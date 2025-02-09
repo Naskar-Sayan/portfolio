@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Common Meta Tags, CSS Links, etc. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body>
+    <!-- Common Header -->
+    <header>
+        <div class="header-content">
+            <div class="signature">
+                <img src="{{ url_for('static', filename='images/signature.png') }}" alt="Signature">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}" {% if active_page == 'home' %}class="active"{% endif %}>Home</a></li>
+                    <li><a href="#about" {% if active_page == 'about' %}class="active"{% endif %}>About</a></li>
+                    <li><a href="#portfolio" {% if active_page == 'portfolio' %}class="active"{% endif %}>Portfolio</a></li>
+                    <li><a href="{{ url_for('contact') }}" {% if active_page == 'contact' %}class="active"{% endif %}>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page-Specific Content Block -->
+    {% block content %}{% endblock %}
+
+    <!-- Common Footer -->
+    <footer class="exclusive-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="{{ url_for('static', filename='images/signature.png') }}" alt="Signature">
+            </div>
+            <div class="footer-social">
+                <!-- Social links here -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sayan Naskar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

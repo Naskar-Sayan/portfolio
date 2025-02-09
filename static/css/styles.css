@@ -1,0 +1,395 @@
+/* General Styles */
+body {
+    overflow-x: hidden; /* Disables horizontal scrolling */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);; /* Semi-transparent background */
+    padding: 0.2rem 0;
+    z-index: 1000;
+}
+
+.header-content {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.signature img {
+    height: 70px; /* Adjust size as needed */
+    width: auto;
+    display: block; /* Ensure it's visible */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+/* Add to styles.css */
+nav ul li a.active {
+    color: #f8750a;
+    border-bottom: 2px solid #f8750a;
+}
+
+nav ul li a {
+    color: rgb(14, 11, 11);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8750a;
+}
+
+/* Hero Section */
+.hero {
+    width: 100vw;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent to improve readability */
+    animation: slideMove 15s ease-in-out infinite; /* Add the sliding animation */
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    animation: slideMove 15s ease-in-out infinite; /* Apply animation to heading */
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    line-height: 1.6;
+    animation: slideMove 10s ease-in-out infinite; /* Apply animation to paragraph */
+}
+
+/* Define the movement animation */
+@keyframes slideMove {
+    0% {
+        transform: translateX(-10px);  /* Start from left */
+    }
+    25% {
+        transform: translateY(5px);   /* Move UPWARD */
+    }
+    50% {
+        transform: translateY(-10px);  /* Move DOWN */
+    }
+    75% {
+        transform: translateX(3px);   /* Move RIGHT */
+    }
+    100% {
+        transform: translateX(-10px);  /* BACK TO START POSITION*/
+    }
+    
+}
+
+.wave-divider {
+    width: 100%; /* Full width of the screen */
+    height: 350px; /* Adjust the height as needed */
+    position: relative;
+    margin-top: -300px; /* Overlaps the next section */
+    z-index: 1; /* Make sure it stays above other content */
+    overflow: hidden;
+}
+
+/* About Section */
+.about {
+    padding: 100px 20px;  /* Adds padding to top and bottom */
+    background-color: white;  /* Solid white background */
+    color: #333;  /* Dark text color for readability */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Centered content */
+.about .content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading style */
+.about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #180909; /* Dark color to contrast with the white background */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Paragraph style */
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555; /* Slightly lighter color for text */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Make sure the SVG's container expands correctly */
+svg {
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Automatically adjusts height based on width */
+}
+
+/* Expertise Section */
+.expertise-section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.expertise-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.expertise-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.expertise-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Hover Effect */
+.expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contact Section */
+.contact-section {
+    background: #ffffff; /* Full white background */
+    padding: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 900px; /* Maximum width */
+    width: 100%;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.contact-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form button {
+    transition: transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Call-to-Action Button */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: white;
+    background: #0073e6;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #005bb5;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+/* Footer Section */
+.exclusive-footer {
+    background: linear-gradient(45deg, #f06, #f79c42);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    height: 70px; /* Adjust size as needed */
+    width: auto;
+    display: block; /* Adjust logo size */
+   
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f79c42;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        flex-direction: column;
+    }
+}
