@@ -1,0 +1,290 @@
+/* General Styles */
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
+    padding: 0.2rem 0;
+    z-index: 1000;
+}
+
+.header-content {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.signature img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a.active {
+    color: #f8750a;
+    border-bottom: 2px solid #f8750a;
+}
+
+nav ul li a {
+    color: rgb(14, 11, 11);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8750a;
+}
+
+/* Enhanced Footer */
+.exclusive-footer {
+    background: linear-gradient(to bottom, rgba(8, 15, 40, 0.95), rgba(4, 9, 30, 0.97));
+    position: relative;
+    color: white;
+    padding: 60px 20px 40px;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+/* Stars Animation */
+.stars-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.stars, .stars2, .stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 90px 40px, #ddd, rgba(0,0,0,0));
+    background-repeat: repeat;
+    animation: twinkle 7s linear infinite;
+}
+
+.stars2 {
+    background-image: 
+        radial-gradient(2px 2px at 100px 150px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 200px 200px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 300px 300px, #eee, rgba(0,0,0,0));
+    animation-delay: -3s;
+}
+
+.stars3 {
+    background-image: 
+        radial-gradient(1px 1px at 50px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 150px 120px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 250px 250px, #eee, rgba(0,0,0,0));
+    animation-delay: -5s;
+}
+
+@keyframes twinkle {
+    from { transform: translateY(0); }
+    to { transform: translateY(-1000px); }
+}
+
+/* Footer Content */
+.footer-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+.footer-logo {
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-glow {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at 50% 50%, 
+        rgba(255, 255, 255, 0.2), 
+        transparent 70%);
+    animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.footer-logo img {
+    height: 70px;
+    width: auto;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 25px;
+}
+
+.social-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.icon-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon:hover .icon-background {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 0 0 20px rgba(106, 17, 203, 0.5);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer-line {
+    height: 1px;
+    width: 80%;
+    margin: 0 auto 20px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Particles */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: floatParticle 20s infinite linear;
+}
+
+@keyframes floatParticle {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(100px);
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+    }
+} 

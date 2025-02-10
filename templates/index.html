@@ -1,38 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/static/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
 
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <!-- Signature Image -->
-            <div class="signature">
-                <img src="{{ url_for('static', filename='images/signature.png') }}" alt="Signature">
-            </div>
-            <!-- Navigation Menu -->
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+{% block title %}My Portfolio{% endblock %}
 
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block content %}
     <!-- Hero Section -->
     <section id="home" class="hero">
         <h1>Hi, I'm Sayan Naskar</h1>
@@ -138,34 +112,60 @@
     <div class="contact-container">
         <h2 class="contact-title">Contact Me</h2>
         <p class="contact-description">Feel free to reach out to me. I'd love to hear from you!</p>
-        <form class="contact-form" action="/submit" method="POST">
+        <form class="contact-form" action="/submit" method="POST" onsubmit="return validateForm()">
             <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
+            <input 
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="Your Email" 
+                required 
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                oninput="this.setCustomValidity('')"
+                onkeyup="validateEmail(this)"
+            />
+            <span id="email-error" class="error-message"></span>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </div>
     </section>
 
-    <!--footer section-->
-    <footer class="exclusive-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="{{ url_for('static', filename='images/signature.png') }}" alt="Signature">
-            </div>
-
-            <div class="footer-social">
-                <a href="https://github.com/your-github" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://kaggle.com" target="_blank" class="social-icon"><i class="fab fa-kaggle"></i></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Sayan Naskar. All rights reserved.</p>
-        </div>
-    </footer>
-    
-
-</body>
-</html>
+    {% block scripts %}
+    <script>
+        function validateEmail(input) {
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const errorElement = document.getElementById('email-error');
+            
+            if (input.value === '') {
+                // If empty, reset to default state
+                input.classList.remove('valid', 'invalid');
+                input.style.borderColor = '#ccc';
+                errorElement.textContent = '';
+                return false;
+            } else if (!emailRegex.test(input.value)) {
+                // If invalid email
+                input.classList.remove('valid');
+                input.classList.add('invalid');
+                input.style.borderColor = '#ff3333';
+                errorElement.textContent = 'Please enter a valid email address';
+                errorElement.style.color = '#ff3333';
+                return false;
+            } else {
+                // If valid email
+                input.classList.remove('invalid');
+                input.classList.add('valid');
+                input.style.borderColor = '#4CAF50';
+                errorElement.textContent = '';
+                return true;
+            }
+        }
+        
+        function validateForm() {
+            const emailInput = document.getElementById('email');
+            return validateEmail(emailInput);
+        }
+    </script>
+    {% endblock %}
+{% endblock %}
