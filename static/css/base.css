@@ -66,7 +66,10 @@ nav ul li a:hover {
 
 /* Enhanced Footer */
 .exclusive-footer {
-    background: linear-gradient(to bottom, rgba(8, 15, 40, 0.95), rgba(4, 9, 30, 0.97));
+    background: linear-gradient(135deg, 
+        rgba(2, 18, 61, 0.9), /* #6a11cb with opacity */
+        rgba(60, 8, 164, 0.85) /* #2575fc with opacity */
+    );
     position: relative;
     color: white;
     padding: 60px 20px 40px;
@@ -82,6 +85,7 @@ nav ul li a:hover {
     overflow: hidden;
     top: 0;
     left: 0;
+    opacity: 0.6; /* Made stars slightly more visible */
 }
 
 .stars, .stars2, .stars3 {
@@ -130,10 +134,10 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
@@ -181,7 +185,7 @@ nav ul li a:hover {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     z-index: 1;
 }
 
@@ -194,15 +198,27 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: all 0.3s ease;
+    z-index: -1;
 }
 
 .social-icon:hover {
     transform: translateY(-5px);
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .social-icon:hover .icon-background {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, 
+        rgba(106, 17, 203, 0.8), 
+        rgba(37, 117, 252, 0.8)
+    );
     box-shadow: 0 0 20px rgba(106, 17, 203, 0.5);
+    transform: scale(1.1);
+}
+
+.social-icon i {
+    position: relative;
+    z-index: 2;
 }
 
 /* Footer Bottom */
