@@ -850,8 +850,8 @@ svg {
 
 .moon {
     position: absolute;
-    top: 15%;
-    right: 8%;
+    top: 18%;
+    right: 6%;
     width: 80px;
     height: 80px;
     background: linear-gradient(145deg, #ffffff, #f4f4f4);

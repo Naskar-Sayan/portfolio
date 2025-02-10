@@ -1,422 +1,277 @@
-/* Main Content Area */
+/* Main Content */
 .main-content {
-    flex: 1;
-    padding: 120px 20px 60px;
-    background: linear-gradient(135deg, #6a11cb 0%, #2bbf61 100%);
     min-height: 100vh;
+    background: var(--contact-bg);
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 80px 20px 40px;
     position: relative;
     overflow: hidden;
 }
 
-/* Animated Background Elements */
-.main-content::before,
-.main-content::after {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    animation: float 15s infinite linear;
+/* Contact Section */
+.contact-section {
+    position: relative;
+    width: 100%;
+    background: var(--contact-bg);
+    padding: 60px 0 30px;
+    overflow: hidden;
 }
 
-.main-content::before {
-    top: -150px;
-    right: -150px;
-    animation-delay: -7s;
-}
-
-.main-content::after {
-    bottom: -150px;
-    left: -150px;
-}
-
-@keyframes float {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    50% {
-        transform: translate(100px, 100px) rotate(180deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(360deg);
-    }
-}
-
-/* Contact Container */
+/* Container */
 .contact-container {
     width: 100%;
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    display: flex;
-    overflow: hidden;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    gap: 100px;
+    align-items: start;
+    padding: 0 30px;
     position: relative;
-    z-index: 1;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
 }
 
 /* Contact Info Section */
 .contact-info {
-    width: 35%;
-    padding: 40px 30px;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-info::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-    opacity: 0.3;
-    animation: moveDots 30s linear infinite;
-}
-
-@keyframes moveDots {
-    0% { background-position: 0 0; }
-    100% { background-position: 100px 100px; }
+    padding: 40px;
+    background: var(--info-bg);
+    border-radius: 20px;
+    box-shadow: var(--info-shadow);
 }
 
 .contact-info h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    color: var(--info-title);
+    margin-bottom: 20px;
 }
 
 .contact-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: var(--info-text);
+    margin-bottom: 40px;
     line-height: 1.6;
-    opacity: 0.9;
-    margin-bottom: 2.5rem;
 }
 
-/* Contact Details Section */
 .contact-details {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    margin-top: 1rem;
+    gap: 25px;
 }
 
 .contact-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 15px;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--item-bg);
     border-radius: 12px;
     transition: all 0.3s ease;
-    margin: 0;
-    overflow: hidden;
-}
-
-.contact-item i {
-    flex-shrink: 0;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-    margin-right: 15px;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.contact-item span {
-    font-size: 0.95rem;
-    color: white;
-    line-height: 1.4;
-    word-break: break-word;
-    padding-top: 8px;
 }
 
 .contact-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateX(5px);
+    transform: translateX(10px);
+    background: var(--item-hover-bg);
+}
+
+.contact-item i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--icon-color);
+    background: var(--icon-bg);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover i {
+    background: var(--icon-hover-bg);
+    color: var(--icon-hover-color);
+}
+
+.contact-item span {
+    color: var(--item-text);
+    font-size: 1rem;
 }
 
 /* Contact Form Section */
 .contact-form-wrapper {
-    width: 65%;
-    padding: 40px;
-    background: white;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-form-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(135deg, #6a11cb20, #2575fc20);
-    border-radius: 0 0 0 100%;
+    padding: 50px;
+    background: var(--form-bg);
+    border-radius: 20px;
+    box-shadow: var(--form-shadow);
+    width: 100%;
+    max-width: calc(100% + 60px);
+    margin-right: auto;
+    margin-left: -80px;
 }
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
 }
 
+/* Form Layout */
 .form-row {
-    position: relative;
-    z-index: 1;
-}
-
-.form-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group.full-width {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 30px;
     width: 100%;
 }
 
+/* Form Groups */
+.form-group {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+}
+
+/* Labels */
 .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--label-color);
     font-size: 0.9rem;
     font-weight: 500;
-    color: #333;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
-.form-group label::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background: #6a11cb;
-    border-radius: 50%;
-}
-
+/* Input Fields */
 .form-group input,
 .form-group textarea {
-    padding: 15px;
-    border: 2px solid #eee;
-    border-radius: 12px;
+    width: 100%;
+    padding: 12px 20px;
+    background: var(--input-bg);
+    border: 2px solid var(--input-border);
+    border-radius: 10px;
+    color: var(--input-text);
     font-size: 1rem;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #6a11cb;
-    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
-    transform: translateY(-2px);
+    border-color: var(--input-focus-border);
+    box-shadow: var(--input-focus-shadow);
+    outline: none;
 }
 
 .form-group textarea {
-    resize: vertical;
     min-height: 120px;
+    resize: vertical;
+    width: 100%;
+}
+
+/* Error Message */
+.error-message {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: 0.85rem;
+    color: var(--error-color);
 }
 
 /* Submit Button */
 .submit-btn {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    width: 100%;
+    padding: 15px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    align-self: flex-end;
-    position: relative;
-    overflow: hidden;
-}
-
-.submit-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to right,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-    );
-    transition: 0.5s;
-}
-
-.submit-btn:hover::before {
-    left: 100%;
+    background: var(--btn-gradient);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+    transform: translateY(-3px);
+    box-shadow: var(--btn-hover-shadow);
 }
 
 .submit-btn i {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
 }
 
-/* Floating Particles */
-.particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    pointer-events: none;
+.submit-btn:hover i {
+    transform: translateX(5px);
 }
-
-.particle {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    animation: floatParticle 20s infinite linear;
-}
-
-@keyframes floatParticle {
-    0% {
-        transform: translateY(0) translateX(0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(-100vh) translateX(100px);
-        opacity: 0;
-    }
-}
-
-/* Add floating particles with JavaScript */
-.particle:nth-child(1) { left: 10%; animation-delay: 0s; }
-.particle:nth-child(2) { left: 30%; animation-delay: 2s; }
-.particle:nth-child(3) { left: 50%; animation-delay: 4s; }
-.particle:nth-child(4) { left: 70%; animation-delay: 6s; }
-.particle:nth-child(5) { left: 90%; animation-delay: 8s; }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .contact-container {
-        flex-direction: column;
-        max-width: 600px;
+        padding: 0 30px;
+    }
+
+    .contact-form-wrapper {
+        max-width: calc(100% + 40px);
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .contact-form-wrapper {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 60px 20px 30px;
+    }
+
+    .contact-section {
+        padding: 40px 0 20px;
     }
 
     .contact-info,
     .contact-form-wrapper {
-        width: 100%;
-    }
-
-    .contact-info {
-        width: 100%;
-        padding: 30px;
-    }
-    
-    .contact-details {
-        max-width: 600px;
-        margin: 1rem auto;
-    }
-
-    .contact-form-wrapper {
         padding: 30px;
     }
 
-    .main-content {
-        padding: 100px 15px 40px;
+    .contact-container {
+        padding: 0 20px;
     }
 
     .form-row {
-        flex-direction: column;
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .contact-info h2 {
         font-size: 2rem;
     }
-
-    .submit-btn {
-        width: 100%;
-    }
 }
 
-@media (max-width: 480px) {
-    .contact-container {
-        border-radius: 15px;
-    }
-
-    .contact-info,
-    .contact-form-wrapper {
-        padding: 20px;
-    }
-
-    .contact-info h2 {
-        font-size: 1.8rem;
-    }
-    
-    .contact-item {
-        padding: 12px;
-    }
-    
-    .contact-item i {
-        width: 30px;
-        height: 30px;
-        font-size: 1rem;
-    }
+/* Validation States */
+.form-group input.valid {
+    border-color: var(--success-color);
 }
 
-.form-group input[type="email"],
-.form-group input[type="tel"] {
-    transition: border-color 0.3s ease;
-}
-
-.form-group input[type="email"].valid,
-.form-group input[type="tel"].valid {
-    border-color: #4CAF50;
-}
-
-.form-group input[type="email"].invalid,
-.form-group input[type="tel"].invalid {
-    border-color: #ff3333;
-}
-
-.error-message {
-    color: #ff3333;
-    font-size: 0.9rem;
-    margin-top: 5px;
-    text-align: left;
-    display: block;
+.form-group input.invalid {
+    border-color: var(--error-color);
 }

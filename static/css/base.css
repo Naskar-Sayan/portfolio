@@ -362,7 +362,7 @@ nav ul li a.active {
 }
 
 .footer-cv h3 {
-    color: white;
+    color: var(--footer-heading-color);
     font-size: 1rem;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -372,6 +372,7 @@ nav ul li a.active {
 .cv-buttons {
     display: flex;
     gap: 15px;
+    justify-content: center;
 }
 
 .cv-btn {
@@ -387,28 +388,28 @@ nav ul li a.active {
 }
 
 .cv-btn.view {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--cv-view-bg);
+    color: var(--cv-view-text);
+    border: 1px solid var(--cv-view-border);
 }
 
 .cv-btn.download {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    color: white;
+    background: var(--cv-download-bg);
+    color: var(--cv-download-text);
     border: none;
 }
 
 .cv-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--cv-btn-hover-shadow);
 }
 
 .cv-btn.view:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--cv-view-hover-bg);
 }
 
 .cv-btn.download:hover {
-    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    background: var(--cv-download-hover-bg);
 }
 
 /* Responsive Design */
@@ -460,12 +461,12 @@ nav ul li a.active {
     --footer-bg: linear-gradient(135deg, rgba(2, 18, 61, 0.9), rgba(60, 8, 164, 0.85));
     --hero-bg: #fafafa;
     --about-bg: #f8f9fa;
-    --about-pattern: radial-gradient(circle at 50% 50%, #000 1px, transparent 1px);
+    --about-pattern: radial-gradient(circle at 50% 50%, var(--accent-color) 1px, transparent 1px);
     --about-card-bg: rgba(255, 255, 255, 0.95);
-    --about-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --about-card-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     --about-card-border: rgba(0, 0, 0, 0.05);
     --about-title: #2d2d2d;
-    --about-text: #555;
+    --about-text: #666;
     --expertise-bg: #e9ecef;
     --expertise-overlay: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     --card-bg: rgba(255, 255, 255, 0.95);
@@ -548,6 +549,69 @@ nav ul li a.active {
     --hero-overlay: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     --hero-blob: linear-gradient(120deg, rgba(248, 117, 10, 0.2), rgba(255, 147, 41, 0.2));
     --hero-title-gradient: linear-gradient(-45deg, #f8750a, #ff4444, #f8750a);
+    --contact-bg: #f8f9fa;
+    --contact-pattern: radial-gradient(circle at 50% 50%, var(--accent-color) 1px, transparent 1px);
+    --info-bg: rgba(255, 255, 255, 0.95);
+    --info-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --info-border: rgba(255, 255, 255, 0.2);
+    --info-blob: linear-gradient(45deg, rgba(248, 117, 10, 0.2), rgba(255, 147, 41, 0.2));
+    --heading-gradient: linear-gradient(45deg, #333, #666);
+    --contact-text: #666;
+    --detail-item-bg: rgba(255, 255, 255, 0.5);
+    --detail-item-hover: rgba(248, 117, 10, 0.1);
+    --icon-color: var(--accent-color);
+    --icon-bg: rgba(248, 117, 10, 0.1);
+    --icon-hover-bg: var(--accent-color);
+    --icon-hover-color: #fff;
+    --form-bg: rgba(255, 255, 255, 0.95);
+    --form-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --form-border: rgba(0, 0, 0, 0.1);
+    --label-color: #666;
+    --input-bg: rgba(255, 255, 255, 0.8);
+    --input-border: rgba(0, 0, 0, 0.1);
+    --input-text: #333;
+    --input-focus-border: var(--accent-color);
+    --input-focus-bg: #fff;
+    --input-focus-shadow: 0 10px 20px rgba(248, 117, 10, 0.1);
+    --btn-gradient: linear-gradient(45deg, var(--accent-color), #ff6b6b);
+    --btn-text: #fff;
+    --btn-shine: linear-gradient(90deg, rgba(255,255,255,0.2), rgba(255,255,255,0.3), rgba(255,255,255,0.2));
+    --btn-hover-shadow: 0 10px 20px rgba(248, 117, 10, 0.2);
+    --accent-gradient: linear-gradient(90deg, var(--accent-color), #ff6b6b);
+    --card-hover-bg: linear-gradient(135deg, rgba(248, 117, 10, 0.1), rgba(255, 147, 41, 0.1));
+    --footer-heading-color: #333;
+    --cv-view-bg: rgba(0, 0, 0, 0.1);
+    --cv-view-text: #333;
+    --cv-view-border: rgba(0, 0, 0, 0.2);
+    --cv-view-hover-bg: rgba(0, 0, 0, 0.2);
+    --cv-download-bg: linear-gradient(45deg, var(--accent-color), #ff6b6b);
+    --cv-download-hover-bg: linear-gradient(45deg, #ff6b6b, var(--accent-color));
+    --cv-download-text: #fff;
+    --cv-btn-hover-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --about-title-gradient: linear-gradient(45deg, #333, #666);
+    --about-line-gradient: linear-gradient(90deg, var(--accent-color), #ff6b6b);
+    --about-image-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    --about-image-overlay: linear-gradient(45deg, rgba(248, 117, 10, 0.2), rgba(255, 147, 41, 0.2));
+    --skill-bg: rgba(255, 255, 255, 0.8);
+    --skill-hover-bg: var(--accent-gradient);
+    --skill-icon-color: var(--accent-color);
+    --skill-text: #333;
+    --blog-bg: #ffffff;  /* Changed from #f8f9fa to pure white */
+    --blog-pattern: radial-gradient(circle at 50% 50%, var(--accent-color) 1px, transparent 1px);
+    --blog-title-gradient: linear-gradient(45deg, #333, #666);
+    --blog-line-gradient: linear-gradient(90deg, var(--accent-color), #ff6b6b);
+    --blog-card-bg: #ffffff;  /* Changed to pure white */
+    --blog-card-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);  /* Softened shadow */
+    --blog-card-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    --blog-card-border: rgba(0, 0, 0, 0.08);  /* Lighter border */
+    --blog-category-bg: rgba(248, 117, 10, 0.1);
+    --blog-category-text: var(--accent-color);
+    --blog-title-text: #333;
+    --blog-excerpt: #666;
+    --blog-meta-border: rgba(0, 0, 0, 0.1);
+    --blog-author-text: #444;
+    --blog-date: #888;
+    --blog-gradient-end: 248, 249, 250;  /* Light theme gradient end */
 }
 
 [data-theme="dark"] {
@@ -562,12 +626,12 @@ nav ul li a.active {
     --footer-bg: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(40, 40, 40, 0.85));
     --hero-bg: #121212;
     --about-bg: #1a1a1a;
-    --about-pattern: radial-gradient(circle at 50% 50%, #fff 1px, transparent 1px);
-    --about-card-bg: rgba(45, 45, 45, 0.9);
-    --about-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --about-pattern: radial-gradient(circle at 50% 50%, var(--accent-color) 1px, transparent 1px);
+    --about-card-bg: rgba(30, 30, 30, 0.95);
+    --about-card-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     --about-card-border: rgba(255, 255, 255, 0.1);
     --about-title: #fff;
-    --about-text: #ddd;
+    --about-text: #aaa;
     --expertise-bg: #2d2d2d;
     --expertise-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85));
     --card-bg: rgba(45, 45, 45, 0.9);
@@ -650,6 +714,69 @@ nav ul li a.active {
     --hero-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
     --hero-blob: linear-gradient(120deg, rgba(255, 68, 68, 0.2), rgba(255, 102, 102, 0.2));
     --hero-title-gradient: linear-gradient(-45deg, #ff4444, #ff6b6b, #ff4444);
+    --contact-bg: #121212;
+    --contact-pattern: radial-gradient(circle at 50% 50%, var(--accent-color) 1px, transparent 1px);
+    --info-bg: rgba(30, 30, 30, 0.95);
+    --info-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    --info-border: rgba(255, 255, 255, 0.1);
+    --info-blob: linear-gradient(45deg, rgba(255, 68, 68, 0.2), rgba(255, 102, 102, 0.2));
+    --heading-gradient: linear-gradient(45deg, #fff, #aaa);
+    --contact-text: #aaa;
+    --detail-item-bg: rgba(255, 255, 255, 0.05);
+    --detail-item-hover: rgba(255, 68, 68, 0.1);
+    --icon-color: var(--accent-color);
+    --icon-bg: rgba(255, 68, 68, 0.1);
+    --icon-hover-bg: var(--accent-color);
+    --icon-hover-color: #fff;
+    --form-bg: rgba(30, 30, 30, 0.95);
+    --form-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    --form-border: rgba(255, 255, 255, 0.1);
+    --label-color: #aaa;
+    --input-bg: rgba(20, 20, 20, 0.8);
+    --input-border: rgba(255, 255, 255, 0.1);
+    --input-text: #fff;
+    --input-focus-border: var(--accent-color);
+    --input-focus-bg: rgba(40, 40, 40, 0.9);
+    --input-focus-shadow: 0 10px 20px rgba(255, 68, 68, 0.1);
+    --btn-gradient: linear-gradient(45deg, var(--accent-color), #ff6b6b);
+    --btn-text: #fff;
+    --btn-shine: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    --btn-hover-shadow: 0 10px 20px rgba(255, 68, 68, 0.2);
+    --accent-gradient: linear-gradient(90deg, var(--accent-color), #ff6b6b);
+    --card-hover-bg: linear-gradient(135deg, rgba(255, 68, 68, 0.1), rgba(255, 102, 102, 0.1));
+    --footer-heading-color: #fff;
+    --cv-view-bg: rgba(255, 255, 255, 0.1);
+    --cv-view-text: #fff;
+    --cv-view-border: rgba(255, 255, 255, 0.2);
+    --cv-view-hover-bg: rgba(255, 255, 255, 0.2);
+    --cv-download-bg: linear-gradient(45deg, var(--accent-color), #ff6b6b);
+    --cv-download-hover-bg: linear-gradient(45deg, #ff6b6b, var(--accent-color));
+    --cv-download-text: #fff;
+    --cv-btn-hover-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --about-title-gradient: linear-gradient(45deg, #fff, #aaa);
+    --about-line-gradient: linear-gradient(90deg, var(--accent-color), #ff6b6b);
+    --about-image-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    --about-image-overlay: linear-gradient(45deg, rgba(255, 68, 68, 0.2), rgba(255, 102, 102, 0.2));
+    --skill-bg: rgba(40, 40, 40, 0.8);
+    --skill-hover-bg: var(--accent-gradient);
+    --skill-icon-color: var(--accent-color);
+    --skill-text: #fff;
+    --blog-bg: #000000;  /* Changed from #121212 to pure black */
+    --blog-pattern: radial-gradient(circle at 50% 50%, var(--accent-color) 1px, transparent 1px);
+    --blog-title-gradient: linear-gradient(45deg, #fff, #aaa);
+    --blog-line-gradient: linear-gradient(90deg, var(--accent-color), #ff6b6b);
+    --blog-card-bg: #1a1a1a;  /* Slightly lighter than black for cards */
+    --blog-card-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    --blog-card-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    --blog-card-border: rgba(255, 255, 255, 0.1);
+    --blog-category-bg: rgba(255, 68, 68, 0.1);
+    --blog-category-text: var(--accent-color);
+    --blog-title-text: #fff;
+    --blog-excerpt: #aaa;
+    --blog-meta-border: rgba(255, 255, 255, 0.1);
+    --blog-author-text: #ddd;
+    --blog-date: #888;
+    --blog-gradient-end: 26, 26, 26;  /* Dark theme gradient end */
 }
 
 /* Theme Switch */
@@ -912,4 +1039,327 @@ input:checked + .slider:before {
     background: var(--rays-gradient);
     animation: rotate 20s linear infinite;
     transform-origin: center;
+}
+
+/* About Section */
+.about-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--about-bg);
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* Background Animation */
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--about-pattern);
+    opacity: 0.03;
+    animation: movePattern 20s linear infinite;
+}
+
+/* Container */
+.about-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* About Header */
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-header h2 {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    background: var(--about-title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: var(--about-line-gradient);
+    border-radius: 2px;
+}
+
+/* About Content */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* About Image */
+.about-image {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: var(--about-image-shadow);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--about-image-overlay);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.about-image:hover::before {
+    opacity: 1;
+}
+
+/* About Details */
+.about-details {
+    padding: 40px;
+    background: var(--about-card-bg);
+    border-radius: 30px;
+    box-shadow: var(--about-card-shadow);
+    border: 1px solid var(--about-card-border);
+}
+
+.about-text {
+    color: var(--about-text);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    padding: 15px;
+    background: var(--skill-bg);
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background: var(--skill-hover-bg);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: var(--skill-icon-color);
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    color: var(--skill-text);
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .about-content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 80px 0;
+    }
+    
+    .about-container {
+        padding: 0 20px;
+    }
+    
+    .about-details {
+        padding: 30px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Blog Section */
+.blog-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--blog-bg);
+    background: linear-gradient(
+        to bottom,
+        var(--blog-bg),
+        var(--blog-bg) 80%,
+        rgba(var(--blog-gradient-end), 0.05)
+    );
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* Background Pattern */
+.blog-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blog-pattern);
+    opacity: 0.03;
+    animation: movePattern 20s linear infinite;
+}
+
+/* Blog Container */
+.blog-container {
+    width: 100%;
+    max-width: 1200px;  /* Reduced from 1400px */
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Blog Header */
+.blog-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog-header h2 {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    background: var(--blog-title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+/* Blog Card */
+.blog-card {
+    background: var(--blog-card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--blog-card-shadow);
+    border: 1px solid var(--blog-card-border);
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--blog-card-hover-shadow);
+}
+
+/* Blog Content */
+.blog-content {
+    padding: 25px;
+}
+
+.blog-category {
+    display: inline-block;
+    padding: 6px 15px;
+    background: var(--blog-category-bg);
+    color: var(--blog-category-text);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.blog-title {
+    font-size: 1.4rem;
+    color: var(--blog-title-text);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.blog-excerpt {
+    color: var(--blog-excerpt);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-section {
+        padding: 80px 0;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .blog-container {
+        padding: 0 20px;
+    }
 } 
