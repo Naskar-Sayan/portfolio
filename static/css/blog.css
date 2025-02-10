@@ -1,0 +1,113 @@
+.blog-section {
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    min-height: 100vh;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-image {
+    position: relative;
+    height: 200px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(106, 17, 203, 0.9);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h2 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.excerpt {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #2575fc;
+}
+
+@media (max-width: 768px) {
+    .blog-section {
+        padding: 100px 15px 40px;
+    }
+    
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+} 

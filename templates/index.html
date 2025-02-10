@@ -7,165 +7,240 @@
 {% endblock %}
 
 {% block content %}
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Hi, I'm Sayan Naskar</h1>
-        <p>I'm a creative developer passionate about building amazing things.</p>
-        <a href="#portfolio" class="btn">View My Work</a>
-    </section>
-    
-    
-    <!-- Wavy Divider -->
-    <div class="wave-divider">
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-        <defs>
-            <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
-                <stop offset="5%" stop-color="#F78DA7"></stop>
-                <stop offset="95%" stop-color="#8ED1FC"></stop>
-            </linearGradient>
-        </defs>
-        <path d="M 0,600 L 0,150 C 94.17224880382778,171.6937799043062 188.34449760765557,193.38755980861245 280,188 C 371.65550239234443,182.61244019138755 460.7942583732057,150.14354066985643 551,155 C 641.2057416267943,159.85645933014357 732.4784688995215,202.03827751196175 837,204 C 941.5215311004785,205.96172248803825 1059.2918660287082,167.70334928229664 1162,152 C 1264.7081339712918,136.29665071770336 1352.3540669856459,143.14832535885168 1440,150 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
-        <path d="M 0,600 L 0,350 C 110.46889952153111,331.8755980861244 220.93779904306223,313.7511961722488 309,313 C 397.0622009569378,312.2488038277512 462.71770334928226,328.8708133971292 552,349 C 641.2822966507177,369.1291866028708 754.1913875598086,392.76555023923447 854,408 C 953.8086124401914,423.23444976076553 1040.5167464114832,430.066985645933 1136,419 C 1231.4832535885168,407.933014354067 1335.7416267942585,378.96650717703346 1440,350 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
-    </svg>
-</div>
-
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>Hi, I'm Sayan Naskar</h2>
-        <p>I specialize in Full Stack Data Analytics and Dashboarding, building interactive and visually appealing Dashboard. My expertise includes Excle,SQL,PowerBI,Tablue,Python with diffrent libraries like Pandas, Numpy, Matplotlib.</p>
-        <p>I graduated from University of Calcutta, India, with a major in Information Technology(IT) Engineering and a minor in Electronics Science.</p>
-    </section>
-
-
-    <!-- Experise Section -->
-    <section id="expertise" class="expertise-section">
-        <div class="container">
-            <h2 class="section-title">My Expertise</h2>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                
-                    <img src="https://images.javatpoint.com/tutorial/flask/images/flask-tutorial.png" alt="python file icons">
-                    &nbsp;&nbsp;
-                    <img src="https://numpy.org/images/logo.svg" alt="python file icons">
-                    &nbsp;&nbsp;
-                    <img src="https://pypi-camo.freetls.fastly.net/705545a847e60d6d4478c76a8146b9000e339c1c/68747470733a2f2f70616e6461732e7079646174612e6f72672f7374617469632f696d672f70616e6461732e737667" alt="python file icons">    
-                    <h3>Python Library</h3>
-                    <p>Building scalable and efficient applications using Python.</p>
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <!-- Moon Animation (for dark mode) -->
+            <div class="moon-container">
+                <div class="moon"></div>
+            </div>
+            
+            <!-- Sunlight Animation (for light mode) -->
+            <div class="sunlight-container">
+                <div class="sun"></div>
+                <div class="rays"></div>
+                <div class="atmospheric-light"></div>
+                <div class="light-particles" id="lightParticles"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h1>Hi, I'm Sayan Naskar</h1>
+                <p>I'm a creative developer passionate about building amazing things.</p>
+                <a href="#portfolio" class="btn">View My Work</a>
+            </div>
+        </section>
+        
+        
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="content">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I specialize in Full Stack Data Analytics and Dashboarding, building interactive and visually appealing Dashboard. My expertise includes Excle,SQL,PowerBI,Tablue,Python with diffrent libraries like Pandas, Numpy, Matplotlib.</p>
+                        <p>I graduated from University of Calcutta, India, with a major in Information Technology(IT) Engineering and a minor in Electronics Science.</p>
+                    </div>
+                    <div class="profile-tile">
+                        <div class="profile-photo-container">
+                            <img src="{{ url_for('static', filename='images/profile/profile1.jpg') }}" alt="Sayan Naskar" class="active">
+                            <img src="{{ url_for('static', filename='images/profile/profile2.jpg') }}" alt="Sayan Naskar">
+                            <img src="{{ url_for('static', filename='images/profile/profile3.jpg') }}" alt="Sayan Naskar">
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
                 </div>
-                <div class="expertise-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/180px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Data Analytics icon">
-                    &nbsp;&nbsp;
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCjdWoDWpbcm2bst3LtpNe0OEK2STiYNpbeNWwINfEODwAiph9ggX&usqp=CAE&s">
-                    &nbsp;&nbsp;
-                    <img src="https://www.tableau.com/themes/custom/tableau_www/logo.v2.svg">
-                    <h3>Data Analytics</h3>
-                    <p>Working with csv xls and Dashboarding the data.</p>
-                </div>
-                <div class="expertise-card">
-                    <img src="https://cdn-icons-png.flaticon.com/128/873/873107.png" alt="AWS Icon">
-                    &nbsp;&nbsp;
+            </div>
+        </section>
 
-                    <img src="https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-docker/1.29.4/1737476530544/Microsoft.VisualStudio.Services.Icons.Default" alt="AWS Icon">
 
-                    &nbsp;&nbsp;
-
-                    <img src="data:image/png;base64,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" alt="AWS Icon">
-                    <h3>AZURE & Cloud</h3>
-                    <p>Leveraging cloud solutions for scalable architectures.</p>
-                </div>
-                <div class="expertise-card">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2772/2772128.png" alt="SQL Icon">
-                    &nbsp;&nbsp;
-                    <img src="https://cdn-icons-png.flaticon.com/128/10828/10828570.png" alt="SQL Icon">
-                    &nbsp;&nbsp;
-                    <img src="https://cdn-icons-png.flaticon.com/128/919/919836.png" alt="SQL Icon">
-                    <h3>SQL & Databases</h3>
-                    <p>Designing optimized database structures and queries.</p>
-                </div>
+        <!-- Experise Section -->
+        <section id="expertise" class="expertise-section">
+            <div class="container">
+                <h2 class="section-title">My Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
                     
-            </div>
-        </div>
-    </section>
-    
+                        <img src="https://images.javatpoint.com/tutorial/flask/images/flask-tutorial.png" alt="python file icons">
+                        &nbsp;&nbsp;
+                        <img src="https://numpy.org/images/logo.svg" alt="python file icons">
+                        &nbsp;&nbsp;
+                        <img src="https://pypi-camo.freetls.fastly.net/705545a847e60d6d4478c76a8146b9000e339c1c/68747470733a2f2f70616e6461732e7079646174612e6f72672f7374617469632f696d672f70616e6461732e737667" alt="python file icons">    
+                        <h3>Python Library</h3>
+                        <p>Building scalable and efficient applications using Python.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/180px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Data Analytics icon">
+                        &nbsp;&nbsp;
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCjdWoDWpbcm2bst3LtpNe0OEK2STiYNpbeNWwINfEODwAiph9ggX&usqp=CAE&s">
+                        &nbsp;&nbsp;
+                        <img src="https://www.tableau.com/themes/custom/tableau_www/logo.v2.svg">
+                        <h3>Data Analytics</h3>
+                        <p>Working with csv xls and Dashboarding the data.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <img src="https://cdn-icons-png.flaticon.com/128/873/873107.png" alt="AWS Icon">
+                        &nbsp;&nbsp;
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <h2>My Recent Works</h2>
-        <div class="projects">
-            <div class="project">
-                <img src="{{ url_for('static', filename='images/human.jpeg') }}" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project">
-                <img src="{{ url_for('static', filename='images/normal.png') }}" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
+                        <img src="https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-docker/1.29.4/1737476530544/Microsoft.VisualStudio.Services.Icons.Default" alt="AWS Icon">
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-    <div class="contact-container">
-        <h2 class="contact-title">Contact Me</h2>
-        <p class="contact-description">Feel free to reach out to me. I'd love to hear from you!</p>
-        <form class="contact-form" action="/submit" method="POST" onsubmit="return validateForm()">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input 
-                type="email" 
-                name="email" 
-                id="email"
-                placeholder="Your Email" 
-                required 
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                oninvalid="this.setCustomValidity('Please enter a valid email address')"
-                oninput="this.setCustomValidity('')"
-                onkeyup="validateEmail(this)"
-            />
-            <span id="email-error" class="error-message"></span>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+                        &nbsp;&nbsp;
+
+                        <img src="data:image/png;base64,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" alt="AWS Icon">
+                        <h3>AZURE & Cloud</h3>
+                        <p>Leveraging cloud solutions for scalable architectures.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2772/2772128.png" alt="SQL Icon">
+                        &nbsp;&nbsp;
+                        <img src="https://cdn-icons-png.flaticon.com/128/10828/10828570.png" alt="SQL Icon">
+                        &nbsp;&nbsp;
+                        <img src="https://cdn-icons-png.flaticon.com/128/919/919836.png" alt="SQL Icon">
+                        <h3>SQL & Databases</h3>
+                        <p>Designing optimized database structures and queries.</p>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Explore my data analytics and dashboard projects</p>
+            </div>
+            
+            <div class="projects-grid">
+                <a href="https://github.com/yourusername/project1" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <img src="{{ url_for('static', filename='images/dashboard1.jpg') }}" alt="Sales Dashboard">
+                        <div class="project-info">
+                            <h3>Sales Analytics Dashboard</h3>
+                            <p>Interactive Power BI dashboard for sales performance analysis</p>
+                            <span class="tech-stack">Power BI • SQL • Excel</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project2" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <img src="{{ url_for('static', filename='images/dashboard2.jpg') }}" alt="Financial Dashboard">
+                        <div class="project-info">
+                            <h3>Financial Metrics Dashboard</h3>
+                            <p>Comprehensive financial analysis dashboard using Tableau</p>
+                            <span class="tech-stack">Tableau • Python • SQL</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project3" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <img src="{{ url_for('static', filename='images/dashboard3.jpg') }}" alt="HR Analytics">
+                        <div class="project-info">
+                            <h3>HR Analytics Dashboard</h3>
+                            <p>Employee performance and engagement analytics</p>
+                            <span class="tech-stack">Power BI • Python • Pandas</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project4" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <img src="{{ url_for('static', filename='images/dashboard4.jpg') }}" alt="Marketing Dashboard">
+                        <div class="project-info">
+                            <h3>Marketing Campaign Dashboard</h3>
+                            <p>Campaign performance and ROI analysis dashboard</p>
+                            <span class="tech-stack">Tableau • SQL • Python</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project5" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <img src="{{ url_for('static', filename='images/dashboard5.jpg') }}" alt="Supply Chain Dashboard">
+                        <div class="project-info">
+                            <h3>Supply Chain Analytics</h3>
+                            <p>End-to-end supply chain monitoring and optimization dashboard</p>
+                            <span class="tech-stack">Power BI • Python • SQL</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project6" class="project-card" target="_blank">
+                    <div class="project-content">
+                        <img src="{{ url_for('static', filename='images/dashboard6.jpg') }}" alt="Customer Analytics">
+                        <div class="project-info">
+                            <h3>Customer Insights Dashboard</h3>
+                            <p>Customer behavior and segmentation analysis platform</p>
+                            <span class="tech-stack">Tableau • Python • Pandas</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </div>
-    </section>
 
     {% block scripts %}
     <script>
-        function validateEmail(input) {
-            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            const errorElement = document.getElementById('email-error');
+        document.addEventListener('DOMContentLoaded', () => {
+            const scenes = document.querySelectorAll('.scene');
+            const steps = document.querySelectorAll('.progress-step');
+            let currentScene = 0;
             
-            if (input.value === '') {
-                // If empty, reset to default state
-                input.classList.remove('valid', 'invalid');
-                input.style.borderColor = '#ccc';
-                errorElement.textContent = '';
-                return false;
-            } else if (!emailRegex.test(input.value)) {
-                // If invalid email
-                input.classList.remove('valid');
-                input.classList.add('invalid');
-                input.style.borderColor = '#ff3333';
-                errorElement.textContent = 'Please enter a valid email address';
-                errorElement.style.color = '#ff3333';
-                return false;
-            } else {
-                // If valid email
-                input.classList.remove('invalid');
-                input.classList.add('valid');
-                input.style.borderColor = '#4CAF50';
-                errorElement.textContent = '';
-                return true;
+            function showScene(index) {
+                scenes.forEach(scene => scene.classList.remove('active'));
+                steps.forEach(step => step.classList.remove('active'));
+                
+                scenes[index].classList.add('active');
+                steps[index].classList.add('active');
+            }
+            
+            function nextScene() {
+                currentScene = (currentScene + 1) % scenes.length;
+                showScene(currentScene);
+            }
+            
+            // Auto-play scenes
+            setInterval(nextScene, 5000);
+            
+            // Allow manual navigation
+            steps.forEach((step, index) => {
+                step.addEventListener('click', () => {
+                    currentScene = index;
+                    showScene(currentScene);
+                });
+            });
+            
+            // Start with first scene
+            showScene(0);
+        });
+
+        function createStars() {
+            const container = document.querySelector('.stars-container');
+            const starCount = 150;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                const size = Math.random() * 2 + 1;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                const duration = Math.random() * 4 + 3;
+                star.style.setProperty('--duration', `${duration}s`);
+                
+                star.style.animationDelay = `${Math.random() * 3}s`;
+                
+                container.appendChild(star);
             }
         }
         
-        function validateForm() {
-            const emailInput = document.getElementById('email');
-            return validateEmail(emailInput);
-        }
+        createStars();
     </script>
     {% endblock %}
 {% endblock %}
