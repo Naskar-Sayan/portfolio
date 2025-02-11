@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_file
 
 app = Flask(__name__)
 
@@ -54,6 +54,10 @@ def submit():
     message = request.form.get('message')
     print(f"Name: {name}, Email: {email}, Message: {message}")
     return redirect(url_for('home'))
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html', active_page='portfolio')
 
 if __name__ == '__main__':
     app.run(debug=True)

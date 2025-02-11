@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio - Sayan Naskar{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="portfolio-section">
+    <!-- Hero Section -->
+    <div class="portfolio-hero">
+        <h1>My Portfolio</h1>
+        <p>Professional Journey & Projects in Data Analytics</p>
+    </div>
+
+    <!-- Professional Background Section -->
+    <div class="background-section">
+        <div class="section-header">
+            <h2>Professional Background</h2>
+            <p>Experience & Certifications</p>
+        </div>
+
+        <div class="background-grid">
+            <!-- Internship Card -->
+            <div class="background-card internship">
+                <h3 class="card-title">
+                    <i class="fas fa-briefcase"></i>
+                    Professional Experience
+                </h3>
+                <div class="timeline-content">
+                    <div class="company-logo">
+                        <img src="{{ url_for('static', filename='images/company-logo.png') }}" alt="Company Name">
+                    </div>
+                    <div class="internship-details">
+                        <h4>Data Analytics Intern</h4>
+                        <h5>Company Name</h5>
+                        <span class="duration">June 2023 - August 2023</span>
+                        <ul class="responsibilities">
+                            <li>Analyzed customer behavior patterns using SQL and Python</li>
+                            <li>Created interactive dashboards using Power BI</li>
+                            <li>Improved reporting efficiency by 40%</li>
+                        </ul>
+                        <div class="tools-used">
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Card -->
+            <div class="background-card certifications">
+                <h3 class="card-title">
+                    <i class="fas fa-certificate"></i>
+                    Certifications
+                </h3>
+                <div class="certifications-grid">
+                    <div class="certification-item">
+                        <div class="certification-logo">
+                            <img src="{{ url_for('static', filename='images/certifications/microsoft.png') }}" alt="Microsoft">
+                        </div>
+                        <div class="certification-info">
+                            <h4>Microsoft Power BI Data Analyst</h4>
+                            <p class="issuer">Microsoft</p>
+                            <p class="date">Issued: Jan 2024</p>
+                            <div class="certification-links">
+                                <a href="#" class="view-credential" target="_blank">View Credential</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more certifications -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects-section">
+        <div class="section-header">
+            <h2>Data Analytics Projects</h2>
+            <p>Real-world problems solved through data</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-preview">
+                    <img src="{{ url_for('static', filename='images/projects/project1.jpg') }}" alt="Sales Analytics Dashboard">
+                    <div class="project-overlay">
+                        <span class="view-project">View Details</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Sales Analytics Dashboard</h3>
+                    <p class="project-brief">
+                        Comprehensive sales performance analysis system helping business track KPIs and make data-driven decisions.
+                    </p>
+                    <div class="tools-used">
+                        <span>Power BI</span>
+                        <span>SQL</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
+                
+                <!-- Project Details Modal -->
+                <div class="project-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Sales Analytics Dashboard</h2>
+                            <span class="close-modal">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="project-images">
+                                <!-- Project images slider here -->
+                            </div>
+                            <div class="project-details">
+                                <section class="business-problem">
+                                    <h3>Business Problem</h3>
+                                    <p>Detailed description of the business challenge...</p>
+                                </section>
+                                
+                                <section class="data-sources">
+                                    <h3>Data Sources</h3>
+                                    <ul>
+                                        <li>Sales transactions database</li>
+                                        <li>Customer CRM data</li>
+                                        <li>Inventory management system</li>
+                                    </ul>
+                                </section>
+                                
+                                <section class="tools-methodology">
+                                    <h3>Tools & Methodology</h3>
+                                    <p>Description of tools and approaches used...</p>
+                                </section>
+                                
+                                <section class="challenges">
+                                    <h3>Challenges & Solutions</h3>
+                                    <p>Details about challenges faced and how they were overcome...</p>
+                                </section>
+                                
+                                <section class="business-impact">
+                                    <h3>Business Impact</h3>
+                                    <p>Quantifiable results and improvements...</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more project cards -->
+        </div>
+    </div>
+</section>
+
+<!-- Modal Background -->
+<div class="modal-background"></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Project Modal Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const projectCards = document.querySelectorAll('.project-card');
+        const modalBackground = document.querySelector('.modal-background');
+        
+        projectCards.forEach(card => {
+            const projectPreview = card.querySelector('.project-preview');
+            const modal = card.querySelector('.project-modal');
+            const closeBtn = modal.querySelector('.close-modal');
+            
+            projectPreview.addEventListener('click', () => {
+                modal.classList.add('active');
+                modalBackground.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('active');
+                modalBackground.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        modalBackground.addEventListener('click', () => {
+            const activeModal = document.querySelector('.project-modal.active');
+            if (activeModal) {
+                activeModal.classList.remove('active');
+                modalBackground.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+</script>
+{% endblock %} 

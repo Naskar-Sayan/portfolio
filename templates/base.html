@@ -27,17 +27,24 @@
     <!-- Common Header -->
     <header>
         <div class="header-content">
+            <!-- Left Side - Signature -->
             <div class="signature">
-                <img src="{{ url_for('static', filename='images/signature.png') }}" alt="Signature">
+                <a href="{{ url_for('home') }}">
+                    <img src="{{ url_for('static', filename='images/signature.png') }}" alt="Signature">
+                </a>
             </div>
-            <nav>
+            
+            <!-- Center - Navigation -->
+            <nav class="center-nav">
                 <ul>
                     <li><a href="{{ url_for('home') }}" {% if active_page == 'home' %}class="active"{% endif %}>Home</a></li>
-                    <li><a href="/blog" {% if active_page == 'blog' %}class="active"{% endif %}>Blog</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="/contact" {% if active_page == 'contact' %}class="active"{% endif %}>Contact</a></li>
+                    <li><a href="{{ url_for('blog') }}" {% if active_page == 'blog' %}class="active"{% endif %}>Blog</a></li>
+                    <li><a href="{{ url_for('portfolio') }}" {% if active_page == 'portfolio' %}class="active"{% endif %}>Portfolio</a></li>
+                    <li><a href="{{ url_for('contact') }}" {% if active_page == 'contact' %}class="active"{% endif %}>Contact</a></li>
                 </ul>
             </nav>
+            
+            <!-- Right Side - Theme Switch -->
             <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />

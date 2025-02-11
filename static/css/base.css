@@ -18,121 +18,187 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--header-bg-color);
-    padding: 0.2rem 0;
+    background: var(--header-bg);
+    backdrop-filter: blur(10px);
     z-index: 1000;
-    backdrop-filter: blur(15px);
     border-bottom: 1px solid var(--header-border);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: var(--header-shadow);
     height: 80px;
-    display: flex;
-    align-items: center;
-}
-
-header.scrolled {
-    transform: translateY(-100%);
-}
-
-header.visible {
-    transform: translateY(0);
+    box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06),
+        0 8px 15px -3px rgba(0, 0, 0, 0.05);
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 10px 30px;
-    width: 100%;
+    padding: 15px 40px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 45px;
+    height: 100%;
+}
+
+/* Signature */
+.signature {
+    width: 150px;
+    position: relative;
+}
+
+.signature a {
+    display: block;
+    text-decoration: none;
 }
 
 .signature img {
-    height: 50px;
-    width: auto;
-    display: block;
-    transition: transform 0.3s ease;
-    filter: var(--signature-filter);
-    opacity: 1;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: all 0.4s ease;
 }
 
-.signature img:hover {
-    transform: scale(1.1) rotate(-5deg) translateY(-2px);
-    filter: var(--signature-filter-hover);
-    opacity: 1;
+/* Light theme signature */
+.signature img {
+    filter: 
+        brightness(0) 
+        saturate(100%) 
+        invert(25%) 
+        sepia(10%) 
+        saturate(1000%) 
+        hue-rotate(0deg) 
+        brightness(95%) 
+        contrast(95%)
+        drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.signature a:hover img {
+    transform: scale(1.05);
+    filter: 
+        brightness(0) 
+        saturate(150%) 
+        invert(30%) 
+        sepia(15%) 
+        saturate(1200%) 
+        hue-rotate(0deg) 
+        brightness(98%) 
+        contrast(98%)
+        drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
 }
 
-nav ul {
+/* Dark theme signature */
+[data-theme="dark"] .signature img {
+    filter: 
+        brightness(0) 
+        saturate(100%) 
+        invert(90%) 
+        sepia(0%) 
+        saturate(0%) 
+        hue-rotate(0deg) 
+        brightness(100%) 
+        contrast(90%)
+        drop-shadow(0 0 3px rgba(255, 255, 255, 0.2));
+}
+
+[data-theme="dark"] .signature img:hover {
+    filter: 
+        brightness(0) 
+        saturate(100%) 
+        invert(95%) 
+        sepia(0%) 
+        saturate(0%) 
+        hue-rotate(0deg) 
+        brightness(105%) 
+        contrast(95%)
+        drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+}
+
+/* Navigation Styles */
+.center-nav {
+    justify-self: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+.center-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 30px;
-    align-items: center;
-    background: var(--nav-bg);
-    padding: 8px 20px;
-    border-radius: 30px;
-    box-shadow: var(--nav-shadow);
-    border: 1px solid var(--nav-border);
+    justify-content: center;
+    gap: 45px;
 }
 
-nav ul li {
-    position: relative;
-    padding: 0 5px;
-}
-
-nav ul li a {
-    color: var(--nav-text-color);
+.center-nav a {
+    color: var(--nav-text);
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 8px 0;
     position: relative;
-    overflow: hidden;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    transition: color 0.3s ease;
 }
 
-nav ul li a::before {
+.center-nav a::after {
     content: '';
     position: absolute;
-    inset: 0;
-    background: var(--nav-hover-bg);
-    border-radius: 20px;
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: var(--accent-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
 }
 
-nav ul li a:hover::before {
-    opacity: 1;
-    transform: scale(1.05);
+.center-nav a:hover,
+.center-nav a.active {
+    color: var(--accent-color);
 }
 
-nav ul li a:hover {
-    color: var(--nav-text-hover);
-    transform: translateY(-2px);
-    text-shadow: 0 0 10px var(--accent-color);
+.center-nav a:hover::after,
+.center-nav a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
-nav ul li a.active {
-    color: var(--nav-text-hover);
-    background: var(--nav-active-gradient);
-    border-radius: 20px;
-    box-shadow: var(--nav-active-shadow);
-    font-weight: 600;
-    text-shadow: 0 0 15px var(--accent-color);
+/* Theme Switch */
+.theme-switch-wrapper {
+    justify-self: end;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+    
+    .header-content {
+        grid-template-columns: auto auto;
+        padding: 15px 20px;
+        gap: 20px;
+    }
+
+    .signature {
+        width: 120px;
+    }
+
+    .center-nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-self: stretch;
+        padding: 10px 0;
+    }
+
+    .center-nav ul {
+        gap: 30px;
+    }
+
+    .center-nav a {
+        font-size: 1rem;
+    }
 }
 
 /* Enhanced Footer */
@@ -412,42 +478,6 @@ nav ul li a.active {
     background: var(--cv-download-hover-bg);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    nav ul li {
-        margin-bottom: 10px;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
-    }
-
-    .footer-social {
-        justify-content: center;
-    }
-
-    .footer-bottom {
-        margin-top: 30px;
-    }
-
-    .cv-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cv-btn {
-        width: 200px;
-        justify-content: center;
-    }
-}
-
 /* Dark Mode Styles */
 :root {
     --primary-bg: #ffffff;
@@ -612,6 +642,13 @@ nav ul li a.active {
     --blog-author-text: #444;
     --blog-date: #888;
     --blog-gradient-end: 248, 249, 250;  /* Light theme gradient end */
+    --signature-gold: #FFD700;
+    --signature-gold-hover: #FFC000;
+    --signature-metallic: #D4AF37;
+    --signature-metallic-hover: #FFD700;
+    --signature-shine: rgba(255, 255, 255, 0.5);
+    --signature-color: #2D3436;  /* Dark gray for light theme */
+    --signature-hover: #1e2224;
 }
 
 [data-theme="dark"] {
@@ -777,6 +814,13 @@ nav ul li a.active {
     --blog-author-text: #ddd;
     --blog-date: #888;
     --blog-gradient-end: 26, 26, 26;  /* Dark theme gradient end */
+    --signature-gold: #FFE55C;
+    --signature-gold-hover: #FFD700;
+    --signature-metallic: #FFD700;
+    --signature-metallic-hover: #FFC000;
+    --signature-shine: rgba(255, 255, 255, 0.6);
+    --signature-color: #F5F6FA;  /* Light gray for dark theme */
+    --signature-hover: #ffffff;
 }
 
 /* Theme Switch */
@@ -1361,5 +1405,15 @@ input:checked + .slider:before {
     
     .blog-container {
         padding: 0 20px;
+    }
+}
+
+/* Shine Animation */
+@keyframes shine {
+    0% {
+        transform: translateX(-200%) translateY(-200%) rotate(-45deg);
+    }
+    50%, 100% {
+        transform: translateX(200%) translateY(200%) rotate(-45deg);
     }
 } 

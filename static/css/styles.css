@@ -10,7 +10,7 @@ section {
 
 /* Hero Section */
 .hero {
-    min-height: 110vh;  /* Increased height */
+    min-height: 115vh;  /* Increased from 110vh to 113vh */
     width: 100%;
     position: relative;
     display: flex;
@@ -45,20 +45,27 @@ section {
 
 /* Hero Content Container */
 .hero-content {
-    max-width: 1200px;
     width: 100%;
     position: relative;
     z-index: 3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
-    margin-top: 2rem;  /* Added top margin for better vertical centering */
 }
 
-.hero-text {
-    flex: 1;
-    max-width: 600px;
+.left-content {
+    position: absolute;
+    left: 5%;  /* Adjust this value to move more left/right */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 4.5rem);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    color: var(--subtitle-color);
 }
 
 /* Hero Heading */
@@ -132,7 +139,7 @@ section {
 
 /* About Section */
 .about {
-    padding: 40px 20px;  /* Reduced overall padding */
+    padding: 40px 20px;
     background: var(--about-bg);
     text-align: center;
     overflow: hidden;
@@ -142,7 +149,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 60px;  /* Reduced bottom padding */
+    padding-bottom: 60px;
+    background: rgba(var(--about-bg-rgb), 0.7);  /* Made transparent */
+    backdrop-filter: blur(10px);  /* Added blur effect */
 }
 
 /* Common Curved Separator for all sections */
@@ -177,13 +186,13 @@ section {
     max-width: 900px;
     position: relative;
     z-index: 3;
-    margin-top: 40px;  /* Reduced top margin */
-    padding: 25px;  /* Reduced padding */
-    background: var(--about-card-bg);
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(var(--card-bg-rgb), 0.6);  /* Made transparent */
     border-radius: 20px;
     box-shadow: var(--about-card-shadow);
-    border: 1px solid var(--about-card-border);
-    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
 }
 
 .about-content {
@@ -249,13 +258,14 @@ svg {
 
 /* Expertise Section */
 .expertise-section {
-    background: var(--expertise-bg);
-    padding: 50px 20px;  /* Reduced overall padding */
+    background: rgba(var(--expertise-bg-rgb), 0.7);  /* Made transparent */
+    padding: 50px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
     margin-top: -50px;
     z-index: 3;
+    backdrop-filter: blur(10px);
 }
 
 .section-title {
@@ -295,14 +305,13 @@ svg {
 }
 
 .expertise-card {
-    background: var(--card-bg);
-    padding: 25px;  /* Reduced card padding */
+    background: rgba(var(--card-bg-rgb), 0.6);  /* Made transparent */
+    padding: 30px;
     border-radius: 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: var(--card-shadow);
-    border: 1px solid var(--card-border);
-    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
     position: relative;
 }
 
@@ -492,6 +501,12 @@ svg {
     
     .section-header h2 {
         font-size: 2rem;
+    }
+
+    .left-content {
+        position: static;
+        text-align: center;
+        transform: none;
     }
 }
 
@@ -819,19 +834,44 @@ svg {
     );
 }
 
-/* Stars Animation (Dark Mode) */
+/* Stars Effect for All Sections */
 .stars-container {
-    position: absolute;
+    position: fixed;  /* Changed from absolute to fixed */
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.6;
-    display: none; /* Hidden by default */
+    pointer-events: none;
+    z-index: 1;  /* Lower z-index to stay behind content */
+    display: none;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle var(--duration, 4s) infinite;
 }
 
 [data-theme="dark"] .stars-container {
-    display: block; /* Show in dark mode */
+    display: block;
+}
+
+/* Enhanced twinkle animation */
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
 }
 
 /* Moon Animation (Dark Mode) */
@@ -1017,7 +1057,8 @@ svg {
         0 0 50px #ff8400,
         0 0 100px #ff8400,
         0 0 150px rgba(255, 132, 0, 0.5),
-        0 0 200px rgba(255, 132, 0, 0.3);
+        0 0 200px rgba(255, 132, 0, 0.3),
+        0 0 250px rgba(255, 132, 0, 0.2);  /* Added extra shadow layer */
     animation: sunPulse 4s ease-in-out infinite;
     z-index: 2;
 }
@@ -1031,13 +1072,63 @@ svg {
     bottom: -50%;
     background: radial-gradient(
         circle,
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 132, 0, 0.8) 30%,
-        rgba(255, 132, 0, 0.2) 60%,
+        rgba(255, 255, 255, 0.9),  /* Increased opacity */
+        rgba(255, 132, 0, 0.9) 30%,  /* Increased opacity */
+        rgba(255, 132, 0, 0.3) 60%,
         transparent 70%
     );
     filter: blur(20px);
     animation: coronaPulse 4s ease-in-out infinite;
+}
+
+/* Enhanced sun pulse animation */
+@keyframes sunPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: blur(1px) brightness(1.2);  /* Increased base brightness */
+    }
+    50% {
+        transform: scale(1.05);
+        filter: blur(2px) brightness(1.5);  /* Increased peak brightness */
+        box-shadow: 
+            inset -8px -8px 12px #ff8400,
+            inset 8px 8px 12px #fff,
+            0 0 60px #ff8400,
+            0 0 120px #ff8400,
+            0 0 180px rgba(255, 132, 0, 0.5),
+            0 0 240px rgba(255, 132, 0, 0.3),
+            0 0 300px rgba(255, 132, 0, 0.2);  /* Enhanced shadow during pulse */
+    }
+}
+
+/* Enhanced corona pulse animation */
+@keyframes coronaPulse {
+    0%, 100% {
+        opacity: 0.9;  /* Increased base opacity */
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* Enhanced atmospheric light */
+.atmospheric-light {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at right 5% top 20%,
+        rgba(255, 132, 0, 0.25),  /* Increased opacity */
+        rgba(255, 132, 0, 0.2) 20%,
+        rgba(255, 132, 0, 0.1) 40%,
+        transparent 60%
+    );
+    filter: blur(40px);
+    mix-blend-mode: screen;
 }
 
 /* Volumetric Light Rays */
@@ -1067,51 +1158,201 @@ svg {
     animation: rayRotate 60s linear infinite;
 }
 
-/* Atmospheric Light Effect */
-.atmospheric-light {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-        circle at right 5% top 20%,
-        rgba(255, 132, 0, 0.15),
-        rgba(255, 132, 0, 0.1) 20%,
-        rgba(255, 132, 0, 0.05) 40%,
-        transparent 60%
-    );
-    filter: blur(40px);
-    mix-blend-mode: screen;
-}
-
-@keyframes sunPulse {
-    0%, 100% {
-        transform: scale(1);
-        filter: blur(1px) brightness(1);
-    }
-    50% {
-        transform: scale(1.05);
-        filter: blur(2px) brightness(1.2);
-    }
-}
-
-@keyframes coronaPulse {
-    0%, 100% {
-        opacity: 0.8;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-}
-
 @keyframes rayRotate {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Center Content */
+.center-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.creative-text {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--creative-text-bg);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .center-content {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+/* Right Content */
+.right-content {
+    position: absolute;
+    right: 5%;  /* Adjust this value to move more left/right */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .right-content {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+/* Hero Button Styles */
+.hero-button-wrapper {
+    position: absolute;  /* Changed from fixed to absolute */
+    right: 5%;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-button-wrapper {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .hero-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Add these variables to :root */
+:root {
+    --about-bg-rgb: 255, 255, 255;  /* Light mode */
+    --card-bg-rgb: 255, 255, 255;
+    --expertise-bg-rgb: 255, 255, 255;
+}
+
+[data-theme="dark"] {
+    --about-bg-rgb: 18, 18, 18;  /* Dark mode */
+    --card-bg-rgb: 30, 30, 30;
+    --expertise-bg-rgb: 18, 18, 18;
+}
+
+/* Keep only the necessary navbar styles */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Keep only the necessary download CV button styles */
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-cv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.download-text {
+    margin-right: 8px;
+}
+
+.download-icon {
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+.download-cv:hover .download-icon {
+    transform: translateY(2px);
+}
+
+/* Dark theme for download CV */
+[data-theme="dark"] .download-cv {
+    background: linear-gradient(135deg, var(--primary-color-dark), var(--secondary-color-dark));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        margin: 1rem 0;
+    }
+
+    .nav-left, .nav-right {
+        width: 100%;
+        justify-content: center;
     }
 }

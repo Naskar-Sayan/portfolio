@@ -8,8 +8,11 @@
 
 {% block content %}
     <div class="main-content">
+        <!-- Stars Container for Dark Mode (Moved outside sections) -->
+        <div class="stars-container"></div>
+
         <!-- Hero Section -->
-        <section id="home" class="hero">
+        <section class="hero">
             <!-- Moon Animation (for dark mode) -->
             <div class="moon-container">
                 <div class="moon"></div>
@@ -22,11 +25,19 @@
                 <div class="atmospheric-light"></div>
                 <div class="light-particles" id="lightParticles"></div>
             </div>
-            
+
             <div class="hero-content">
-                <h1>Hi, I'm Sayan Naskar</h1>
-                <p>I'm a creative developer passionate about building amazing things.</p>
-                <a href="#portfolio" class="btn">View My Work</a>
+                <div class="left-content">
+                    <h1>Hi, I'm <br>
+                        Sayan <br>
+                        Naskar</h1>
+                    <p>I'm a creative developer<br> passionate about building amazing things.</p>
+                </div>
+            </div>
+
+            <!-- Separate button section -->
+            <div class="hero-button-wrapper">
+                <a href="#portfolio" class="hero-button">View My Work</a>
             </div>
         </section>
         
@@ -178,6 +189,8 @@
                     </div>
                 </a>
             </div>
+
+            
         </section>
     </div>
 

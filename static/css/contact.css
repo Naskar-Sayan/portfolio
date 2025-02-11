@@ -275,3 +275,13 @@
 .form-group input.invalid {
     border-color: var(--error-color);
 }
+
+/* Remove all hire button related styles */
+.hire-button-wrapper,
+.hire-button,
+.hire-button::before,
+.hire-button:hover,
+.hire-button-text,
+.hire-button-icon {
+    display: none;
+}
