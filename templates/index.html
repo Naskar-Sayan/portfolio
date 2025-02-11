@@ -43,21 +43,31 @@
         
         
         <!-- About Section -->
-        <section id="about" class="about">
-            <div class="content">
-                <div class="about-content">
+        <section class="about-section">
+            <div class="about-container">
+                <!-- Left Side: About Text -->
+                <div class="about-text-side">
+                    <h2 class="section-title">About Me</h2>
                     <div class="about-text">
-                        <h2>About Me</h2>
-                        <p>I specialize in Full Stack Data Analytics and Dashboarding, building interactive and visually appealing Dashboard. My expertise includes Excle,SQL,PowerBI,Tablue,Python with diffrent libraries like Pandas, Numpy, Matplotlib.</p>
-                        <p>I graduated from University of Calcutta, India, with a major in Information Technology(IT) Engineering and a minor in Electronics Science.</p>
+                        <p>
+                            I specialize in Full Stack Data Analytics and Dashboarding, building interactive and visually appealing Dashboards.<br>
+                             My expertise includes Excel, SQL, PowerBI, Tableau, Python with different libraries like Pandas, Numpy, Matplotlib.
+                        </p>
+                        <p>
+                            I graduated from University of Calcutta, India, with a major in Information Technology(IT) Engineering and a minor in Electronics Science.
+                        </p>
                     </div>
-                    <div class="profile-tile">
-                        <div class="profile-photo-container">
-                            <img src="{{ url_for('static', filename='images/profile/profile1.jpg') }}" alt="Sayan Naskar" class="active">
-                            <img src="{{ url_for('static', filename='images/profile/profile2.jpg') }}" alt="Sayan Naskar">
-                            <img src="{{ url_for('static', filename='images/profile/profile3.jpg') }}" alt="Sayan Naskar">
+                </div>
+
+                <!-- Right Side: Photo Tile -->
+                <div class="photo-tile">
+                    <div class="tile-container">
+                        <div class="photo-wrapper">
+                            <img src="{{ url_for('static', filename='images/profile/photo1.jpg') }}" alt="Sayan Naskar" class="active">
+                            <img src="{{ url_for('static', filename='images/profile/photo2.jpg') }}" alt="Sayan Naskar">
+                            <img src="{{ url_for('static', filename='images/profile/photo3.jpg') }}" alt="Sayan Naskar">
                         </div>
-                        <div class="profile-glow"></div>
+                        <div class="tile-glow"></div>
                     </div>
                 </div>
             </div>

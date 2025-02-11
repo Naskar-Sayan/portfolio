@@ -187,3 +187,16 @@
         gap: 8px;
     }
 } 
+<style>
+@media (max-width: 768px) {
+    .blog-wrapper {
+        padding: 120px 20px 80px; /* Adjust top padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-wrapper {
+        padding: 100px 16px 60px; /* More top padding */
+    }
+}
+</style>

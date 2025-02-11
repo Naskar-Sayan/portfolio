@@ -142,5 +142,9 @@ def submit():
 def portfolio():
     return render_template('portfolio.html', active_page='portfolio')
 
+@app.route('/biography')
+def biography():
+    return render_template('biography.html', active_page='biography')
+
 if __name__ == '__main__':
     app.run(debug=True)

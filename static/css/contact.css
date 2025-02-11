@@ -316,3 +316,66 @@
         opacity: 1;
     }
 }
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 120px; /* Adjusted to prevent overlap with header */
+    }
+
+    .contact-section {
+        padding-top: 100px; /* Added more padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding-top: 140px; /* Increased top padding */
+    }
+
+    .contact-section {
+        padding-top: 120px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-info,
+    .contact-form-wrapper {
+        width: 100%; /* Ensure full width */
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box; /* Prevent extra spacing */
+        overflow: hidden;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr; /* Make form fields full width */
+        gap: 20px; /* Reduce gap for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 20px; /* Reduce padding for better fit */
+    }
+
+    .form-row {
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Reduce gap for better spacing */
+    }
+
+    .contact-item {
+        flex-wrap: wrap; /* Prevents content from overflowing */
+        word-break: break-word; /* Ensures long text wraps properly */
+        overflow-wrap: break-word;
+        width: 100%; /* Make sure items take full width */
+    }
+
+    .contact-item span {
+        flex: 1; /* Allow text to take full space inside */
+        min-width: 0; /* Prevent overflow */
+    }
+}

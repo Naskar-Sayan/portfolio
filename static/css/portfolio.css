@@ -525,3 +525,97 @@
         grid-template-columns: 1fr;
     }
 } 
+@media (max-width: 768px) {
+    .certifications-grid, 
+    .background-grid {
+        grid-template-columns: 1fr !important; /* Ensures full width in mobile */
+    }
+
+    .certification-card, 
+    .background-card {
+        width: 100% !important;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+.certification-card, 
+.background-card {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.certifications-section, 
+.background-section {
+    padding: 0 10px; /* Reduce padding */
+}
+
+.certification-card, 
+.background-card {
+    padding: 15px; /* Reduce inner padding */
+}
+
+@media (max-width: 768px) {
+    .certifications-grid, 
+    .background-grid {
+        grid-template-columns: 1fr; /* Force single column */
+        gap: 15px; /* Reduce gap */
+    }
+}
+@media (max-width: 768px) {
+    .certification-card, 
+    .background-card {
+        width: 90%;
+        max-width: 100%;
+        padding: 15px; /* Reduce padding */
+        font-size: 0.9rem; /* Reduce text size */
+    }
+
+    .certification-logo {
+        width: 60px; /* Reduce logo size */
+        height: 60px;
+    }
+
+    .certification-info h3 {
+        font-size: 1rem; /* Smaller title */
+    }
+
+    .certification-links a, 
+    .certification-links button {
+        font-size: 0.8rem; /* Reduce button size */
+        padding: 6px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .certifications-grid, 
+    .background-grid {
+        display: flex; /* Use flex instead of grid */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+        gap: 15px; /* Reduce gap */
+        overflow: hidden; /* Prevent content cut-off */
+    }
+
+    .certification-card, 
+    .background-card {
+        width: 90%; /* Reduce width for better fit */
+        max-width: 100%;
+        padding: 15px; /* Reduce padding */
+        font-size: 0.9rem; /* Reduce text size */
+        box-sizing: border-box; /* Ensure proper sizing */
+        overflow-wrap: break-word; /* Prevent text overflow */
+    }
+
+    .certification-logo {
+        width: 60px; /* Reduce logo size */
+        height: 60px;
+    }
+
+    .certification-info h3 {
+        font-size: 1rem; /* Smaller title */
+    }
+
+    .certification-links a, 
+    .certification-links button {
+        font-size: 0.8rem; /* Reduce button size */
+        padding: 6px 10px;
+    }
+}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Biography - Sayan Naskar{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/biography.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <div class="bio-header">
+        <h1>My Journey</h1>
+        <p class="bio-subtitle">Moments, Memories & Milestones</p>
+    </div>
+
+    <div class="bio-grid">
+        <!-- Travel Section -->
+        <div class="bio-section">
+            <h2><i class="fas fa-plane"></i> Travel Stories</h2>
+            <div class="memory-card">
+                <img src="{{ url_for('static', filename='images/bio/travel1.jpg') }}" alt="Travel Memory">
+                <div class="memory-content">
+                    <h3>Darjeeling Adventures</h3>
+                    <span class="memory-date">December 2023</span>
+                    <p>Exploring the misty mountains and tea gardens of Darjeeling. The sunrise at Tiger Hill was absolutely breathtaking!</p>
+                </div>
+            </div>
+            <!-- Add more travel cards -->
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="bio-section">
+            <h2><i class="fas fa-heart"></i> Hobbies & Interests</h2>
+            <div class="memory-card">
+                <img src="{{ url_for('static', filename='images/bio/hobby1.jpg') }}" alt="Hobby">
+                <div class="memory-content">
+                    <h3>Photography</h3>
+                    <p>Capturing moments through my lens. Street photography and nature shots are my favorites.</p>
+                </div>
+            </div>
+            <!-- Add more hobby cards -->
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="bio-section">
+            <h2><i class="fas fa-trophy"></i> Achievements</h2>
+            <div class="memory-card">
+                <img src="{{ url_for('static', filename='images/bio/achievement1.jpg') }}" alt="Achievement">
+                <div class="memory-content">
+                    <h3>Hackathon Winner</h3>
+                    <span class="memory-date">2023</span>
+                    <p>Won first place in the national coding hackathon with my innovative solution.</p>
+                </div>
+            </div>
+            <!-- Add more achievement cards -->
+        </div>
+    </div>
+</div>
+{% endblock %} 

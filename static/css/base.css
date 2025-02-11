@@ -169,6 +169,56 @@ header {
     transform: scale(1.1);
 }
 
+/* Bio Button */
+.bio-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;  /* Same as theme switch */
+    height: 34px;  /* Same as theme switch */
+    padding: 0;
+    margin-right: 15px;
+    background: var(--secondary-bg);
+    color: var(--accent-color);
+    border-radius: 50%;  /* Make it circular like theme switch */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.bio-btn i {
+    font-size: 16px;  /* Same size as sun/moon icons */
+}
+
+.bio-btn span {
+    display: none;  /* Hide text, show only icon */
+}
+
+.bio-btn:hover {
+    transform: translateY(-2px);
+    background: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(248, 117, 10, 0.2);
+}
+
+/* Dark theme */
+[data-theme="dark"] .bio-btn {
+    background: var(--secondary-bg);
+    color: var(--accent-color);
+}
+
+[data-theme="dark"] .bio-btn:hover {
+    background: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 68, 68, 0.2);
+}
+
+/* Remove responsive styles since we're always showing just the icon */
+@media (max-width: 768px) {
+    .bio-btn {
+        margin-right: 10px;  /* Slightly less margin on mobile */
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
@@ -422,60 +472,126 @@ header {
     }
 }
 
-/* CV Section */
+/* Footer CV Section */
 .footer-cv {
-    text-align: center;
-}
-
-.footer-cv h3 {
-    color: var(--footer-heading-color);
-    font-size: 1rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.cv-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-.cv-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+/* CV View Icon */
+.cv-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary-bg);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.cv-btn.view {
-    background: var(--cv-view-bg);
-    color: var(--cv-view-text);
-    border: 1px solid var(--cv-view-border);
-}
-
-.cv-btn.download {
-    background: var(--cv-download-bg);
-    color: var(--cv-download-text);
-    border: none;
-}
-
-.cv-btn:hover {
+.cv-icon:hover {
     transform: translateY(-3px);
-    box-shadow: var(--cv-btn-hover-shadow);
+    box-shadow: 0 5px 15px rgba(var(--accent-rgb), 0.3);
 }
 
-.cv-btn.view:hover {
-    background: var(--cv-view-hover-bg);
+.cv-icon i {
+    font-size: 20px;
+    transition: all 0.3s ease;
 }
 
-.cv-btn.download:hover {
-    background: var(--cv-download-hover-bg);
+/* Download CV Button */
+.download-cv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #f8750a;  /* Fixed orange for both themes */
+    color: #000;  /* Black text for light theme */
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #f8750a;
+}
+
+.download-cv i,
+.download-cv span {
+    color: #000;  /* Black text for light theme */
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] .download-cv {
+    background: #f8750a;
+    border-color: #f8750a;
+    color: #fff;  /* White text for dark theme */
+}
+
+[data-theme="dark"] .download-cv i,
+[data-theme="dark"] .download-cv span {
+    color: #fff;  /* White text for dark theme */
+}
+
+/* Hover states */
+.download-cv:hover {
+    transform: translateY(-3px);
+    background: #ff8c2c;
+    border-color: #ff8c2c;
+    box-shadow: 0 5px 15px rgba(248, 117, 10, 0.3);
+}
+
+[data-theme="dark"] .download-cv:hover {
+    background: #ff8c2c;
+    border-color: #ff8c2c;
+    box-shadow: 0 5px 15px rgba(248, 117, 10, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-cv {
+        gap: 15px;
+    }
+
+    .cv-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cv-icon i {
+        font-size: 18px;
+    }
+
+    .download-cv {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .download-cv i {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .cv-icon i {
+        font-size: 16px;
+    }
+
+    .download-cv {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
 }
 
 /* Dark Mode Styles */
@@ -529,7 +645,6 @@ header {
     --footer-card-bg: rgba(255, 255, 255, 0.95);
     --footer-card-border: rgba(0, 0, 0, 0.05);
     --footer-card-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    --footer-card-animation: slideUpFade 0.8s ease-out;
     --footer-logo-animation: spinIn 1s ease-out;
     --footer-logo-glow: radial-gradient(circle at 50% 50%, 
         rgba(248, 117, 10, 0.3),
@@ -701,7 +816,6 @@ header {
     --footer-card-bg: rgba(30, 30, 30, 0.95);
     --footer-card-border: rgba(255, 255, 255, 0.1);
     --footer-card-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    --footer-card-animation: glowSlideUp 0.8s ease-out;
     --footer-logo-animation: glowSpinIn 1s ease-out;
     --footer-logo-glow: radial-gradient(circle at 50% 50%, 
         rgba(255, 68, 68, 0.3),
@@ -1395,16 +1509,44 @@ input:checked + .slider:before {
 
 @media (max-width: 768px) {
     .blog-section {
-        padding: 80px 0;
-    }
-    
-    .blog-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        padding-top: 140px;  /* Increased top padding to account for header */
+        padding-bottom: 60px;
     }
     
     .blog-container {
         padding: 0 20px;
+        margin-top: 20px;  /* Added extra margin from header */
+    }
+
+    .blog-header {
+        margin-top: 20px;  /* Space after header */
+    }
+
+    /* Ensure header doesn't overlap */
+    header + .blog-section {
+        margin-top: 80px;  /* Extra space after fixed header */
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .blog-section {
+        padding: 100px 0;  /* Original desktop padding */
+    }
+    
+    .blog-container {
+        padding: 0 40px;
+    }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+    .blog-section {
+        padding-top: 160px;  /* More padding for smaller screens */
     }
 }
 
@@ -1416,4 +1558,69 @@ input:checked + .slider:before {
     50%, 100% {
         transform: translateX(200%) translateY(200%) rotate(-45deg);
     }
+}
+
+/* Moon Crater Animation */
+@keyframes crater {
+    0% {
+        box-shadow: 
+            inset -25px -25px 40px rgba(0,0,0,0.5),
+            inset 25px 25px 40px rgba(255,255,255,0.1),
+            0 0 50px rgba(255,255,255,0.1);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 
+            inset -30px -30px 45px rgba(0,0,0,0.6),
+            inset 30px 30px 45px rgba(255,255,255,0.15),
+            0 0 60px rgba(255,255,255,0.15);
+        transform: scale(1.02);
+    }
+    100% {
+        box-shadow: 
+            inset -25px -25px 40px rgba(0,0,0,0.5),
+            inset 25px 25px 40px rgba(255,255,255,0.1),
+            0 0 50px rgba(255,255,255,0.1);
+        transform: scale(1);
+    }
+}
+
+.moon-crater {
+    position: absolute;
+    background: var(--moon-surface);
+    border-radius: 50%;
+    animation: crater 4s ease-in-out infinite;
+}
+
+.moon-crater:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 25%;
+    transform: rotate(-15deg);
+}
+
+.moon-crater:nth-child(2) {
+    width: 45px;
+    height: 45px;
+    top: 60%;
+    left: 65%;
+    transform: rotate(25deg);
+}
+
+.moon-crater:nth-child(3) {
+    width: 35px;
+    height: 35px;
+    top: 40%;
+    left: 45%;
+    transform: rotate(-5deg);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .moon-crater {
+    background: var(--moon-surface-dark);
+    box-shadow: 
+        inset -25px -25px 40px rgba(0,0,0,0.7),
+        inset 25px 25px 40px rgba(255,255,255,0.05),
+        0 0 50px rgba(255,255,255,0.05);
 } 

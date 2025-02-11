@@ -46,6 +46,12 @@
             
             <!-- Right Side - Theme Switch -->
             <div class="theme-switch-wrapper">
+                <!-- Bio Button -->
+                <a href="{{ url_for('biography') }}" class="bio-btn" title="Bio">
+                    <i class="fas fa-user"></i>
+                </a>
+                
+                <!-- Theme Switch -->
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
                     <div class="slider round">
@@ -85,17 +91,13 @@
             </div>
 
             <div class="footer-cv">
-                <h3>Download CV</h3>
-                <div class="cv-buttons">
-                    <a href="{{ url_for('static', filename='cv/SayanNaskar_CV.pdf') }}" target="_blank" class="cv-btn view">
-                        <i class="fas fa-eye"></i>
-                        View CV
-                    </a>
-                    <a href="{{ url_for('static', filename='cv/SayanNaskar_CV.pdf') }}" download class="cv-btn download">
-                        <i class="fas fa-download"></i>
-                        Download CV
-                    </a>
-                </div>
+                <a href="#" class="cv-icon">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+                <a href="#" class="download-cv">
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </a>
             </div>
 
             <div class="footer-social">
