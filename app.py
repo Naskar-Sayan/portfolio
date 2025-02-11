@@ -1,6 +1,28 @@
-from flask import Flask, render_template, request, redirect, url_for, send_file
+from flask import Flask, render_template, request, redirect, url_for, flash, session
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import os
+from dotenv import load_dotenv
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+
+load_dotenv()
 
 app = Flask(__name__)
+app.secret_key = os.environ.get('SECRET_KEY')
+
+# Email configuration
+SMTP_SERVER = "smtp.gmail.com"
+SMTP_PORT = 587
+SMTP_USERNAME = os.environ.get('EMAIL_USERNAME')
+SMTP_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+
+limiter = Limiter(
+    app=app,
+    key_func=get_remote_address,
+    default_limits=["200 per day", "50 per hour"]
+)
 
 @app.route('/')
 def home():
@@ -45,15 +67,76 @@ def blog_post(slug):
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html', active_page='contact')
+    return render_template('contact.html', 
+        active_page='contact',
+        form_data=session.get('form_data', {}))
 
 @app.route('/submit', methods=['POST'])
+@limiter.limit("5 per minute")
 def submit():
-    name = request.form.get('name')
-    email = request.form.get('email')
-    message = request.form.get('message')
-    print(f"Name: {name}, Email: {email}, Message: {message}")
-    return redirect(url_for('home'))
+    # Store form data in session
+    session['form_data'] = {
+        'name': request.form.get('name', '').strip(),
+        'email': request.form.get('email', '').strip(),
+        'phone': request.form.get('phone', '').strip(),
+        'subject': request.form.get('subject', '').strip(),
+        'message': request.form.get('message', '').strip(),
+    }
+
+    try:
+        # Get form data from session
+        form_data = session['form_data']
+        
+        # Basic validation - only check if fields are not empty
+        if not all([form_data['name'], form_data['email'], form_data['subject'], form_data['message']]):
+            flash('Please fill in all required fields.', 'error')
+            return redirect(url_for('contact'))
+
+        # Create email content
+        msg = MIMEMultipart()
+        msg['From'] = SMTP_USERNAME
+        msg['To'] = SMTP_USERNAME  # Sending to yourself
+        msg['Subject'] = f"New Contact Form Submission: {form_data['subject']}"
+
+        # Email body
+        body = f"""
+        New Contact Form Submission
+
+        ━━━━━━━━━━━━━━━━━━━━━━━━━
+
+        👤 Sender Details:
+           Name: {form_data['name']}
+           Email: {form_data['email']}
+           Phone: {form_data['phone']}
+
+        📝 Message Details:
+           Subject: {form_data['subject']}
+
+        📨 Message:
+        {form_data['message']}
+
+        ━━━━━━━━━━━━━━━━━━━━━━━━━
+
+        This message was sent from your portfolio website contact form.
+        """
+
+        msg.attach(MIMEText(body, 'plain'))
+
+        # Send email
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()  # Enable TLS
+            server.login(SMTP_USERNAME, SMTP_PASSWORD)
+            server.send_message(msg)
+
+        # Clear form data from session on success
+        session.pop('form_data', None)
+        flash('Thanks for reaching out! I will get back to you within 24 hours.', 'success')
+        return redirect(url_for('contact'))
+
+    except Exception as e:
+        print(f"Error sending email: {str(e)}")
+        flash('Oops! Something went wrong. Please try again or email me directly at sayannaskar.web@gmail.com', 'error')
+        return redirect(url_for('contact'))
 
 @app.route('/portfolio')
 def portfolio():
