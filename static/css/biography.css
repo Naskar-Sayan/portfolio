@@ -1,1 +1,205 @@
- 
+/* Biography Section Styles */
+.main-content {
+    background: var(--biography-bg);
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Bio Header */
+.bio-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bio-header h1 {
+    font-size: 2.5rem;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.bio-header p.bio-subtitle {
+    font-size: 1.2rem;
+    color: var(--subtitle-color);
+}
+
+/* Bio Grid */
+.bio-grid {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: column; /* Stack tiles vertically */
+    gap: 30px; /* Space between tiles */
+}
+
+/* Bio Section */
+.bio-section {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center align text */
+}
+
+.bio-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+/* Memory Card */
+.memory-card {
+    flex: 1; /* Allow cards to grow equally */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Image Container */
+.image-container {
+    display: flex; /* Use flexbox for images */
+    justify-content: center; /* Center align images */
+    gap: 10px; /* Space between images */
+}
+
+.memory-card img {
+    width: 100%; /* Make images responsive */
+    max-width: 150px; /* Set a max width for images */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.memory-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Memory Content */
+.memory-content {
+    padding: 15px;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align items to the start */
+    text-align: center; /* Center align text */
+}
+
+.content-details {
+    display: flex;
+    flex-direction: column; /* Stack Read More and details vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.memory-content h3 {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 5px;
+}
+
+.memory-content .memory-date {
+    font-size: 0.9rem;
+    color: var(--meta-color);
+    margin-bottom: 10px;
+}
+
+.memory-content p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Theme Variables */
+:root {
+    --biography-bg: #ffffff; /* Light theme background */
+    --title-color: #333333; /* Title color */
+    --subtitle-color: #666666; /* Subtitle color */
+    --text-color: #444444; /* Text color */
+    --meta-color: #888888; /* Meta information color */
+    --card-bg: #f8f9fa; /* Card background */
+    --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Card shadow */
+    --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Card hover shadow */
+}
+
+[data-theme="dark"] {
+    --biography-bg: #1a1a1a; /* Dark theme background */
+    --title-color: #ffffff; /* Title color */
+    --subtitle-color: #aaaaaa; /* Subtitle color */
+    --text-color: #dddddd; /* Text color */
+    --meta-color: #bbbbbb; /* Meta information color */
+    --card-bg: #2a2a2a; /* Card background */
+    --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Card shadow */
+    --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Card hover shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-header h1 {
+        font-size: 2rem; /* Smaller title for mobile */
+        padding: 120px 20px 80px
+    }
+
+    .bio-header p.bio-subtitle {
+        font-size: 1rem; /* Smaller subtitle for mobile */
+    }
+
+    .bio-section {
+        padding: 15px; /* Less padding for mobile */
+    }
+
+    .memory-content {
+        padding: 10px; /* Less padding for mobile */
+    }
+
+    .memory-content h3 {
+        font-size: 1.2rem; /* Smaller memory title */
+    }
+
+    .memory-content p {
+        font-size: 0.9rem; /* Smaller memory text */
+    }
+
+    .read-more {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    .details {
+        font-size: 0.8rem; /* Smaller details font size for mobile */
+    }
+
+    .memory-card img {
+        max-width: 100%; /* Make images full width on mobile */
+    }
+}
+
+/* Read More Link */
+.read-more {
+    margin-top: 10px; /* Space above the link */
+    align-self: center; /* Center align the link */
+    font-size: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--hover-accent-color); /* Define this variable for hover effect */
+}
+
+/* Details */
+.details {
+    margin-top: 0; /* Remove margin to eliminate space */
+    font-size: 0.9rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    border-top: none; /* Remove border to eliminate separation */
+    padding-top: 10px; /* Keep padding for spacing */
+    display: none; /* Initially hidden */
+    transition: max-height 0.3s ease; /* Smooth transition */
+} 
+.details {
+    display: none;
+    margin-top: 10px; /* Space maintain korar jonno */
+    transition: max-height 0.3s ease;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}

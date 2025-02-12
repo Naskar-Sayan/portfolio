@@ -764,6 +764,7 @@ header {
     --signature-shine: rgba(255, 255, 255, 0.5);
     --signature-color: #2D3436;  /* Dark gray for light theme */
     --signature-hover: #1e2224;
+    --hover-accent-color: #ff4d4d; /* Light theme hover color */
 }
 
 [data-theme="dark"] {
@@ -935,6 +936,7 @@ header {
     --signature-shine: rgba(255, 255, 255, 0.6);
     --signature-color: #F5F6FA;  /* Light gray for dark theme */
     --signature-hover: #ffffff;
+    --hover-accent-color: #ff9999; /* Dark theme hover color */
 }
 
 /* Theme Switch */

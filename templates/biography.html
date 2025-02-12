@@ -18,42 +18,76 @@
         <div class="bio-section">
             <h2><i class="fas fa-plane"></i> Travel Stories</h2>
             <div class="memory-card">
-                <img src="{{ url_for('static', filename='images/bio/travel1.jpg') }}" alt="Travel Memory">
                 <div class="memory-content">
                     <h3>Darjeeling Adventures</h3>
                     <span class="memory-date">December 2023</span>
-                    <p>Exploring the misty mountains and tea gardens of Darjeeling. The sunrise at Tiger Hill was absolutely breathtaking!</p>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/bio/travel1.jpg') }}" alt="Travel Memory">
+                        <img src="{{ url_for('static', filename='images/bio/travel2.jpg') }}" alt="Travel Memory">
+                    </div>
+                    <p>Exploring the misty mountains and tea gardens of Darjeeling. The sunrise at Tiger Hill was breathtaking!</p>
+                    <a href="javascript:void(0);" class="read-more" onclick="toggleDetails('travelDetails', this)">Read More</a>
+                    <div id="travelDetails" class="details">
+                        <p>Here you can add more detailed information about your travel experiences, including tips, places to visit, and personal anecdotes.</p>
+                    </div>
                 </div>
             </div>
-            <!-- Add more travel cards -->
         </div>
 
         <!-- Hobbies Section -->
         <div class="bio-section">
             <h2><i class="fas fa-heart"></i> Hobbies & Interests</h2>
             <div class="memory-card">
-                <img src="{{ url_for('static', filename='images/bio/hobby1.jpg') }}" alt="Hobby">
                 <div class="memory-content">
                     <h3>Photography</h3>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/bio/hobby1.jpg') }}" alt="Hobby">
+                        <img src="{{ url_for('static', filename='images/bio/hobby2.jpg') }}" alt="Hobby">
+                    </div>
                     <p>Capturing moments through my lens. Street photography and nature shots are my favorites.</p>
+                    <a href="javascript:void(0);" class="read-more" onclick="toggleDetails('hobbyDetails', this)">Read More</a>
+                    <div id="hobbyDetails" class="details">
+                        <p>Here you can add more detailed information about your hobbies, including your favorite photography techniques and experiences.</p>
+                    </div>
                 </div>
             </div>
-            <!-- Add more hobby cards -->
         </div>
 
         <!-- Achievements Section -->
         <div class="bio-section">
             <h2><i class="fas fa-trophy"></i> Achievements</h2>
             <div class="memory-card">
-                <img src="{{ url_for('static', filename='images/bio/achievement1.jpg') }}" alt="Achievement">
                 <div class="memory-content">
                     <h3>Hackathon Winner</h3>
                     <span class="memory-date">2023</span>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/bio/achievement1.jpg') }}" alt="Achievement">
+                        <img src="{{ url_for('static', filename='images/bio/achievement2.jpg') }}" alt="Achievement">
+                    </div>
                     <p>Won first place in the national coding hackathon with my innovative solution.</p>
+                    <a href="javascript:void(0);" class="read-more" onclick="toggleDetails('achievementDetails', this)">Read More</a>
+                    <div id="achievementDetails" class="details">
+                        <p>Here you can add more detailed information about your achievements, including the projects you worked on and the skills you developed.</p>
+                    </div>
                 </div>
             </div>
-            <!-- Add more achievement cards -->
         </div>
     </div>
 </div>
-{% endblock %} 
+
+<script>
+function toggleDetails(detailId, btn) {
+    event.preventDefault(); // Default click action prevent kora
+    var details = document.getElementById(detailId);
+    
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+        btn.parentNode.appendChild(details); // Read More button er niche expandable content move kora
+        btn.innerText = "Read Less"; // Button text change kora
+    } else {
+        details.style.display = "none";
+        btn.innerText = "Read More"; // Button text original e fire ana
+    }
+}
+</script>
+{% endblock %}
