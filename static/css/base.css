@@ -42,8 +42,12 @@ header {
 
 /* Signature */
 .signature {
-    width: 150px;
+    width: 95px;
     position: relative;
+    margin-left:40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .signature a {
@@ -54,7 +58,6 @@ header {
 .signature img {
     width: 100%;
     height: auto;
-    position: relative;
     transition: all 0.4s ease;
 }
 
@@ -63,13 +66,12 @@ header {
     filter: 
         brightness(0) 
         saturate(100%) 
-        invert(25%) 
-        sepia(10%) 
+        invert(10%) 
+        sepia(0%) 
         saturate(1000%) 
         hue-rotate(0deg) 
-        brightness(95%) 
-        contrast(95%)
-        drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+        brightness(100%) 
+        contrast(100%);
 }
 
 .signature a:hover img {
@@ -357,10 +359,15 @@ header {
 }
 
 .footer-logo img {
-    height: 50px;
-    width: auto;
+    width: 125px;
+    height: auto;
+    margin-left: 25px;
     filter: var(--footer-logo-filter);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.05);
 }
 
 /* Social Icons */
@@ -487,6 +494,7 @@ header {
     height: 45px;
     display: flex;
     align-items: center;
+    margin-left: 30px;
     justify-content: center;
     border-radius: 50%;
     background: var(--primary-bg);
@@ -510,8 +518,9 @@ header {
 /* Download CV Button */
 .download-cv {
     display: flex;
+    margin-left: 25px;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding: 12px 24px;
     background: #f8750a;  /* Fixed orange for both themes */
     color: #000;  /* Black text for light theme */
