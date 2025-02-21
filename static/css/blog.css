@@ -1,188 +1,281 @@
-/* Biography Section Styles */
-.main-content {
-    background: var(--biography-bg);
-    padding: 60px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+/* Root Variables */
+:root {
+    --primary-color: #ff6b6b; /* Vibrant coral for energy */
+    --secondary-color: #4ecdc4; /* Teal accent for contrast */
+    --bg-color: #f7f7f7; /* Soft off-white background */
+    --card-bg: #ffffff; /* Clean white cards */
+    --title-color: #2b2d42; /* Deep slate for titles */
+    --text-color: #555555; /* Subtle gray for text */
+    --meta-color: #8d99ae; /* Muted blue-gray for meta */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.15);
+    --transition: all 0.4s ease-in-out;
 }
 
-/* Bio Header */
-.bio-header {
+/* Dark Mode */
+[data-theme="dark"] {
+    --primary-color: #ff8787;
+    --secondary-color: #6be4dd;
+    --bg-color: #020610;
+    --card-bg: #2b2d42;
+    --title-color: #edf2f4;
+    --text-color: #d9e1e8;
+    --meta-color: #a3bffa;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Blog Wrapper */
+.blog-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 140px 30px 80px;
+    position: relative;
+}
+
+/* Blog Intro */
+.blog-intro {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 1;
 }
 
-.bio-header h1 {
-    font-size: 2.5rem;
+.blog-intro h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
     color: var(--title-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+    position: relative;
 }
 
-.bio-header p.bio-subtitle {
-    font-size: 1.2rem;
-    color: var(--subtitle-color);
+.blog-intro h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
 }
 
-/* Bio Grid */
-.bio-grid {
-    display: flex; /* Use flexbox for horizontal layout */
-    flex-direction: column; /* Stack tiles vertically */
-    gap: 30px; /* Space between tiles */
+.blog-intro p {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
 }
 
-/* Bio Section */
-.bio-section {
-    background: var(--card-bg);
-    border-radius: 15px;
+/* Blog Feed */
+.blog-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 40px;
     padding: 20px;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center; /* Center align text */
 }
 
-.bio-section:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--card-hover-shadow);
-}
-
-/* Memory Card */
-.memory-card {
-    flex: 1; /* Allow cards to grow equally */
+/* Post Card */
+.post-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    cursor: pointer;
 }
 
-/* Image Container */
-.image-container {
-    display: flex; /* Use flexbox for images */
-    justify-content: center; /* Center align images */
-    gap: 10px; /* Space between images */
+.post-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--shadow-hover);
 }
 
-.memory-card img {
-    width: 100%; /* Make images responsive */
-    max-width: 150px; /* Set a max width for images */
-    height: auto;
-    border-radius: 10px;
+.post-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+    transition: var(--transition);
+    z-index: 0;
+}
+
+.post-card:hover::before {
+    left: 0;
+}
+
+/* Post Meta */
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--meta-color);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.post-meta .post-category {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+/* Post Title */
+.post-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--title-color);
+    margin: 0 0 15px;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.post-title a:hover {
+    color: var(--primary-color);
+}
+
+/* Post Excerpt */
+.post-excerpt {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+}
+
+/* Post Footer */
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background: rgba(255, 107, 107, 0.1);
+    transition: var(--transition);
+}
+
+.read-more:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.read-more svg {
     transition: transform 0.3s ease;
 }
 
-.memory-card:hover img {
-    transform: scale(1.05);
+.read-more:hover svg {
+    transform: translateX(6px);
 }
 
-/* Memory Content */
-.memory-content {
-    padding: 15px;
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Align items to the start */
-    text-align: center; /* Center align text */
-}
-
-.memory-content h3 {
-    font-size: 1.5rem;
-    color: var(--title-color);
-    margin-bottom: 5px;
-}
-
-.memory-content .memory-date {
+.read-time {
     font-size: 0.9rem;
     color: var(--meta-color);
-    margin-bottom: 10px;
+    font-style: italic;
 }
 
-.memory-content p {
-    font-size: 1rem;
-    color: var(--text-color);
-    line-height: 1.5;
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Theme Variables */
-:root {
-    --biography-bg: #ffffff; /* Light theme background */
-    --title-color: #333333; /* Title color */
-    --subtitle-color: #666666; /* Subtitle color */
-    --text-color: #444444; /* Text color */
-    --meta-color: #888888; /* Meta information color */
-    --card-bg: #f8f9fa; /* Card background */
-    --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Card shadow */
-    --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Card hover shadow */
+.post-card {
+    animation: slideIn 0.6s ease-out forwards;
+    animation-delay: calc(var(--order) * 0.15s);
+    opacity: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .bio-header h1 {
-        font-size: 2rem; /* Smaller title for mobile */
-        padding: 120px 20px 80px
+    .blog-wrapper {
+        padding: 100px 20px 60px;
     }
 
-    .bio-header p.bio-subtitle {
-        font-size: 1rem; /* Smaller subtitle for mobile */
+    .blog-intro h1 {
+        font-size: 2.8rem;
     }
 
-    .bio-section {
-        padding: 15px; /* Less padding for mobile */
+    .blog-intro p {
+        font-size: 1.15rem;
     }
 
-    .memory-content {
-        padding: 10px; /* Less padding for mobile */
+    .blog-feed {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
-    .memory-content h3 {
-        font-size: 1.2rem; /* Smaller memory title */
+    .post-card {
+        padding: 25px;
     }
 
-    .memory-content p {
-        font-size: 0.9rem; /* Smaller memory text */
+    .post-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .post-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 
     .read-more {
-        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 6px 12px;
     }
-
-    .details {
-        font-size: 0.8rem; /* Smaller details font size for mobile */
-    }
-
-    .memory-card img {
-        max-width: 100%; /* Make images full width on mobile */
-    }
-}
-
-/* Read More Link */
-.read-more {
-    margin-top: 10px; /* Space above the link */
-    align-self: center; /* Center align the link */
-    font-size: 1rem;
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.read-more:hover {
-    color: var(--hover-accent-color); /* Define this variable for hover effect */
-}
-
-/* Details */
-.details {
-    margin-top: 0; /* Remove margin to eliminate space */
-    font-size: 0.9rem;
-    color: var(--text-color);
-    line-height: 1.5;
-    border-top: none; /* Remove border to eliminate separation */
-    padding-top: 10px; /* Keep padding for spacing */
-    display: none; /* Initially hidden */
-    transition: max-height 0.3s ease; /* Smooth transition */
-} 
-.details {
-    display: none;
-    margin-top: 10px; /* Space maintain korar jonno */
-    transition: max-height 0.3s ease;
-}
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    cursor: pointer;
 }

@@ -4,20 +4,21 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 <div class="blog-wrapper">
     <!-- Blog Header -->
-    <div class="blog-intro">
+    <header class="blog-intro">
         <h1>Data Analytics Journal</h1>
-        <p>Exploring insights through data stories and analysis</p>
-    </div>
+        <p>Unveiling insights through captivating data stories and cutting-edge analysis</p>
+    </header>
 
     <!-- Blog Posts -->
-    <div class="blog-feed">
+    <section class="blog-feed">
         {% for post in posts %}
-        <article class="post-card">
+        <article class="post-card" style="--order: {{ loop.index0 }}">
             <div class="post-meta">
                 <span class="post-date">{{ post.date }}</span>
                 <span class="post-category">{{ post.category }}</span>
@@ -29,18 +30,18 @@
             
             <p class="post-excerpt">{{ post.excerpt }}</p>
             
-            <div class="post-footer">
+            <footer class="post-footer">
                 <a href="{{ url_for('blog_post', slug=post.slug) }}" class="read-more">
-                    Continue Reading
+                    Dive In
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M13.5 19L20.5 12L13.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M20.5 12L3.5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <span class="read-time">{{ post.read_time }} min read</span>
-            </div>
+            </footer>
         </article>
         {% endfor %}
-    </div>
+    </section>
 </div>
-{% endblock %} 
+{% endblock %}

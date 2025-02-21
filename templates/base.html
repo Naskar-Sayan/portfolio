@@ -148,6 +148,19 @@
                 localStorage.setItem('theme', 'light');
             }
         });
+
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Prevent the default context menu from appearing
+        });
+
+        // Disable keyboard shortcuts for copying and inspecting
+        document.addEventListener('keydown', function(e) {
+            // Disable Ctrl + C, Ctrl + U, Ctrl + S, Ctrl + X, Ctrl + I, Ctrl + Shift + I, Ctrl + Shift + C
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'x' || e.key === 'i' || (e.shiftKey && (e.key === 'I' || e.key === 'C')))) {
+                e.preventDefault();
+            }
+        });
     </script>
     {% block scripts %}{% endblock %}
 </body>
