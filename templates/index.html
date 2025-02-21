@@ -3,7 +3,7 @@
 {% block title %}Sayan Naskar | Portfolio{% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -33,15 +33,15 @@
                         Naskar</h1>
                     <p>I'm a creative developer<br> passionate about building amazing things.</p>
                 </div>
-            </div>
+        </div>
 
             <!-- Separate button section -->
             <div class="hero-button-wrapper">
                 <a href="#portfolio" class="hero-button">View My Work</a>
             </div>
-        </section>
-        
-        
+    </section>
+    
+    
         <!-- About Section -->
         <section class="about-section">
             <div class="about-container">
@@ -57,7 +57,7 @@
                             I graduated from University of Calcutta, India, with a major in Information Technology(IT) Engineering and a minor in Electronics Science.
                         </p>
                     </div>
-                </div>
+</div>
 
                 <!-- Right Side: Photo Tile -->
                 <div class="photo-tile">
@@ -71,62 +71,62 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
 
-        <!-- Experise Section -->
-        <section id="expertise" class="expertise-section">
-            <div class="container">
-                <h2 class="section-title">My Expertise</h2>
-                <div class="expertise-grid">
-                    <div class="expertise-card">
-                    
-                        <img src="https://images.javatpoint.com/tutorial/flask/images/flask-tutorial.png" alt="python file icons">
-                        &nbsp;&nbsp;
-                        <img src="https://numpy.org/images/logo.svg" alt="python file icons">
-                        &nbsp;&nbsp;
-                        <img src="https://pypi-camo.freetls.fastly.net/705545a847e60d6d4478c76a8146b9000e339c1c/68747470733a2f2f70616e6461732e7079646174612e6f72672f7374617469632f696d672f70616e6461732e737667" alt="python file icons">    
-                        <h3>Python Library</h3>
-                        <p>Building scalable and efficient applications using Python.</p>
-                    </div>
-                    <div class="expertise-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/180px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Data Analytics icon">
-                        &nbsp;&nbsp;
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCjdWoDWpbcm2bst3LtpNe0OEK2STiYNpbeNWwINfEODwAiph9ggX&usqp=CAE&s">
-                        &nbsp;&nbsp;
-                        <img src="https://www.tableau.com/themes/custom/tableau_www/logo.v2.svg">
-                        <h3>Data Analytics</h3>
-                        <p>Working with csv xls and Dashboarding the data.</p>
-                    </div>
-                    <div class="expertise-card">
-                        <img src="https://cdn-icons-png.flaticon.com/128/873/873107.png" alt="AWS Icon">
-                        &nbsp;&nbsp;
-
-                        <img src="https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-docker/1.29.4/1737476530544/Microsoft.VisualStudio.Services.Icons.Default" alt="AWS Icon">
-
-                        &nbsp;&nbsp;
-
-                        <img src="data:image/png;base64,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" alt="AWS Icon">
-                        <h3>AZURE & Cloud</h3>
-                        <p>Leveraging cloud solutions for scalable architectures.</p>
-                    </div>
-                    <div class="expertise-card">
-                        <img src="https://cdn-icons-png.flaticon.com/128/2772/2772128.png" alt="SQL Icon">
-                        &nbsp;&nbsp;
-                        <img src="https://cdn-icons-png.flaticon.com/128/10828/10828570.png" alt="SQL Icon">
-                        &nbsp;&nbsp;
-                        <img src="https://cdn-icons-png.flaticon.com/128/919/919836.png" alt="SQL Icon">
-                        <h3>SQL & Databases</h3>
-                        <p>Designing optimized database structures and queries.</p>
-                    </div>
-                        
+    <!-- Experise Section -->
+    <section id="expertise" class="expertise-section">
+        <div class="container">
+            <h2 class="section-title">My Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                
+                    <img src="https://images.javatpoint.com/tutorial/flask/images/flask-tutorial.png" alt="python file icons">
+                    &nbsp;&nbsp;
+                    <img src="https://numpy.org/images/logo.svg" alt="python file icons">
+                    &nbsp;&nbsp;
+                    <img src="https://pypi-camo.freetls.fastly.net/705545a847e60d6d4478c76a8146b9000e339c1c/68747470733a2f2f70616e6461732e7079646174612e6f72672f7374617469632f696d672f70616e6461732e737667" alt="python file icons">    
+                    <h3>Python Library</h3>
+                    <p>Building scalable and efficient applications using Python.</p>
                 </div>
-            </div>
-        </section>
-        
+                <div class="expertise-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/180px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Data Analytics icon">
+                    &nbsp;&nbsp;
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCjdWoDWpbcm2bst3LtpNe0OEK2STiYNpbeNWwINfEODwAiph9ggX&usqp=CAE&s">
+                    &nbsp;&nbsp;
+                    <img src="https://www.tableau.com/themes/custom/tableau_www/logo.v2.svg">
+                    <h3>Data Analytics</h3>
+                    <p>Working with csv xls and Dashboarding the data.</p>
+                </div>
+                <div class="expertise-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/873/873107.png" alt="AWS Icon">
+                    &nbsp;&nbsp;
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
+                    <img src="https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-docker/1.29.4/1737476530544/Microsoft.VisualStudio.Services.Icons.Default" alt="AWS Icon">
+
+                    &nbsp;&nbsp;
+
+                    <img src="data:image/png;base64,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" alt="AWS Icon">
+                    <h3>AZURE & Cloud</h3>
+                    <p>Leveraging cloud solutions for scalable architectures.</p>
+                </div>
+                <div class="expertise-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2772/2772128.png" alt="SQL Icon">
+                    &nbsp;&nbsp;
+                    <img src="https://cdn-icons-png.flaticon.com/128/10828/10828570.png" alt="SQL Icon">
+                    &nbsp;&nbsp;
+                    <img src="https://cdn-icons-png.flaticon.com/128/919/919836.png" alt="SQL Icon">
+                    <h3>SQL & Databases</h3>
+                    <p>Designing optimized database structures and queries.</p>
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
             <div class="section-header">
                 <h2>Featured Projects</h2>
                 <p>Explore my data analytics and dashboard projects</p>
@@ -162,8 +162,8 @@
                             <h3>HR Analytics Dashboard</h3>
                             <p>Employee performance and engagement analytics</p>
                             <span class="tech-stack">Power BI • Python • Pandas</span>
-                        </div>
-                    </div>
+            </div>
+        </div>
                 </a>
                 
                 <a href="https://github.com/yourusername/project4" class="project-card" target="_blank">
@@ -174,7 +174,7 @@
                             <p>Campaign performance and ROI analysis dashboard</p>
                             <span class="tech-stack">Tableau • SQL • Python</span>
                         </div>
-                    </div>
+    </div>
                 </a>
                 
                 <a href="https://github.com/yourusername/project5" class="project-card" target="_blank">
@@ -185,7 +185,7 @@
                             <p>End-to-end supply chain monitoring and optimization dashboard</p>
                             <span class="tech-stack">Power BI • Python • SQL</span>
                         </div>
-                    </div>
+            </div>
                 </a>
                 
                 <a href="https://github.com/yourusername/project6" class="project-card" target="_blank">
@@ -195,10 +195,10 @@
                             <h3>Customer Insights Dashboard</h3>
                             <p>Customer behavior and segmentation analysis platform</p>
                             <span class="tech-stack">Tableau • Python • Pandas</span>
-                        </div>
-                    </div>
-                </a>
             </div>
+        </div>
+                </a>
+        </div>
 
             
         </section>

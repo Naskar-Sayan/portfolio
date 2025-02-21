@@ -42,9 +42,10 @@ header {
 
 /* Signature */
 .signature {
-    width: 95px;
+    width: 125px;
+    height: 50px;
     position: relative;
-    margin-left:40px;
+    margin-left:0px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -345,27 +346,31 @@ header {
 
 /* Logo Styling */
 .footer-logo {
-    position: relative;
-    overflow: hidden;
-    animation: var(--footer-logo-animation);
-}
-
-.logo-glow {
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    background: var(--footer-logo-glow);
-    animation: var(--footer-logo-glow-animation);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: none;
+    box-shadow: none;
 }
 
 .footer-logo img {
-    width: 125px;
-    height: auto;
-    margin-left: 25px;
-    filter: var(--footer-logo-filter);
+    width: 125px; /* Set width for logo */
+    height: auto; /* Maintain aspect ratio */
     transition: all 0.4s ease;
 }
 
+/* Light Mode */
+.footer-logo img {
+    filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(1000%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+/* Dark Mode */
+[data-theme="dark"] .footer-logo img {
+    filter: brightness(0) saturate(100%) invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(90%);
+}
+
+/* Hover Effect */
 .footer-logo img:hover {
     transform: scale(1.05);
 }
