@@ -1,22 +1,29 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 import os
 from dotenv import load_dotenv
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+import resend
 
 load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY')
 
-# Email configuration
-SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587
-SMTP_USERNAME = os.environ.get('EMAIL_USERNAME')
-SMTP_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+# Email / Resend configuration
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY')
+if not RESEND_API_KEY:
+    raise RuntimeError("RESEND_API_KEY is not set in environment variables")
+
+resend.api_key = RESEND_API_KEY
+
+# Where you want to receive contact form emails
+CONTACT_EMAIL = os.environ.get('EMAIL_USERNAME') or os.environ.get('CONTACT_EMAIL')
+if not CONTACT_EMAIL:
+    raise RuntimeError("Set EMAIL_USERNAME or CONTACT_EMAIL in environment variables")
+
+# "From" shown in the email (Resend requires a verified domain for custom from address)
+FROM_EMAIL = os.environ.get('RESEND_FROM_EMAIL', 'Portfolio Contact Form <onboarding@resend.dev>')
 
 limiter = Limiter(
     app=app,
@@ -67,9 +74,11 @@ def blog_post(slug):
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html', 
+    return render_template(
+        'contact.html',
         active_page='contact',
-        form_data=session.get('form_data', {}))
+        form_data=session.get('form_data', {})
+    )
 
 @app.route('/submit', methods=['POST'])
 @limiter.limit("5 per minute")
@@ -92,41 +101,36 @@ def submit():
             flash('Please fill in all required fields.', 'error')
             return redirect(url_for('contact'))
 
-        # Create email content
-        msg = MIMEMultipart()
-        msg['From'] = SMTP_USERNAME
-        msg['To'] = SMTP_USERNAME  # Sending to yourself
-        msg['Subject'] = f"New Contact Form Submission: {form_data['subject']}"
-
-        # Email body
+        # Email subject & body
+        subject = f"New Contact Form Submission: {form_data['subject']}"
         body = f"""
-        New Contact Form Submission
+New Contact Form Submission
 
-        ━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━
 
-        👤 Sender Details:
-           Name: {form_data['name']}
-           Email: {form_data['email']}
-           Phone: {form_data['phone']}
+👤 Sender Details:
+   Name: {form_data['name']}
+   Email: {form_data['email']}
+   Phone: {form_data['phone']}
 
-        📝 Message Details:
-           Subject: {form_data['subject']}
+📝 Message Details:
+   Subject: {form_data['subject']}
 
-        📨 Message:
-        {form_data['message']}
+📨 Message:
+{form_data['message']}
 
-        ━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━
 
-        This message was sent from your portfolio website contact form.
-        """
+This message was sent from your portfolio website contact form.
+"""
 
-        msg.attach(MIMEText(body, 'plain'))
-
-        # Send email
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-            server.starttls()  # Enable TLS
-            server.login(SMTP_USERNAME, SMTP_PASSWORD)
-            server.send_message(msg)
+        # Send email using Resend
+        resend.Emails.send({
+            "from": FROM_EMAIL,
+            "to": [CONTACT_EMAIL],
+            "subject": subject,
+            "text": body,
+        })
 
         # Clear form data from session on success
         session.pop('form_data', None)
