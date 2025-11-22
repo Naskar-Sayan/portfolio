@@ -8,7 +8,7 @@ import resend
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY')
+app.secret_key = os.environ.get('SECRET_KEY', 'dev-fallback-secret')
 
 # Email / Resend configuration
 RESEND_API_KEY = os.environ.get('RESEND_API_KEY')
