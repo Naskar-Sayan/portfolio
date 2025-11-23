@@ -11,69 +11,36 @@
 <div class="blog-wrapper">
     <!-- Blog Header -->
     <header class="blog-intro">
-        <div class="blog-intro-meta">
-            <span class="pill pill-soft">Data · Analytics · Stories</span>
-        </div>
         <h1>Data Analytics Journal</h1>
-        <p>Unveiling insights through captivating data stories and cutting-edge analysis.</p>
+        <p>Unveiling insights through captivating data stories and cutting-edge analysis</p>
     </header>
 
-    <!-- Bento Blog Grid -->
+    <!-- Blog Posts: Bento Grid -->
     <section class="blog-feed bento-grid">
         {% for post in posts %}
-        <article 
-            class="post-card bento-card" 
-            style="--order: {{ loop.index0 }};"
-            data-category="{{ post.category|e }}"
-        >
-            <!-- Background accent -->
-            <div class="card-accent"></div>
-
-            <!-- Top Meta Row -->
-            <div class="post-top">
-                <div class="post-meta">
-                    <span class="post-date">
-                        <span class="dot"></span>
-                        {{ post.date }}
-                    </span>
-                    <span class="post-category pill pill-outline">
-                        {{ post.category }}
-                    </span>
-                </div>
-
-                <span class="read-time-chip">
-                    ⏱ {{ post.read_time }} min
-                </span>
+        <article class="post-card bento-card" style="--order: {{ loop.index0 }};">
+            <div class="post-meta">
+                <span class="post-date">{{ post.date }}</span>
+                <span class="post-category">{{ post.category }}</span>
             </div>
-
-            <!-- Title & Excerpt -->
-            <div class="post-body">
-                <h2 class="post-title">
-                    <a href="{{ url_for('blog_post', slug=post.slug) }}">
-                        {{ post.title }}
-                    </a>
-                </h2>
-
-                <p class="post-excerpt">
-                    {{ post.excerpt }}
-                </p>
-            </div>
-
-            <!-- Footer CTA -->
+            
+            <h2 class="post-title">
+                <a href="{{ url_for('blog_post', slug=post.slug) }}">{{ post.title }}</a>
+            </h2>
+            
+            <p class="post-excerpt">{{ post.excerpt }}</p>
+            
             <footer class="post-footer">
                 <a href="{{ url_for('blog_post', slug=post.slug) }}" class="read-more">
-                    <span class="read-more-label">Dive In</span>
-                    <span class="icon-wrapper">
-                        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M13.5 19L20.5 12L13.5 5" 
-                                  stroke="currentColor" stroke-width="2" 
-                                  stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.5 12L3.5 12" 
-                                  stroke="currentColor" stroke-width="2" 
-                                  stroke-linecap="round" stroke-linejoin="round"/>
+                    <span>Dive In</span>
+                    <span class="read-more-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M13.5 19L20.5 12L13.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.5 12L3.5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </span>
                 </a>
+                <span class="read-time">{{ post.read_time }} min read</span>
             </footer>
         </article>
         {% endfor %}
