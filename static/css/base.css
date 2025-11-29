@@ -425,6 +425,17 @@ header {
     z-index: 2;
 }
 
+.peerlist-icon {
+    position: relative;
+    width: 1.5rem;    /* same as FontAwesome icon size */
+    height: 1.5rem;
+    z-index: 2;
+    display: block;
+    color: var(--footer-icon-color); /* matches existing icon color */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 /* Footer Bottom */
 .footer-bottom {
     text-align: center;
