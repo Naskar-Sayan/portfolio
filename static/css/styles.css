@@ -174,7 +174,7 @@ section {
 
 /* Right side photo tile */
 .photo-tile {
-    width: 50%;  /* Slightly reduced width */
+    width: 100%;  /* Slightly reduced width */
     height: 380px;
     border-radius: 20px;
     overflow: hidden;
