@@ -149,7 +149,7 @@ section {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 80px;
     align-items: center;
 }
 
