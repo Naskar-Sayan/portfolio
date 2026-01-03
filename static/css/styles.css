@@ -174,7 +174,7 @@ section {
 
 /* Right side photo tile */
 .photo-tile {
-    width: 95%;  /* Slightly reduced width */
+    width: 50%;  /* Slightly reduced width */
     height: 380px;
     border-radius: 20px;
     overflow: hidden;
@@ -185,7 +185,7 @@ section {
 
 .photo-wrapper {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 380px;
     overflow: hidden;
     background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
