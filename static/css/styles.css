@@ -185,7 +185,7 @@ section {
 
 .photo-wrapper {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 380px;
     overflow: hidden;
     background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
