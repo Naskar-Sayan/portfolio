@@ -200,9 +200,11 @@ section {
     transition: opacity 0.8s ease;
 }
 
-.photo-wrapper img.active {
+.photo-wrapper img.active,
+.photo-wrapper img.visible {
     opacity: 1;
 }
+
 
 /* Mobile Responsive */
 @media (max-width: 992px) {
