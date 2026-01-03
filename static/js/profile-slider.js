@@ -1,7 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.profile-images img');
     const prevBtn = document.querySelector('.slider-nav .prev');
     const nextBtn = document.querySelector('.slider-nav .next');
+
+    // ⛔ Exit if slider not present
+    if (!images.length || !prevBtn || !nextBtn) return;
+
     let currentIndex = 0;
 
     function showImage(index) {
@@ -22,6 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
     prevBtn.addEventListener('click', prevImage);
     nextBtn.addEventListener('click', nextImage);
 
-    // Auto slide every 4 seconds
     setInterval(nextImage, 4000);
-}); 
+});
