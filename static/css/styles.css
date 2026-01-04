@@ -172,53 +172,60 @@ section {
     color: var(--text-color);
 }
 
-/* Right side photo tile */
 .photo-tile {
-    width: 100%;  /* Slightly reduced width */
+    width: 100%;
     height: 380px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: var(--tile-bg, rgba(255, 255, 255, 0.95));
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-left: 50px;  /* Pull slightly towards text */
+    margin-left: 50px;
+
+    /* ❌ REMOVE visual styling */
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 }
 
 .photo-wrapper {
     position: relative;
     width: 100%;
-    height: 380px;
+    height: 100%;
 
-    /* Soft rounded shape, not decorative */
-    border-radius: 22px;
+    border-radius: 28px;
     overflow: hidden;
 
-    /* Very subtle separation from background */
-    background: rgba(255, 255, 255, 0.02);
+    /* Deep, calm, premium background */
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.04),
+        rgba(0,0,0,0.85)
+    );
 
-    /* Professional depth (not dramatic) */
+    /* Real elegance comes from restraint */
     box-shadow:
-        0 18px 40px rgba(0, 0, 0, 0.55),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+        0 25px 60px rgba(0,0,0,0.65),
+        inset 0 0 0 1px rgba(255,255,255,0.04);
 }
+
 
 /* Image styling */
 .photo-wrapper img {
     width: 100%;
     height: 100%;
 
-    /* Key decision: full image, no crop */
     object-fit: contain;
     object-position: center;
 
-    /* Calm editorial tone */
-    filter: grayscale(100%) contrast(1.05) brightness(0.97);
+    padding: 22px;
 
-    /* Slight optical breathing room */
-    padding: 18px;
+    filter: grayscale(100%) contrast(1.06) brightness(0.96);
 
-    /* No animation needed for elegance */
     display: block;
 }
+
 
 
 /* Mobile Responsive */
