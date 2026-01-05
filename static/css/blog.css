@@ -1,26 +1,30 @@
-/* Root Variables */
 :root {
-    --primary-color: #FFA500; /* Vibrant coral for energy */
-    --secondary-color: #FFA500; /* Teal accent for contrast */
-    --bg-color: #f7f7f7; /* Soft off-white background */
-    --card-bg: #ffffff; /* Clean white cards */
-    --title-color: #FFA500; /* Deep slate for titles */
-    --text-color: #666; /* Subtle gray for text */
-    --meta-color: #555; /* Muted blue-gray for meta */
+    --primary-color: #FFA500;      /* Orange */
+    --secondary-color: #FFA500;    /* Orange */
+    --bg-color: #f7f7f7;
+    --card-bg: #ffffff;
+
+    --title-color: #000000;        /* BLACK title (day) */
+    --text-color: #777777;         /* GRAY text (day) */
+    --meta-color: #777777;
+
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.15);
     --transition: all 0.4s ease-in-out;
 }
 
-/* Dark Mode */
+}
+
 [data-theme="dark"] {
-    --primary-color: #ff8787;
-    --secondary-color: #6be4dd;
+    --primary-color: #FFA500;   /* Orange stays */
+    --secondary-color: #FFA500; /* Orange stays */
+
     --bg-color: #020610;
     --card-bg: #2b2d42;
-    --title-color: #FFA500;
-    --text-color: #d9e1e8;
-    --meta-color: #2b2d42;
+
+    --title-color: #ffffff;    /* WHITE title (night) */
+    --text-color: #ffffff;     /* WHITE text (night) */
+    --meta-color: #cccccc;
 }
 
 /* Base Styles */
@@ -53,9 +57,6 @@ body {
     font-weight: 700;
     color: var(--title-color);
     margin-bottom: 20px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     letter-spacing: -0.02em;
     position: relative;
 }
