@@ -4,8 +4,8 @@
     --secondary-color: #4ecdc4; /* Teal accent for contrast */
     --bg-color: #f7f7f7; /* Soft off-white background */
     --card-bg: #ffffff; /* Clean white cards */
-    --title-color: #2b2d42; /* Deep slate for titles */
-    --text-color: #555555; /* Subtle gray for text */
+    --title-color: #333; /* Deep slate for titles */
+    --text-color: #555; /* Subtle gray for text */
     --meta-color: #8d99ae; /* Muted blue-gray for meta */
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.15);
