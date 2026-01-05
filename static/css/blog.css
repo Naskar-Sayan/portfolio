@@ -13,8 +13,6 @@
     --transition: all 0.4s ease-in-out;
 }
 
-}
-
 [data-theme="dark"] {
     --primary-color: #FFA500;   /* Orange stays */
     --secondary-color: #FFA500; /* Orange stays */
