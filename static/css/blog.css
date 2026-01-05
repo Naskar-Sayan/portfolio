@@ -14,8 +14,8 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #FC6A03;   /* Orange stays */
-    --secondary-color: #FC6A03; /* Orange stays */
+    --primary-color: #ff8787;   /* Orange stays */
+    --secondary-color: #6be4dd; /* Orange stays */
 
     --bg-color: #020610;
     --card-bg: ##2a2a2a;
