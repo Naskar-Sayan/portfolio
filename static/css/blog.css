@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #FFA500;      /* Orange */
-    --secondary-color: #FFA500;    /* Orange */
+    --primary-color: #ff8787;      /* Orange */
+    --secondary-color: #ff8787;    /* Orange */
     --bg-color: #f7f7f7;
     --card-bg: #ffffff;
 
@@ -15,7 +15,7 @@
 
 [data-theme="dark"] {
     --primary-color: #ff8787;   /* Orange stays */
-    --secondary-color: #6be4dd; /* Orange stays */
+    --secondary-color: #ff8787; /* Orange stays */
 
     --bg-color: #020610;
     --card-bg: ##2a2a2a;
