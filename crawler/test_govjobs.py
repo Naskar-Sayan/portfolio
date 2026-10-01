@@ -5,7 +5,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "crawler"))
 
 from quality import validate_record, merge_jobs
-from govjob_crawler import extract_table_records, html_text
+from govjob_crawler import extract_table_records, html_text, make_record
 
 def test_generic_ncs_page_is_rejected():
     job = {
@@ -119,14 +119,14 @@ def test_ncs_aggregator_row_without_external_official_link_is_rejected():
     assert records == []
 
 def test_posting_date_can_be_extracted_from_iso_text():
-    html = """
-    <a href="https://drdo.gov.in/drdo/sites/default/files/vacancy/advt2026.pdf">JRF Recruitment</a>
-    """
-    _, soup = html_text(html.encode())
-    records = extract_table_records(
+    record = make_record(
         "DRDO",
-        "https://drdo.gov.in/recruitment",
-        soup,
+        "JRF Recruitment",
+        "https://drdo.gov.in/drdo/sites/default/files/vacancy/advt2026.pdf",
+        "JRF Recruitment issued 2026-09-08",
         "2026-10-01T00:00:00+00:00",
+        "https://drdo.gov.in/drdo/sites/default/files/vacancy/advt2026.pdf",
+        "https://drdo.gov.in/drdo/sites/default/files/vacancy/advt2026.pdf",
+        "page",
     )
-    assert records == []
+    assert record["posting_date"] == "2026-09-08"
