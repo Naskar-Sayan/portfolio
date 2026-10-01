@@ -199,7 +199,8 @@ def job_from_page(source: str, url: str, title: str, text: str, discovered: str,
         "discovered_at": discovered,
         "source": source,
         "official_source": official(url),
-        "confidence": "official" if official(url) else "secondary",
+        "confidence": "primary_domain" if official(url) else "secondary",
+        "verification": "primary_domain_match" if official(url) else "secondary_lead",
         "kind": "recruitment_notice",
     }
 
@@ -211,6 +212,19 @@ def crawl(seed_limit=80, page_limit=700, days=15):
     # NCS maintains a government-portal directory covering multiple states.
     dynamic_sources = discover_ncs_sources()
     all_seeds = list(SEEDS)
+
+    # Secondary news discovery is only a lead generator. If a news article
+    # exposes a primary government link, add that link to the official crawl.
+    news_path = "data/news_leads.json"
+    try:
+        with open(news_path, "r", encoding="utf-8") as f:
+            news_data = json.load(f)
+        for lead in news_data.get("leads", []):
+            primary = lead.get("primary_source")
+            if primary and official(primary):
+                all_seeds.append((f"News lead: {lead.get('publisher') or 'news source'}", primary))
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        pass
     existing = {url.rstrip("/") for _, url in all_seeds}
     for item in dynamic_sources:
         if item[1].rstrip("/") not in existing:
