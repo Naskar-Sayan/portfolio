@@ -39,6 +39,14 @@ jobs:
       - name: Build alert digest
         run: python crawler/alerts.py --jobs data/jobs.json --state data/alert_state.json --output data/alerts.json --deadline-days 3
 
+      - name: Send WhatsApp alert when configured
+        env:
+          WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
+          WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
+          WHATSAPP_RECIPIENT: ${{ secrets.WHATSAPP_RECIPIENT }}
+          WHATSAPP_API_VERSION: v23.0
+        run: python crawler/whatsapp_notify.py --input data/alerts.json
+
       - name: Commit dataset and alert state
         run: |
           git config user.name "github-actions[bot]"
