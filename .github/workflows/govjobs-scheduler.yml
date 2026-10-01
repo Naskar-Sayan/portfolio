@@ -1,0 +1,97 @@
+name: Government Jobs Daily Refresh
+# Production crawler validation gate
+# Nationwide quality revalidation trigger
+# Source-link and freshness hardening validation
+# Open-web discovery + official-source verification
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - ".github/workflows/govjobs-scheduler.yml"
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout government-jobs development branch
+        uses: actions/checkout@v4
+        with:
+          ref: govjob-development
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install crawler dependencies
+        run: pip install -r crawler/requirements.txt
+
+      - name: Run crawler quality tests
+        run: python -m pytest crawler/test_govjobs.py -q
+
+      - name: Validate crawler syntax
+        run: python -m py_compile crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py
+
+      - name: Discover secondary recruitment leads
+        run: python crawler/news_discovery.py --output data/news_leads.json
+
+      - name: Discover recruitment across the open web
+        run: python crawler/web_discovery.py --output data/web_leads.json --per-query 8
+
+      - name: Crawl official recruitment sources
+        run: python crawler/govjob_crawler.py --days 30 --page-limit 1200 --output data/jobs.json
+
+      - name: Build alert digest
+        run: python crawler/alerts.py --jobs data/jobs.json --state data/alert_state.json --output data/alerts.json --deadline-days 3
+
+      - name: Send WhatsApp alert when configured
+        env:
+          WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
+          WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
+          WHATSAPP_RECIPIENT: ${{ secrets.WHATSAPP_RECIPIENT }}
+          WHATSAPP_API_VERSION: v23.0
+        run: python crawler/whatsapp_notify.py --input data/alerts.json
+
+      - name: Commit dataset and alert state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/alerts.json data/alert_state.json
+          if git diff --cached --quiet; then
+            echo "No dataset changes."
+          else
+            git commit -m "Refresh government jobs and open-web discovery"
+            git push origin HEAD:govjob-development
+          fi
+
+      - name: Publish refreshed dataset to live master branch
+        run: |
+          cp data/jobs.json /tmp/jobs.json
+          cp data/news_leads.json /tmp/news_leads.json
+          cp data/web_leads.json /tmp/web_leads.json
+          cp data/alerts.json /tmp/alerts.json
+          cp data/alert_state.json /tmp/alert_state.json
+          git fetch origin master
+          git checkout master
+          cp /tmp/jobs.json data/jobs.json
+          cp /tmp/news_leads.json data/news_leads.json
+          cp /tmp/web_leads.json data/web_leads.json
+          cp /tmp/alerts.json data/alerts.json
+          cp /tmp/alert_state.json data/alert_state.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/alerts.json data/alert_state.json
+          if git diff --cached --quiet; then
+            echo "Live master dataset already current."
+          else
+            git commit -m "Publish government jobs dataset"
+            git push origin HEAD:master
+          fi
+
+# Live open-web discovery validation
