@@ -30,6 +30,9 @@ jobs:
       - name: Install crawler dependencies
         run: pip install -r crawler/requirements.txt
 
+      - name: Run crawler quality tests
+        run: python -m pytest crawler/test_govjobs.py -q
+
       - name: Discover secondary recruitment leads
         run: python crawler/news_discovery.py --output data/news_leads.json
 
