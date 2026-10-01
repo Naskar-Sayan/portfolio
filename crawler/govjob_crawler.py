@@ -103,8 +103,8 @@ def extract_portal_links(final_url, content):
         label = clean(a.get_text(" ", strip=True), 160)
         if label and official(href):
             found.append((label, href))
-    for raw in re.findall(r"https?://[^\s"'<>]+", content.decode("utf-8", "ignore")):
-        raw = raw.rstrip(".,);]")
+    for raw in re.findall(r"https?://[^\s<>]+", content.decode("utf-8", "ignore")):
+        raw = raw.rstrip(".,);]\"'")
         if official(raw): found.append(("Government portal", raw))
     unique = {}
     for label, href in found:
