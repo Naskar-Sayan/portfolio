@@ -70,6 +70,15 @@ def parse_date(v):
     for fmt in DATE_PATTERNS:
         try: return datetime.strptime(v, fmt).date().isoformat()
         except ValueError: pass
+    m = re.search(r"(?<!\d)(20\d{2})[-/](\d{1,2})[-/](\d{1,2})(?!\d)", v)
+    if m:
+        try:
+            return datetime.strptime(
+                f"{m.group(1)}-{m.group(2).zfill(2)}-{m.group(3).zfill(2)}",
+                "%Y-%m-%d",
+            ).date().isoformat()
+        except ValueError:
+            pass
     return None
 
 def get(url):
@@ -163,6 +172,11 @@ def make_record(org, title, url, text, discovered, application_url=None, documen
         # Recruitment PDFs may have sparse extraction; otherwise require concrete fields.
         return None
     digest = hashlib.sha256((url + "|" + title).encode()).hexdigest()[:16]
+    posting_date = None
+    for candidate in re.findall(r"\b(?:20\d{2}[-/]\d{1,2}[-/]\d{1,2}|\d{1,2}[-/]\d{1,2}[-/]20\d{2})\b", text):
+        posting_date = parse_date(candidate)
+        if posting_date:
+            break
     return {
         "id": digest,
         "title": title,
@@ -171,6 +185,7 @@ def make_record(org, title, url, text, discovered, application_url=None, documen
         "application_url": application_url or url,
         "document_url": document_url,
         **fields,
+        "posting_date": posting_date,
         "discovered_at": discovered,
         "source": clean(org, 300),
         "official_source": True,
@@ -198,14 +213,26 @@ def row_record(source, final_url, headers, cells, row, discovered):
     deadline = cell("last date","closing date","deadline")
     method = cell("method of appointment","type","employment type")
     links = [(clean(a.get_text(" ", strip=True),120) or "", urljoin(final_url,a["href"])) for a in row.find_all("a", href=True)]
-    notice_url = next((u for _,u in links if official(u)), final_url)
+    official_links = [u for _,u in links if official(u)]
+    base_host = (urlparse(final_url).hostname or "").lower()
+    if base_host.endswith("ncs.gov.in"):
+        external = [u for u in official_links if (urlparse(u).hostname or "").lower() != base_host]
+        if not external:
+            return None
+        notice_url = external[0]
+    else:
+        notice_url = official_links[0] if official_links else final_url
     apply_url = next((u for label,u in links if re.search(r"apply|online application|application",label,re.I)), notice_url)
     text = " | ".join(cells)
     rec = make_record(org, title, notice_url, text + " " + (method or ""), discovered, apply_url, notice_url, "table_row")
     if rec and deadline:
-        rec["deadline"] = parse_date(deadline)
+        parsed_deadline = parse_date(deadline)
+        if parsed_deadline:
+            rec["deadline"] = parsed_deadline
     if rec and issued:
-        rec["posting_date"] = parse_date(issued)
+        parsed_issued = parse_date(issued)
+        if parsed_issued:
+            rec["posting_date"] = parsed_issued
     return rec
 
 def extract_table_records(source, final_url, soup, discovered):
