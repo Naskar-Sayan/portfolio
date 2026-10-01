@@ -24,6 +24,42 @@ UA = "GovJobDashboard-NewsDiscovery/0.3 (+https://github.com/Naskar-Sayan/portfo
 TIMEOUT = 20
 
 QUERIES = [
+    '"Andhra Pradesh" government recruitment vacancy notification',
+    '"Arunachal Pradesh" government recruitment vacancy notification',
+    '"Assam" government recruitment vacancy notification',
+    '"Bihar" government recruitment vacancy notification',
+    '"Chhattisgarh" government recruitment vacancy notification',
+    '"Goa" government recruitment vacancy notification',
+    '"Gujarat" government recruitment vacancy notification',
+    '"Haryana" government recruitment vacancy notification',
+    '"Himachal Pradesh" government recruitment vacancy notification',
+    '"Jharkhand" government recruitment vacancy notification',
+    '"Karnataka" government recruitment vacancy notification',
+    '"Kerala" government recruitment vacancy notification',
+    '"Madhya Pradesh" government recruitment vacancy notification',
+    '"Maharashtra" government recruitment vacancy notification',
+    '"Manipur" government recruitment vacancy notification',
+    '"Meghalaya" government recruitment vacancy notification',
+    '"Mizoram" government recruitment vacancy notification',
+    '"Nagaland" government recruitment vacancy notification',
+    '"Odisha" government recruitment vacancy notification',
+    '"Punjab" government recruitment vacancy notification',
+    '"Rajasthan" government recruitment vacancy notification',
+    '"Sikkim" government recruitment vacancy notification',
+    '"Tamil Nadu" government recruitment vacancy notification',
+    '"Telangana" government recruitment vacancy notification',
+    '"Tripura" government recruitment vacancy notification',
+    '"Uttar Pradesh" government recruitment vacancy notification',
+    '"Uttarakhand" government recruitment vacancy notification',
+    '"West Bengal" government recruitment vacancy notification',
+    '"Delhi" government recruitment vacancy notification',
+    '"Jammu Kashmir" government recruitment vacancy notification',
+    '"Ladakh" government recruitment vacancy notification',
+    '"Puducherry" government recruitment vacancy notification',
+    '"Chandigarh" government recruitment vacancy notification',
+    '"Andaman Nicobar" government recruitment vacancy notification',
+    '"Lakshadweep" government recruitment vacancy notification',
+    '"Dadra Nagar Haveli Daman Diu" government recruitment vacancy notification',
     '"government recruitment" India vacancy notification',
     '"recruitment notification" India government jobs',
     '"vacancy" "government" India recruitment',
@@ -105,7 +141,7 @@ def official_links(article_url: str):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--output", default="data/news_leads.json")
-    p.add_argument("--per-query", type=int, default=10)
+    p.add_argument("--per-query", type=int, default=8)
     args = p.parse_args()
 
     now = datetime.now(timezone.utc).isoformat()
