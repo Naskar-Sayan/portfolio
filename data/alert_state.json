@@ -1,12 +1,8 @@
 {
-  "generated_at": "2026-10-01T14:12:14.064261+00:00",
-  "source_count": 0,
-  "sources": [],
-  "registry_source": "NCS government portal directory",
-  "window_days": 15,
-  "cutoff": "2026-09-16",
-  "jobs": [
-    {
+  "initialized_at": "2026-10-01T14:13:53.336347+00:00",
+  "updated_at": "2026-10-01T14:13:53.336347+00:00",
+  "jobs": {
+    "national board of examinations in medical sciences 31 08 2026": {
       "id": "954f6cde2f34fd6c",
       "title": "31/08/2026",
       "normalized_key": "national board of examinations in medical sciences 31 08 2026",
@@ -27,7 +23,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "national board of examinations in medical sciences national board of examinations in medical sciences": {
       "id": "e13b00e6ec7ed47e",
       "title": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
       "normalized_key": "national board of examinations in medical sciences national board of examinations in medical sciences",
@@ -48,7 +44,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "national career service ncsnewwebsite": {
       "id": "584d5296ee135c85",
       "title": "NcsNewWebsite",
       "normalized_key": "national career service ncsnewwebsite",
@@ -69,7 +65,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "drdo cvrde chennai 5": {
       "id": "ab68cc091f3fdd83",
       "title": "5",
       "normalized_key": "drdo cvrde chennai 5",
@@ -90,7 +86,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "jharkhand 7": {
       "id": "8a7d8a8b69d4f8b3",
       "title": "7",
       "normalized_key": "jharkhand 7",
@@ -111,7 +107,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "find domestic jobs ncsnewwebsite": {
       "id": "6303214e1b80f59e",
       "title": "NcsNewWebsite",
       "normalized_key": "find domestic jobs ncsnewwebsite",
@@ -132,7 +128,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "find international jobs e migrate ncsnewwebsite": {
       "id": "f40d881d629db77b",
       "title": "NcsNewWebsite",
       "normalized_key": "find international jobs e migrate ncsnewwebsite",
@@ -153,7 +149,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "jobs in health sector ncsnewwebsite": {
       "id": "eafa2782b67299d2",
       "title": "NcsNewWebsite",
       "normalized_key": "jobs in health sector ncsnewwebsite",
@@ -174,7 +170,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "jobs in government sector ncsnewwebsite": {
       "id": "9424da0a41658ab4",
       "title": "NcsNewWebsite",
       "normalized_key": "jobs in government sector ncsnewwebsite",
@@ -195,7 +191,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "jobs for differently abled ncsnewwebsite": {
       "id": "5e4b4515872dd24e",
       "title": "NcsNewWebsite",
       "normalized_key": "jobs for differently abled ncsnewwebsite",
@@ -216,7 +212,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "jobs for ex servicemen ncsnewwebsite": {
       "id": "66057e9370551841",
       "title": "NcsNewWebsite",
       "normalized_key": "jobs for ex servicemen ncsnewwebsite",
@@ -237,7 +233,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "find career center ncsnewwebsite": {
       "id": "37c5ed396e75d584",
       "title": "NcsNewWebsite",
       "normalized_key": "find career center ncsnewwebsite",
@@ -258,7 +254,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "find skill provider ncsnewwebsite": {
       "id": "4d4d277fe8d3c5df",
       "title": "NcsNewWebsite",
       "normalized_key": "find skill provider ncsnewwebsite",
@@ -279,7 +275,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "about ncsc das vrcs ncsnewwebsite": {
       "id": "825ad8b20bc96c7e",
       "title": "NcsNewWebsite",
       "normalized_key": "about ncsc das vrcs ncsnewwebsite",
@@ -300,7 +296,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "find candidates ncsnewwebsite": {
       "id": "307e8d3ca6661845",
       "title": "NcsNewWebsite",
       "normalized_key": "find candidates ncsnewwebsite",
@@ -321,7 +317,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "post new jobs ncsnewwebsite": {
       "id": "02db514d9218db7d",
       "title": "NcsNewWebsite",
       "normalized_key": "post new jobs ncsnewwebsite",
@@ -342,7 +338,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "state wise skill development portals ncsnewwebsite": {
       "id": "eff2dc3193eb1288",
       "title": "NcsNewWebsite",
       "normalized_key": "state wise skill development portals ncsnewwebsite",
@@ -363,7 +359,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "participate in a job fairs and events ncsnewwebsite": {
       "id": "6782081181efedfa",
       "title": "NcsNewWebsite",
       "normalized_key": "participate in a job fairs and events ncsnewwebsite",
@@ -384,7 +380,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "nesm ncsnewwebsite": {
       "id": "8e01e985eb2342bb",
       "title": "NcsNewWebsite",
       "normalized_key": "nesm ncsnewwebsite",
@@ -405,7 +401,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "ncs dashboard ncsnewwebsite": {
       "id": "02f79f2c80c7f63e",
       "title": "NcsNewWebsite",
       "normalized_key": "ncs dashboard ncsnewwebsite",
@@ -426,7 +422,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "ai resume builder ncsnewwebsite": {
       "id": "a76e87b1f300b1d4",
       "title": "NcsNewWebsite",
       "normalized_key": "ai resume builder ncsnewwebsite",
@@ -447,7 +443,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "personalized online mentoring programs ncsnewwebsite": {
       "id": "d14765b32e3780a7",
       "title": "NcsNewWebsite",
       "normalized_key": "personalized online mentoring programs ncsnewwebsite",
@@ -468,7 +464,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "international resources ncsnewwebsite": {
       "id": "051122c12d7ad8b4",
       "title": "NcsNewWebsite",
       "normalized_key": "international resources ncsnewwebsite",
@@ -489,7 +485,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "career schemes ncsnewwebsite": {
       "id": "6d95fc07e2d25a97",
       "title": "NcsNewWebsite",
       "normalized_key": "career schemes ncsnewwebsite",
@@ -510,7 +506,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "jobs for women ncsnewwebsite": {
       "id": "8f4638bb35a9a4cb",
       "title": "NcsNewWebsite",
       "normalized_key": "jobs for women ncsnewwebsite",
@@ -531,7 +527,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "employment news employment news": {
       "id": "fcd1f8f55ff7deed",
       "title": "Employment News",
       "normalized_key": "employment news employment news",
@@ -552,7 +548,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "employment news g20 women engagement group w20 prioritising india": {
       "id": "bceb2c9eb5b94289",
       "title": "G20 Women Engagement Group W20: Prioritising India",
       "normalized_key": "employment news g20 women engagement group w20 prioritising india",
@@ -573,7 +569,7 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     },
-    {
+    "national career service national career service": {
       "id": "52ef624d1b592151",
       "title": "National Career Service",
       "normalized_key": "national career service national career service",
@@ -594,6 +590,5 @@
       "verification": "primary_domain_match",
       "kind": "recruitment_notice"
     }
-  ],
-  "deduplicated_count": 28
+  }
 }
