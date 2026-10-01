@@ -34,7 +34,7 @@ jobs:
         run: python crawler/news_discovery.py --output data/news_leads.json
 
       - name: Crawl official recruitment sources
-        run: python crawler/govjob_crawler.py --days 15 --page-limit 700 --output data/jobs.json
+        run: python crawler/govjob_crawler.py --days 15 --page-limit 500 --output data/jobs.json
 
       - name: Build alert digest
         run: python crawler/alerts.py --jobs data/jobs.json --state data/alert_state.json --output data/alerts.json --deadline-days 3
