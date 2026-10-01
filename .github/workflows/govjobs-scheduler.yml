@@ -46,6 +46,38 @@ jobs:
       - name: Discover recruitment across the open web
         run: python crawler/web_discovery.py --output data/web_leads.json --per-query 8
 
+      - name: Bridge discovered official URLs into the crawler queue
+        run: |
+          python - <<'PY'
+          import json
+          path = "data/news_leads.json"
+          with open(path, encoding="utf-8") as f:
+              data = json.load(f)
+          with open("data/web_leads.json", encoding="utf-8") as f:
+              web = json.load(f)
+          leads = data.get("leads", [])
+          seen = {x.get("primary_source") or x.get("url") for x in leads}
+          for item in web.get("official_sources", []):
+              url = item.get("url")
+              if not url or url in seen:
+                  continue
+              leads.append({
+                  "url": url,
+                  "title": item.get("title", "Open-web discovered official recruitment source"),
+                  "snippet": "",
+                  "query": item.get("query", "official sitemap"),
+                  "discovered_at": data.get("generated_at"),
+                  "primary_source": url,
+                  "verification": item.get("verification", "official_sitemap"),
+              })
+              seen.add(url)
+          data["leads"] = leads
+          data["lead_count"] = len(leads)
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+          print(f"Bridged {len(leads)} total verified/official crawl leads.")
+          PY
+
       - name: Crawl official recruitment sources
         run: python crawler/govjob_crawler.py --days 30 --page-limit 1200 --output data/jobs.json
 
