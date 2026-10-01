@@ -3,6 +3,7 @@ name: Government Jobs Daily Refresh
 # Nationwide quality revalidation trigger
 # Source-link and freshness hardening validation
 # Multi-agent discovery + open-web discovery + official-source verification
+# Force-refresh trigger: 2026-10-01T17:24:33.359Z
 
 on:
   push:
@@ -82,24 +83,12 @@ jobs:
               seen.add(url)
 
           for item in web.get("official_sources", []):
-              add(
-                  item.get("url"),
-                  item.get("title", "Open-web discovered official recruitment source"),
-                  item.get("query", "official sitemap"),
-                  item.get("verification", "official_sitemap"),
-              )
+              add(item.get("url"), item.get("title", "Open-web discovered official recruitment source"), item.get("query", "official sitemap"), item.get("verification", "official_sitemap"))
 
           for item in agents.get("candidates", []):
-              # Only bridge official/verified targets. Secondary job-site data
-              # remains evidence for the official crawler, never authority.
               url = item.get("primary_source") or item.get("notice_url")
               if url and (".gov.in" in url or ".nic.in" in url or ".ac.in" in url or ".edu.in" in url or url.endswith(".gov")):
-                  add(
-                      url,
-                      item.get("title", "Multi-agent discovered official recruitment source"),
-                      item.get("query", item.get("agent", "multi-agent")),
-                      item.get("verification", "multi_agent_official"),
-                  )
+                  add(url, item.get("title", "Multi-agent discovered official recruitment source"), item.get("query", item.get("agent", "multi-agent")), item.get("verification", "multi_agent_official"))
 
           data["leads"] = leads
           data["lead_count"] = len(leads)
