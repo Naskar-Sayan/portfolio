@@ -297,6 +297,20 @@ def crawl(page_limit=500, days=15):
         time.sleep(0.05)
 
     jobs = merge_jobs(raw_jobs)
+    today = now.date().isoformat()
+    active = []
+    for job in jobs:
+        deadline = job.get("deadline")
+        posting = job.get("posting_date")
+        # Keep currently open notices, recently issued notices, and undated
+        # primary PDFs whose parent source explicitly surfaced them.
+        if deadline and deadline < today:
+            if not posting or posting < cutoff:
+                continue
+        if posting and posting < cutoff and deadline and deadline < today:
+            continue
+        active.append(job)
+    jobs = active
     jobs.sort(key=lambda x: (x.get("deadline") or "9999-12-31", x.get("discovered_at","")))
     source_stats = {}
     for name,url in unique_seeds:
