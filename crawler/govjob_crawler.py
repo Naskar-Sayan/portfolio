@@ -54,6 +54,10 @@ DATE_PATTERNS = [
     "%d/%m/%Y", "%d-%m-%Y", "%d/%m/%y", "%d-%m-%y",
     "%d %B %Y", "%d %b %Y", "%B %d, %Y", "%b %d, %Y",
 ]
+CORRIGENDUM_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|last date extended)\b", re.I)
+JOB_STRONG_RE = re.compile(r"\b(recruitment|recruitment notice|advertisement|applications? invited|vacanc(?:y|ies)|apprentice|walk[- ]?in|engagement)\b", re.I)
+JOB_WEAK_RE = re.compile(r"\b(job|career|notification|appointment|hiring)\b", re.I)
+
 DATE_ANY_RE = re.compile(
     r"\b(?:0?[1-9]|[12]\d|3[01])[/-](?:0?[1-9]|1[0-2])[/-](?:20)?\d{2}\b|"
     r"\b(?:0?[1-9]|[12]\d|3[01])\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+20\d{2}\b",
@@ -155,7 +159,9 @@ def extract_pdf(url: str, content: bytes) -> str:
 
 def job_from_page(source: str, url: str, title: str, text: str, discovered: str, application_url: str | None = None):
     combined = title + " " + text
-    if not JOB_TERMS.search(combined):
+    if not JOB_STRONG_RE.search(combined):
+        # Avoid publishing generic pages that merely contain words like
+        # "notification" or "career".
         return None
 
     dates = [parse_date(x) for x in DATE_ANY_RE.findall(text)]
@@ -188,6 +194,9 @@ def job_from_page(source: str, url: str, title: str, text: str, discovered: str,
     return {
         "id": digest,
         "title": title,
+        "normalized_key": re.sub(r"[^a-z0-9]+", " ", (source + " " + title).lower()).strip()[:220],
+        "notice_type": "corrigendum" if CORRIGENDUM_RE.search(combined) else "recruitment",
+        "is_update": bool(CORRIGENDUM_RE.search(combined)),
         "organization": source,
         "url": url,
         "application_url": application_url or url,
@@ -317,8 +326,21 @@ def crawl(seed_limit=80, page_limit=700, days=15):
 
     # Keep a rolling window in the static store. Items without dates are kept
     # because many recruitment pages expose dates only inside linked PDFs.
+    # Deduplicate records that point to the same notice or have effectively
+    # identical organization/title combinations.
+    dedup = {}
+    for item in jobs.values():
+        key = item.get("normalized_key") or item["id"]
+        existing = dedup.get(key)
+        if existing is None:
+            dedup[key] = item
+        else:
+            # Prefer a direct official URL over a secondary/discovered copy.
+            if item.get("official_source") and not existing.get("official_source"):
+                dedup[key] = item
+
     ordered = sorted(
-        jobs.values(),
+        dedup.values(),
         key=lambda x: (x.get("deadline") or "9999-12-31", x.get("discovered_at", "")),
     )
     return {
@@ -329,6 +351,7 @@ def crawl(seed_limit=80, page_limit=700, days=15):
         "window_days": days,
         "cutoff": cutoff,
         "jobs": ordered[:500],
+        "deduplicated_count": len(dedup),
     }
 
 
