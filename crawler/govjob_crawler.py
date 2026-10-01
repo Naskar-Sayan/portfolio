@@ -32,6 +32,10 @@ MAX_BYTES = 8_000_000
 SEEDS = [
     ("Employment News", "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"),
     ("National Career Service", "https://ncs.gov.in/latest-update"),
+    ("UPSC", "https://www.upsc.gov.in/recruitment/recruitment-advertisement"),
+    ("SSC", "https://ssc.gov.in/"),
+    ("IBPS", "https://www.ibps.in/"),
+    ("RRB", "https://www.rrbapply.gov.in/"),
     ("India.gov.in Jobs", "https://www.india.gov.in/category/jobs"),
     ("IGOD", "https://igod.gov.in/"),
 ]
@@ -78,9 +82,25 @@ def get(url: str):
         return None, None
 
 
+OFFICIAL_DOMAINS = {
+    "employmentnews.gov.in",
+    "ncs.gov.in",
+    "upsc.gov.in",
+    "ssc.gov.in",
+    "ibps.in",
+    "rrbapply.gov.in",
+    "india.gov.in",
+    "igod.gov.in",
+}
+
 def official(url: str) -> bool:
     host = (urlparse(url).hostname or "").lower()
-    return host.endswith(".gov.in") or host.endswith(".nic.in") or host.endswith(".gov") or host.endswith(".ac.in")
+    return (
+        host in OFFICIAL_DOMAINS
+        or any(host.endswith("." + domain) for domain in OFFICIAL_DOMAINS)
+        or host.endswith(".gov.in")
+        or host.endswith(".nic.in")
+    )
 
 
 def text_from_html(content: bytes) -> tuple[str, BeautifulSoup]:
@@ -187,6 +207,7 @@ def crawl(seed_limit=80, page_limit=250, days=15):
     return {
         "generated_at": now.isoformat(),
         "source_count": len(SEEDS),
+        "sources": [{"name": name, "url": url} for name, url in SEEDS],
         "window_days": days,
         "cutoff": cutoff,
         "jobs": ordered[:500],
