@@ -150,5 +150,27 @@ def portfolio():
 def biography():
     return render_template('biography.html', active_page='biography')
 
+@app.route('/government-jobs')
+def government_jobs():
+    import json
+    from pathlib import Path
+    data_path = Path(app.root_path) / 'data' / 'jobs.json'
+    payload = {'jobs': [], 'generated_at': None}
+    try:
+        with data_path.open('r', encoding='utf-8') as f:
+            payload = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    jobs = payload.get('jobs', [])
+    alerts = {'summary': {}}
+    alert_path = Path(app.root_path) / 'data' / 'alerts.json'
+    try:
+        with alert_path.open('r', encoding='utf-8') as f:
+            alerts = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    sources = sorted({job.get('source') for job in jobs if job.get('source')})
+    return render_template('government_jobs.html', active_page='government_jobs', jobs=jobs, sources=sources, generated_at=payload.get('generated_at'), alerts=alerts)
+
 if __name__ == '__main__':
     app.run(debug=True)
