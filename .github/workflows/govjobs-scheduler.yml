@@ -1,5 +1,6 @@
 name: Government Jobs Daily Refresh
 # Production crawler validation gate
+# Nationwide quality revalidation trigger
 
 on:
   push:
