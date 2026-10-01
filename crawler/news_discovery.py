@@ -32,6 +32,14 @@ QUERIES = [
     '"recruitment" PSU India vacancy',
     '"recruitment" university India government vacancy',
     '"apprentice" government India notification',
+    '"सरकारी भर्ती" नौकरी अधिसूचना',
+    '"সরকারি চাকরি" নিয়োগ বিজ্ঞপ্তি',
+    '"सरकारी नोकरी" भरती जाहिरात',
+    '"அரசு வேலை" ஆட்சேர்ப்பு அறிவிப்பு',
+    '"ప్రభుత్వ ఉద్యోగం" నియామక నోటిఫికేషన్',
+    '"ಸರ್ಕಾರಿ ಉದ್ಯೋಗ" ನೇಮಕಾತಿ ಅಧಿಸೂಚನೆ',
+    '"സർക്കാർ ജോലി" നിയമന വിജ്ഞാപനം',
+    '"સરકારી નોકરી" ભરતી જાહેરાત',
 ]
 
 session = requests.Session()
