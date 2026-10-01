@@ -2,7 +2,7 @@ name: Government Jobs Daily Refresh
 # Production crawler validation gate
 # Nationwide quality revalidation trigger
 # Source-link and freshness hardening validation
-# Open-web discovery + official-source verification
+# Multi-agent discovery + open-web discovery + official-source verification
 
 on:
   push:
@@ -35,10 +35,10 @@ jobs:
         run: pip install -r crawler/requirements.txt
 
       - name: Run crawler quality tests
-        run: python -m pytest crawler/test_govjobs.py -q
+        run: python -m pytest crawler/test_govjobs.py crawler/test_agents.py -q
 
       - name: Validate crawler syntax
-        run: python -m py_compile crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py
+        run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py
 
       - name: Discover secondary recruitment leads
         run: python crawler/news_discovery.py --output data/news_leads.json
@@ -46,36 +46,68 @@ jobs:
       - name: Discover recruitment across the open web
         run: python crawler/web_discovery.py --output data/web_leads.json --per-query 8
 
-      - name: Bridge discovered official URLs into the crawler queue
+      - name: Run multi-agent discovery and job-site extraction
+        run: python crawler/agents.py --output data/agent_leads.json
+
+      - name: Bridge all discovered official URLs into the crawler queue
         run: |
           python - <<'PY'
           import json
+
           path = "data/news_leads.json"
           with open(path, encoding="utf-8") as f:
               data = json.load(f)
+
           with open("data/web_leads.json", encoding="utf-8") as f:
               web = json.load(f)
+
+          with open("data/agent_leads.json", encoding="utf-8") as f:
+              agents = json.load(f)
+
           leads = data.get("leads", [])
           seen = {x.get("primary_source") or x.get("url") for x in leads}
-          for item in web.get("official_sources", []):
-              url = item.get("url")
+
+          def add(url, title, query, verification):
               if not url or url in seen:
-                  continue
+                  return
               leads.append({
                   "url": url,
-                  "title": item.get("title", "Open-web discovered official recruitment source"),
+                  "title": title,
                   "snippet": "",
-                  "query": item.get("query", "official sitemap"),
+                  "query": query,
                   "discovered_at": data.get("generated_at"),
                   "primary_source": url,
-                  "verification": item.get("verification", "official_sitemap"),
+                  "verification": verification,
               })
               seen.add(url)
+
+          for item in web.get("official_sources", []):
+              add(
+                  item.get("url"),
+                  item.get("title", "Open-web discovered official recruitment source"),
+                  item.get("query", "official sitemap"),
+                  item.get("verification", "official_sitemap"),
+              )
+
+          for item in agents.get("candidates", []):
+              # Only bridge official/verified targets. Secondary job-site data
+              # remains evidence for the official crawler, never authority.
+              url = item.get("primary_source") or item.get("notice_url")
+              if url and (".gov.in" in url or ".nic.in" in url or ".ac.in" in url or ".edu.in" in url or url.endswith(".gov")):
+                  add(
+                      url,
+                      item.get("title", "Multi-agent discovered official recruitment source"),
+                      item.get("query", item.get("agent", "multi-agent")),
+                      item.get("verification", "multi_agent_official"),
+                  )
+
           data["leads"] = leads
           data["lead_count"] = len(leads)
           with open(path, "w", encoding="utf-8") as f:
               json.dump(data, f, ensure_ascii=False, indent=2)
+
           print(f"Bridged {len(leads)} total verified/official crawl leads.")
+          print(f"Multi-agent candidates: {agents.get('candidate_count', 0)}; official: {agents.get('official_candidate_count', 0)}")
           PY
 
       - name: Crawl official recruitment sources
@@ -96,11 +128,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/alerts.json data/alert_state.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json
           if git diff --cached --quiet; then
             echo "No dataset changes."
           else
-            git commit -m "Refresh government jobs and open-web discovery"
+            git commit -m "Refresh multi-agent government jobs discovery"
             git push origin HEAD:govjob-development
           fi
 
@@ -109,6 +141,7 @@ jobs:
           cp data/jobs.json /tmp/jobs.json
           cp data/news_leads.json /tmp/news_leads.json
           cp data/web_leads.json /tmp/web_leads.json
+          cp data/agent_leads.json /tmp/agent_leads.json
           cp data/alerts.json /tmp/alerts.json
           cp data/alert_state.json /tmp/alert_state.json
           git fetch origin master
@@ -116,14 +149,15 @@ jobs:
           cp /tmp/jobs.json data/jobs.json
           cp /tmp/news_leads.json data/news_leads.json
           cp /tmp/web_leads.json data/web_leads.json
+          cp /tmp/agent_leads.json data/agent_leads.json
           cp /tmp/alerts.json data/alerts.json
           cp /tmp/alert_state.json data/alert_state.json
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/alerts.json data/alert_state.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json
           if git diff --cached --quiet; then
             echo "Live master dataset already current."
           else
-            git commit -m "Publish government jobs dataset"
+            git commit -m "Publish multi-agent government jobs dataset"
             git push origin HEAD:master
           fi
 
-# Live open-web discovery validation
+# Multi-agent discovery validation
