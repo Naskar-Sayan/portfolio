@@ -27,8 +27,8 @@ except Exception:
 UA = "GovJobDashboard/1.0 (+https://github.com/Naskar-Sayan/portfolio)"
 TIMEOUT = 10
 MAX_BYTES = 6_000_000
-MAX_PAGES_PER_DOMAIN = 35
-MAX_QUEUE_PER_DOMAIN = 60
+MAX_PAGES_PER_DOMAIN = 60
+MAX_QUEUE_PER_DOMAIN = 120
 
 SEEDS = [
     ("Employment News", "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"),
@@ -146,10 +146,23 @@ def discover_directory(url, max_pages=8):
     return [(label, href) for href, label in external.items()]
 
 def discover_ncs_sources():
-    return discover_directory("https://ncs.gov.in/devPortalList", max_pages=8)
+    return discover_directory("https://ncs.gov.in/devPortalList", max_pages=20)
 
 def discover_igod_sources():
-    return discover_directory("https://igod.gov.in/", max_pages=12)
+    # IGOD is the live national directory of government sites. Traverse
+    # state/UT and union-government category pages rather than maintaining
+    # a hand-written source registry.
+    entrypoints = [
+        ("https://igod.gov.in/", 20),
+        ("https://igod.gov.in/categories", 50),
+        ("https://igod.gov.in/sg/states", 60),
+        ("https://igod.gov.in/site_map", 60),
+    ]
+    found = {}
+    for url, limit in entrypoints:
+        for label, href in discover_directory(url, max_pages=limit):
+            found.setdefault(href.rstrip("/"), label)
+    return [(label, href) for href, label in found.items()]
 
 def find_apply_link(soup, base):
     for a in soup.find_all("a", href=True):
@@ -274,7 +287,7 @@ def extract_table_records(source, final_url, soup, discovered):
                 if rec: out.append(rec)
     return out
 
-def crawl(page_limit=500, days=15):
+def crawl(page_limit=1200, days=30):
     now = datetime.now(timezone.utc)
     cutoff = (now - timedelta(days=days)).date().isoformat()
     seeds = list(SEEDS)
@@ -394,8 +407,8 @@ def crawl(page_limit=500, days=15):
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--output",default="data/jobs.json")
-    p.add_argument("--days",type=int,default=15)
-    p.add_argument("--page-limit",type=int,default=500)
+    p.add_argument("--days",type=int,default=30)
+    p.add_argument("--page-limit",type=int,default=1200)
     a=p.parse_args()
     result=crawl(a.page_limit,a.days)
     with open(a.output,"w",encoding="utf-8") as f: json.dump(result,f,ensure_ascii=False,indent=2)
