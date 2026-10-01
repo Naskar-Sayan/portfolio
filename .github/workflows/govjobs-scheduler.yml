@@ -64,3 +64,5 @@ jobs:
             git commit -m "Refresh government jobs and alerts"
             git push origin HEAD:govjob-development
           fi
+
+# Live directory-depth expansion validation
