@@ -45,7 +45,8 @@
       data-deadline="{{ job.deadline or '' }}">
       <div class="job-card-top">
         <span class="job-source">{{ job.source }}</span>
-        {% if job.official_source %}<span class="verified">Official domain</span>{% endif %}
+        {% if job.official_source %}<span class="verified">✓ Primary source</span>{% endif %}
+        {% if job.is_update %}<span class="update-badge">Update</span>{% endif %}
       </div>
       <h2>{{ job.title }}</h2>
       <p class="job-org">{{ job.organization }}</p>
