@@ -26,8 +26,10 @@ except Exception:
     PdfReader = None
 
 UA = "GovJobDashboard/0.2 (+https://github.com/Naskar-Sayan/portfolio)"
-TIMEOUT = 20
-MAX_BYTES = 8_000_000
+TIMEOUT = 10
+MAX_BYTES = 6_000_000
+MAX_PAGES_PER_DOMAIN = 35
+MAX_QUEUE_PER_DOMAIN = 60
 
 SEEDS = [
     ("Employment News", "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"),
@@ -243,24 +245,26 @@ def crawl(seed_limit=80, page_limit=700, days=15):
     queue = all_seeds
     seen = set()
     jobs = {}
+    domain_counts = {}
+    queued_domain_counts = {}
 
     # First pass: seeds and official links they expose.
     while queue and len(seen) < page_limit:
         source, url = queue.pop(0)
         if url in seen:
             continue
+        host = (urlparse(url).hostname or "").lower()
+        if domain_counts.get(host, 0) >= MAX_PAGES_PER_DOMAIN:
+            continue
+        domain_counts[host] = domain_counts.get(host, 0) + 1
         seen.add(url)
         final_url, content = get(url)
         if not final_url or not content:
             continue
 
-        ctype = ""
-        try:
-            ctype = session.head(final_url, timeout=10, allow_redirects=True).headers.get("content-type", "").lower()
-        except requests.RequestException:
-            pass
+        ctype = "application/pdf" if final_url.lower().endswith(".pdf") else ""
 
-        if final_url.lower().endswith(".pdf") or "application/pdf" in ctype:
+        if ctype == "application/pdf":
             text = extract_pdf(final_url, content)
             item = job_from_page(source, final_url, source, text, now.isoformat())
             if item:
@@ -320,9 +324,15 @@ def crawl(seed_limit=80, page_limit=700, days=15):
                     continue
                 if href in seen:
                     continue
-                if JOB_TERMS.search(label) or "employmentnews.gov.in" in href or "ncs.gov.in" in href:
-                    queue.append((source, href))
-        time.sleep(0.15)
+                target_host = (urlparse(href).hostname or "").lower()
+                if domain_counts.get(target_host, 0) >= MAX_PAGES_PER_DOMAIN:
+                    continue
+                priority = bool(JOB_TERMS.search(label) or re.search(r"\\.pdf(?:$|\\?)|recruit|vacanc|career|advert|notification|apply", href + " " + label, re.I))
+                if priority or "employmentnews.gov.in" in href or "ncs.gov.in" in href:
+                    if queued_domain_counts.get(target_host, 0) < MAX_QUEUE_PER_DOMAIN:
+                        queue.append((source, href))
+                        queued_domain_counts[target_host] = queued_domain_counts.get(target_host, 0) + 1
+        time.sleep(0.05)
 
     # Keep a rolling window in the static store. Items without dates are kept
     # because many recruitment pages expose dates only inside linked PDFs.
