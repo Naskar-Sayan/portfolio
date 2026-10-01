@@ -73,3 +73,30 @@ def test_empty_table_header_does_not_crash():
         "2026-10-01T00:00:00+00:00",
     )
     assert len(records) == 1
+
+def test_closed_archive_record_is_rejected():
+    job = {
+        "title": "Notification 009 - Urgently Required Female Cleaning Labour in Saudi Arabia",
+        "organization": "Government portal",
+        "url": "https://nri.up.gov.in/upfcomra/en/page/upfcomra/en/article/notification-09",
+        "official_source": True,
+        "application_url": "https://nri.up.gov.in/upfcomra/en/page/upfcomra/en/article/notification-09",
+        "raw_text": "Notification 009 19.05.2017 Closed",
+    }
+    ok, reasons = validate_record(job)
+    assert not ok
+    assert "closed_or_expired" in reasons
+    assert "generic_organization" in reasons
+
+def test_generic_current_vacancies_page_is_rejected():
+    job = {
+        "title": "Current Vacancies",
+        "organization": "Government portal",
+        "url": "https://nri.up.gov.in/upfcomra/en/page/current-vacancies",
+        "official_source": True,
+        "application_url": "https://nri.up.gov.in/upfcomra/en/page/current-vacancies",
+        "raw_text": "Current Vacancies Status Closed",
+    }
+    ok, reasons = validate_record(job)
+    assert not ok
+    assert "generic_page_title" in reasons
