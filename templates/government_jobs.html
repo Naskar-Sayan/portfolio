@@ -10,7 +10,7 @@
       <p class="eyebrow">GOVERNMENT JOB DISCOVERY</p>
       <h1>Government Jobs</h1>
       <p>Recruitment notices collected from official government sources and refreshed automatically.</p>
-      {% if generated_at %}<small class="govjobs-updated">Last dataset refresh: {{ generated_at }}</small>{% endif %}
+      {% if generated_at %}<small class="govjobs-updated"><span class="refresh-dot"></span> Last refreshed: <strong>{{ generated_at }}</strong></small>{% endif %}
     </div>
     <div class="govjobs-stat">
       <strong>{{ jobs|length }}</strong>
