@@ -18,6 +18,14 @@
     </div>
   </div>
 
+  {% if alerts and alerts.summary %}
+  <div class="govjobs-alert-summary">
+    <span><b>{{ alerts.summary.get('new_jobs', 0) }}</b> new</span>
+    <span><b>{{ alerts.summary.get('updated_jobs', 0) }}</b> updated</span>
+    <span><b>{{ alerts.summary.get('deadline_alerts', 0) }}</b> closing within 3 days</span>
+  </div>
+  {% endif %}
+
   <div class="govjobs-toolbar">
     <input id="jobSearch" type="search" placeholder="Search post, organisation, keyword…">
     <select id="sourceFilter">
