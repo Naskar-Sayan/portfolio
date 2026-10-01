@@ -58,3 +58,18 @@ def test_merge_keeps_richer_duplicate():
     assert len(merged) == 1
     assert merged[0]["vacancies"] == 12
     assert merged[0]["qualification"] == "B.Tech in relevant discipline"
+def test_empty_table_header_does_not_crash():
+    html = """
+    <table>
+      <tr><th></th><th>Organisation</th><th>Post</th><th>Last Date</th></tr>
+      <tr><td></td><td>Example Government Institute</td><td>Clerk</td><td>30/10/2026</td></tr>
+    </table>
+    """
+    _, soup = html_text(html.encode())
+    records = extract_table_records(
+        "Employment News",
+        "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+        soup,
+        "2026-10-01T00:00:00+00:00",
+    )
+    assert len(records) == 1
