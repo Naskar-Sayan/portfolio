@@ -100,3 +100,33 @@ def test_generic_current_vacancies_page_is_rejected():
     ok, reasons = validate_record(job)
     assert not ok
     assert "generic_page_title" in reasons
+
+
+def test_ncs_aggregator_row_without_external_official_link_is_rejected():
+    html = """
+    <table>
+      <tr><th>Issued Date</th><th>Organisation</th><th>Post</th><th>Last Date</th></tr>
+      <tr><td>01/09/2026</td><td>Example Department</td><td>Clerk Recruitment</td><td>30/10/2026</td></tr>
+    </table>
+    """
+    _, soup = html_text(html.encode())
+    records = extract_table_records(
+        "National Career Service",
+        "https://ncs.gov.in/latest-update",
+        soup,
+        "2026-10-01T00:00:00+00:00",
+    )
+    assert records == []
+
+def test_posting_date_can_be_extracted_from_iso_text():
+    html = """
+    <a href="https://drdo.gov.in/drdo/sites/default/files/vacancy/advt2026.pdf">JRF Recruitment</a>
+    """
+    _, soup = html_text(html.encode())
+    records = extract_table_records(
+        "DRDO",
+        "https://drdo.gov.in/recruitment",
+        soup,
+        "2026-10-01T00:00:00+00:00",
+    )
+    assert records == []
