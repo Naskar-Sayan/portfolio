@@ -3,16 +3,18 @@ from __future__ import annotations
 import re
 from urllib.parse import urlparse
 
-UPDATE_RE = re.compile(r"\\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|withdrawn|postponed|deferred|rescheduled)\\b", re.I)
-STRONG_RE = re.compile(r"\\b(recruitment|vacanc(?:y|ies)|applications? invited|advertisement|apprenticeship|apprentice|engagement|walk[- ]?in|selection process|posts?\\s+of|post\\s+of)\\b", re.I)
-GENERIC_PAGE_RE = re.compile(r"^(ncsnewwebsite|home|homepage|jobs?|careers?|career|find domestic jobs|find international jobs|find career center|find skill provider|find candidates|post new jobs|ai resume builder|ncs dashboard|state-wise skill development portals|participate in a job fairs and events)$", re.I)
-BAD_ORG_RE = re.compile(r"^(national career service|ncsnewwebsite|india\\.gov\\.in jobs|igod)$", re.I)
+UPDATE_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|withdrawn|postponed|deferred|rescheduled)\b", re.I)
+STRONG_RE = re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advertisement|apprenticeship|apprentice|engagement|walk[- ]?in|selection process|posts?\s+of|post\s+of)\b", re.I)
+GENERIC_PAGE_RE = re.compile(r"^(ncsnewwebsite|home|homepage|jobs?|careers?|career|find domestic jobs|find international jobs|find career center|find skill provider|find candidates|post new jobs|ai resume builder|ncs dashboard|state-wise skill development portals|participate in a job fairs and events|current vacancies|service charges for recruitment)$", re.I)
+BAD_ORG_RE = re.compile(r"^(national career service|ncsnewwebsite|india\.gov\.in jobs|igod|government portal)$", re.I)
+CLOSED_RE = re.compile(r"\b(closed|expired|position filled|applications? closed)\b", re.I)
+OLD_DATE_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 
 
 def clean(value: object, limit: int = 500) -> str | None:
     if value is None:
         return None
-    s = re.sub(r"\\s+", " ", str(value)).strip()
+    s = re.sub(r"\s+", " ", str(value)).strip()
     return s[:limit] or None
 
 
@@ -39,9 +41,13 @@ def validate_record(job: dict) -> tuple[bool, list[str]]:
     title = clean(job.get("title"), 300)
     org = clean(job.get("organization"), 300)
     url = clean(job.get("url"), 2000)
+    raw = clean(job.get("raw_text"), 3000) or ""
     if not title or GENERIC_PAGE_RE.match(title): reasons.append("generic_page_title")
     if not org or BAD_ORG_RE.match(org): reasons.append("generic_organization")
     if not url or not url.startswith(("http://", "https://")): reasons.append("invalid_url")
+    if CLOSED_RE.search(raw): reasons.append("closed_or_expired")
+    years = [int(y) for y in OLD_DATE_RE.findall(raw)]
+    if years and not job.get("deadline") and max(years) < 2025: reasons.append("historical_archive")
     ok, evidence = recruitment_evidence(job)
     if not ok: reasons.append("insufficient_recruitment_evidence")
     if job.get("official_source") is not True and not is_official_url(url): reasons.append("not_primary_source")
@@ -51,8 +57,8 @@ def validate_record(job: dict) -> tuple[bool, list[str]]:
 def normalized_key(job: dict) -> str:
     def norm(v):
         s = re.sub(r"[^a-z0-9]+", " ", (str(v or "").lower())).strip()
-        s = re.sub(r"\\b(corrigendum|addendum|extension|revised|amendment|extended)\\b", " ", s)
-        return re.sub(r"\\s+", " ", s).strip()
+        s = re.sub(r"\b(corrigendum|addendum|extension|revised|amendment|extended)\b", " ", s)
+        return re.sub(r"\s+", " ", s).strip()
     return f"{norm(job.get('organization'))}|{norm(job.get('title'))}"[:320]
 
 
