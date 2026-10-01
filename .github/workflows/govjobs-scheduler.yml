@@ -40,7 +40,7 @@ jobs:
         run: python crawler/news_discovery.py --output data/news_leads.json
 
       - name: Crawl official recruitment sources
-        run: python crawler/govjob_crawler.py --days 15 --page-limit 500 --output data/jobs.json
+        run: python crawler/govjob_crawler.py --days 30 --page-limit 1200 --output data/jobs.json
 
       - name: Build alert digest
         run: python crawler/alerts.py --jobs data/jobs.json --state data/alert_state.json --output data/alerts.json --deadline-days 3
@@ -63,6 +63,26 @@ jobs:
           else
             git commit -m "Refresh government jobs and alerts"
             git push origin HEAD:govjob-development
+          fi
+
+      - name: Publish refreshed dataset to live master branch
+        run: |
+          cp data/jobs.json /tmp/jobs.json
+          cp data/news_leads.json /tmp/news_leads.json
+          cp data/alerts.json /tmp/alerts.json
+          cp data/alert_state.json /tmp/alert_state.json
+          git fetch origin master
+          git checkout master
+          cp /tmp/jobs.json data/jobs.json
+          cp /tmp/news_leads.json data/news_leads.json
+          cp /tmp/alerts.json data/alerts.json
+          cp /tmp/alert_state.json data/alert_state.json
+          git add data/jobs.json data/news_leads.json data/alerts.json data/alert_state.json
+          if git diff --cached --quiet; then
+            echo "Live master dataset already current."
+          else
+            git commit -m "Publish government jobs dataset"
+            git push origin HEAD:master
           fi
 
 # Live directory-depth expansion validation
