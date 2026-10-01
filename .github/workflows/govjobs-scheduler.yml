@@ -31,7 +31,7 @@ jobs:
         run: pip install -r crawler/requirements.txt
 
       - name: Crawl official recruitment sources
-        run: python crawler/govjob_crawler.py --days 15 --page-limit 250 --output data/jobs.json
+        run: python crawler/govjob_crawler.py --days 15 --page-limit 700 --output data/jobs.json
 
       - name: Commit dataset if changed
         run: |
