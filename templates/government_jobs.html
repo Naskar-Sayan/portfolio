@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}Government Jobs | Sayan Naskar{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/government_jobs.css') }}">
+{% endblock %}
+{% block content %}
+<section class="govjobs-page">
+  <div class="govjobs-hero">
+    <div>
+      <p class="eyebrow">GOVERNMENT JOB DISCOVERY</p>
+      <h1>Government Jobs</h1>
+      <p>Recruitment notices collected from official government sources and refreshed automatically.</p>
+      {% if generated_at %}<small class="govjobs-updated">Last dataset refresh: {{ generated_at }}</small>{% endif %}
+    </div>
+    <div class="govjobs-stat">
+      <strong>{{ jobs|length }}</strong>
+      <span>currently listed</span>
+    </div>
+  </div>
+
+  {% if alerts and alerts.summary %}
+  <div class="govjobs-alert-summary">
+    <span><b>{{ alerts.summary.get('new_jobs', 0) }}</b> new</span>
+    <span><b>{{ alerts.summary.get('updated_jobs', 0) }}</b> updated</span>
+    <span><b>{{ alerts.summary.get('deadline_alerts', 0) }}</b> closing within 3 days</span>
+  </div>
+  {% endif %}
+
+  <div class="govjobs-toolbar">
+    <input id="jobSearch" type="search" placeholder="Search post, organisation, keyword…">
+    <select id="sourceFilter">
+      <option value="">All sources</option>
+      {% for source in sources %}<option value="{{ source }}">{{ source }}</option>{% endfor %}
+    </select>
+    <select id="deadlineFilter">
+      <option value="">Any deadline</option>
+      <option value="7">Next 7 days</option>
+      <option value="15">Next 15 days</option>
+      <option value="30">Next 30 days</option>
+    </select>
+  </div>
+
+  <p class="govjobs-note">
+    Always verify eligibility, dates and application instructions on the linked official notice before applying.
+    The system treats official government domains as the primary source of truth.
+  </p>
+
+  <div id="jobGrid" class="job-grid">
+    {% for job in jobs %}
+    <article class="job-card"
+      data-search="{{ (job.title ~ ' ' ~ job.organization ~ ' ' ~ job.source)|lower }}"
+      data-source="{{ job.source }}"
+      data-deadline="{{ job.deadline or '' }}">
+      <div class="job-card-top">
+        <span class="job-source">{{ job.source }}</span>
+        {% if job.official_source %}<span class="verified">✓ Primary source</span>{% endif %}
+        {% if job.is_update %}<span class="update-badge">Update</span>{% endif %}
+      </div>
+      <h2>{{ job.title }}</h2>
+      <p class="job-org">{{ job.organization }}</p>
+      <div class="job-details">
+        {% if job.vacancies %}<span><b>Vacancies</b> {{ job.vacancies }}</span>{% endif %}
+        {% if job.age_limit_years %}<span><b>Age</b> up to {{ job.age_limit_years }} years</span>{% endif %}
+        {% if job.pay %}<span><b>Pay</b> {{ job.pay }}</span>{% endif %}
+      </div>
+      {% if job.qualification %}<p class="qualification"><b>Qualification:</b> {{ job.qualification }}</p>{% endif %}
+      {% if job.deadline %}<p class="deadline">Last date: <strong>{{ job.deadline }}</strong></p>{% else %}<p class="deadline muted">Deadline not extracted</p>{% endif %}
+      <a href="{{ job.application_url or job.url }}" target="_blank" rel="noopener noreferrer">Open official application/notice ↗</a>
+    </article>
+    {% else %}
+      <div class="empty-state">No recruitment records are available yet. The next scheduled crawl will refresh this page.</div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+const search = document.getElementById('jobSearch');
+const source = document.getElementById('sourceFilter');
+const deadline = document.getElementById('deadlineFilter');
+const cards = [...document.querySelectorAll('.job-card')];
+
+function filterJobs() {
+  const q = search.value.toLowerCase().trim();
+  const src = source.value;
+  const days = Number(deadline.value || 0);
+  const now = new Date();
+  cards.forEach(card => {
+    const textOk = !q || card.dataset.search.includes(q);
+    const sourceOk = !src || card.dataset.source === src;
+    let dateOk = true;
+    if (days && card.dataset.deadline) {
+      const d = new Date(card.dataset.deadline + 'T23:59:59');
+      dateOk = d >= now && d <= new Date(now.getTime() + days*86400000);
+    } else if (days) dateOk = false;
+    card.hidden = !(textOk && sourceOk && dateOk);
+  });
+}
+[search, source, deadline].forEach(el => el.addEventListener('input', filterJobs));
+[search, source, deadline].forEach(el => el.addEventListener('change', filterJobs));
+</script>
+{% endblock %}
