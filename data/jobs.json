@@ -1,0 +1,774 @@
+{
+  "generated_at": "2026-10-01T14:43:00.100496+00:00",
+  "window_days": 15,
+  "cutoff": "2026-09-16",
+  "discovery": {
+    "seed_count": 51,
+    "pages_crawled": 188,
+    "domains_crawled": 53,
+    "source_stats": [
+      {
+        "host": "anubandham.gujarat.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "apeda.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 1
+      },
+      {
+        "host": "api.ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "betacloud.ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "da.ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "data.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "dget.ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "digitalindia.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "drdo.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 7,
+        "jobs_found": 7
+      },
+      {
+        "host": "eemis.hp.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "eex.ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "emigrate.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "employmentbankwb.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "employmentnews.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 35,
+        "jobs_found": 3
+      },
+      {
+        "host": "empmission.odisha.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "erojgar.cg.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 23,
+        "jobs_found": 0
+      },
+      {
+        "host": "goidirectory.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "igod.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "itiemp.karnataka.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "jakemp.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "jeevandan.ap.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "mprojgar.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 18,
+        "jobs_found": 2
+      },
+      {
+        "host": "nri.up.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 35,
+        "jobs_found": 0
+      },
+      {
+        "host": "onlineemploymentportal.delhi.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "parivartan.parivahan.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "passportindia.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "pgportal.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "rajemployment.rajasthan.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "recruitment.jharkhand.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "rojgar.mahaswayam.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "services.india.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "sewayojan.up.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 10,
+        "jobs_found": 0
+      },
+      {
+        "host": "ssc.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "sws.delhi.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "tnvelaivaaippu.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "ucams.cpcb.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "uppbpb.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 10,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.employment.kerala.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.eneversion.nic.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.hrex.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ibps.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.india.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.labour.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.meity.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.msde.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.pmindia.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.publicationsdivision.nic.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.rrbapply.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.skillindiadigital.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.upsc.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      }
+    ]
+  },
+  "quality": {
+    "raw_candidates": 124,
+    "published_jobs": 13,
+    "rejected_or_deduplicated": 111,
+    "primary_source_required": true
+  },
+  "registry_source": "Live NCS + IGOD government directories",
+  "jobs": [
+    {
+      "id": "6610d10c5fd9e8c3",
+      "title": "ACCOUNTANT & OTHERS",
+      "organization": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "deadline": "2026-10-11",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "12/09/2026 | MINERAL EXPLORATION AND CONSULTANCY LIMITED | ACCOUNTANT & OTHERS | Recruitment | 11/10/2026 Recruitment",
+      "posting_date": "2026-09-12",
+      "normalized_key": "mineral exploration and consultancy limited|accountant others",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "deadline",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "4961d667715e9e3c",
+      "title": "YOUNG CONSULTANT (FOREST FIRE RISK MANAGEMENT)",
+      "organization": "NATIONAL DISASTER MANAGEMENT AUTHORITY",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "deadline": "2026-10-18",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "NATIONAL DISASTER MANAGEMENT AUTHORITY",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "31/08/2026 | NATIONAL DISASTER MANAGEMENT AUTHORITY | YOUNG CONSULTANT (FOREST FIRE RISK MANAGEMENT) | Deputation | 18/10/2026 Deputation",
+      "posting_date": "2026-08-31",
+      "normalized_key": "national disaster management authority|young consultant forest fire risk management",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "deadline",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "8d9e693bb4076159",
+      "title": "EXECUTIVE DIRECTOR",
+      "organization": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "deadline": "2026-10-30",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "31/08/2026 | NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES | EXECUTIVE DIRECTOR | Recruitment | 30/10/2026 Recruitment",
+      "posting_date": "2026-08-31",
+      "normalized_key": "national board of examinations in medical sciences|executive director",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "deadline",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "6040c3fd89ab4732",
+      "title": "Junior Research Fellowship (JRF)",
+      "organization": "DRDO - DYSL-SM, Hyderabad",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "DRDO - DYSL-SM, Hyderabad",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "1 | DRDO - DYSL-SM, Hyderabad | Junior Research Fellowship (JRF) | 2026-09-08 | 1 | Jrf | https://drdo.go... Jrf",
+      "posting_date": null,
+      "normalized_key": "drdo dysl sm hyderabad|junior research fellowship jrf",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "96f23360f6a14ab2",
+      "title": "Paid Internship Scheme 2026-27",
+      "organization": "DRDO - CVRDE, Chennai",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "DRDO - CVRDE, Chennai",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "2 | DRDO - CVRDE, Chennai | Paid Internship Scheme 2026-27 | 2026-09-08 | 35 | Internship | https://drdo.go... Internship",
+      "posting_date": null,
+      "normalized_key": "drdo cvrde chennai|paid internship scheme 2026 27",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "5e5903587bef5c33",
+      "title": "Junior Research Fellow (JRF) 2026",
+      "organization": "DRDO - LRDE, Bengaluru",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "DRDO - LRDE, Bengaluru",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "3 | DRDO - LRDE, Bengaluru | Junior Research Fellow (JRF) 2026 | 2026-09-07 | 2 | Jrf | https://drdo.go... Jrf",
+      "posting_date": null,
+      "normalized_key": "drdo lrde bengaluru|junior research fellow jrf 2026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "c857abddc32cdb47",
+      "title": "Driver (Ordinary Grade)",
+      "organization": "India Post",
+      "url": "https://ncs.gov.in/latest-update",
+      "application_url": "https://ncs.gov.in/latest-update",
+      "document_url": "https://ncs.gov.in/latest-update",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "India Post",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "4 | India Post | Driver (Ordinary Grade) | 2026-09-01 | 11 | Deputation / Absorption | blob:https://ww... Deputation / Absorption",
+      "posting_date": null,
+      "normalized_key": "india post|driver ordinary grade",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "a7e4d7ed45519752",
+      "title": "Apprenticeship Training",
+      "organization": "DRDO - CVRDE, Chennai",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "DRDO - CVRDE, Chennai",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "5 | DRDO - CVRDE, Chennai | Apprenticeship Training | 2026-08-31 | 93 | Apprentice | https://drdo.go... Apprentice",
+      "posting_date": null,
+      "normalized_key": "drdo cvrde chennai|apprenticeship training",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "0084041fb22934ae",
+      "title": "Junior Research Fellow (JRF)",
+      "organization": "DRDO - NPOL, Kochi",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "DRDO - NPOL, Kochi",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "6 | DRDO - NPOL, Kochi | Junior Research Fellow (JRF) | 2026-08-31 | 4 | Jrf | https://drdo.go... Jrf",
+      "posting_date": null,
+      "normalized_key": "drdo npol kochi|junior research fellow jrf",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "bbea6128d90940f7",
+      "title": "Junior Research Fellow (JRF)",
+      "organization": "DRDO - VRDE, Ahilyanagar",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "DRDO - VRDE, Ahilyanagar",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "7 | DRDO - VRDE, Ahilyanagar | Junior Research Fellow (JRF) | 2026-08-31 | 5 | Jrf | https://drdo.go... Jrf",
+      "posting_date": null,
+      "normalized_key": "drdo vrde ahilyanagar|junior research fellow jrf",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "df1d9ffd5f7a48f8",
+      "title": "Associate (Legal)",
+      "organization": "APEDA",
+      "url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
+      "application_url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
+      "document_url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "APEDA",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "8 | APEDA | Associate (Legal) | 2026-08-27 | 1 | Contract | https://apeda.g... Contract",
+      "posting_date": null,
+      "normalized_key": "apeda|associate legal",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "33dd0b53e09b0f90",
+      "title": "Junior Research Fellow (JRF)",
+      "organization": "DRDO - DEBEL, Bengaluru",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "DRDO - DEBEL, Bengaluru",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "9 | DRDO - DEBEL, Bengaluru | Junior Research Fellow (JRF) | 2026-08-27 | 2 | Jrf | https://drdo.go... Jrf",
+      "posting_date": null,
+      "normalized_key": "drdo debel bengaluru|junior research fellow jrf",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    },
+    {
+      "id": "73fec691155b8311",
+      "title": "Project Technical Support-III",
+      "organization": "NCI AIIMS Jhajjar",
+      "url": "https://ncs.gov.in/latest-update",
+      "application_url": "https://ncs.gov.in/latest-update",
+      "document_url": "https://ncs.gov.in/latest-update",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "discovered_at": "2026-10-01T14:43:00.100496+00:00",
+      "source": "NCI AIIMS Jhajjar",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "10 | NCI AIIMS Jhajjar | Project Technical Support-III | 2026-08-25 | 1 | Icmr Project | https://www1.ai... Icmr Project",
+      "posting_date": null,
+      "normalized_key": "nci aiims jhajjar|project technical support iii",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": []
+      }
+    }
+  ]
+}
