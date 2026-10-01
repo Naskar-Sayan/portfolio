@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
+import json
 import os
 from dotenv import load_dotenv
 from flask_limiter import Limiter
@@ -141,6 +142,26 @@ This message was sent from your portfolio website contact form.
         print(f"Error sending email: {str(e)}")
         flash('Oops! Something went wrong. Please try again or email me directly at sayannaskar.web@gmail.com', 'error')
         return redirect(url_for('contact'))
+
+@app.route('/government-jobs')
+def government_jobs():
+    jobs_path = os.path.join(app.root_path, 'data', 'jobs.json')
+    data = {'generated_at': None, 'jobs': []}
+    try:
+        with open(jobs_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        pass
+
+    jobs = data.get('jobs', [])
+    sources = sorted({job.get('source', '') for job in jobs if job.get('source')})
+    return render_template(
+        'government_jobs.html',
+        active_page='government_jobs',
+        jobs=jobs,
+        sources=sources,
+        generated_at=data.get('generated_at'),
+    )
 
 @app.route('/portfolio')
 def portfolio():
