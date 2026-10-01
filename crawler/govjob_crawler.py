@@ -155,7 +155,7 @@ def make_record(org, title, url, text, discovered, application_url=None, documen
     fields = extract_fields(text)
     strong = bool(STRONG_RE.search(title + " " + text))
     has_doc = bool(document_url or urlparse(url).path.lower().endswith(".pdf"))
-    if not strong and not has_doc: return None
+    if not strong and not has_doc and not (source_kind == "table_row" and fields["vacancies"] is not None): return None
     # A generic landing page is not a vacancy record. It can still seed discovery.
     generic = re.fullmatch(r"(home|homepage|jobs?|careers?|career|ncsnewwebsite|find .*|.*dashboard.*)", title, re.I)
     if generic and source_kind != "table_row": return None
