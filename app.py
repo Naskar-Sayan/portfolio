@@ -162,6 +162,15 @@ def government_jobs():
     except (FileNotFoundError, json.JSONDecodeError):
         pass
     jobs = payload.get('jobs', [])
+    generated_at_display = payload.get('generated_at')
+    if generated_at_display:
+        try:
+            from datetime import datetime
+            from zoneinfo import ZoneInfo
+            refreshed = datetime.fromisoformat(generated_at_display.replace('Z', '+00:00')).astimezone(ZoneInfo('Asia/Kolkata'))
+            generated_at_display = refreshed.strftime('%d %B %Y, %I:%M %p IST')
+        except (ValueError, TypeError):
+            generated_at_display = payload.get('generated_at')
     alerts = {'summary': {}}
     alert_path = Path(app.root_path) / 'data' / 'alerts.json'
     try:
@@ -170,7 +179,7 @@ def government_jobs():
     except (FileNotFoundError, json.JSONDecodeError):
         pass
     sources = sorted({job.get('source') for job in jobs if job.get('source')})
-    return render_template('government_jobs.html', active_page='government_jobs', jobs=jobs, sources=sources, generated_at=payload.get('generated_at'), alerts=alerts)
+    return render_template('government_jobs.html', active_page='government_jobs', jobs=jobs, sources=sources, generated_at=generated_at_display, alerts=alerts)
 
 if __name__ == '__main__':
     app.run(debug=True)
