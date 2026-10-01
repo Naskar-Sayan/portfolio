@@ -213,7 +213,10 @@ def extract_table_records(source, final_url, soup, discovered):
     for table in soup.find_all("table"):
         rows = table.find_all("tr")
         if not rows: continue
-        headers = [(clean(x.get_text(" ",strip=True),120) or "").lower() for x in rows[0].find_all(["th","td"])]
+        headers = []
+        for x in rows[0].find_all(["th","td"]):
+            value = clean(x.get_text(" ", strip=True), 120)
+            headers.append((value or "").lower())
         if len(headers) < 2: continue
         header_text = " ".join(headers)
         # Only treat tables as vacancy tables when they expose recruitment semantics.
