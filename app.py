@@ -155,12 +155,21 @@ def government_jobs():
 
     jobs = data.get('jobs', [])
     sources = sorted({job.get('source', '') for job in jobs if job.get('source')})
+    alerts = {'summary': {}, 'new_jobs': [], 'updated_jobs': [], 'deadline_alerts': []}
+    alerts_path = os.path.join(app.root_path, 'data', 'alerts.json')
+    try:
+        with open(alerts_path, 'r', encoding='utf-8') as f:
+            alerts = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        pass
+
     return render_template(
         'government_jobs.html',
         active_page='government_jobs',
         jobs=jobs,
         sources=sources,
         generated_at=data.get('generated_at'),
+        alerts=alerts,
     )
 
 @app.route('/portfolio')
