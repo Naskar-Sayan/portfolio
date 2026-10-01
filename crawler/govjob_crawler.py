@@ -1,31 +1,30 @@
 #!/usr/bin/env python3
-"""Free government-job discovery crawler.
+"""Bounded, production-oriented discovery of Indian government recruitment notices.
 
-Designed for GitHub Actions: no database, proxy, paid API, or permanent server.
-It starts from official government aggregators/directories, follows a bounded
-number of official-domain links, extracts recruitment-like pages/PDFs, and
-writes normalized JSON for the Flask dashboard.
+Design principles:
+- Discovery sources/directories are never themselves published as jobs.
+- A job must be backed by a concrete vacancy row or recruitment document.
+- Official government/institutional URLs are required for publication.
+- NCS/IGOD are live discovery seeds; no manually maintained nationwide registry.
+- Secondary news is lead-only and must resolve to a primary source before publication.
 """
 from __future__ import annotations
 
-import argparse
-import hashlib
-import io
-import json
-import re
-import time
+import argparse, hashlib, io, json, re, time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
+from quality import merge_jobs
+
 try:
     from pypdf import PdfReader
 except Exception:
     PdfReader = None
 
-UA = "GovJobDashboard/0.2 (+https://github.com/Naskar-Sayan/portfolio)"
+UA = "GovJobDashboard/1.0 (+https://github.com/Naskar-Sayan/portfolio)"
 TIMEOUT = 10
 MAX_BYTES = 6_000_000
 MAX_PAGES_PER_DOMAIN = 35
@@ -42,341 +41,303 @@ SEEDS = [
     ("IGOD", "https://igod.gov.in/"),
 ]
 
-JOB_TERMS = re.compile(
-    r"\b(recruitment|vacancy|vacancies|career|careers|job|jobs|"
-    r"advertisement|engagement|appointment|apprentice|internship|"
-    r"walk[- ]in|hiring|notification|application)\b", re.I
-)
-DEADLINE_RE = re.compile(
-    r"(?:last date|closing date|application deadline|apply before)\D{0,40}"
-    r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{1,2}\s+\w+\s+\d{4})",
-    re.I,
-)
-DATE_PATTERNS = [
-    "%d/%m/%Y", "%d-%m-%Y", "%d/%m/%y", "%d-%m-%y",
-    "%d %B %Y", "%d %b %Y", "%B %d, %Y", "%b %d, %Y",
-]
-CORRIGENDUM_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|last date extended)\b", re.I)
-JOB_STRONG_RE = re.compile(r"\b(recruitment|recruitment notice|advertisement|applications? invited|vacanc(?:y|ies)|apprentice|walk[- ]?in|engagement)\b", re.I)
-JOB_WEAK_RE = re.compile(r"\b(job|career|notification|appointment|hiring)\b", re.I)
-
-DATE_ANY_RE = re.compile(
-    r"\b(?:0?[1-9]|[12]\d|3[01])[/-](?:0?[1-9]|1[0-2])[/-](?:20)?\d{2}\b|"
-    r"\b(?:0?[1-9]|[12]\d|3[01])\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+20\d{2}\b",
-    re.I,
-)
+OFFICIAL_EXACT = {"ibps.in", "rrbapply.gov.in"}
+DISCOVERY_PATHS = re.compile(r"(recruit|vacanc|career|advert|notification|appointment|engag|apprent|intern|job|apply)", re.I)
+STRONG_RE = re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advertisement|apprenticeship|apprentice|engagement|walk[- ]?in|selection process)\b", re.I)
+UPDATE_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|withdrawn|postponed|deferred|rescheduled)\b", re.I)
+DEADLINE_RE = re.compile(r"(?:last date|closing date|application deadline|apply before|applications? .*? till|last date for (?:submission|application))\D{0,50}(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4}|[A-Za-z]{3,9}\s+\d{1,2},\s+\d{4})", re.I)
+DATE_PATTERNS = ["%d/%m/%Y","%d-%m-%Y","%d/%m/%y","%d-%m-%y","%d %B %Y","%d %b %Y","%B %d, %Y","%b %d, %Y"]
 VACANCY_RE = re.compile(r"\b(?:total\s+)?vacanc(?:y|ies)\s*[:=-]?\s*(\d{1,6})\b", re.I)
 AGE_RE = re.compile(r"\b(?:age\s*limit|maximum\s*age|upper\s*age)\D{0,30}(\d{2})\s*(?:years?|yrs?)", re.I)
-PAY_RE = re.compile(r"(?:(?:pay|salary|remuneration|stipend|pay\s*level)[^\n]{0,80}(?:₹|rs\.?|inr)\s?[\d,]+(?:\s*[-–]\s*(?:₹|rs\.?|inr)?\s?[\d,]+)?|(?:₹|rs\.?|inr)\s?[\d,]+\s*(?:per\s*month|pm)?)", re.I)
+PAY_RE = re.compile(r"(?:(?:pay|salary|remuneration|stipend|pay\s*level)[^\n]{0,100}(?:₹|rs\.?|inr)\s?[\d,]+(?:\s*[-–]\s*(?:₹|rs\.?|inr)?\s?[\d,]+)?|(?:₹|rs\.?|inr)\s?[\d,]+\s*(?:per\s*month|pm)?)", re.I)
 QUAL_RE = re.compile(r"\b(?:essential\s+qualification|educational\s+qualification|eligibility|qualification)\b[:\-]?\s*([^.;]{20,350})", re.I)
 
 session = requests.Session()
 session.headers.update({"User-Agent": UA, "Accept-Language": "en-IN,en;q=0.8"})
 
+def official(url: str) -> bool:
+    host = (urlparse(url).hostname or "").lower().rstrip(".")
+    return host.endswith(".gov.in") or host.endswith(".nic.in") or host.endswith(".gov") or host.endswith(".ac.in") or host in OFFICIAL_EXACT
 
-def parse_date(value: str | None):
-    if not value:
-        return None
-    value = re.sub(r"\s+", " ", value.strip())
+def clean(v, limit=1000):
+    if v is None: return None
+    s = re.sub(r"\s+", " ", str(v)).strip()
+    return s[:limit] or None
+
+def parse_date(v):
+    if not v: return None
+    v = clean(v, 80)
     for fmt in DATE_PATTERNS:
-        try:
-            return datetime.strptime(value, fmt).date().isoformat()
-        except ValueError:
-            pass
+        try: return datetime.strptime(v, fmt).date().isoformat()
+        except ValueError: pass
     return None
 
-
-def get(url: str):
+def get(url):
     try:
         r = session.get(url, timeout=TIMEOUT, allow_redirects=True)
         r.raise_for_status()
-        if len(r.content) > MAX_BYTES:
-            return None, None
+        if len(r.content) > MAX_BYTES: return None, None
         return r.url, r.content
     except requests.RequestException:
         return None, None
 
+def html_text(content):
+    soup = BeautifulSoup(content, "html.parser")
+    for tag in soup(["script","style","noscript"]): tag.decompose()
+    return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)), soup
 
-OFFICIAL_DOMAINS = {
-    "employmentnews.gov.in",
-    "ncs.gov.in",
-    "upsc.gov.in",
-    "ssc.gov.in",
-    "ibps.in",
-    "rrbapply.gov.in",
-    "india.gov.in",
-    "igod.gov.in",
-}
+def pdf_text(content):
+    if PdfReader is None: return ""
+    try:
+        reader = PdfReader(io.BytesIO(content))
+        return re.sub(r"\s+", " ", " ".join((p.extract_text() or "") for p in reader.pages[:20]))
+    except Exception:
+        return ""
 
-def official(url: str) -> bool:
-    host = (urlparse(url).hostname or "").lower()
-    return (
-        host in OFFICIAL_DOMAINS
-        or any(host.endswith("." + domain) for domain in OFFICIAL_DOMAINS)
-        or host.endswith(".gov.in")
-        or host.endswith(".nic.in")
-    )
-
-
-def discover_ncs_sources():
-    """Use NCS's government-portal directory as a live source registry."""
-    final_url, content = get("https://ncs.gov.in/devPortalList")
-    if not content:
-        return []
-    _, soup = text_from_html(content)
+def extract_portal_links(final_url, content):
+    """Extract live government portal URLs even when buttons are JS-wrapped."""
+    text, soup = html_text(content)
     found = []
     for a in soup.find_all("a", href=True):
-        href = urljoin(final_url or "https://ncs.gov.in/", a["href"])
-        label = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
-        if href.startswith(("http://", "https://")) and label:
-            host = (urlparse(href).hostname or "").lower()
-            if host.endswith(".gov.in") or host.endswith(".nic.in") or host.endswith(".gov") or host.endswith(".ac.in"):
-                found.append((label[:120], href))
-    # Keep unique domains/URLs and avoid exploding the crawl queue.
+        href = urljoin(final_url, a["href"])
+        label = clean(a.get_text(" ", strip=True), 160)
+        if label and official(href):
+            found.append((label, href))
+    for raw in re.findall(r"https?://[^\s"'<>]+", content.decode("utf-8", "ignore")):
+        raw = raw.rstrip(".,);]")
+        if official(raw): found.append(("Government portal", raw))
     unique = {}
     for label, href in found:
         unique.setdefault(href.rstrip("/"), label)
     return [(label, href) for href, label in unique.items()]
 
+def discover_directory(url):
+    final, content = get(url)
+    if not content: return []
+    links = extract_portal_links(final, content)
+    # Prefer actual portal links; directory UI links are not recruitment records.
+    return [(label, href) for label, href in links if href != url and (urlparse(href).hostname or "").lower() not in {"ncs.gov.in","igod.gov.in","india.gov.in"}]
 
-def text_from_html(content: bytes) -> tuple[str, BeautifulSoup]:
-    soup = BeautifulSoup(content, "html.parser")
-    for tag in soup(["script", "style", "noscript"]):
-        tag.decompose()
-    return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)), soup
+def discover_ncs_sources():
+    return discover_directory("https://ncs.gov.in/devPortalList")
 
+def discover_igod_sources():
+    return discover_directory("https://igod.gov.in/")
 
-def extract_pdf(url: str, content: bytes) -> str:
-    if PdfReader is None:
-        return ""
-    try:
-        reader = PdfReader(io.BytesIO(content))
-        chunks = []
-        for page in reader.pages[:15]:
-            chunks.append(page.extract_text() or "")
-        return re.sub(r"\s+", " ", " ".join(chunks))
-    except Exception:
-        return ""
+def find_apply_link(soup, base):
+    for a in soup.find_all("a", href=True):
+        label = clean(a.get_text(" ", strip=True), 160) or ""
+        href = urljoin(base, a["href"])
+        if re.search(r"apply|online application|application form|apply online", label, re.I):
+            return href
+    return None
 
-
-def job_from_page(source: str, url: str, title: str, text: str, discovered: str, application_url: str | None = None):
-    combined = title + " " + text
-    if not JOB_STRONG_RE.search(combined):
-        # Avoid publishing generic pages that merely contain words like
-        # "notification" or "career".
-        return None
-
-    dates = [parse_date(x) for x in DATE_ANY_RE.findall(text)]
-    dates = [x for x in dates if x]
+def extract_fields(text):
     deadline = None
-    m = DEADLINE_RE.search(text)
-    if m:
-        deadline = parse_date(m.group(1))
-    if not deadline and dates:
-        # For a recruitment notice, the latest explicit date is a useful fallback.
-        deadline = max(dates)
-    if deadline and deadline < datetime.now().date().isoformat():
+    m = DEADLINE_RE.search(text or "")
+    if m: deadline = parse_date(m.group(1))
+    vm = VACANCY_RE.search(text or "")
+    am = AGE_RE.search(text or "")
+    pm = PAY_RE.search(text or "")
+    qm = QUAL_RE.search(text or "")
+    return {
+        "deadline": deadline,
+        "vacancies": int(vm.group(1)) if vm else None,
+        "age_limit_years": int(am.group(1)) if am else None,
+        "pay": clean(pm.group(0), 300) if pm else None,
+        "qualification": clean(qm.group(1), 500) if qm else None,
+    }
+
+def make_record(org, title, url, text, discovered, application_url=None, document_url=None, source_kind="page"):
+    title = clean(title, 300)
+    text = clean(text, 5000) or ""
+    if not title or not official(url): return None
+    fields = extract_fields(text)
+    strong = bool(STRONG_RE.search(title + " " + text))
+    has_doc = bool(document_url or urlparse(url).path.lower().endswith(".pdf"))
+    if not strong and not has_doc: return None
+    # A generic landing page is not a vacancy record. It can still seed discovery.
+    generic = re.fullmatch(r"(home|homepage|jobs?|careers?|career|ncsnewwebsite|find .*|.*dashboard.*)", title, re.I)
+    if generic and source_kind != "table_row": return None
+    if source_kind == "page" and not any((fields["deadline"], fields["vacancies"], fields["qualification"], fields["pay"], has_doc)):
+        # Recruitment PDFs may have sparse extraction; otherwise require concrete fields.
         return None
-
-    vacancy = None
-    vm = VACANCY_RE.search(text)
-    if vm:
-        vacancy = int(vm.group(1))
-
-    age_limit = None
-    am = AGE_RE.search(text)
-    if am:
-        age_limit = int(am.group(1))
-
-    pay_match = PAY_RE.search(text)
-    qualification_match = QUAL_RE.search(text)
-
-    title = re.sub(r"\s+", " ", title).strip()[:240] or "Government recruitment notice"
-    digest = hashlib.sha256(url.encode()).hexdigest()[:16]
+    digest = hashlib.sha256((url + "|" + title).encode()).hexdigest()[:16]
     return {
         "id": digest,
         "title": title,
-        "normalized_key": re.sub(r"[^a-z0-9]+", " ", (source + " " + title).lower()).strip()[:220],
-        "notice_type": "corrigendum" if CORRIGENDUM_RE.search(combined) else "recruitment",
-        "is_update": bool(CORRIGENDUM_RE.search(combined)),
-        "organization": source,
+        "organization": clean(org, 300),
         "url": url,
         "application_url": application_url or url,
-        "deadline": deadline,
-        "vacancies": vacancy,
-        "age_limit_years": age_limit,
-        "pay": re.sub(r"\s+", " ", pay_match.group(0)).strip() if pay_match else None,
-        "qualification": re.sub(r"\s+", " ", qualification_match.group(1)).strip()[:500] if qualification_match else None,
+        "document_url": document_url,
+        **fields,
         "discovered_at": discovered,
-        "source": source,
-        "official_source": official(url),
-        "confidence": "primary_domain" if official(url) else "secondary",
-        "verification": "primary_domain_match" if official(url) else "secondary_lead",
+        "source": clean(org, 300),
+        "official_source": True,
+        "confidence": "primary_domain",
+        "verification": "primary_domain_match",
+        "notice_type": "update" if UPDATE_RE.search(title + " " + text) else "recruitment",
+        "is_update": bool(UPDATE_RE.search(title + " " + text)),
         "kind": "recruitment_notice",
+        "raw_text": text[:2500],
     }
 
+def header_map(headers):
+    return {i: h for i,h in enumerate(headers)}
 
-def crawl(seed_limit=80, page_limit=700, days=15):
+def row_record(source, final_url, headers, cells, row, discovered):
+    h = header_map(headers)
+    def cell(*names):
+        for i, name in h.items():
+            if any(n in name for n in names) and i < len(cells):
+                return cells[i]
+        return None
+    org = cell("organisation","organization","department","ministry","company","employer") or source
+    title = cell("post","position","designation","vacancy","job","subject","advertisement") or (cells[0] if cells else None)
+    issued = cell("issued","posting date","publish")
+    deadline = cell("last date","closing date","deadline")
+    method = cell("method of appointment","type","employment type")
+    links = [(clean(a.get_text(" ", strip=True),120) or "", urljoin(final_url,a["href"])) for a in row.find_all("a", href=True)]
+    notice_url = next((u for _,u in links if official(u)), final_url)
+    apply_url = next((u for label,u in links if re.search(r"apply|online application|application",label,re.I)), notice_url)
+    text = " | ".join(cells)
+    rec = make_record(org, title, notice_url, text + " " + (method or ""), discovered, apply_url, notice_url, "table_row")
+    if rec and deadline:
+        rec["deadline"] = parse_date(deadline)
+    if rec and issued:
+        rec["posting_date"] = parse_date(issued)
+    return rec
+
+def extract_table_records(source, final_url, soup, discovered):
+    out = []
+    for table in soup.find_all("table"):
+        rows = table.find_all("tr")
+        if not rows: continue
+        headers = [clean(x.get_text(" ",strip=True),120).lower() or "" for x in rows[0].find_all(["th","td"])]
+        if len(headers) < 2: continue
+        header_text = " ".join(headers)
+        # Only treat tables as vacancy tables when they expose recruitment semantics.
+        if not (re.search(r"organisation|organization|post|position|vacancy|last date|advertisement|posting date", header_text, re.I)):
+            continue
+        for row in rows[1:]:
+            cells = [clean(x.get_text(" ",strip=True),400) or "" for x in row.find_all(["th","td"])]
+            if len(cells) >= 2 and (STRONG_RE.search(" | ".join(cells)) or re.search(r"last date|vacancy|advertisement", header_text, re.I)):
+                rec = row_record(source, final_url, headers, cells, row, discovered)
+                if rec: out.append(rec)
+    return out
+
+def crawl(page_limit=500, days=15):
     now = datetime.now(timezone.utc)
     cutoff = (now - timedelta(days=days)).date().isoformat()
-
-    # NCS maintains a government-portal directory covering multiple states.
-    dynamic_sources = discover_ncs_sources()
-    all_seeds = list(SEEDS)
-
-    # Secondary news discovery is only a lead generator. If a news article
-    # exposes a primary government link, add that link to the official crawl.
-    news_path = "data/news_leads.json"
+    seeds = list(SEEDS)
+    for label, url in discover_ncs_sources() + discover_igod_sources():
+        seeds.append((label, url))
+    # News is lead-only.
     try:
-        with open(news_path, "r", encoding="utf-8") as f:
-            news_data = json.load(f)
-        for lead in news_data.get("leads", []):
+        with open("data/news_leads.json", encoding="utf-8") as f: news = json.load(f)
+        for lead in news.get("leads", []):
             primary = lead.get("primary_source")
-            if primary and official(primary):
-                all_seeds.append((f"News lead: {lead.get('publisher') or 'news source'}", primary))
-    except (FileNotFoundError, json.JSONDecodeError, OSError):
-        pass
-    existing = {url.rstrip("/") for _, url in all_seeds}
-    for item in dynamic_sources:
-        if item[1].rstrip("/") not in existing:
-            all_seeds.append(item)
-            existing.add(item[1].rstrip("/"))
+            if primary and official(primary): seeds.append(("Verified news lead", primary))
+    except (OSError, json.JSONDecodeError): pass
 
-    queue = all_seeds
+    unique_seeds = []
+    seen_seed = set()
+    for name,url in seeds:
+        key = url.rstrip("/")
+        if key not in seen_seed:
+            unique_seeds.append((name,url)); seen_seed.add(key)
+
+    queue = list(unique_seeds)
     seen = set()
-    jobs = {}
-    domain_counts = {}
-    queued_domain_counts = {}
-
-    # First pass: seeds and official links they expose.
+    counts = {}
+    queued = {}
+    raw_jobs = []
+    discovery_sources = []
     while queue and len(seen) < page_limit:
         source, url = queue.pop(0)
-        if url in seen:
-            continue
+        if url in seen: continue
         host = (urlparse(url).hostname or "").lower()
-        if domain_counts.get(host, 0) >= MAX_PAGES_PER_DOMAIN:
-            continue
-        domain_counts[host] = domain_counts.get(host, 0) + 1
+        if counts.get(host,0) >= MAX_PAGES_PER_DOMAIN: continue
+        counts[host] = counts.get(host,0) + 1
         seen.add(url)
-        final_url, content = get(url)
-        if not final_url or not content:
+        final, content = get(url)
+        if not final or not content: continue
+        discovery_sources.append((source, final))
+        discovered = now.isoformat()
+        if final.lower().split("?",1)[0].endswith(".pdf"):
+            text = pdf_text(content)
+            # For PDFs, require explicit recruitment language; title comes from filename/first text.
+            filename = urlparse(final).path.rsplit("/",1)[-1].rsplit(".",1)[0]
+            title = clean(filename.replace("_"," ").replace("-"," "), 220) or source
+            first = clean(text, 500) or ""
+            if STRONG_RE.search(title + " " + text):
+                rec = make_record(source, title, final, text, discovered, final, final, "page")
+                if rec: raw_jobs.append(rec)
             continue
 
-        ctype = "application/pdf" if final_url.lower().endswith(".pdf") else ""
+        text, soup = html_text(content)
+        table_jobs = extract_table_records(source, final, soup, discovered)
+        raw_jobs.extend(table_jobs)
 
-        if ctype == "application/pdf":
-            text = extract_pdf(final_url, content)
-            item = job_from_page(source, final_url, source, text, now.isoformat())
-            if item:
-                jobs[item["id"]] = item
-            continue
+        # Page-level publication is deliberately strict.
+        page_title = soup.title.get_text(" ",strip=True) if soup.title else source
+        rec = make_record(source, page_title, final, text, discovered, find_apply_link(soup,final), None, "page")
+        if rec: raw_jobs.append(rec)
 
-        text, soup = text_from_html(content)
-        title = soup.title.get_text(" ", strip=True) if soup.title else source
-
-        # Look for an explicit application link on the same page.
-        application_url = None
+        # Follow only likely recruitment/discovery links on official domains.
         for a in soup.find_all("a", href=True):
-            label = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
-            href = urljoin(final_url, a["href"])
-            if re.search(r"apply|online application|application form|apply online", label, re.I):
-                application_url = href
-                break
-
-        item = job_from_page(source, final_url, title, text, now.isoformat(), application_url)
-        if item:
-            jobs[item["id"]] = item
-
-        # Many government aggregators expose jobs as table rows. Capture those
-        # individually so one page can yield dozens of normalized records.
-        for table in soup.find_all("table"):
-            rows = table.find_all("tr")
-            headers = [re.sub(r"\s+", " ", x.get_text(" ", strip=True)).lower() for x in rows[0].find_all(["th", "td"])] if rows else []
-            for row in rows[1:]:
-                cells = [re.sub(r"\s+", " ", x.get_text(" ", strip=True)) for x in row.find_all(["th", "td"])]
-                row_text = " | ".join(cells)
-                if len(cells) < 2 or not JOB_TERMS.search(row_text):
-                    continue
-                row_title = cells[0]
-                row_org = source
-                if headers:
-                    for idx, h in enumerate(headers):
-                        if idx < len(cells) and any(k in h for k in ("organisation", "organization", "company", "department")):
-                            row_org = cells[idx]
-                            break
-                row_url = final_url
-                for a in row.find_all("a", href=True):
-                    href = urljoin(final_url, a["href"])
-                    if official(href):
-                        row_url = href
-                        if re.search(r"apply|advert|notification|download|view", a.get_text(" ", strip=True), re.I):
-                            break
-                row_item = job_from_page(row_org, row_url, row_title, row_text, now.isoformat(), row_url)
-                if row_item:
-                    jobs[row_item["id"]] = row_item
-
-        # Bound discovery to official links and recruitment-looking anchors.
-        if len(seen) < page_limit:
-            for a in soup.find_all("a", href=True):
-                href = urljoin(final_url, a["href"])
-                label = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
-                if not href.startswith(("http://", "https://")) or not official(href):
-                    continue
-                if href in seen:
-                    continue
-                target_host = (urlparse(href).hostname or "").lower()
-                if domain_counts.get(target_host, 0) >= MAX_PAGES_PER_DOMAIN:
-                    continue
-                priority = bool(JOB_TERMS.search(label) or re.search(r"\\.pdf(?:$|\\?)|recruit|vacanc|career|advert|notification|apply", href + " " + label, re.I))
-                if priority or "employmentnews.gov.in" in href or "ncs.gov.in" in href:
-                    if queued_domain_counts.get(target_host, 0) < MAX_QUEUE_PER_DOMAIN:
-                        queue.append((source, href))
-                        queued_domain_counts[target_host] = queued_domain_counts.get(target_host, 0) + 1
+            href = urljoin(final, a["href"])
+            if href in seen or not href.startswith(("http://","https://")) or not official(href): continue
+            label = clean(a.get_text(" ",strip=True),180) or ""
+            target = href + " " + label
+            thost = (urlparse(href).hostname or "").lower()
+            if counts.get(thost,0) >= MAX_PAGES_PER_DOMAIN or queued.get(thost,0) >= MAX_QUEUE_PER_DOMAIN: continue
+            if DISCOVERY_PATHS.search(target):
+                queue.append((source,href)); queued[thost] = queued.get(thost,0) + 1
         time.sleep(0.05)
 
-    # Keep a rolling window in the static store. Items without dates are kept
-    # because many recruitment pages expose dates only inside linked PDFs.
-    # Deduplicate records that point to the same notice or have effectively
-    # identical organization/title combinations.
-    dedup = {}
-    for item in jobs.values():
-        key = item.get("normalized_key") or item["id"]
-        existing = dedup.get(key)
-        if existing is None:
-            dedup[key] = item
-        else:
-            # Prefer a direct official URL over a secondary/discovered copy.
-            if item.get("official_source") and not existing.get("official_source"):
-                dedup[key] = item
+    jobs = merge_jobs(raw_jobs)
+    jobs.sort(key=lambda x: (x.get("deadline") or "9999-12-31", x.get("discovered_at","")))
+    source_stats = {}
+    for name,url in unique_seeds:
+        host = (urlparse(url).hostname or "").lower()
+        source_stats.setdefault(host, {"host":host,"seed_count":0,"pages_crawled":0,"jobs_found":0})
+        source_stats[host]["seed_count"] += 1
+    for host,n in counts.items():
+        source_stats.setdefault(host, {"host":host,"seed_count":0,"pages_crawled":0,"jobs_found":0})["pages_crawled"] = n
+    for j in jobs:
+        host = (urlparse(j["url"]).hostname or "").lower()
+        source_stats.setdefault(host, {"host":host,"seed_count":0,"pages_crawled":0,"jobs_found":0})["jobs_found"] += 1
 
-    ordered = sorted(
-        dedup.values(),
-        key=lambda x: (x.get("deadline") or "9999-12-31", x.get("discovered_at", "")),
-    )
     return {
         "generated_at": now.isoformat(),
-        "source_count": len(all_seeds),
-        "sources": [{"name": name, "url": url} for name, url in all_seeds],
-        "registry_source": "NCS government portal directory",
         "window_days": days,
         "cutoff": cutoff,
-        "jobs": ordered[:500],
-        "deduplicated_count": len(dedup),
+        "discovery": {
+            "seed_count": len(unique_seeds),
+            "pages_crawled": len(seen),
+            "domains_crawled": len(counts),
+            "source_stats": sorted(source_stats.values(), key=lambda x:x["host"]),
+        },
+        "quality": {
+            "raw_candidates": len(raw_jobs),
+            "published_jobs": len(jobs),
+            "rejected_or_deduplicated": max(0, len(raw_jobs)-len(jobs)),
+            "primary_source_required": True,
+        },
+        "registry_source": "Live NCS + IGOD government directories",
+        "jobs": jobs[:500],
     }
 
-
 def main():
-    p = argparse.ArgumentParser()
-    p.add_argument("--output", default="data/jobs.json")
-    p.add_argument("--days", type=int, default=15)
-    p.add_argument("--page-limit", type=int, default=700)
-    args = p.parse_args()
+    p=argparse.ArgumentParser()
+    p.add_argument("--output",default="data/jobs.json")
+    p.add_argument("--days",type=int,default=15)
+    p.add_argument("--page-limit",type=int,default=500)
+    a=p.parse_args()
+    result=crawl(a.page_limit,a.days)
+    with open(a.output,"w",encoding="utf-8") as f: json.dump(result,f,ensure_ascii=False,indent=2)
+    print(f"Published {len(result['jobs'])} verified recruitment records from {result['discovery']['pages_crawled']} crawled pages.")
 
-    result = crawl(page_limit=args.page_limit, days=args.days)
-    with open(args.output, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-    print(f"Generated {len(result['jobs'])} recruitment records.")
-
-
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
