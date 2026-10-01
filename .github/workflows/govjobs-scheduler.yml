@@ -1,6 +1,10 @@
 name: Government Jobs Daily Refresh
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - ".github/workflows/govjobs-scheduler.yml"
   schedule:
     - cron: "30 3 * * *"
   workflow_dispatch:
