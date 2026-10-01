@@ -120,18 +120,36 @@ def extract_portal_links(final_url, content):
         unique.setdefault(href.rstrip("/"), label)
     return [(label, href) for href, label in unique.items()]
 
-def discover_directory(url):
-    final, content = get(url)
-    if not content: return []
-    links = extract_portal_links(final, content)
-    # Prefer actual portal links; directory UI links are not recruitment records.
-    return [(label, href) for label, href in links if href != url and (urlparse(href).hostname or "").lower() not in {"ncs.gov.in","igod.gov.in","india.gov.in"}]
+def discover_directory(url, max_pages=8):
+    """Bounded recursive traversal of a government directory, without a registry."""
+    start_host = (urlparse(url).hostname or "").lower()
+    queue = [url]
+    seen = set()
+    external = {}
+    while queue and len(seen) < max_pages:
+        current = queue.pop(0)
+        if current in seen:
+            continue
+        seen.add(current)
+        final, content = get(current)
+        if not content:
+            continue
+        links = extract_portal_links(final, content)
+        for label, href in links:
+            host = (urlparse(href).hostname or "").lower()
+            if host == start_host:
+                if href not in seen and href not in queue:
+                    # Directory navigation only; keep traversal shallow and bounded.
+                    queue.append(href)
+            elif official(href):
+                external.setdefault(href.rstrip("/"), label)
+    return [(label, href) for href, label in external.items()]
 
 def discover_ncs_sources():
-    return discover_directory("https://ncs.gov.in/devPortalList")
+    return discover_directory("https://ncs.gov.in/devPortalList", max_pages=8)
 
 def discover_igod_sources():
-    return discover_directory("https://igod.gov.in/")
+    return discover_directory("https://igod.gov.in/", max_pages=12)
 
 def find_apply_link(soup, base):
     for a in soup.find_all("a", href=True):
