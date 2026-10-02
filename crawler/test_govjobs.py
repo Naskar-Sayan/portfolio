@@ -130,3 +130,45 @@ def test_posting_date_can_be_extracted_from_iso_text():
         "page",
     )
     assert record["posting_date"] == "2026-09-08"
+
+
+def test_official_homepage_is_rejected_even_if_it_mentions_recruitment_menu():
+    job = {
+        "title": "Official Website of Manipur",
+        "organization": "Official Portal of Manipur Government",
+        "url": "https://manipur.gov.in/",
+        "official_source": True,
+        "application_url": "https://manipur.gov.in/",
+        "raw_text": "Home About Us Recruitment Contact Us Notification Tenders",
+    }
+    ok, reasons = validate_record(job)
+    assert not ok
+    assert "generic_page_title" in reasons
+    assert "navigation_or_landing_page" in reasons
+
+def test_district_homepage_is_rejected():
+    job = {
+        "title": "District Kargil, Union Territory of Ladakh | Union Territory of Ladakh | India",
+        "organization": "Kargil",
+        "url": "https://kargil.nic.in/",
+        "official_source": True,
+        "application_url": "https://kargil.nic.in/notice/recruitment/",
+        "raw_text": "Home Notices Recruitment Tenders Contact Us",
+    }
+    ok, reasons = validate_record(job)
+    assert not ok
+    assert "generic_page_title" in reasons
+
+def test_specific_recruitment_with_deadline_is_kept():
+    job = {
+        "title": "Assistant State Examiner of Documents",
+        "organization": "Crime Investigation Department, Maharashtra",
+        "url": "https://mahacid.gov.in/recruitment/notice.pdf",
+        "official_source": True,
+        "application_url": "https://mahacid.gov.in/recruitment/notice.pdf",
+        "document_url": "https://mahacid.gov.in/recruitment/notice.pdf",
+        "deadline": "2026-10-20",
+        "raw_text": "Advertisement for recruitment to the post of Assistant State Examiner of Documents. Last date 20/10/2026.",
+    }
+    ok, reasons = validate_record(job)
+    assert ok, reasons
