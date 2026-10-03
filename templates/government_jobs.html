@@ -207,6 +207,18 @@
     control.addEventListener('input', filterJobs);
     control.addEventListener('change', filterJobs);
   });
+  function moveNewJobsToTop() {
+    const tbody = document.getElementById('jobTableBody');
+    if (!tbody) return;
+    const currentRows = [...tbody.querySelectorAll('tr.job-row')];
+    const newRows = currentRows.filter(row => row.classList.contains('is-new-job'));
+    if (!newRows.length) return;
+    const fragment = document.createDocumentFragment();
+    newRows.forEach(row => fragment.appendChild(row));
+    tbody.insertBefore(fragment, tbody.firstChild);
+  }
+
+  moveNewJobsToTop();
   applyDeadlineColors();
 })();
 </script>
