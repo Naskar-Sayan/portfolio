@@ -34,7 +34,7 @@ jobs:
         run: pip install -r crawler/requirements.txt
 
       - name: Run crawler quality tests
-        run: python -m pytest crawler/test_govjobs.py crawler/test_agents.py crawler/test_scope.py -q
+        run: python -m pytest crawler/test_govjobs.py crawler/test_agents.py crawler/test_scope.py crawler/test_psu_registry.py -q
 
       - name: Validate crawler syntax
         run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py crawler/scope_filter.py crawler/qc_dataset.py crawler/psu_registry.py
