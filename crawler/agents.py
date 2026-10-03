@@ -461,15 +461,20 @@ def update_agent():
 
 
 def run():
+    # Exactly 10 isolated agents. Each agent owns a disjoint query namespace;
+    # no generic Search/State/PDF/JobSite agent is allowed to cross scopes.
+    agent_names = (
+        "PSURegistryAgent", "PSUCareerAgent", "PSUNoticeAgent",
+        "CentralGovAgent", "CentralExamAgent",
+        "WestBengalStateAgent", "WestBengalInstitutionsAgent",
+        "CentralLinkedInstitutionAgent", "CentralLinkedBodyAgent",
+        "RegionalStateAgent",
+    )
+
     all_rows = []
     stats = {}
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        futures = {
-            pool.submit(query_agent, name): name
-            for name in ("SearchAgent", "InstitutionAgent", "PSUAgent",
-                         "JudiciaryAgent", "PDFAgent")
-        }
-        futures[pool.submit(update_agent)] = "UpdateAgent"
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures = {pool.submit(query_agent, name): name for name in agent_names}
         for f in as_completed(futures):
             name = futures[f]
             try:
@@ -479,36 +484,10 @@ def run():
             except Exception:
                 stats[name] = 0
 
-    # State discovery is the widest search, so run it separately with a
-    # bounded quota to protect the free GitHub Actions runtime.
-    state_rows = []
-    for state in STATES:
-        q = f'"{state}" government recruitment vacancy'
-        for row in bing(q)[:6]:
-            state_rows.append(candidate_from_result("StateAgent", q, row))
-        time.sleep(SEARCH_DELAY)
-    stats["StateAgent"] = len(state_rows)
-    all_rows.extend(state_rows)
-
-    directory_rows = directory_agent()
-    stats["DirectoryAgent"] = len(directory_rows)
-    all_rows.extend(directory_rows)
-
-    # Extract structured rows from secondary job sites discovered by the
-    # search agents. This agent adds data richness but never bypasses
-    # official-source verification.
-    job_rows = job_site_agent(all_rows)
-    stats["JobSiteExtractorAgent"] = len(job_rows)
-    all_rows.extend(job_rows)
-
-    official_domains = list(dict.fromkeys(
-        "https://" + host(x["primary_source"] or x["url"]) + "/"
-        for x in all_rows
-        if primary(x.get("primary_source") or x.get("url", ""))
-    ))
-    sitemap_rows = sitemap_agent(official_domains)
-    stats["SitemapAgent"] = len(sitemap_rows)
-    all_rows.extend(sitemap_rows)
+    # RegionalStateAgent is the only state agent besides the two WB agents.
+    # It is restricted by STATES to Assam, Tripura and Odisha.
+    # No DirectoryAgent/StateAgent/JobSiteExtractorAgent/SitemapAgent is run
+    # here because those generic agents could cross the ownership boundaries.
 
     dedup = {}
     for row in all_rows:
@@ -528,7 +507,17 @@ def run():
             1 for x in dedup.values()
             if primary(x.get("primary_source") or x.get("notice_url") or x.get("url", ""))
         ),
-        "method": "multi-agent free discovery; official verification remains mandatory",
+        "method": "10 isolated scoped agents; disjoint query ownership; official verification remains mandatory",
+        "scope_policy": {
+            "psu_agents": 3,
+            "central_agents": 2,
+            "west_bengal_agents": 2,
+            "central_linked_agents": 2,
+            "secondary_state_agents": 1,
+            "secondary_states": ["Assam", "Tripura", "Odisha"],
+            "west_bengal_priority": "highest",
+            "all_psus_required": True,
+        },
         "candidates": list(dedup.values())[:MAX_LEADS],
     }
     return result
