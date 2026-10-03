@@ -34,6 +34,15 @@
   </div>
   {% endif %}
 
+  {% set new_job_ids = alerts.get('new_jobs', []) | map(attribute='id') | list %}
+
+  <div class="govjobs-deadline-legend" aria-label="Deadline color legend">
+    <span class="legend-title">Deadline:</span>
+    <span class="deadline-legend-item"><i class="legend-dot deadline-red-dot"></i> Very close · 0–3 days</span>
+    <span class="deadline-legend-item"><i class="legend-dot deadline-yellow-dot"></i> Medium · 4–7 days</span>
+    <span class="deadline-legend-item"><i class="legend-dot deadline-green-dot"></i> Time available · 8+ days</span>
+  </div>
+
   <section class="govjobs-controls" aria-label="Job filters">
     <label class="search-control">
       <span class="sr-only">Search jobs</span>
@@ -77,7 +86,7 @@
       </thead>
       <tbody id="jobTableBody">
         {% for job in jobs %}
-        <tr class="job-row"
+        <tr class="job-row{% if job.id in new_job_ids %} is-new-job{% endif %}"
             data-search="{{ (job.title ~ ' ' ~ job.organization ~ ' ' ~ job.source ~ ' ' ~ (job.qualification or ''))|lower }}"
             data-source="{{ job.source }}"
             data-deadline="{{ job.deadline or '' }}">
@@ -95,6 +104,7 @@
           </td>
 
           <td class="post-cell" title="{{ job.title }}">
+            {% if job.id in new_job_ids %}<span class="row-badge new-badge" title="New since the previous refresh">NEW</span>{% endif %}
             <span class="truncate">{{ job.title or 'Recruitment notice' }}</span>
             {% if job.is_update %}<span class="row-badge">Updated</span>{% endif %}
           </td>
@@ -103,7 +113,7 @@
             {{ job.notice_type|capitalize if job.notice_type else 'Recruitment' }}
           </td>
 
-          <td class="deadline-cell {% if not job.deadline %}is-missing{% endif %}">
+          <td class="deadline-cell {% if not job.deadline %}is-missing{% endif %}" data-deadline-cell="{{ job.deadline or '' }}">
             {% if job.deadline %}
             {{ job.deadline[8:10] }}/{{ job.deadline[5:7] }}/{{ job.deadline[0:4] }}
             {% else %}Not extracted{% endif %}
@@ -177,10 +187,27 @@
     noResults.hidden = visible !== 0;
   }
 
+  function applyDeadlineColors() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    document.querySelectorAll('[data-deadline-cell]').forEach(cell => {
+      const value = cell.dataset.deadlineCell;
+      cell.classList.remove('deadline-red', 'deadline-yellow', 'deadline-green');
+      if (!value) return;
+      const due = new Date(value + 'T00:00:00');
+      if (Number.isNaN(due.getTime())) return;
+      const daysLeft = Math.ceil((due - today) / 86400000);
+      if (daysLeft <= 3) cell.classList.add('deadline-red');
+      else if (daysLeft <= 7) cell.classList.add('deadline-yellow');
+      else cell.classList.add('deadline-green');
+    });
+  }
+
   [search, source, deadline].forEach(control => {
     control.addEventListener('input', filterJobs);
     control.addEventListener('change', filterJobs);
   });
+  applyDeadlineColors();
 })();
 </script>
 {% endblock %}
