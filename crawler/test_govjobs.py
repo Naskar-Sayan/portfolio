@@ -27,6 +27,7 @@ def test_concrete_recruitment_record_is_accepted():
         "official_source": True,
         "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
         "deadline": "2026-10-30",
+        "qualification": "MBBS with relevant experience",
         "raw_text": "Recruitment Executive Director Last Date 30/10/2026",
     }
     ok, reasons = validate_record(job)
