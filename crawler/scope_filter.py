@@ -127,9 +127,22 @@ def is_indian_official(url: str) -> bool:
     )
 
 
+STATE_DOMAIN_MARKERS = (
+    "ap.gov.in","arunachal.gov.in","bihar.gov.in","cg.gov.in","chhattisgarh.gov.in",
+    "goa.gov.in","gujarat.gov.in","haryana.gov.in","himachal.gov.in","jharkhand.gov.in",
+    "karnataka.gov.in","kerala.gov.in","mp.gov.in","maharashtra.gov.in","manipur.gov.in",
+    "meghalaya.gov.in","mizoram.gov.in","nagaland.gov.in","punjab.gov.in","rajasthan.gov.in",
+    "sikkim.gov.in","tn.gov.in","telangana.gov.in","up.gov.in","uk.gov.in","delhi.gov.in",
+    "jk.gov.in","ladakh.gov.in","py.gov.in","chandigarh.gov.in","andaman.gov.in",
+    "lakshadweep.gov.in","dnh.gov.in","ddd.gov.in",
+)
+
 def state_government_excluded(job: dict) -> bool:
     t = text(job)
     low = t.lower()
+    h = host(str(job.get("url") or job.get("document_url") or ""))
+    if any(h == d or h.endswith("." + d) for d in STATE_DOMAIN_MARKERS):
+        return True
     for state in EXCLUDED_STATE_NAMES:
         s = state.lower()
         # Do not reject a central job merely because its location is in another
