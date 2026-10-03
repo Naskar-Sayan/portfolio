@@ -69,54 +69,76 @@ DATE_FORMATS = (
 )
 
 STATES = [
-    "Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa",
-    "Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala",
-    "Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland",
-    "Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura",
-    "Uttar Pradesh","Uttarakhand","West Bengal","Delhi","Jammu Kashmir","Ladakh",
-    "Puducherry","Chandigarh","Andaman Nicobar","Lakshadweep",
-    "Dadra Nagar Haveli Daman Diu",
+    "West Bengal",
+    "Assam",
+    "Tripura",
+    "Odisha",
 ]
 
 AGENT_QUERIES = {
-    "SearchAgent": [
-        '"government recruitment" India vacancy notification',
-        '"applications are invited" government India recruitment',
-        '"recruitment notification" India vacancy',
-        '"government job" recruitment advertisement India',
+    # 3 PSU agents: deliberately disjoint discovery strategies.
+    "PSURegistryAgent": [
+        '"Department of Public Enterprises" CPSE list recruitment',
+        '"Public Enterprises Survey" CPSE recruitment India',
+        'site:dpe.gov.in CPSE recruitment career vacancy',
     ],
-    "InstitutionAgent": [
-        'site:ac.in recruitment vacancy notification university India',
-        'site:edu.in recruitment vacancy notification India institute',
-        'AIIMS recruitment vacancy notification India',
-        'IIT NIT recruitment vacancy notification India',
-        'autonomous institute recruitment India vacancy',
+    "PSUCareerAgent": [
+        'site:gov.in PSU "careers" recruitment vacancy',
+        'site:co.in PSU "careers" "recruitment" India',
+        '"public sector enterprise" "career" recruitment India',
     ],
-    "PSUAgent": [
-        'PSU recruitment notification India vacancy',
-        'public sector undertaking recruitment India',
-        'CPSE recruitment vacancy India',
-        'government company recruitment India notification',
-        'bank insurance recruitment notification India',
+    "PSUNoticeAgent": [
+        '"CPSE" "recruitment notification" India',
+        '"PSU" "recruitment advertisement" India',
+        '"public sector" "vacancy" "apply online" India',
     ],
-    "JudiciaryAgent": [
-        'high court recruitment notification India',
-        'district court recruitment vacancy India',
-        'judicial recruitment board notification India',
-        'tribunal recruitment vacancy India',
-        'court clerk recruitment notification India',
+
+    # 2 central-government agents: disjoint ministry/exam and departmental searches.
+    "CentralGovAgent": [
+        '"central government" recruitment notification India ministry',
+        'site:gov.in "recruitment" "Government of India" vacancy',
+        '"Union Government" recruitment vacancy India',
     ],
-    "JobSiteExtractorAgent": [
-        'government jobs India recruitment latest vacancy',
-        'sarkari job recruitment notification India',
-        'government jobs vacancy last date India',
-        'latest govt jobs recruitment India',
+    "CentralExamAgent": [
+        'UPSC recruitment advertisement vacancy',
+        'SSC recruitment notification vacancy India',
+        'RRB RRC recruitment notification vacancy India',
+        'central government banking insurance recruitment India',
     ],
-    "PDFAgent": [
-        '"recruitment" filetype:pdf India government',
-        '"vacancy" filetype:pdf site:gov.in',
-        '"advertisement" filetype:pdf recruitment India',
-        '"corrigendum" filetype:pdf recruitment India',
+
+    # 2 West Bengal agents: the highest-priority state layer.
+    "WestBengalStateAgent": [
+        '"West Bengal" government recruitment vacancy notification',
+        'site:wb.gov.in recruitment vacancy',
+        'site:wbpsc.gov.in recruitment advertisement',
+        'site:westbengal.gov.in recruitment notification',
+    ],
+    "WestBengalInstitutionsAgent": [
+        '"West Bengal" government hospital recruitment vacancy',
+        '"West Bengal" state university recruitment vacancy',
+        '"West Bengal" municipality recruitment notification',
+        '"West Bengal" board corporation recruitment',
+    ],
+
+    # 2 central-linked agents: autonomous/statutory/central institutions.
+    "CentralLinkedInstitutionAgent": [
+        'site:ac.in "recruitment" "government of India" vacancy',
+        'site:edu.in "recruitment" central institute India',
+        'AIIMS CSIR ICAR recruitment notification India',
+        'IIT NIT IIIT IISER recruitment India',
+    ],
+    "CentralLinkedBodyAgent": [
+        '"autonomous body" recruitment India government',
+        '"statutory body" recruitment India vacancy',
+        'central commission authority board recruitment India',
+        'tribunal court central government recruitment India',
+    ],
+
+    # 1 secondary-state agent: only Assam, Tripura and Odisha.
+    "RegionalStateAgent": [
+        '"Assam" government recruitment vacancy notification',
+        '"Tripura" government recruitment vacancy notification',
+        '"Odisha" government recruitment vacancy notification',
     ],
 }
 
@@ -219,14 +241,35 @@ def state_agent():
     return out
 
 
+def load_cpse_names():
+    try:
+        with open("data/psu_registry.json", encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("cpse_names", [])
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
 def query_agent(name):
     out = []
-    for q in AGENT_QUERIES.get(name, []):
+    queries = list(AGENT_QUERIES.get(name, []))
+    if name == "PSURegistryAgent":
+        # Registry agent is the only agent allowed to enumerate individual CPSEs.
+        # Career/notice agents use different, non-overlapping query strategies.
+        cpse = load_cpse_names()
+        queries = []
+        for i in range(0, len(cpse), 5):
+            batch = cpse[i:i+5]
+            names = " OR ".join(f'"{org}"' for org in batch)
+            queries.extend([
+                f'({names}) recruitment vacancy careers',
+                f'({names}) recruitment notification advertisement',
+            ])
+    for q in queries:
         for row in bing(q):
             out.append(candidate_from_result(name, q, row))
         time.sleep(SEARCH_DELAY)
     return out
-
 
 def directory_agent():
     # Reuses the live directories rather than maintaining a static registry.
@@ -439,15 +482,20 @@ def update_agent():
 
 
 def run():
+    # Exactly 10 isolated agents. Each agent owns a disjoint query namespace;
+    # no generic Search/State/PDF/JobSite agent is allowed to cross scopes.
+    agent_names = (
+        "PSURegistryAgent", "PSUCareerAgent", "PSUNoticeAgent",
+        "CentralGovAgent", "CentralExamAgent",
+        "WestBengalStateAgent", "WestBengalInstitutionsAgent",
+        "CentralLinkedInstitutionAgent", "CentralLinkedBodyAgent",
+        "RegionalStateAgent",
+    )
+
     all_rows = []
     stats = {}
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        futures = {
-            pool.submit(query_agent, name): name
-            for name in ("SearchAgent", "InstitutionAgent", "PSUAgent",
-                         "JudiciaryAgent", "PDFAgent")
-        }
-        futures[pool.submit(update_agent)] = "UpdateAgent"
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures = {pool.submit(query_agent, name): name for name in agent_names}
         for f in as_completed(futures):
             name = futures[f]
             try:
@@ -457,36 +505,10 @@ def run():
             except Exception:
                 stats[name] = 0
 
-    # State discovery is the widest search, so run it separately with a
-    # bounded quota to protect the free GitHub Actions runtime.
-    state_rows = []
-    for state in STATES:
-        q = f'"{state}" government recruitment vacancy'
-        for row in bing(q)[:6]:
-            state_rows.append(candidate_from_result("StateAgent", q, row))
-        time.sleep(SEARCH_DELAY)
-    stats["StateAgent"] = len(state_rows)
-    all_rows.extend(state_rows)
-
-    directory_rows = directory_agent()
-    stats["DirectoryAgent"] = len(directory_rows)
-    all_rows.extend(directory_rows)
-
-    # Extract structured rows from secondary job sites discovered by the
-    # search agents. This agent adds data richness but never bypasses
-    # official-source verification.
-    job_rows = job_site_agent(all_rows)
-    stats["JobSiteExtractorAgent"] = len(job_rows)
-    all_rows.extend(job_rows)
-
-    official_domains = list(dict.fromkeys(
-        "https://" + host(x["primary_source"] or x["url"]) + "/"
-        for x in all_rows
-        if primary(x.get("primary_source") or x.get("url", ""))
-    ))
-    sitemap_rows = sitemap_agent(official_domains)
-    stats["SitemapAgent"] = len(sitemap_rows)
-    all_rows.extend(sitemap_rows)
+    # RegionalStateAgent is the only state agent besides the two WB agents.
+    # It is restricted by STATES to Assam, Tripura and Odisha.
+    # No DirectoryAgent/StateAgent/JobSiteExtractorAgent/SitemapAgent is run
+    # here because those generic agents could cross the ownership boundaries.
 
     dedup = {}
     for row in all_rows:
@@ -506,7 +528,17 @@ def run():
             1 for x in dedup.values()
             if primary(x.get("primary_source") or x.get("notice_url") or x.get("url", ""))
         ),
-        "method": "multi-agent free discovery; official verification remains mandatory",
+        "method": "10 isolated scoped agents; disjoint query ownership; official verification remains mandatory",
+        "scope_policy": {
+            "psu_agents": 3,
+            "central_agents": 2,
+            "west_bengal_agents": 2,
+            "central_linked_agents": 2,
+            "secondary_state_agents": 1,
+            "secondary_states": ["Assam", "Tripura", "Odisha"],
+            "west_bengal_priority": "highest",
+            "all_psus_required": True,
+        },
         "candidates": list(dedup.values())[:MAX_LEADS],
     }
     return result
