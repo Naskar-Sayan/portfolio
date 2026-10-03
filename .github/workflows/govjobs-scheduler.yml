@@ -168,4 +168,4 @@ jobs:
             git push origin HEAD:master
           fi
 
-# Trigger after CPSE registry TLS source fix.
+# Trigger after CPSE registry DPE mirror fallback hardening.
