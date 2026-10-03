@@ -85,7 +85,7 @@ def test_closed_archive_record_is_rejected():
     }
     ok, reasons = validate_record(job)
     assert not ok
-    assert "closed_or_expired" in reasons
+    assert "closed_or_result_noise" in reasons
     assert "generic_organization" in reasons
 
 def test_generic_current_vacancies_page_is_rejected():
