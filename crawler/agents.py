@@ -42,11 +42,18 @@ MAX_RESULTS = 12
 MAX_LEADS = 2500
 MAX_REQUESTS = 1800
 
-PRIMARY_SUFFIXES = (".gov.in", ".nic.in", ".gov", ".ac.in", ".edu.in")
+PRIMARY_SUFFIXES = (".gov.in", ".nic.in", ".ac.in", ".edu.in")
 PRIMARY_EXACT = {
     "india.gov.in", "ncs.gov.in", "employmentnews.gov.in", "upsc.gov.in",
     "ssc.gov.in", "ibps.in", "rrbapply.gov.in",
 }
+
+FOREIGN_HOST_MARKERS = (
+    "usajobs.gov", "opm.gov", "calcareers.ca.gov", "kingcounty.gov",
+    "lacounty.gov", "ny.gov", "mass.gov", "illinois.gov", "texas.gov",
+    "florida.gov", "wa.gov", "ohio.gov", "gov.uk", "gov.au", "govt.nz",
+    "canada.ca", "ontario.ca",
+)
 RECRUITMENT_RE = re.compile(
     r"recruitment|vacanc(?:y|ies)|job|career|advertisement|notification|"
     r"appointment|engagement|apprentice|application|selection|walk[- ]?in",
@@ -152,6 +159,8 @@ def host(url):
 
 def primary(url):
     h = host(url)
+    if not h or any(h == x or h.endswith("." + x) for x in FOREIGN_HOST_MARKERS):
+        return False
     return h in PRIMARY_EXACT or h.endswith(PRIMARY_SUFFIXES)
 
 

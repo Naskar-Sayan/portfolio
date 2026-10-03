@@ -59,3 +59,17 @@ def test_foreign_gov_not_central():
       raw_text="Government recruitment. Last date 30/10/2099. Qualification degree."
     ))
     assert not ok
+
+
+def test_employment_news_landing_record_is_rejected():
+    ok, reasons, scope = high_precision_valid(job(
+        title="Employment News",
+        organization="Employment News",
+        url="https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+        application_url="https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+        deadline="2099-10-30",
+        pay="Rs.530",
+        raw_text="Employment News All JOBS recruitment vacancy"
+    ))
+    assert not ok
+    assert "generic_organization" in reasons or "generic_page_title" in reasons

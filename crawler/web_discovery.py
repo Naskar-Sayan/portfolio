@@ -30,11 +30,18 @@ MAX_RESULTS_PER_QUERY = 25
 MAX_OFFICIAL_DOMAINS = 250
 MAX_OFFICIAL_URLS = 900
 
-PRIMARY_SUFFIXES = (".gov.in", ".nic.in", ".gov", ".ac.in", ".edu.in")
+PRIMARY_SUFFIXES = (".gov.in", ".nic.in", ".ac.in", ".edu.in")
 PRIMARY_EXACT = {
     "india.gov.in", "ncs.gov.in", "employmentnews.gov.in", "upsc.gov.in",
     "ssc.gov.in", "ibps.in", "rrbapply.gov.in",
 }
+
+FOREIGN_HOST_MARKERS = (
+    "usajobs.gov", "opm.gov", "calcareers.ca.gov", "kingcounty.gov",
+    "lacounty.gov", "ny.gov", "mass.gov", "illinois.gov", "texas.gov",
+    "florida.gov", "wa.gov", "ohio.gov", "gov.uk", "gov.au", "govt.nz",
+    "canada.ca", "ontario.ca",
+)
 RECRUITMENT_TERMS = re.compile(
     r"\b(recruitment|recruit|vacancy|vacancies|career|careers|job|jobs|"
     r"advertisement|notification|appointment|engagement|apprentice|"
@@ -90,6 +97,8 @@ def host(url: str) -> str:
 
 def is_primary(url: str) -> bool:
     h = host(url)
+    if not h or any(h == x or h.endswith("." + x) for x in FOREIGN_HOST_MARKERS):
+        return False
     return h in PRIMARY_EXACT or h.endswith(PRIMARY_SUFFIXES)
 
 

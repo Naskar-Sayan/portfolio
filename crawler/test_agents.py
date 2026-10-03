@@ -1,4 +1,4 @@
-from agents import clean_url, parse_date, primary
+from agents import clean_url, parse_date, primary, resolve_search_url, PSU_AGENT_SHARDS
 
 
 def test_primary_domains():
@@ -34,3 +34,14 @@ def test_exact_ten_agent_partition():
     assert {k: len(v) for k, v in AGENT_QUERIES.items()} == expected
     assert STATES == ["West Bengal", "Assam", "Tripura", "Odisha"]
     assert len(AGENT_QUERIES) == 10
+
+
+def test_bing_redirect_is_resolved():
+    encoded = "a1aHR0cHM6Ly93d3cucHN1LmVkdS8"
+    url = "https://www.bing.com/ck/a?u=" + encoded
+    assert resolve_search_url(url) == "https://www.psu.edu/"
+
+
+def test_psu_registry_shards_are_disjoint():
+    assert set(PSU_AGENT_SHARDS) == {"PSURegistryAgent", "PSUCareerAgent", "PSUNoticeAgent"}
+    assert len(set(PSU_AGENT_SHARDS.values())) == 3

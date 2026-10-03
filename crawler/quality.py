@@ -7,10 +7,10 @@ from urllib.parse import urlparse
 UPDATE_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|withdrawn|postponed|deferred|rescheduled)\b", re.I)
 STRONG_RE = re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advertisement|apprenticeship|apprentice|engagement|walk[- ]?in|selection process|posts?\s+of|post\s+of|hiring|apply online)\b", re.I)
 GENERIC_PAGE_RE = re.compile(
-    r"^(ncsnewwebsite|home|homepage|jobs?|careers?|career|find domestic jobs|find international jobs|find career center|find skill provider|find candidates|post new jobs|ai resume builder|ncs dashboard|state-wise skill development portals|participate in a job fairs and events|current vacancies|service charges for recruitment|official website(?: of .*)?|official portal(?: of .*)?|district .*\|.*\| india|.* > home|.* - home)$",
+    r"^(ncsnewwebsite|home|homepage|jobs?|careers?|career|employment news|all jobs|latest jobs|current vacancies|current openings?|find domestic jobs|find international jobs|find career center|find skill provider|find candidates|post new jobs|ai resume builder|ncs dashboard|state-wise skill development portals|participate in a job fairs and events|service charges for recruitment|official website(?: of .*)?|official portal(?: of .*)?|district .*\|.*\| india|.* > home|.* - home)$",
     re.I,
 )
-BAD_ORG_RE = re.compile(r"^(national career service|ncsnewwebsite|india\.gov\.in jobs|igod|government portal|official portal of .* government)$", re.I)
+BAD_ORG_RE = re.compile(r"^(national career service|ncsnewwebsite|india\.gov\.in jobs|igod|government portal|official portal of .* government|employment news)$", re.I)
 CLOSED_RE = re.compile(r"\b(closed|expired|position filled|applications? closed|result declared|selected candidates|provisional merit list)\b", re.I)
 NOISE_TITLE_RE = re.compile(r"\b(tender|procurement|e[- ]?tender|quotation|auction|expression of interest|rfp|meeting|seminar|workshop|training|scholarship|admission|syllabus|answer key|result|merit list|interview schedule|press release)\b", re.I)
 OLD_DATE_RE = re.compile(r"\b(?:19|20)\d{2}\b")
@@ -25,6 +25,16 @@ def clean(value: object, limit: int = 500) -> str | None:
     s = re.sub(r"\s+", " ", str(value)).strip()
     return s[:limit] or None
 
+def load_trusted_psu_domains() -> set[str]:
+    try:
+        import json
+        with open("data/psu_domains.json", encoding="utf-8") as f:
+            return {str(x).lower().rstrip(".") for x in json.load(f).get("domains", [])}
+    except (OSError, ValueError):
+        return set()
+
+TRUSTED_PSU_DOMAINS = load_trusted_psu_domains()
+
 def is_official_url(url: str | None) -> bool:
     host = (urlparse(url or "").hostname or "").lower().rstrip(".")
     if not host:
@@ -32,10 +42,10 @@ def is_official_url(url: str | None) -> bool:
     return (
         host.endswith(".gov.in")
         or host.endswith(".nic.in")
-        or host.endswith(".gov")
         or host.endswith(".ac.in")
         or host.endswith(".edu.in")
         or host in {"ibps.in", "rrbapply.gov.in"}
+        or host in TRUSTED_PSU_DOMAINS
     )
 
 def recruitment_evidence(job: dict) -> tuple[bool, list[str]]:
