@@ -22,13 +22,14 @@ All secondary leads are later resolved/verified by the official crawler.
 from __future__ import annotations
 
 import argparse
+import base64
 import html
 import json
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
-from urllib.parse import quote, urljoin, urlparse
+from urllib.parse import parse_qs, quote, unquote, urljoin, urlparse
 from xml.etree import ElementTree as ET
 
 import requests
@@ -164,6 +165,38 @@ def primary(url):
     return h in PRIMARY_EXACT or h.endswith(PRIMARY_SUFFIXES)
 
 
+def resolve_search_url(url):
+    if not url or host(url) not in {"bing.com", "www.bing.com"}:
+        return url
+    try:
+        raw = parse_qs(urlparse(url).query).get("u", [""])[0]
+        raw = unquote(raw)
+        if raw.startswith("a1"):
+            raw = raw[2:]
+        raw += "=" * ((4 - len(raw) % 4) % 4)
+        decoded = base64.urlsafe_b64decode(raw).decode("utf-8", "ignore")
+        if decoded.startswith(("http://", "https://")):
+            return clean_url(decoded)
+    except Exception:
+        pass
+    return url
+
+
+def cpse_context_matches(url, cpse_name):
+    if not url or not cpse_name:
+        return False
+    final, content = fetch(url)
+    if not content:
+        return False
+    soup = BeautifulSoup(content, "html.parser")
+    title = clean(soup.title.get_text(" ", strip=True) if soup.title else "", 400).lower()
+    body = clean(soup.get_text(" ", strip=True), 5000).lower()
+    needle = re.sub(r"[^a-z0-9]+", " ", cpse_name.lower()).strip()
+    hay = re.sub(r"[^a-z0-9]+", " ", title + " " + body)
+    tokens = [x for x in needle.split() if len(x) > 2]
+    return len(tokens) >= 2 and sum(t in hay for t in tokens) >= max(2, len(tokens) // 2)
+
+
 def clean(value, limit=700):
     if value is None:
         return ""
@@ -210,7 +243,7 @@ def bing(query):
         a = item.select_one("h2 a[href]")
         if not a:
             continue
-        href = clean_url(urljoin(final or url, a["href"]))
+        href = resolve_search_url(clean_url(urljoin(final or url, a["href"])))
         title = clean(a.get_text(" ", strip=True), 300)
         p = item.select_one(".b_caption p")
         snippet = clean(p.get_text(" ", strip=True), 700) if p else ""
@@ -259,27 +292,40 @@ def load_cpse_names():
         return []
 
 
+PSU_AGENT_SHARDS = {"PSURegistryAgent": 0, "PSUCareerAgent": 1, "PSUNoticeAgent": 2}
+
+
 def query_agent(name):
     out = []
     queries = list(AGENT_QUERIES.get(name, []))
-    if name == "PSURegistryAgent":
-        # Registry agent is the only agent allowed to enumerate individual CPSEs.
-        # Career/notice agents use different, non-overlapping query strategies.
+    if name in PSU_AGENT_SHARDS:
         cpse = load_cpse_names()
-        queries = []
-        for i in range(0, len(cpse), 5):
-            batch = cpse[i:i+5]
-            names = " OR ".join(f'"{org}"' for org in batch)
-            queries.extend([
-                f'({names}) recruitment vacancy careers',
-                f'({names}) recruitment notification advertisement',
-            ])
+        shard = PSU_AGENT_SHARDS[name]
+        for i, organization in enumerate(cpse):
+            if i % 3 != shard:
+                continue
+            if name == "PSURegistryAgent":
+                q = f'"{organization}" recruitment careers'
+            elif name == "PSUCareerAgent":
+                q = f'"{organization}" current openings careers'
+            else:
+                q = f'"{organization}" recruitment notification advertisement'
+            for row in bing(q):
+                url = row["url"]
+                trusted = primary(url) or cpse_context_matches(url, organization)
+                if trusted:
+                    item = candidate_from_result(name, q, row)
+                    item["organization"] = organization
+                    item["primary_source"] = url
+                    item["verification"] = "direct_official_cpse" if primary(url) else "cpse_registry_name_verified"
+                    out.append(item)
+            time.sleep(SEARCH_DELAY)
+        return out
     for q in queries:
         for row in bing(q):
             out.append(candidate_from_result(name, q, row))
         time.sleep(SEARCH_DELAY)
     return out
-
 def directory_agent():
     # Reuses the live directories rather than maintaining a static registry.
     seeds = [
@@ -528,9 +574,15 @@ def run():
         if key[0]:
             dedup[key] = row
 
+    trusted_psu_domains = sorted({
+        host(x.get("primary_source"))
+        for x in dedup.values()
+        if x.get("agent") in PSU_AGENT_SHARDS and x.get("primary_source")
+    })
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "agents": stats,
+        "trusted_psu_domains": trusted_psu_domains,
         "agent_count": len(stats),
         "candidate_count": len(dedup),
         "official_candidate_count": sum(

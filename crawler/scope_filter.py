@@ -64,6 +64,16 @@ def load_psu_names():
 
 PSU_NAMES = load_psu_names()
 
+
+def load_trusted_psu_domains():
+    try:
+        with open("data/psu_domains.json", encoding="utf-8") as f:
+            return tuple(str(x).lower().rstrip(".") for x in json.load(f).get("domains", []))
+    except (OSError, json.JSONDecodeError):
+        return ()
+
+TRUSTED_PSU_DOMAINS = load_trusted_psu_domains()
+
 PSU_TERMS = re.compile(
     r"\b(?:public sector undertaking|public sector enterprise|central public sector|"
     r"cpse|psu|government company|mah?aratna|navratna|miniratna|"
@@ -87,9 +97,11 @@ STATE_GOV_RE = re.compile(
 
 GENERIC_ORG_RE = re.compile(
     r"^(?:verified news lead|government portal|official portal|official website|"
-    r"ncsnewwebsite|national career service|india\.gov\.in jobs|igod)$",
+    r"ncsnewwebsite|national career service|india\.gov\.in jobs|igod|employment news)$",
     re.I,
 )
+
+GENERIC_TITLE_RE = re.compile(r"^(?:employment news|all jobs|latest jobs|current vacancies?|current openings?|recruitment|careers?|jobs? at .*)$", re.I)
 
 NOISE_RE = re.compile(
     r"\b(?:tender|e[- ]tender|procurement|quotation|auction|rfp|expression of interest|"
@@ -116,10 +128,12 @@ def text(job: dict) -> str:
     ))
 
 
-def is_indian_official(url: str) -> bool:
+def is_indian_official(url: str, allow_trusted_psu: bool = False) -> bool:
     h = host(url)
     if not h or any(h == x or h.endswith("." + x) for x in FOREIGN_HOST_MARKERS):
         return False
+    if allow_trusted_psu and h in TRUSTED_PSU_DOMAINS:
+        return True
     return (
         h.endswith(".gov.in") or h.endswith(".nic.in") or
         h.endswith(".ac.in") or h.endswith(".edu.in") or
@@ -162,10 +176,14 @@ def classify_scope(job: dict) -> tuple[str | None, list[str]]:
     org = str(job.get("organization") or "")
     t = text(job)
 
-    if not url or not is_indian_official(url):
+    h = host(url)
+    trusted_psu = h in TRUSTED_PSU_DOMAINS or any(name and name in t.lower() for name in PSU_NAMES)
+    if not url or not is_indian_official(url, allow_trusted_psu=trusted_psu):
         return None, ["non_indian_or_untrusted_domain"]
     if GENERIC_ORG_RE.fullmatch(org.strip()):
         return None, ["generic_organization"]
+    if GENERIC_TITLE_RE.fullmatch(str(job.get("title") or "").strip()):
+        return None, ["generic_page_title"]
     if NOISE_RE.search(str(job.get("title") or "")):
         return None, ["non_recruitment_notice"]
     if state_government_excluded(job):
@@ -173,12 +191,6 @@ def classify_scope(job: dict) -> tuple[str | None, list[str]]:
 
     h = host(url)
     low = t.lower()
-
-    if h in NATIONAL_HOSTS or h.endswith(".gov.in") and CENTRAL_ORG_TERMS.search(t):
-        return "central", ["national_or_central_source"]
-
-    if PSU_TERMS.search(t) or any(name and name in low for name in PSU_NAMES):
-        return "psu", ["psu_cpse_registry_or_keyword_evidence"]
 
     if any(x in low for x in ("west bengal", "west bengal government", "wbpsc", "wb govt")):
         return "west_bengal", ["west_bengal_evidence"]
@@ -191,6 +203,12 @@ def classify_scope(job: dict) -> tuple[str | None, list[str]]:
 
     if any(x in low for x in ("odisha government", "odisha govt", "odisha psc", "odisha staff selection")):
         return "odisha", ["odisha_evidence"]
+
+    if PSU_TERMS.search(t) or any(name and name in low for name in PSU_NAMES) or h in TRUSTED_PSU_DOMAINS:
+        return "psu", ["psu_cpse_registry_or_keyword_evidence"]
+
+    if h in NATIONAL_HOSTS or (h.endswith(".gov.in") and CENTRAL_ORG_TERMS.search(t)):
+        return "central", ["national_or_central_source"]
 
     if CENTRAL_LINKED_TERMS.search(t) and (h.endswith(".ac.in") or h.endswith(".edu.in") or h.endswith(".gov.in") or h.endswith(".nic.in")):
         return "central_linked", ["central_linked_evidence"]
