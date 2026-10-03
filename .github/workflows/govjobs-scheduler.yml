@@ -37,13 +37,16 @@ jobs:
         run: python -m pytest crawler/test_govjobs.py crawler/test_agents.py crawler/test_scope.py -q
 
       - name: Validate crawler syntax
-        run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py crawler/scope_filter.py crawler/qc_dataset.py
+        run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py crawler/scope_filter.py crawler/qc_dataset.py crawler/psu_registry.py
 
       - name: Discover secondary recruitment leads
         run: python crawler/news_discovery.py --output data/news_leads.json
 
       - name: Discover recruitment across the open web
         run: python crawler/web_discovery.py --output data/web_leads.json --per-query 8
+
+      - name: Refresh CPSE/PSU registry from DPE
+        run: python crawler/psu_registry.py --output data/psu_registry.json
 
       - name: Run exact 10-agent discovery
         run: python crawler/agents.py --output data/agent_leads.json
@@ -129,7 +132,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json data/psu_registry.json
           if git diff --cached --quiet; then
             echo "No dataset changes."
           else
@@ -146,6 +149,7 @@ jobs:
           cp data/alerts.json /tmp/alerts.json
           cp data/alert_state.json /tmp/alert_state.json
           cp data/scope_rejections.json /tmp/scope_rejections.json
+          cp data/psu_registry.json /tmp/psu_registry.json
           git fetch origin master
           git checkout master
           cp /tmp/jobs.json data/jobs.json
@@ -155,7 +159,8 @@ jobs:
           cp /tmp/alerts.json data/alerts.json
           cp /tmp/alert_state.json data/alert_state.json
           cp /tmp/scope_rejections.json data/scope_rejections.json
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json
+          cp /tmp/psu_registry.json data/psu_registry.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json data/psu_registry.json
           if git diff --cached --quiet; then
             echo "Live master dataset already current."
           else
