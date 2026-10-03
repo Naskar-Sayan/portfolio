@@ -54,6 +54,16 @@ CENTRAL_LINKED_TERMS = re.compile(
     re.I,
 )
 
+def load_psu_names():
+    try:
+        with open("data/psu_registry.json", encoding="utf-8") as f:
+            data = json.load(f)
+        return tuple(x.lower() for x in data.get("cpse_names", []))
+    except (OSError, json.JSONDecodeError):
+        return ()
+
+PSU_NAMES = load_psu_names()
+
 PSU_TERMS = re.compile(
     r"\b(?:public sector undertaking|public sector enterprise|central public sector|"
     r"cpse|psu|government company|mah?aratna|navratna|miniratna|"
@@ -117,9 +127,22 @@ def is_indian_official(url: str) -> bool:
     )
 
 
+STATE_DOMAIN_MARKERS = (
+    "ap.gov.in","arunachal.gov.in","bihar.gov.in","cg.gov.in","chhattisgarh.gov.in",
+    "goa.gov.in","gujarat.gov.in","haryana.gov.in","himachal.gov.in","jharkhand.gov.in",
+    "karnataka.gov.in","kerala.gov.in","mp.gov.in","maharashtra.gov.in","manipur.gov.in",
+    "meghalaya.gov.in","mizoram.gov.in","nagaland.gov.in","punjab.gov.in","rajasthan.gov.in",
+    "sikkim.gov.in","tn.gov.in","telangana.gov.in","up.gov.in","uk.gov.in","delhi.gov.in",
+    "jk.gov.in","ladakh.gov.in","py.gov.in","chandigarh.gov.in","andaman.gov.in",
+    "lakshadweep.gov.in","dnh.gov.in","ddd.gov.in",
+)
+
 def state_government_excluded(job: dict) -> bool:
     t = text(job)
     low = t.lower()
+    h = host(str(job.get("url") or job.get("document_url") or ""))
+    if any(h == d or h.endswith("." + d) for d in STATE_DOMAIN_MARKERS):
+        return True
     for state in EXCLUDED_STATE_NAMES:
         s = state.lower()
         # Do not reject a central job merely because its location is in another
@@ -154,8 +177,8 @@ def classify_scope(job: dict) -> tuple[str | None, list[str]]:
     if h in NATIONAL_HOSTS or h.endswith(".gov.in") and CENTRAL_ORG_TERMS.search(t):
         return "central", ["national_or_central_source"]
 
-    if PSU_TERMS.search(t):
-        return "psu", ["psu_cpse_evidence"]
+    if PSU_TERMS.search(t) or any(name and name in low for name in PSU_NAMES):
+        return "psu", ["psu_cpse_registry_or_keyword_evidence"]
 
     if any(x in low for x in ("west bengal", "west bengal government", "wbpsc", "wb govt")):
         return "west_bengal", ["west_bengal_evidence"]
