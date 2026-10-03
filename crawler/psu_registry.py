@@ -9,15 +9,30 @@ import requests
 # mirror can intermittently present an incomplete TLS chain on GitHub-hosted
 # runners, which causes requests/urllib3 certificate verification failures.
 DPE_PDF = "https://www.dpe.gov.in/static/uploads/2025/12/59f1e4e0304212412539aa93f4a91056.pdf"
-UA = "GovJobDashboard-PSURegistry/1.0 (+https://github.com/Naskar-Sayan/portfolio)"
+DPE_MIRROR_PDF = "https://reports-pesurvey.dpe.gov.in/pesurveyreports/FY2024-25/APPENDIX-II.pdf"
+UA = "GovJobDashboard-PSURegistry/1.1 (+https://github.com/Naskar-Sayan/portfolio)"
 
 def fetch_text():
-    r=requests.get(DPE_PDF,headers={"User-Agent":UA},timeout=45)
-    r.raise_for_status()
     from pypdf import PdfReader
     import io
-    reader=PdfReader(io.BytesIO(r.content))
-    return "\n".join((p.extract_text() or "") for p in reader.pages)
+    # Prefer the primary DPE-hosted PDF. If its edge/WAF returns 403,
+    # fall back to the official DPE survey mirror. That mirror has
+    # intermittently served an incomplete TLS chain on hosted runners,
+    # so verification is disabled only for this official DPE host.
+    urls = [(DPE_PDF, True), (DPE_MIRROR_PDF, False)]
+    errors = []
+    for url, verify in urls:
+        try:
+            r=requests.get(url,headers={"User-Agent":UA,"Accept":"application/pdf,*/*"},timeout=60,verify=verify)
+            r.raise_for_status()
+            reader=PdfReader(io.BytesIO(r.content))
+            text="\n".join((p.extract_text() or "") for p in reader.pages)
+            if len(text) < 1000:
+                raise RuntimeError("DPE PDF returned unexpectedly little text")
+            return text, url
+        except Exception as exc:
+            errors.append(f"{url}: {type(exc).__name__}: {exc}")
+    raise RuntimeError("Unable to fetch DPE CPSE registry. " + " | ".join(errors))
 
 def parse_names(text):
     names=set()
@@ -36,13 +51,13 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("--output",default="data/psu_registry.json")
     a=p.parse_args()
-    text=fetch_text()
+    text, source_url=fetch_text()
     names=parse_names(text)
     if len(names) < 100:
         raise RuntimeError(f"DPE CPSE registry extraction unexpectedly small: {len(names)}")
     out={
       "generated_at":datetime.now(timezone.utc).isoformat(),
-      "source":DPE_PDF,
+      "source":source_url,
       "source_authority":"Department of Public Enterprises, Ministry of Finance, Government of India",
       "survey":"FY2024-25",
       "cpse_count":len(names),
