@@ -54,6 +54,16 @@ CENTRAL_LINKED_TERMS = re.compile(
     re.I,
 )
 
+def load_psu_names():
+    try:
+        with open("data/psu_registry.json", encoding="utf-8") as f:
+            data = json.load(f)
+        return tuple(x.lower() for x in data.get("cpse_names", []))
+    except (OSError, json.JSONDecodeError):
+        return ()
+
+PSU_NAMES = load_psu_names()
+
 PSU_TERMS = re.compile(
     r"\b(?:public sector undertaking|public sector enterprise|central public sector|"
     r"cpse|psu|government company|mah?aratna|navratna|miniratna|"
@@ -154,8 +164,8 @@ def classify_scope(job: dict) -> tuple[str | None, list[str]]:
     if h in NATIONAL_HOSTS or h.endswith(".gov.in") and CENTRAL_ORG_TERMS.search(t):
         return "central", ["national_or_central_source"]
 
-    if PSU_TERMS.search(t):
-        return "psu", ["psu_cpse_evidence"]
+    if PSU_TERMS.search(t) or any(name and name in low for name in PSU_NAMES):
+        return "psu", ["psu_cpse_registry_or_keyword_evidence"]
 
     if any(x in low for x in ("west bengal", "west bengal government", "wbpsc", "wb govt")):
         return "west_bengal", ["west_bengal_evidence"]
