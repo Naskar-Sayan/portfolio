@@ -1,6 +1,7 @@
 """Production-grade validation and normalization for government recruitment records."""
 from __future__ import annotations
 import re
+from datetime import date
 from urllib.parse import urlparse
 
 UPDATE_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|withdrawn|postponed|deferred|rescheduled)\b", re.I)
@@ -10,7 +11,8 @@ GENERIC_PAGE_RE = re.compile(
     re.I,
 )
 BAD_ORG_RE = re.compile(r"^(national career service|ncsnewwebsite|india\.gov\.in jobs|igod|government portal|official portal of .* government)$", re.I)
-CLOSED_RE = re.compile(r"\b(closed|expired|position filled|applications? closed)\b", re.I)
+CLOSED_RE = re.compile(r"\b(closed|expired|position filled|applications? closed|result declared|selected candidates|provisional merit list)\b", re.I)
+NOISE_TITLE_RE = re.compile(r"\b(tender|procurement|e[- ]?tender|quotation|auction|expression of interest|rfp|meeting|seminar|workshop|training|scholarship|admission|syllabus|answer key|result|merit list|interview schedule|press release)\b", re.I)
 OLD_DATE_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 GENERIC_TEXT_RE = re.compile(
     r"\b(search|site map|accessibility|skip to|screen reader|menu|contact us|about us|home|citizen services|notifications?|tenders?|events?|gallery|who'?s who)\b",
@@ -25,7 +27,16 @@ def clean(value: object, limit: int = 500) -> str | None:
 
 def is_official_url(url: str | None) -> bool:
     host = (urlparse(url or "").hostname or "").lower().rstrip(".")
-    return host.endswith(".gov.in") or host.endswith(".nic.in") or host.endswith(".gov") or host.endswith(".ac.in") or host.endswith(".edu.in") or host in {"ibps.in", "rrbapply.gov.in"}
+    if not host:
+        return False
+    return (
+        host.endswith(".gov.in")
+        or host.endswith(".nic.in")
+        or host.endswith(".gov")
+        or host.endswith(".ac.in")
+        or host.endswith(".edu.in")
+        or host in {"ibps.in", "rrbapply.gov.in"}
+    )
 
 def recruitment_evidence(job: dict) -> tuple[bool, list[str]]:
     evidence = []
@@ -69,31 +80,39 @@ def validate_record(job: dict) -> tuple[bool, list[str]]:
         reasons.append("generic_organization")
     if not url or not url.startswith(("http://", "https://")):
         reasons.append("invalid_url")
+    if not is_official_url(url):
+        reasons.append("non_indian_or_unverified_domain")
     if CLOSED_RE.search(raw):
-        reasons.append("closed_or_expired")
+        reasons.append("closed_or_result_noise")
+    if NOISE_TITLE_RE.search(title):
+        reasons.append("non_recruitment_notice_type")
 
+    # Reject old archive pages unless they contain a current deadline.
     years = [int(y) for y in OLD_DATE_RE.findall(raw)]
-    if years and not job.get("deadline") and max(years) < 2025:
+    if years and not job.get("deadline") and max(years) < date.today().year - 1:
         reasons.append("historical_archive")
 
-    # Reject homepage/menu captures where the crawler merely saw a recruitment
-    # navigation item but did not extract a concrete vacancy.
     title_generic = bool(title and GENERIC_PAGE_RE.match(title))
     raw_has_only_navigation = bool(raw) and not STRONG_RE.search(title + " " + org) and not job.get("vacancies") and not job.get("deadline") and not job.get("document_url")
     if title_generic or raw_has_only_navigation:
         reasons.append("navigation_or_landing_page")
 
-    # Application links must not simply point back to the same generic homepage
-    # when there is no independent recruitment evidence.
     if app and url and app.rstrip("/") == url.rstrip("/") and not any((job.get("deadline"), job.get("vacancies"), job.get("document_url"))):
         if not STRONG_RE.search(title + " " + org):
             reasons.append("self_link_without_recruitment_evidence")
 
-    ok, _ = recruitment_evidence(job)
-    if not ok:
-        reasons.append("insufficient_recruitment_evidence")
-    if job.get("official_source") is not True and not is_official_url(url):
-        reasons.append("not_primary_source")
+    # Require at least two independent substantive recruitment signals.
+    evidence = recruitment_evidence(job)[1]
+    independent = sum(bool(x) for x in (
+        job.get("vacancies") is not None,
+        bool(job.get("deadline")),
+        bool(job.get("document_url") or str(url or "").lower().split("?")[0].endswith(".pdf")),
+        bool(job.get("qualification")),
+        bool(job.get("pay")),
+    ))
+    if not recruitment_evidence(job)[0] or independent < 2:
+        reasons.append("insufficient_independent_recruitment_evidence")
+
     return not reasons, reasons
 
 def normalized_key(job: dict) -> str:
