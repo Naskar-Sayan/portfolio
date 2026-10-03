@@ -1,10 +1,7 @@
 name: Government Jobs Daily Refresh
 # Production crawler validation gate
-# Nationwide quality revalidation trigger
-# Source-link and freshness hardening validation
+# High-precision publication firewall
 # Multi-agent discovery + open-web discovery + official-source verification
-# Force-refresh trigger: scoped-10-agent-priority-rerun-2026-10-03
-# UI enhancement: new-job blink + deadline urgency colors
 
 on:
   push:
@@ -37,10 +34,10 @@ jobs:
         run: pip install -r crawler/requirements.txt
 
       - name: Run crawler quality tests
-        run: python -m pytest crawler/test_govjobs.py crawler/test_agents.py -q
+        run: python -m pytest crawler/test_govjobs.py crawler/test_agents.py crawler/test_scope.py -q
 
       - name: Validate crawler syntax
-        run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py
+        run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py crawler/scope_filter.py crawler/qc_dataset.py
 
       - name: Discover secondary recruitment leads
         run: python crawler/news_discovery.py --output data/news_leads.json
@@ -48,29 +45,41 @@ jobs:
       - name: Discover recruitment across the open web
         run: python crawler/web_discovery.py --output data/web_leads.json --per-query 8
 
-      - name: Run multi-agent discovery and job-site extraction
+      - name: Run exact 10-agent discovery
         run: python crawler/agents.py --output data/agent_leads.json
 
-      - name: Bridge all discovered official URLs into the crawler queue
+      - name: Bridge only scope-eligible official URLs
         run: |
           python - <<'PY'
           import json
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, "crawler")
+          from scope_filter import is_indian_official, state_government_excluded, FOREIGN_HOST_MARKERS, host
 
-          path = "data/news_leads.json"
-          with open(path, encoding="utf-8") as f:
-              data = json.load(f)
-
-          with open("data/web_leads.json", encoding="utf-8") as f:
-              web = json.load(f)
-
-          with open("data/agent_leads.json", encoding="utf-8") as f:
-              agents = json.load(f)
+          path = Path("data/news_leads.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+          web = json.loads(Path("data/web_leads.json").read_text(encoding="utf-8"))
+          agents = json.loads(Path("data/agent_leads.json").read_text(encoding="utf-8"))
 
           leads = data.get("leads", [])
           seen = {x.get("primary_source") or x.get("url") for x in leads}
 
+          def eligible(url, title=""):
+              if not url or not is_indian_official(url):
+                  return False
+              h = host(url)
+              if any(h == x or h.endswith("." + x) for x in FOREIGN_HOST_MARKERS):
+                  return False
+              text = (title or "") + " " + url
+              # Do not bridge explicit excluded state-government sources.
+              pseudo = {"title": title, "organization": title, "url": url, "raw_text": text}
+              if state_government_excluded(pseudo):
+                  return False
+              return True
+
           def add(url, title, query, verification):
-              if not url or url in seen:
+              if not eligible(url, title) or url in seen:
                   return
               leads.append({
                   "url": url,
@@ -84,26 +93,28 @@ jobs:
               seen.add(url)
 
           for item in web.get("official_sources", []):
-              add(item.get("url"), item.get("title", "Open-web discovered official recruitment source"), item.get("query", "official sitemap"), item.get("verification", "official_sitemap"))
+              add(item.get("url"), item.get("title", ""), item.get("query", "official web discovery"), item.get("verification", "official"))
 
           for item in agents.get("candidates", []):
               url = item.get("primary_source") or item.get("notice_url")
-              if url and (".gov.in" in url or ".nic.in" in url or ".ac.in" in url or ".edu.in" in url or url.endswith(".gov")):
-                  add(url, item.get("title", "Multi-agent discovered official recruitment source"), item.get("query", item.get("agent", "multi-agent")), item.get("verification", "multi_agent_official"))
+              add(url, item.get("title", ""), item.get("query", item.get("agent", "multi-agent")), item.get("verification", "multi_agent_official"))
 
           data["leads"] = leads
           data["lead_count"] = len(leads)
-          with open(path, "w", encoding="utf-8") as f:
-              json.dump(data, f, ensure_ascii=False, indent=2)
-
-          print(f"Bridged {len(leads)} total verified/official crawl leads.")
-          print(f"Multi-agent candidates: {agents.get('candidate_count', 0)}; official: {agents.get('official_candidate_count', 0)}")
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+          print(f"Bridged {len(leads)} scope-eligible official leads.")
           PY
 
-      - name: Crawl official recruitment sources
+      - name: Crawl discovered official recruitment sources
         run: python crawler/govjob_crawler.py --days 30 --page-limit 1200 --output data/jobs.json
 
-      - name: Build alert digest
+      - name: Apply hard publication scope and precision gate
+        run: python crawler/scope_filter.py --input data/jobs.json --output data/jobs.json --rejected-output data/scope_rejections.json
+
+      - name: Independent dataset QC - require at least 98% pass
+        run: python crawler/qc_dataset.py --input data/jobs.json --min-score 0.98
+
+      - name: Build alert digest from filtered dataset only
         run: python crawler/alerts.py --jobs data/jobs.json --state data/alert_state.json --output data/alerts.json --deadline-days 3
 
       - name: Send WhatsApp alert when configured
@@ -114,15 +125,15 @@ jobs:
           WHATSAPP_API_VERSION: v23.0
         run: python crawler/whatsapp_notify.py --input data/alerts.json
 
-      - name: Commit dataset and alert state
+      - name: Commit dataset and audit state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json
           if git diff --cached --quiet; then
             echo "No dataset changes."
           else
-            git commit -m "Refresh multi-agent government jobs discovery"
+            git commit -m "Refresh high-precision government jobs dataset"
             git push origin HEAD:govjob-development
           fi
 
@@ -134,6 +145,7 @@ jobs:
           cp data/agent_leads.json /tmp/agent_leads.json
           cp data/alerts.json /tmp/alerts.json
           cp data/alert_state.json /tmp/alert_state.json
+          cp data/scope_rejections.json /tmp/scope_rejections.json
           git fetch origin master
           git checkout master
           cp /tmp/jobs.json data/jobs.json
@@ -142,12 +154,11 @@ jobs:
           cp /tmp/agent_leads.json data/agent_leads.json
           cp /tmp/alerts.json data/alerts.json
           cp /tmp/alert_state.json data/alert_state.json
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json
+          cp /tmp/scope_rejections.json data/scope_rejections.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json
           if git diff --cached --quiet; then
             echo "Live master dataset already current."
           else
-            git commit -m "Publish multi-agent government jobs dataset"
+            git commit -m "Publish high-precision government jobs dataset"
             git push origin HEAD:master
           fi
-
-# Multi-agent discovery validation
