@@ -5,7 +5,10 @@ import argparse, json, re
 from datetime import datetime, timezone
 import requests
 
-DPE_PDF = "https://reports-pesurvey.dpe.gov.in/pesurveyreports/FY2024-25/APPENDIX-II.pdf"
+# Use the DPE's primary dpe.gov.in-hosted copy. The reports-pesurvey
+# mirror can intermittently present an incomplete TLS chain on GitHub-hosted
+# runners, which causes requests/urllib3 certificate verification failures.
+DPE_PDF = "https://www.dpe.gov.in/static/uploads/2025/12/59f1e4e0304212412539aa93f4a91056.pdf"
 UA = "GovJobDashboard-PSURegistry/1.0 (+https://github.com/Naskar-Sayan/portfolio)"
 
 def fetch_text():
