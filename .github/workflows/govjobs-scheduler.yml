@@ -1,5 +1,6 @@
 name: Government Jobs Daily Refresh
 # Production crawler validation gate
+# Trigger hardened discovery/QC refresh
 # High-precision publication firewall
 # Multi-agent discovery + open-web discovery + official-source verification
 
