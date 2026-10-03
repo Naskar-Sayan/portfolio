@@ -76,44 +76,69 @@ STATES = [
 ]
 
 AGENT_QUERIES = {
-    "SearchAgent": [
-        '"government recruitment" India vacancy notification',
-        '"applications are invited" government India recruitment',
-        '"recruitment notification" India vacancy',
-        '"government job" recruitment advertisement India',
+    # 3 PSU agents: deliberately disjoint discovery strategies.
+    "PSURegistryAgent": [
+        '"Department of Public Enterprises" CPSE list recruitment',
+        '"Public Enterprises Survey" CPSE recruitment India',
+        'site:dpe.gov.in CPSE recruitment career vacancy',
     ],
-    "InstitutionAgent": [
-        'site:ac.in recruitment vacancy notification university India',
-        'site:edu.in recruitment vacancy notification India institute',
-        'AIIMS recruitment vacancy notification India',
-        'IIT NIT recruitment vacancy notification India',
-        'autonomous institute recruitment India vacancy',
+    "PSUCareerAgent": [
+        'site:gov.in PSU "careers" recruitment vacancy',
+        'site:co.in PSU "careers" "recruitment" India',
+        '"public sector enterprise" "career" recruitment India',
     ],
-    "PSUAgent": [
-        'PSU recruitment notification India vacancy',
-        'public sector undertaking recruitment India',
-        'CPSE recruitment vacancy India',
-        'government company recruitment India notification',
-        'bank insurance recruitment notification India',
+    "PSUNoticeAgent": [
+        '"CPSE" "recruitment notification" India',
+        '"PSU" "recruitment advertisement" India',
+        '"public sector" "vacancy" "apply online" India',
     ],
-    "JudiciaryAgent": [
-        'high court recruitment notification India',
-        'district court recruitment vacancy India',
-        'judicial recruitment board notification India',
-        'tribunal recruitment vacancy India',
-        'court clerk recruitment notification India',
+
+    # 2 central-government agents: disjoint ministry/exam and departmental searches.
+    "CentralGovAgent": [
+        '"central government" recruitment notification India ministry',
+        'site:gov.in "recruitment" "Government of India" vacancy',
+        '"Union Government" recruitment vacancy India',
     ],
-    "JobSiteExtractorAgent": [
-        'government jobs India recruitment latest vacancy',
-        'sarkari job recruitment notification India',
-        'government jobs vacancy last date India',
-        'latest govt jobs recruitment India',
+    "CentralExamAgent": [
+        'UPSC recruitment advertisement vacancy',
+        'SSC recruitment notification vacancy India',
+        'RRB RRC recruitment notification vacancy India',
+        'central government banking insurance recruitment India',
     ],
-    "PDFAgent": [
-        '"recruitment" filetype:pdf India government',
-        '"vacancy" filetype:pdf site:gov.in',
-        '"advertisement" filetype:pdf recruitment India',
-        '"corrigendum" filetype:pdf recruitment India',
+
+    # 2 West Bengal agents: the highest-priority state layer.
+    "WestBengalStateAgent": [
+        '"West Bengal" government recruitment vacancy notification',
+        'site:wb.gov.in recruitment vacancy',
+        'site:wbpsc.gov.in recruitment advertisement',
+        'site:westbengal.gov.in recruitment notification',
+    ],
+    "WestBengalInstitutionsAgent": [
+        '"West Bengal" government hospital recruitment vacancy',
+        '"West Bengal" state university recruitment vacancy',
+        '"West Bengal" municipality recruitment notification',
+        '"West Bengal" board corporation recruitment',
+    ],
+
+    # 2 central-linked agents: autonomous/statutory/central institutions.
+    "CentralLinkedInstitutionAgent": [
+        'site:ac.in "recruitment" "government of India" vacancy',
+        'site:edu.in "recruitment" central institute India',
+        'AIIMS CSIR ICAR recruitment notification India',
+        'IIT NIT IIIT IISER recruitment India',
+    ],
+    "CentralLinkedBodyAgent": [
+        '"autonomous body" recruitment India government',
+        '"statutory body" recruitment India vacancy',
+        'central commission authority board recruitment India',
+        'tribunal court central government recruitment India',
+    ],
+
+    # 1 secondary-state agent: only Assam, Tripura and Odisha.
+    "RegionalStateAgent": [
+        '"Assam" government recruitment vacancy notification',
+        '"Tripura" government recruitment vacancy notification',
+        '"Odisha" government recruitment vacancy notification',
     ],
 }
 
