@@ -241,14 +241,33 @@ def state_agent():
     return out
 
 
+def load_cpse_names():
+    try:
+        with open("data/psu_registry.json", encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("cpse_names", [])
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
 def query_agent(name):
     out = []
-    for q in AGENT_QUERIES.get(name, []):
+    queries = list(AGENT_QUERIES.get(name, []))
+    if name == "PSURegistryAgent":
+        # Registry agent is the only agent allowed to enumerate individual CPSEs.
+        # Career/notice agents use different, non-overlapping query strategies.
+        cpse = load_cpse_names()
+        queries = []
+        for org in cpse:
+            queries.extend([
+                f'"{org}" recruitment vacancy',
+                f'"{org}" careers recruitment',
+            ])
+    for q in queries:
         for row in bing(q):
             out.append(candidate_from_result(name, q, row))
         time.sleep(SEARCH_DELAY)
     return out
-
 
 def directory_agent():
     # Reuses the live directories rather than maintaining a static registry.
