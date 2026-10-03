@@ -37,7 +37,7 @@ jobs:
         run: python -m pytest crawler/test_govjobs.py crawler/test_agents.py crawler/test_scope.py crawler/test_psu_registry.py -q
 
       - name: Validate crawler syntax
-        run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py crawler/scope_filter.py crawler/qc_dataset.py crawler/psu_registry.py
+        run: python -m py_compile crawler/agents.py crawler/web_discovery.py crawler/news_discovery.py crawler/govjob_crawler.py crawler/quality.py crawler/scope_filter.py crawler/qc_dataset.py crawler/psu_registry.py
 
       - name: Discover secondary recruitment leads
         run: python crawler/news_discovery.py --output data/news_leads.json
@@ -64,12 +64,28 @@ jobs:
           data = json.loads(path.read_text(encoding="utf-8"))
           web = json.loads(Path("data/web_leads.json").read_text(encoding="utf-8"))
           agents = json.loads(Path("data/agent_leads.json").read_text(encoding="utf-8"))
+          psu_domains = sorted(set(agents.get("trusted_psu_domains", [])))
+          Path("data/psu_domains.json").write_text(
+              json.dumps({
+                  "generated_at": data.get("generated_at"),
+                  "source": "CPSE-specific official search results",
+                  "domains": psu_domains,
+              }, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
 
           leads = data.get("leads", [])
           seen = {x.get("primary_source") or x.get("url") for x in leads}
 
-          def eligible(url, title=""):
-              if not url or not is_indian_official(url):
+          def eligible(url, title="", organization=""):
+              if not url:
+                  return False
+              context = (title or "") + " " + (organization or "")
+              trusted_psu = any(
+                  name and name.lower() in context.lower()
+                  for name in json.loads(Path("data/psu_registry.json").read_text(encoding="utf-8")).get("cpse_names", [])
+              )
+              if not is_indian_official(url, allow_trusted_psu=trusted_psu):
                   return False
               h = host(url)
               if any(h == x or h.endswith("." + x) for x in FOREIGN_HOST_MARKERS):
@@ -81,8 +97,8 @@ jobs:
                   return False
               return True
 
-          def add(url, title, query, verification):
-              if not eligible(url, title) or url in seen:
+          def add(url, title, query, verification, organization=""):
+              if not eligible(url, title, organization) or url in seen:
                   return
               leads.append({
                   "url": url,
@@ -100,7 +116,7 @@ jobs:
 
           for item in agents.get("candidates", []):
               url = item.get("primary_source") or item.get("notice_url")
-              add(url, item.get("title", ""), item.get("query", item.get("agent", "multi-agent")), item.get("verification", "multi_agent_official"))
+              add(url, item.get("title", ""), item.get("query", item.get("agent", "multi-agent")), item.get("verification", "multi_agent_official"), item.get("organization", ""))
 
           data["leads"] = leads
           data["lead_count"] = len(leads)
@@ -132,7 +148,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json data/psu_registry.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json data/psu_registry.json data/psu_domains.json data/psu_domains.json
           if git diff --cached --quiet; then
             echo "No dataset changes."
           else
@@ -150,6 +166,7 @@ jobs:
           cp data/alert_state.json /tmp/alert_state.json
           cp data/scope_rejections.json /tmp/scope_rejections.json
           cp data/psu_registry.json /tmp/psu_registry.json
+          cp data/psu_domains.json /tmp/psu_domains.json
           git fetch origin master
           git checkout master
           cp /tmp/jobs.json data/jobs.json
@@ -160,12 +177,11 @@ jobs:
           cp /tmp/alert_state.json data/alert_state.json
           cp /tmp/scope_rejections.json data/scope_rejections.json
           cp /tmp/psu_registry.json data/psu_registry.json
-          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json data/psu_registry.json
+          cp /tmp/psu_domains.json data/psu_domains.json
+          git add data/jobs.json data/news_leads.json data/web_leads.json data/agent_leads.json data/alerts.json data/alert_state.json data/scope_rejections.json data/psu_registry.json data/psu_domains.json
           if git diff --cached --quiet; then
             echo "Live master dataset already current."
           else
             git commit -m "Publish high-precision government jobs dataset"
             git push origin HEAD:master
           fi
-
-# Trigger after CPSE registry source + numbered-table parser hardening.
