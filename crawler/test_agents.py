@@ -31,5 +31,6 @@ def test_exact_ten_agent_partition():
         "RegionalStateAgent": 3,
     }
     assert set(AGENT_QUERIES) == set(expected)
+    assert {k: len(v) for k, v in AGENT_QUERIES.items()} == expected
     assert STATES == ["West Bengal", "Assam", "Tripura", "Odisha"]
     assert len(AGENT_QUERIES) == 10
