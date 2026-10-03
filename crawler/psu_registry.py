@@ -8,42 +8,50 @@ import requests
 # Use the DPE's primary dpe.gov.in-hosted copy. The reports-pesurvey
 # mirror can intermittently present an incomplete TLS chain on GitHub-hosted
 # runners, which causes requests/urllib3 certificate verification failures.
-DPE_PDF = "https://www.dpe.gov.in/static/uploads/2025/12/59f1e4e0304212412539aa93f4a91056.pdf"
+DPE_PDF = "https://www.dpe.gov.in/static/uploads/2026/01/1714f02a9605547f2b3846e46b3d2a4f.pdf"
+DPE_PDF_ALT = "https://www.dpe.gov.in/static/uploads/2025/12/59f1e4e0304212412539aa93f4a91056.pdf"
 DPE_MIRROR_PDF = "https://reports-pesurvey.dpe.gov.in/pesurveyreports/FY2024-25/APPENDIX-II.pdf"
-UA = "GovJobDashboard-PSURegistry/1.1 (+https://github.com/Naskar-Sayan/portfolio)"
+JINA_PDF = "https://r.jina.ai/https://www.dpe.gov.in/static/uploads/2026/01/1714f02a9605547f2b3846e46b3d2a4f.pdf"
+UA = "GovJobDashboard-PSURegistry/1.2 (+https://github.com/Naskar-Sayan/portfolio)"
 
 def fetch_text():
     from pypdf import PdfReader
     import io
-    # Prefer the primary DPE-hosted PDF. If its edge/WAF returns 403,
-    # fall back to the official DPE survey mirror. That mirror has
-    # intermittently served an incomplete TLS chain on hosted runners,
-    # so verification is disabled only for this official DPE host.
-    urls = [(DPE_PDF, True), (DPE_MIRROR_PDF, False)]
+    sources = [
+        ("pdf", DPE_PDF, True),
+        ("pdf", DPE_PDF_ALT, True),
+        ("pdf", DPE_MIRROR_PDF, False),
+        ("text", JINA_PDF, True),
+    ]
     errors = []
-    for url, verify in urls:
+    for kind, url, verify in sources:
         try:
-            r=requests.get(url,headers={"User-Agent":UA,"Accept":"application/pdf,*/*"},timeout=60,verify=verify)
+            r=requests.get(url,headers={"User-Agent":UA,"Accept":"application/pdf,text/plain,*/*"},timeout=90,verify=verify)
             r.raise_for_status()
-            reader=PdfReader(io.BytesIO(r.content))
-            text="\n".join((p.extract_text() or "") for p in reader.pages)
+            if kind == "text":
+                text=r.text
+            else:
+                reader=PdfReader(io.BytesIO(r.content))
+                text="\n".join((p.extract_text(extraction_mode="layout") or "") for p in reader.pages)
             if len(text) < 1000:
-                raise RuntimeError("DPE PDF returned unexpectedly little text")
-            return text, url
-        except Exception as exc:
-            errors.append(f"{url}: {type(exc).__name__}: {exc}")
-    raise RuntimeError("Unable to fetch DPE CPSE registry. " + " | ".join(errors))
-
-def parse_names(text):
-    names=set()
-    for line in text.splitlines():
-        line=re.sub(r"\s+"," ",line).strip(" |")
-        m=re.search(r"(?:S\.\s*No\.?\s*\d+\s*\|\s*.*?\|\s*CPSE\s+|\bCPSE\s+)(.+)$",line,re.I)
-        if not m: continue
-        name=m.group(1).strip(" |:-")
-        if 3 <= len(name) <= 180 and not re.search(r"^(sector|cognate group|CPSE)$",name,re.I):
-            names.add(name)
-    # De-duplicate obvious headers and keep only enterprise-like entries.
+                raise RuntimeError("DPE registry response contains unexpectedly little text")
+            return tdef parse_names(text):
+    # Appendix II is a numbered table; only numbered rows are CPSE entries.
+    names={}
+    for raw in text.splitlines():
+        line=re.sub(r"\s+"," ",raw).strip(" |")
+        m=re.match(r"^(\d{1,3})\s+(.+?)\s*$",line)
+        if not m:
+            continue
+        number=int(m.group(1))
+        name=m.group(2).strip(" |:-")
+        if not (1 <= number <= 999 and 3 <= len(name) <= 180):
+            continue
+        if name.lower().startswith(("sector / cognate", "cpse", "s. no")):
+            continue
+        names[number]=name
+    return [names[n] for n in sorted(names)]
+p only enterprise-like entries.
     bad=("sector / cognate group","central public sector enterprises","appendix")
     return sorted(n for n in names if not any(x in n.lower() for x in bad))
 
