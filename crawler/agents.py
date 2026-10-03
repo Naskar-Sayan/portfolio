@@ -258,10 +258,12 @@ def query_agent(name):
         # Career/notice agents use different, non-overlapping query strategies.
         cpse = load_cpse_names()
         queries = []
-        for org in cpse:
+        for i in range(0, len(cpse), 5):
+            batch = cpse[i:i+5]
+            names = " OR ".join(f'"{org}"' for org in batch)
             queries.extend([
-                f'"{org}" recruitment vacancy',
-                f'"{org}" careers recruitment',
+                f'({names}) recruitment vacancy careers',
+                f'({names}) recruitment notification advertisement',
             ])
     for q in queries:
         for row in bing(q):
