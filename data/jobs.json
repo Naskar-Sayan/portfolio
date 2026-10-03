@@ -1,28 +1,22 @@
 {
-  "generated_at": "2026-10-03T18:34:46.352226+00:00",
+  "generated_at": "2026-10-03T19:21:40.019939+00:00",
   "window_days": 30,
   "cutoff": "2026-09-03",
   "discovery": {
-    "seed_count": 93,
-    "pages_crawled": 1200,
-    "domains_crawled": 153,
+    "seed_count": 132,
+    "pages_crawled": 791,
+    "domains_crawled": 105,
     "source_stats": [
       {
-        "host": "acquisitions.usajobs.gov",
+        "host": "academics.iitd.ac.in",
         "seed_count": 0,
-        "pages_crawled": 16,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "actuary.usajobs.gov",
+        "host": "admissions.ge.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "ai.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -44,15 +38,15 @@
         "jobs_found": 0
       },
       {
-        "host": "armychildcarejobs.usajobs.gov",
-        "seed_count": 0,
+        "host": "apps.odishatourism.gov.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
         "host": "asdm.assam.gov.in",
         "seed_count": 1,
-        "pages_crawled": 22,
+        "pages_crawled": 53,
         "jobs_found": 0
       },
       {
@@ -62,15 +56,9 @@
         "jobs_found": 0
       },
       {
-        "host": "attorney.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "auditing.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
+        "host": "assamtourism.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -80,69 +68,9 @@
         "jobs_found": 0
       },
       {
-        "host": "careerforce.mn.gov",
-        "seed_count": 1,
-        "pages_crawled": 60,
-        "jobs_found": 0
-      },
-      {
-        "host": "careers.bop.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "careers.mn.gov",
-        "seed_count": 0,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "careers.state.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "chemistry.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "civil.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "computerscience.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "crossfunctional.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
         "host": "cssda.cg.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "cybereffects.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "cybersecurity.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
         "jobs_found": 0
       },
       {
@@ -152,14 +80,8 @@
         "jobs_found": 0
       },
       {
-        "host": "department.va.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "details.usajobs.gov",
-        "seed_count": 0,
+        "host": "delhitourism.gov.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -170,9 +92,9 @@
         "jobs_found": 0
       },
       {
-        "host": "dot.usajobs.gov",
+        "host": "doe.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 1,
+        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -194,21 +116,9 @@
         "jobs_found": 0
       },
       {
-        "host": "earlycareer.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "earlycareers.gov",
+        "host": "ecampus.iitd.ac.in",
         "seed_count": 0,
         "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "economist.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
         "jobs_found": 0
       },
       {
@@ -239,7 +149,7 @@
         "host": "employmentnews.gov.in",
         "seed_count": 2,
         "pages_crawled": 60,
-        "jobs_found": 8
+        "jobs_found": 7
       },
       {
         "host": "empmission.odisha.gov.in",
@@ -250,49 +160,31 @@
       {
         "host": "erojgar.cg.gov.in",
         "seed_count": 1,
-        "pages_crawled": 22,
+        "pages_crawled": 23,
         "jobs_found": 0
       },
       {
-        "host": "general.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "gsavets.usajobs.gov",
+        "host": "facapp.iitm.ac.in",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "healthphysics.usajobs.gov",
+        "host": "ge.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
+        "pages_crawled": 48,
+        "jobs_found": 4
       },
       {
-        "host": "help.usajobs.gov",
+        "host": "home.iitd.ac.in",
         "seed_count": 0,
-        "pages_crawled": 7,
-        "jobs_found": 0
+        "pages_crawled": 60,
+        "jobs_found": 27
       },
       {
-        "host": "home.treasury.gov",
+        "host": "icandsr.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "hrmanagement.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "ice.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
+        "pages_crawled": 31,
         "jobs_found": 0
       },
       {
@@ -302,33 +194,27 @@
         "jobs_found": 0
       },
       {
-        "host": "informationtechnology.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "intel.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "intelligencecareers.usajobs.gov",
+        "host": "in.iitd.ac.in",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "intern.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 3,
+        "host": "indianrail.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "intern.whitehouse.gov",
+        "host": "internal.iitd.ac.in",
         "seed_count": 0,
-        "pages_crawled": 1,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "international.iitd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 29,
         "jobs_found": 0
       },
       {
@@ -344,21 +230,15 @@
         "jobs_found": 0
       },
       {
-        "host": "itmanagement.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
         "host": "jakemp.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "jobs.irs.gov",
-        "seed_count": 0,
-        "pages_crawled": 2,
+        "host": "jammu.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -392,45 +272,21 @@
         "jobs_found": 0
       },
       {
-        "host": "login.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 20,
-        "jobs_found": 0
-      },
-      {
         "host": "lsdm.ladakh.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "mathematicalstatistics.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
+        "host": "maharashtratourism.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
-        "host": "mathematics.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "mechanical.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "milspouse.usajobs.gov",
+        "host": "maitri.maharashtra.gov.in",
         "seed_count": 0,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "mn.gov",
-        "seed_count": 1,
-        "pages_crawled": 38,
         "jobs_found": 0
       },
       {
@@ -452,18 +308,6 @@
         "jobs_found": 0
       },
       {
-        "host": "natsec.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "naturalresources.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
         "host": "ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 18,
@@ -472,7 +316,7 @@
       {
         "host": "nri.up.gov.in",
         "seed_count": 0,
-        "pages_crawled": 3,
+        "pages_crawled": 60,
         "jobs_found": 0
       },
       {
@@ -482,8 +326,20 @@
         "jobs_found": 0
       },
       {
-        "host": "nurse.usajobs.gov",
+        "host": "ocs.iitd.ac.in",
         "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "odisha.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "odishatourism.gov.in",
+        "seed_count": 1,
         "pages_crawled": 16,
         "jobs_found": 0
       },
@@ -494,37 +350,13 @@
         "jobs_found": 0
       },
       {
-        "host": "othercyber.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
         "host": "pbssd.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "physicalscience.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "physics.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
         "host": "pminternship.mca.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "publicsafety.dhs.in.gov",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -536,10 +368,16 @@
         "jobs_found": 0
       },
       {
-        "host": "recentgrad.usajobs.gov",
+        "host": "recruit-ndl.nielit.gov.in",
         "seed_count": 0,
-        "pages_crawled": 1,
+        "pages_crawled": 3,
         "jobs_found": 0
+      },
+      {
+        "host": "recruit.iitm.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 17
       },
       {
         "host": "recruitment.jharkhand.gov.in",
@@ -548,7 +386,7 @@
         "jobs_found": 0
       },
       {
-        "host": "register.state.gov",
+        "host": "recruitment.nta.nic.in",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -560,19 +398,7 @@
         "jobs_found": 0
       },
       {
-        "host": "science.osti.gov",
-        "seed_count": 0,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
         "host": "sdct.goa.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "semesterofservice.usajobs.gov",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -580,12 +406,6 @@
       {
         "host": "sewayojan.up.nic.in",
         "seed_count": 1,
-        "pages_crawled": 10,
-        "jobs_found": 0
-      },
-      {
-        "host": "sikkim.gov.in",
-        "seed_count": 0,
         "pages_crawled": 10,
         "jobs_found": 0
       },
@@ -615,20 +435,8 @@
       },
       {
         "host": "ssc.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "statistics.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
-        "jobs_found": 0
-      },
-      {
-        "host": "stem.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
+        "seed_count": 2,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -638,27 +446,9 @@
         "jobs_found": 0
       },
       {
-        "host": "support-usajobs.opm.gov",
-        "seed_count": 0,
-        "pages_crawled": 9,
-        "jobs_found": 0
-      },
-      {
-        "host": "talent.opm.gov",
-        "seed_count": 0,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
         "host": "task.telangana.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "tech.usajobs.gov",
-        "seed_count": 0,
-        "pages_crawled": 16,
         "jobs_found": 0
       },
       {
@@ -670,13 +460,19 @@
       {
         "host": "uppbpb.gov.in",
         "seed_count": 0,
-        "pages_crawled": 3,
+        "pages_crawled": 10,
         "jobs_found": 0
       },
       {
-        "host": "usajobshelp.opm.gov",
-        "seed_count": 0,
-        "pages_crawled": 60,
+        "host": "upsc.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "upsconline.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -686,18 +482,6 @@
         "jobs_found": 0
       },
       {
-        "host": "whitehouse.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.apprenticeship.gov",
-        "seed_count": 2,
-        "pages_crawled": 43,
-        "jobs_found": 1
-      },
-      {
         "host": "www.apprenticeship.gov.in",
         "seed_count": 0,
         "pages_crawled": 7,
@@ -705,18 +489,6 @@
       },
       {
         "host": "www.apprenticeshipindia.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.dol.gov",
-        "seed_count": 1,
-        "pages_crawled": 13,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.eeoc.gov",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -734,30 +506,6 @@
         "jobs_found": 0
       },
       {
-        "host": "www.epa.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.federalreserve.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.ftc.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.gsa.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "www.hrex.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -770,15 +518,27 @@
         "jobs_found": 0
       },
       {
-        "host": "www.in.gov",
+        "host": "www.iitd.ac.in",
         "seed_count": 1,
-        "pages_crawled": 5,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitm.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 34,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.incredibleindia.gov.in",
+        "seed_count": 13,
+        "pages_crawled": 19,
         "jobs_found": 0
       },
       {
         "host": "www.india.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
+        "seed_count": 2,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -788,20 +548,20 @@
         "jobs_found": 0
       },
       {
-        "host": "www.intelligencecareers.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.justice.gov",
-        "seed_count": 0,
-        "pages_crawled": 5,
+        "host": "www.irel.co.in",
+        "seed_count": 2,
+        "pages_crawled": 32,
         "jobs_found": 0
       },
       {
         "host": "www.labour.gov.in",
         "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.moil.nic.in",
+        "seed_count": 1,
         "pages_crawled": 2,
         "jobs_found": 0
       },
@@ -812,21 +572,21 @@
         "jobs_found": 0
       },
       {
-        "host": "www.nasa.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "www.ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 3,
         "jobs_found": 0
       },
       {
-        "host": "www.opm.gov",
-        "seed_count": 0,
-        "pages_crawled": 6,
+        "host": "www.nsic.co.in",
+        "seed_count": 1,
+        "pages_crawled": 56,
+        "jobs_found": 17
+      },
+      {
+        "host": "www.odishatourism.gov.in",
+        "seed_count": 19,
+        "pages_crawled": 19,
         "jobs_found": 0
       },
       {
@@ -842,15 +602,9 @@
         "jobs_found": 0
       },
       {
-        "host": "www.sec.gov",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "www.sikkim.gov.in",
         "seed_count": 1,
-        "pages_crawled": 23,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -863,18 +617,6 @@
         "host": "www.skillodisha.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.state.gov",
-        "seed_count": 1,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.stpaul.gov",
-        "seed_count": 1,
-        "pages_crawled": 43,
         "jobs_found": 0
       },
       {
@@ -894,92 +636,25 @@
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
-      },
-      {
-        "host": "www.usa.gov",
-        "seed_count": 2,
-        "pages_crawled": 13,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.usaid.gov",
-        "seed_count": 0,
-        "pages_crawled": 3,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.usajobs.gov",
-        "seed_count": 1,
-        "pages_crawled": 51,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.westutx.gov",
-        "seed_count": 1,
-        "pages_crawled": 3,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.whitehouse.gov",
-        "seed_count": 1,
-        "pages_crawled": 13,
-        "jobs_found": 0
       }
     ]
   },
   "quality": {
-    "raw_candidates": 180,
-    "published_jobs": 17,
-    "rejected_or_deduplicated": 163,
+    "raw_candidates": 419,
+    "published_jobs": 80,
+    "rejected_or_deduplicated": 339,
     "primary_source_required": true,
     "scope_gate": "high_precision",
-    "published_jobs_before_scope_gate": 17,
-    "published_jobs_after_scope_gate": 4,
-    "rejected_by_scope_gate": 13,
+    "published_jobs_before_scope_gate": 80,
+    "published_jobs_after_scope_gate": 3,
+    "rejected_by_scope_gate": 77,
     "scope_counts": {
-      "central": 4
+      "central": 3
     },
     "accuracy_target": ">=98% precision by hard scope/evidence gate; measured on QC set"
   },
   "registry_source": "Live NCS + IGOD government directories",
   "jobs": [
-    {
-      "id": "e3ea389f73256850",
-      "title": "Employment News",
-      "organization": "Employment News",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "document_url": null,
-      "deadline": "2026-09-12",
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": "Rs.530",
-      "qualification": null,
-      "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-03T18:34:46.352226+00:00",
-      "source": "Employment News",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "update",
-      "is_update": true,
-      "kind": "recruitment_notice",
-      "raw_text": "Employment News Buy Books From Publications Division Website | e-Subscription Hindi Website | Buy Books From Publications Division Website | e-Subscription Home About Us Subscribe e-Employment News Subscription Print Employment News Subscription How To Advertise Rate Card Advertise on EN test Web Advertisement How To Advertise Rate Card Advertise on EN New Advertisement Policy Tender Editorial Lead Article Career Article Web Exclusive Grievance RTI Feedback/Grievance Policies Policy Business Policy Amendment in Discount Structure 2020 Business Policy 2019 Contact Us Home About Us Subscribe e-Employment News Subscription Print Employment News Subscription How To Advertise Rate Card Advertise on EN Web Advertisement Tender Editorial Lead Article Special Article Career Article Success Stories/Interview Grievance RTI Feedback/Grievance Policies Policy Business Policy Amendment in Discount Structure 2020 Business Policy 2019 Contact Us Subscribe print version @Rs.530 per annum; Subscribe only e-version @Rs.400 per annum. || !! ATTENTION ADVERTISERS !! Advertisers are requested to give full details of job Vacancies/ Minimum size will now be 200 sq.cm for shorter advertisements || Click here to become an e-resource aggregator of Publications Division || New Advertisement Policy || Buy Books from Bharatkosh || Buy Books from Flipkart || Buy Books from Amazon || || All JOBS ISSUED DATE (MM/DD/YYYY) ORGANISATION POST METHOD OF APPOINTMENT LAST DATE (DD/MM/YYYY) 12/09/2026 MINERAL EXPLORATION AND CONSULTANCY LIMITED ACCOUNTANT & OTHERS Recruitment 11/10/2026 12/09/2026 DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT LECTURER Recruitment 27/09/2026 12/09/2026 NALANDA UNIVERSITY TEACHING POSITIONS Recruitment 15/09/2026 07/09/2026 RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED ENGINEER & OTHERS Recruitment 24/09/2026 07/09/2026 NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS PROFESSOR Recruitment 17/09/2026 31/08/2026 NATIONAL DISASTER MANAGEMENT AUTHORITY YOUNG CONSULTANT (FOREST FIRE RISK MANAGEMENT) Deputation 18/10/2026 31/08/2026 NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES EXECUTIVE DIRECTOR Recruitment 30/10/2026 24/08/2026 INDO-RUSSIAN RIFLES PVT LTD, D/O DEFENCE CHIEF EXECUTIVE OFFICER/ MANAGING DIRECTOR Recruitment 11/09/2026 24/08/2026 SAINIK SCHOOL AMBIKAPUR LABORATORY ASSISTANT (BIOLOGY) & OTHERS Contractual 12/09/2026 24/08/2026 BRIC- NATIONAL INSTITUTE OF ANIMAL BIOTECHNOLOGY SCIENTIST-B & OTHERS Rec",
-      "normalized_key": "employment news|employment news",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "deadline",
-          "application_link",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "scope_gate": "high_precision"
-      },
-      "scope": "central"
-    },
     {
       "id": "6610d10c5fd9e8c3",
       "title": "ACCOUNTANT & OTHERS",
@@ -993,7 +668,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-03T18:34:46.352226+00:00",
+      "discovered_at": "2026-10-03T19:21:40.019939+00:00",
       "source": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1031,7 +706,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-08-31",
-      "discovered_at": "2026-10-03T18:34:46.352226+00:00",
+      "discovered_at": "2026-10-03T19:21:40.019939+00:00",
       "source": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1069,7 +744,7 @@
       "pay": "Rs. 37,000",
       "qualification": "certificates/Mark Sheets/Experience Certificates etc",
       "posting_date": "2026-09-04",
-      "discovered_at": "2026-10-03T18:34:46.352226+00:00",
+      "discovered_at": "2026-10-03T19:21:40.019939+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
