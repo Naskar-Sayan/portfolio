@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse, hashlib, io, json, re, time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin, urlparse
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
@@ -42,6 +43,20 @@ SEEDS = [
 ]
 
 OFFICIAL_EXACT = {"ibps.in", "rrbapply.gov.in"}
+
+def trusted_psu_domains() -> set[str]:
+    """Load CPSE domains discovered by the dedicated PSU agents."""
+    try:
+        p = Path("data/psu_domains.json")
+        data = json.loads(p.read_text(encoding="utf-8"))
+        return {
+            str(x).lower().strip().rstrip(".")
+            for x in data.get("domains", [])
+            if isinstance(x, str) and "." in x
+        }
+    except (OSError, ValueError, TypeError):
+        return set()
+
 DISCOVERY_PATHS = re.compile(r"(recruit|vacanc|career|advert|notification|appointment|engag|apprent|intern|job|apply)", re.I)
 STRONG_RE = re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advertisement|apprenticeship|apprentice|engagement|walk[- ]?in|selection process)\b", re.I)
 UPDATE_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|withdrawn|postponed|deferred|rescheduled)\b", re.I)
@@ -55,9 +70,13 @@ QUAL_RE = re.compile(r"\b(?:essential\s+qualification|educational\s+qualificatio
 session = requests.Session()
 session.headers.update({"User-Agent": UA, "Accept-Language": "en-IN,en;q=0.8"})
 
-def official(url: str) -> bool:
+def official(url: str, allow_trusted_psu: bool = True) -> bool:
     host = (urlparse(url).hostname or "").lower().rstrip(".")
-    return host.endswith(".gov.in") or host.endswith(".nic.in") or host.endswith(".gov") or host.endswith(".ac.in") or host in OFFICIAL_EXACT
+    if host.endswith(".gov.in") or host.endswith(".nic.in") or host.endswith(".ac.in") or host in OFFICIAL_EXACT:
+        return True
+    if allow_trusted_psu and host in trusted_psu_domains():
+        return True
+    return False
 
 def clean(v, limit=1000):
     if v is None: return None
