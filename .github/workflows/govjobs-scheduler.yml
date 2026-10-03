@@ -168,4 +168,4 @@ jobs:
             git push origin HEAD:master
           fi
 
-# Trigger after CPSE registry DPE mirror fallback hardening.
+# Trigger after CPSE registry source + numbered-table parser hardening.
