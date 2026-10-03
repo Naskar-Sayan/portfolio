@@ -3,7 +3,7 @@ name: Government Jobs Daily Refresh
 # Nationwide quality revalidation trigger
 # Source-link and freshness hardening validation
 # Multi-agent discovery + open-web discovery + official-source verification
-# Force-refresh trigger: quality-control-rerun-2026-10-02
+# Force-refresh trigger: scoped-10-agent-priority-rerun-2026-10-03
 
 on:
   push:
