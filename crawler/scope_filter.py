@@ -202,7 +202,9 @@ def classify_scope(job: dict) -> tuple[str | None, list[str]]:
 
 def high_precision_valid(job: dict) -> tuple[bool, list[str], str | None]:
     scope, scope_reasons = classify_scope(job)
-    reasons = list(scope_reasons)
+    # classify_scope returns positive evidence labels for accepted scopes.
+    # Only actual classification failures should invalidate the record.
+    reasons = [] if scope is not None else list(scope_reasons)
     title = str(job.get("title") or "")
     raw = str(job.get("raw_text") or "")
     combined = title + " " + raw
