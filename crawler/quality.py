@@ -126,7 +126,11 @@ def validate_record(job: dict) -> tuple[bool, list[str]]:
         bool(job.get("qualification")),
         bool(job.get("pay")),
     ))
-    if not recruitment_evidence(job)[0] or independent < 2:
+    document_backed = bool(job.get("document_url") or str(url or "").lower().split("?")[0].endswith(".pdf"))
+    strong_signal = bool(STRONG_RE.search(title + " " + org + " " + raw))
+    page_minimum = bool(title and not GENERIC_PAGE_RE.match(title) and strong_signal and independent >= 1)
+    document_minimum = bool(document_backed and strong_signal)
+    if not recruitment_evidence(job)[0] or not (page_minimum or document_minimum):
         reasons.append("insufficient_independent_recruitment_evidence")
 
     return not reasons, reasons
