@@ -81,6 +81,20 @@ def is_indian_official(url,allow_trusted_psu=False):
     if allow_trusted_psu and h in TRUSTED_PSU_DOMAINS and h.endswith((".co.in",".gov.in",".nic.in",".ac.in",".edu.in",".in")): return True
     return h.endswith(".gov.in") or h.endswith(".nic.in") or h.endswith(".ac.in") or h.endswith(".edu.in") or h in NATIONAL_HOSTS
 
+def psu_context_official(job):
+    """Accept a PSU commercial domain only when the host is corroborated by the organization."""
+    url=job.get("url") or job.get("document_url") or ""
+    h=host(url)
+    if not h or not h.endswith((".co.in",".in",".com",".org")):
+        return False
+    t=text(job).lower()
+    if not PSU_TERMS.search(t) and not any(n and n in t for n in PSU_NAMES):
+        return False
+    labels=[x for x in h.split(".") if x not in {"www","co","in","com","org","net","gov","nic"}]
+    org=str(job.get("organization") or "").lower()
+    org_tokens={re.sub(r"[^a-z0-9]","",x) for x in re.findall(r"[a-z0-9]+",org)}
+    return any(label in org_tokens and len(label)>=3 for label in labels)
+
 def state_government_excluded(job):
     t=text(job).lower(); h=host(str(job.get("url") or job.get("document_url") or ""))
     return any(h==d or h.endswith("."+d) for d in STATE_DOMAIN_MARKERS) or any(
@@ -93,7 +107,7 @@ def classify_scope(job):
     if any(x in low for x in ("assam government","assam govt","assam psc")): return "assam",["assam_evidence"]
     if any(x in low for x in ("tripura government","tripura govt","tripura psc")): return "tripura",["tripura_evidence"]
     if any(x in low for x in ("odisha government","odisha govt","odisha psc","odisha staff selection")): return "odisha",["odisha_evidence"]
-    if PSU_TERMS.search(t) or any(n and n in low for n in PSU_NAMES) or h in TRUSTED_PSU_DOMAINS: return "psu",["psu_registry_or_keyword"]
+    if PSU_TERMS.search(t) or any(n and n in low for n in PSU_NAMES) or psu_context_official(job): return "psu",["psu_registry_or_keyword"]
     if h in NATIONAL_HOSTS or (h.endswith(".gov.in") and CENTRAL_ORG_TERMS.search(t)): return "central",["national_or_central_source"]
     if CENTRAL_LINKED_TERMS.search(t) and (h.endswith((".ac.in",".edu.in",".gov.in",".nic.in"))): return "central_linked",["central_linked_evidence"]
     # Other Indian official state sources are useful, but ownership is not strong enough
