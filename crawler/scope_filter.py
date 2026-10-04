@@ -207,6 +207,14 @@ def tier_for(job,scope,score):
     return None
 
 def evaluate(job):
+    # Final expiry guard also covers externally imported candidate records.
+    deadline = str(job.get("deadline") or "").strip()
+    if deadline:
+        try:
+            if date.fromisoformat(deadline[:10]) < date.today():
+                return None, ["application_deadline_passed"], None, 0
+        except ValueError:
+            pass
     job=normalize_provenance(job)
     reasons=hard_reject(job)
     if reasons: return None,reasons,None,0
