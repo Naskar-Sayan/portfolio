@@ -3,6 +3,10 @@ from __future__ import annotations
 import re
 from datetime import date
 from urllib.parse import urlparse
+try:
+    from scope_filter import is_indian_official as scope_official
+except ImportError:
+    scope_official = None
 
 UPDATE_RE = re.compile(r"\b(corrigendum|addendum|extension|revised|re-revised|modified|amendment|extended|withdrawn|postponed|deferred|rescheduled)\b", re.I)
 STRONG_RE = re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advertisement|apprenticeship|apprentice|engagement|walk[- ]?in|selection process|posts?\s+of|post\s+of|hiring|apply online)\b", re.I)
@@ -12,7 +16,7 @@ GENERIC_PAGE_RE = re.compile(
 )
 BAD_ORG_RE = re.compile(r"^(national career service|ncsnewwebsite|india\.gov\.in jobs|igod|government portal|official portal of .* government|employment news)$", re.I)
 CLOSED_RE = re.compile(r"\b(closed|expired|position filled|applications? closed|result declared|selected candidates|provisional merit list)\b", re.I)
-NOISE_TITLE_RE = re.compile(r"\b(tender|procurement|e[- ]?tender|quotation|auction|expression of interest|rfp|meeting|seminar|workshop|training|scholarship|admission|syllabus|answer key|result|merit list|interview schedule|press release)\b", re.I)
+NOISE_TITLE_RE = re.compile(r"\b(tender|procurement|e[- ]?tender|quotation|auction|expression of interest|rfp|meeting|seminar|workshop|training|scholarship|admission|syllabus|answer key|result|merit list|interview schedule|press release|shortlisting|shortlisted|not[- ]?shortlisted|document verification)\b", re.I)
 OLD_DATE_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 GENERIC_TEXT_RE = re.compile(
     r"\b(search|site map|accessibility|skip to|screen reader|menu|contact us|about us|home|citizen services|notifications?|tenders?|events?|gallery|who'?s who)\b",
@@ -39,6 +43,8 @@ def is_official_url(url: str | None) -> bool:
     host = (urlparse(url or "").hostname or "").lower().rstrip(".")
     if not host:
         return False
+    if scope_official:
+        return bool(scope_official(url, allow_trusted_psu=True))
     return (
         host.endswith(".gov.in")
         or host.endswith(".nic.in")
