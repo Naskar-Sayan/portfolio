@@ -1,6 +1,6 @@
 name: Government Jobs Daily Refresh
 # Production crawler validation gate
-# High-precision publication firewall
+# Multi-stage publication gate: hard safety + evidence scoring + publication tiers
 # Multi-agent discovery + open-web discovery + official-source verification
 
 on:
@@ -127,10 +127,10 @@ jobs:
       - name: Crawl discovered official recruitment sources
         run: python crawler/govjob_crawler.py --days 30 --page-limit 1200 --output data/jobs.json
 
-      - name: Apply hard publication scope and precision gate
+      - name: Apply multi-stage publication gate
         run: python crawler/scope_filter.py --input data/jobs.json --output data/jobs.json --rejected-output data/scope_rejections.json
 
-      - name: Independent dataset QC - require at least 98% pass
+      - name: Independent tiered dataset QC (98% verified precision target)
         run: python crawler/qc_dataset.py --input data/jobs.json --min-score 0.98
 
       - name: Build alert digest from filtered dataset only
