@@ -70,6 +70,20 @@ def load_json_names(path,key):
     except (OSError,json.JSONDecodeError): return ()
 PSU_NAMES=load_json_names("data/psu_registry.json","cpse_names")
 TRUSTED_PSU_DOMAINS=load_json_names("data/psu_domains.json","domains")
+PSU_DOMAIN_OVERRIDES={
+    "hmtindia.com":"HMT Ltd.",
+    "nsic.co.in":"National Small Industries Corporation Ltd.",
+    "ntpc.co.in":"NTPC Ltd.",
+    "ntpc.com":"NTPC Ltd.",
+    "gailonline.com":"GAIL (India) Limited",
+    "pfcind.com":"Power Finance Corporation Limited",
+    "nbccindia.in":"NBCC (India) Limited",
+    "irel.co.in":"IREL (India) Limited",
+}
+INSTITUTIONAL_DOMAIN_ORGS={
+    "home.iitd.ac.in":"Indian Institute of Technology Delhi",
+    "iitd.ac.in":"Indian Institute of Technology Delhi",
+}
 
 def host(url): return (urlparse(url or "").hostname or "").lower().rstrip(".")
 def text(job): return " ".join(str(job.get(k) or "") for k in
@@ -78,13 +92,31 @@ def text(job): return " ".join(str(job.get(k) or "") for k in
 def is_indian_official(url,allow_trusted_psu=False):
     h=host(url)
     if not h or any(h==x or h.endswith("."+x) for x in FOREIGN_HOST_MARKERS): return False
-    if allow_trusted_psu and h in TRUSTED_PSU_DOMAINS and h.endswith((".co.in",".gov.in",".nic.in",".ac.in",".edu.in",".in")): return True
+    if allow_trusted_psu and (h in PSU_DOMAIN_OVERRIDES or (h in TRUSTED_PSU_DOMAINS and h.endswith((".co.in",".gov.in",".nic.in",".ac.in",".edu.in",".in")))): return True
     return h.endswith(".gov.in") or h.endswith(".nic.in") or h.endswith(".ac.in") or h.endswith(".edu.in") or h in NATIONAL_HOSTS
+
+def inferred_organization(job):
+    org=str(job.get("organization") or "").strip()
+    if org and not GENERIC_ORG_RE.fullmatch(org):
+        return org
+    h=host(job.get("url") or job.get("document_url") or "")
+    if h in PSU_DOMAIN_OVERRIDES:
+        return PSU_DOMAIN_OVERRIDES[h]
+    if h in INSTITUTIONAL_DOMAIN_ORGS:
+        return INSTITUTIONAL_DOMAIN_ORGS[h]
+    return org
+
+def normalize_provenance(job):
+    row=dict(job)
+    row["organization"]=inferred_organization(row)
+    return row
 
 def psu_context_official(job):
     """Accept a PSU commercial domain only when the host is corroborated by the organization."""
     url=job.get("url") or job.get("document_url") or ""
     h=host(url)
+    if h in PSU_DOMAIN_OVERRIDES:
+        return True
     if not h or not h.endswith((".co.in",".in",".com",".org")):
         return False
     t=text(job).lower()
@@ -122,9 +154,9 @@ def hard_reject(job):
     title=str(job.get("title") or "")
     if not url or not (is_indian_official(url,allow_trusted_psu=True) or psu_context_official(job)):
         return ["non_indian_or_untrusted_domain"]
-    if GENERIC_ORG_RE.fullmatch(org.strip()): return ["generic_organization"]
+    if GENERIC_ORG_RE.fullmatch(org.strip()) and not (host(url) in PSU_DOMAIN_OVERRIDES or host(url) in INSTITUTIONAL_DOMAIN_ORGS): return ["generic_organization"]
     if GENERIC_TITLE_RE.fullmatch(title.strip()): return ["generic_page_title"]
-    if NOISE_RE.search(title): return ["non_recruitment_notice"]
+    if NOISE_RE.search(title) or re.search(r"\b(?:shortlisted|shortlisting|not[- ]?shortlisted|provisional result|final list of)\b",title,re.I): return ["non_recruitment_notice"]
     if not title or len(title.strip())<4: return ["missing_specific_title"]
     if not RECRUITMENT_RE.search(title+" "+str(job.get("raw_text") or "")): return ["no_recruitment_signal"]
     return []
@@ -148,6 +180,7 @@ def tier_for(job,scope,score):
     return None
 
 def evaluate(job):
+    job=normalize_provenance(job)
     reasons=hard_reject(job)
     if reasons: return None,reasons,None,0
     scope,scope_reasons=classify_scope(job)
@@ -167,7 +200,7 @@ def filter_dataset(dataset):
     for job in dataset.get("jobs",[]):
         tier,reasons,scope,score=evaluate(job)
         if tier:
-            row=dict(job); q=dict(row.get("quality") or {})
+            row=normalize_provenance(job); q=dict(row.get("quality") or {})
             row["scope"]=scope; row["publication_tier"]=tier; row["publication_score"]=score
             q.update({"scope":scope,"publication_tier":tier,"publication_score":score,"scope_gate":"multi_stage_v2"})
             row["quality"]=q
