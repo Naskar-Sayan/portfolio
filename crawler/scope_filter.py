@@ -149,6 +149,26 @@ def classify_scope(job):
     if h.endswith((".ac.in",".edu.in")): return "institutional_indian_source",["indian_institutional_domain"]
     return None,["scope_owner_not_verified"]
 
+def source_freshness_reject(job):
+    """Reject stale PSU PDF leads that were discovered from historical career archives."""
+    h=host(job.get("url") or job.get("document_url") or "")
+    if h not in {"hmtindia.com","www.hmtindia.com","nsic.co.in","www.nsic.co.in"}:
+        return False
+    u=str(job.get("url") or job.get("document_url") or "")
+    m=re.search(r"/(20\d{2})/(\d{1,2})/",u)
+    if not m:
+        return False
+    try:
+        issued=datetime(int(m.group(1)),int(m.group(2)),1).date()
+    except ValueError:
+        return False
+    age=(date.today()-issued).days
+    title=str(job.get("title") or "")
+    # Rolling/open-ended institutional advertisements can remain active.
+    if "rolling" in title.lower() or "no last date" in str(job.get("raw_text") or "").lower():
+        return False
+    return age>90
+
 def hard_reject(job):
     url=job.get("url") or job.get("document_url") or ""; org=str(job.get("organization") or "")
     title=str(job.get("title") or "")
@@ -156,7 +176,8 @@ def hard_reject(job):
         return ["non_indian_or_untrusted_domain"]
     if GENERIC_ORG_RE.fullmatch(org.strip()) and not (host(url) in PSU_DOMAIN_OVERRIDES or host(url) in INSTITUTIONAL_DOMAIN_ORGS): return ["generic_organization"]
     if GENERIC_TITLE_RE.fullmatch(title.strip()): return ["generic_page_title"]
-    if NOISE_RE.search(title) or re.search(r"\b(?:shortlisted|shortlisting|not[- ]?shortlisted|provisional result|final list of)\b",title,re.I): return ["non_recruitment_notice"]
+    if NOISE_RE.search(title) or re.search(r"\b(?:shortlisted|shortlisting|not[- ]?shortlisted|provisional result|final list of|document verification|\bDV\b)\b",title,re.I): return ["non_recruitment_notice"]
+    if source_freshness_reject(job): return ["historical_recruitment"]
     if not title or len(title.strip())<4: return ["missing_specific_title"]
     if not RECRUITMENT_RE.search(title+" "+str(job.get("raw_text") or "")): return ["no_recruitment_signal"]
     return []
