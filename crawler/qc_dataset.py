@@ -5,7 +5,7 @@ import argparse,json,re
 from urllib.parse import urlparse
 import sys
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
-from scope_filter import psu_context_official
+from scope_filter import psu_context_official, is_indian_official
 
 FOREIGN=("usajobs.gov","opm.gov","calcareers.ca.gov","kingcounty.gov","lacounty.gov","gov.uk","gov.au","canada.ca","ontario.ca")
 NOISE=re.compile(r"\b(tender|procurement|quotation|auction|rfp|meeting|seminar|workshop|scholarship|admission|syllabus|answer key|result|merit list|press release)\b",re.I)
@@ -13,7 +13,7 @@ RECRUIT=re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advert
 def h(url): return (urlparse(url or "").hostname or "").lower().rstrip(".")
 def official(url,job=None):
     x=h(url)
-    if x.endswith((".gov.in",".nic.in",".ac.in",".edu.in")) or x in {"ibps.in","rrbapply.gov.in","india.gov.in","ncs.gov.in","employmentnews.gov.in"}:
+    if job and is_indian_official(job.get("url") or job.get("document_url"), allow_trusted_psu=True):
         return True
     if job and psu_context_official(job):
         return True
