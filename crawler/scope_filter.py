@@ -134,7 +134,7 @@ def evidence_score(job):
     fields += int(job.get("vacancies") is not None)
     signal=int(bool(RECRUITMENT_RE.search(text(job))))
     specific=int(bool(job.get("title") and not GENERIC_TITLE_RE.fullmatch(str(job.get("title")).strip())))
-    provenance=int(bool(job.get("official_source") or job.get("verification") or is_indian_official(job.get("url") or job.get("document_url"),True)))
+    provenance=int(bool(job.get("official_source") or job.get("verification") or is_indian_official(job.get("url") or job.get("document_url"),True) or psu_context_official(job)))
     return min(100, signal*20+specific*15+provenance*20+min(fields,5)*9)
 
 def tier_for(job,scope,score):
