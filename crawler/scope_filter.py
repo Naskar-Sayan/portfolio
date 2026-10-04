@@ -89,7 +89,6 @@ def state_government_excluded(job):
 
 def classify_scope(job):
     t=text(job); low=t.lower(); h=host(job.get("url") or job.get("document_url") or "")
-    if state_government_excluded(job): return None,["excluded_state_government"]
     if any(x in low for x in ("west bengal","wbpsc","wb govt")): return "west_bengal",["west_bengal_evidence"]
     if any(x in low for x in ("assam government","assam govt","assam psc")): return "assam",["assam_evidence"]
     if any(x in low for x in ("tripura government","tripura govt","tripura psc")): return "tripura",["tripura_evidence"]
@@ -99,6 +98,7 @@ def classify_scope(job):
     if CENTRAL_LINKED_TERMS.search(t) and (h.endswith((".ac.in",".edu.in",".gov.in",".nic.in"))): return "central_linked",["central_linked_evidence"]
     # Other Indian official state sources are useful, but ownership is not strong enough
     # for verified publication.
+    if state_government_excluded(job): return "state_other",["other_indian_state_government"]
     if h.endswith((".gov.in",".nic.in")): return "state_other",["indian_state_official_domain"]
     if h.endswith((".ac.in",".edu.in")): return "institutional_indian_source",["indian_institutional_domain"]
     return None,["scope_owner_not_verified"]
@@ -141,6 +141,11 @@ def evaluate(job):
     tier=tier_for(job,scope,score)
     if tier is None: return None,["insufficient_evidence"],scope,score
     return tier,scope_reasons,scope,score
+
+def high_precision_valid(job):
+    """Backward-compatible view of the old gate: only VERIFIED records pass."""
+    tier,reasons,scope,score=evaluate(job)
+    return tier=="verified", reasons, scope
 
 def filter_dataset(dataset):
     kept=[]; rejected=[]; counts={}; tier_counts={}
