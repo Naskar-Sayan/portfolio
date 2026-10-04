@@ -577,7 +577,9 @@ def run():
     trusted_psu_domains = sorted({
         host(x.get("primary_source"))
         for x in dedup.values()
-        if x.get("agent") in PSU_AGENT_SHARDS and x.get("primary_source")
+        if x.get("agent") in PSU_AGENT_SHARDS
+        and x.get("primary_source")
+        and _cpse_domain_matches(x.get("primary_source"))
     })
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
