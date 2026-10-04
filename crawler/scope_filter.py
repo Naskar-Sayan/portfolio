@@ -157,10 +157,15 @@ def source_freshness_reject(job):
         return False
     u=str(job.get("url") or job.get("document_url") or "")
     m=re.search(r"/(20\d{2})/(\d{1,2})/",u)
-    if not m:
-        return False
+    if m:
+        year,month=int(m.group(1)),int(m.group(2))
+    else:
+        m=re.search(r"/(20\d{2})(\d{2})(\d{2})\d{4,}(?:\D|$)",u)
+        if not m:
+            return False
+        year,month=int(m.group(1)),int(m.group(2))
     try:
-        issued=datetime(int(m.group(1)),int(m.group(2)),1).date()
+        issued=datetime(year,month,1).date()
     except ValueError:
         return False
     age=(date.today()-issued).days
