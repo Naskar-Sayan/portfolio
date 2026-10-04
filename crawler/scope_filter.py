@@ -106,7 +106,8 @@ def classify_scope(job):
 def hard_reject(job):
     url=job.get("url") or job.get("document_url") or ""; org=str(job.get("organization") or "")
     title=str(job.get("title") or "")
-    if not url or not is_indian_official(url,allow_trusted_psu=True): return ["non_indian_or_untrusted_domain"]
+    if not url or not (is_indian_official(url,allow_trusted_psu=True) or psu_context_official(job)):
+        return ["non_indian_or_untrusted_domain"]
     if GENERIC_ORG_RE.fullmatch(org.strip()): return ["generic_organization"]
     if GENERIC_TITLE_RE.fullmatch(title.strip()): return ["generic_page_title"]
     if NOISE_RE.search(title): return ["non_recruitment_notice"]
@@ -123,7 +124,7 @@ def evidence_score(job):
     return min(100, signal*20+specific*15+provenance*20+min(fields,5)*9)
 
 def tier_for(job,scope,score):
-    has_core=score>=85
+    has_core=score>=80
     if scope in {"central","psu","central_linked","west_bengal","assam","tripura","odisha"} and has_core:
         return "verified"
     if scope in {"state_other","institutional_indian_source","central","psu","central_linked","west_bengal","assam","tripura","odisha"} and score>=65:
