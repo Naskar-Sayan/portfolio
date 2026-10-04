@@ -5,7 +5,7 @@ name: Government Jobs Daily Refresh
 
 on:
   push:
-    branches: [master]
+    branches: [master, govjob-development]
     paths:
       - ".github/workflows/govjobs-scheduler.yml"
   schedule:
