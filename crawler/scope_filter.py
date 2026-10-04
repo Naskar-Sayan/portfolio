@@ -79,7 +79,7 @@ def is_indian_official(url,allow_trusted_psu=False):
     h=host(url)
     if not h or any(h==x or h.endswith("."+x) for x in FOREIGN_HOST_MARKERS): return False
     if allow_trusted_psu and h in TRUSTED_PSU_DOMAINS: return True
-    return h.endswith(".gov.in") or h.endswith(".nic.in") or h.endswith(".ac.in") or h.endswith(".edu.in") or h in NATIONAL_HOSTS or h.endswith(".co.in")
+    return h.endswith(".gov.in") or h.endswith(".nic.in") or h.endswith(".ac.in") or h.endswith(".edu.in") or h in NATIONAL_HOSTS
 
 def state_government_excluded(job):
     t=text(job).lower(); h=host(str(job.get("url") or job.get("document_url") or ""))
