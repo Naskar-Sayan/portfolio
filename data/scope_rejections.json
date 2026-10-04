@@ -1,64 +1,13 @@
 {
-  "generated_at": "2026-10-03T19:39:29.045178+00:00",
-  "rejected_count": 77,
+  "generated_at": "2026-10-04T07:31:53.393991+00:00",
+  "rejected_count": 54,
   "scope_counts": {
-    "central": 3
+    "central": 14
+  },
+  "tier_counts": {
+    "verified": 14
   },
   "rejected": [
-    {
-      "id": "3be5d40ea1f987da",
-      "title": "TEACHING POSITIONS",
-      "organization": "NALANDA UNIVERSITY",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "reasons": [
-        "expired_notice"
-      ]
-    },
-    {
-      "id": "307139714d8ee2b8",
-      "title": "PROFESSOR",
-      "organization": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "reasons": [
-        "expired_notice"
-      ]
-    },
-    {
-      "id": "bbc6a387001985d6",
-      "title": "ENGINEER & OTHERS",
-      "organization": "RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "reasons": [
-        "expired_notice"
-      ]
-    },
-    {
-      "id": "b0fff7e6cce858a4",
-      "title": "LECTURER",
-      "organization": "DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "reasons": [
-        "expired_notice"
-      ]
-    },
-    {
-      "id": "4c2a4f801ce90813",
-      "title": "Internships Fellowships Opportunities | OGE IIT Madras",
-      "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "6aaa3c0b97f88fe5",
-      "title": "Research Internship for Young Academics (RIYA) – Summer 2027 | OGE IIT Madras",
-      "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/research-internship-for-young-academics-riya-summer-2027",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
     {
       "id": "4961d667715e9e3c",
       "title": "YOUNG CONSULTANT (FOREST FIRE RISK MANAGEMENT)",
@@ -66,79 +15,9 @@
       "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
       "reasons": [
         "no_recruitment_signal"
-      ]
-    },
-    {
-      "id": "ca69a40dfb658c9e",
-      "title": "Morehead-Cain Global Fellows Program (2027–2028) | OGE IIT Madras",
-      "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/morehead-cain-global-fellows-program-20272028",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "32f2bd576c9a875b",
-      "title": "advtCVRDE08092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
-      "reasons": [
-        "excluded_state_government"
-      ]
-    },
-    {
-      "id": "677014af9188af5f",
-      "title": "advtLRDE07092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
-      "reasons": [
-        "excluded_state_government"
-      ]
-    },
-    {
-      "id": "d789393336ab098c",
-      "title": "advtCVRDE02092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
-      "reasons": [
-        "excluded_state_government"
-      ]
-    },
-    {
-      "id": "cec740c28f96c0fb",
-      "title": "advtNPOL01092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
-      "reasons": [
-        "excluded_state_government"
-      ]
-    },
-    {
-      "id": "ffb09edd2505b3a7",
-      "title": "advtVRDE31082026En",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
-      "reasons": [
-        "excluded_state_government"
-      ]
-    },
-    {
-      "id": "7da731296293778b",
-      "title": "Advertisement Associate Legal 27 08 2026",
-      "organization": "https://apeda.g...",
-      "url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
-      "reasons": [
-        "excluded_state_government"
-      ]
-    },
-    {
-      "id": "e940885a65b0b427",
-      "title": "advtDEBEL27082026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
-      "reasons": [
-        "excluded_state_government"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "1da01e8da4961ef0",
@@ -147,7 +26,9 @@
       "url": "https://home.iitd.ac.in/uploads/Notification%20%20for%20DV%20and%20Annexure-I.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "9c96dee91c2a980a",
@@ -156,7 +37,9 @@
       "url": "https://home.iitd.ac.in/uploads/Notice%20to%20be%20upload%20on%20Institute%20Website%2019-06-26.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "00af7c98c5334783",
@@ -165,17 +48,9 @@
       "url": "https://home.iitd.ac.in/uploads/Corrigendum%20PDF.pdf",
       "reasons": [
         "generic_organization"
-      ]
-    },
-    {
-      "id": "99b457c9406f816e",
-      "title": "international info brochure",
-      "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/assets/pdf/international-info-brochure.pdf",
-      "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "3cf0b4df3211b06f",
@@ -184,7 +59,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Advertisement%20for%20the%20post%20of%20Director,%20IIT%20Delhi.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "c4742f0a6b97a778",
@@ -193,7 +70,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Advertisement%20for%20the%20post%20of%20Director,%20IIT%20Mandi.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "6d820531535a2237",
@@ -202,7 +81,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Advertisement%20for%20the%20post%20of%20Director,%20IIT%20Indore.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "7eea43f5c448e4f0",
@@ -211,7 +92,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/IPDF_Advertisement_Feb_26_2026-Final.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "4edc3573f0fd98f9",
@@ -220,7 +103,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/I_IPDF_Advertisement_10092026.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "9bb6702f72b8e5aa",
@@ -229,7 +114,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Advertisement%20to%20be%20published%20in%20the%20Newspapers(1).pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "57b2d7997ae34c7f",
@@ -238,7 +125,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rollling%20Advt.%20IITD%202026%20AP-1_23.3.2026.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "863a276f83a3f281",
@@ -247,7 +136,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rollling%20Advt.%20IITD%202025%20AP-2.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "e524292bd93098b2",
@@ -256,7 +147,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/IITD%202025%20AP-1%20Rollling%20advt%20FINAL%20APR25.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "17e07fdd920c2db6",
@@ -265,7 +158,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/MAIN%20SRD_18.8.2026.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "41ee7b4010b63140",
@@ -274,7 +169,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/IITD%20EST-1%2003%202025.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "0c276e51ba06425a",
@@ -283,7 +180,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling%20Advt.%20IITD%202026%20PROF-1_23.3.2026.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "724283da2423c2aa",
@@ -292,7 +191,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling%20Advt.%20IITD%202025%20PROF-2.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "1cfe84671af60f6d",
@@ -301,7 +202,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/prof-associate/IITD%202025%20PROF-1%20FINAL_27Dec24.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "8a6808ee2bdf3b57",
@@ -310,7 +213,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/INTERNATINAL%20ADVERTISEMENT_NOCI_FF-7.5.2026.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "f53e10c405fe5d20",
@@ -319,7 +224,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Note%20on%20Shortlisting%20for%20%20the%20post%20of%20Institute%20Engineer.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "4038e2842ac9c2ee",
@@ -328,7 +235,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/List%20of%20Provisionally%20Shortlisted-Not-Shortlisted%20Applicants%20for%20the%20Post%20of%20Institute%20Engineer%20on%20Deputation%20basis.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "b648f93a262e38c6",
@@ -337,7 +246,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Note%20on%20Shortlisting%20for%20%20the%20post%20of%20EE%20(Civil).pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "0d7acfb2c508cc2c",
@@ -346,7 +257,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Final%20List%20of%20the%20Provisionally%20Shortlisted%20&%20Not-Shortlisted%20Applicants%20for%20the%20post%20of%20Assistant%20Executive%20Engineer%20(Civil).pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "1561b5ebb9f3d49c",
@@ -355,7 +268,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Final%20List%20of%20Provisionally%20Shortlisted%20and%20Not-Shortlisted%20Applicants%20for%20the%20Post%20of%20Superintending%20Engineer.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "f5d83349e3109b02",
@@ -364,7 +279,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Final%20List%20of%20Provisionally%20Shortlisted%20and%20Not-Shortlisted%20Applicants%20for%20the%20Post%20of%20Medical%20Officer.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "4d85f6cd10aec8ba",
@@ -373,7 +290,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Final%20List%20of%20the%20Provisionally%20Shortlisted%20&%20Not-Shortlisted%20Applicants%20for%20the%20post%20of%20Assistant%20Administrative%20Officer.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "7949b5aa1813fb52",
@@ -382,7 +301,9 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Note%20on%20Shortlisting%20for%20%20the%20post%20of%20Superintending%20Engineer.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "4a34a1a30c1128cb",
@@ -391,7 +312,108 @@
       "url": "https://home.iitd.ac.in/jobs-iitd/uploads/List%20of%20Provisionally%20Shortlisted%20and%20Not-Shortlisted%20Applicants%20for%20the%20Post%20of%20Superintending%20Engineer.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "76f35bc6b1fce5bf",
+      "title": "YP Engagement Notifictaion 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/09/YP-Engagement-Notifictaion-2026.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3778f364f7013b18",
+      "title": "Engagement of Senior Adviser",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/09/Engagement-of-Senior-Adviser.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "748ce9d38fa865f2",
+      "title": "Executive Consultant FPA",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/07/Executive-Consultant-FPA.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1141628c8e897d06",
+      "title": "PS Notification",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/04/PS_Notification.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "4e59a9b4342825b0",
+      "title": "WG Notification",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/04/WG_Notification.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e24a1bc62c0ff40a",
+      "title": "Senior Adviser MTL Units",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/09/Senior-Adviser-MTL-Units.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "eda0c99729d5211c",
+      "title": "FTA recruitment MTH 05 02 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/02/FTA-recruitment-MTH-05-02-2026.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "cfa149ed247f92bb",
+      "title": "Advt HMT MTK FTA Jan 2026%20REVISED",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/01/Advt-HMT-MTK-FTA-Jan-2026%20REVISED.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5ea7517a4918ac0c",
+      "title": "R1 HMTI FTA March 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.hmtindia.com/wp-content/uploads/2026/03/R1-HMTI-FTA-March-2026.pdf",
+      "reasons": [
+        "non_indian_or_untrusted_domain"
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "288b493754d65035",
@@ -400,7 +422,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026714181514.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "b554794bfbc176b3",
@@ -409,7 +433,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "9a4b882fbc30407d",
@@ -418,7 +444,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "feeb1efe3d440b05",
@@ -426,9 +454,10 @@
       "organization": "Verified news lead",
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251118183938.pdf",
       "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "a6445a2a273f8cc9",
@@ -436,9 +465,10 @@
       "organization": "Verified news lead",
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112258.pdf",
       "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "286a3c04066690fe",
@@ -446,9 +476,10 @@
       "organization": "Verified news lead",
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112220.pdf",
       "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "b0236f9d4ad9ecb6",
@@ -457,7 +488,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "2a6d8a8b264964f9",
@@ -466,7 +499,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "2d2ab36fd0d2a3b6",
@@ -475,7 +510,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "7c3434ff774594bd",
@@ -484,7 +521,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "4624f177988a9abd",
@@ -493,7 +532,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "94ae38e18eda06a5",
@@ -502,7 +543,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "021994935904c231",
@@ -510,9 +553,10 @@
       "organization": "Verified news lead",
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134013.pdf",
       "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "c1d1ce1afa165d15",
@@ -520,9 +564,10 @@
       "organization": "Verified news lead",
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134052.pdf",
       "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "81305680ed69bd3c",
@@ -530,9 +575,10 @@
       "organization": "Verified news lead",
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134129.pdf",
       "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "a2975d0184757593",
@@ -541,7 +587,9 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
       "reasons": [
         "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     },
     {
       "id": "786d8a8f54ddf4e5",
@@ -549,162 +597,10 @@
       "organization": "Verified news lead",
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134243.pdf",
       "reasons": [
-        "generic_organization",
-        "no_recruitment_signal"
-      ]
-    },
-    {
-      "id": "ad3dcc1bf4c16247",
-      "title": "R525 Detailed Advt and instructions",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
-      "reasons": [
         "generic_organization"
-      ]
-    },
-    {
-      "id": "410bcf5677cf7587",
-      "title": "R525 DR L1list",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-DR-L1list.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "19e2360c7dc4bb68",
-      "title": "R525 DRAR L1Schedule",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-DRAR-L1Schedule.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "d7054449bd6ad0d9",
-      "title": "R525 DR L2 shortlisted",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-DR-L2-shortlisted.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "10eb809f1f4b6bcb",
-      "title": "R525 AR L1list",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-AR-L1list.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "4504695ff6721317",
-      "title": "R525 AR L2 shortlisted",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-AR-L2-shortlisted.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "e59a4c5ba444f683",
-      "title": "R525 HVAC Officer L1",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_HVAC_Officer_L1.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "2ed8a728df394284",
-      "title": "R525 TO L1",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_TO_L1.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "50093a13a46de2e8",
-      "title": "R525 AEE L1",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_AEE_L1.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "660485c5e48b384b",
-      "title": "R525 AEE L2 shortlisted",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_AEE_L2_shortlisted.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "abb24e7216399266",
-      "title": "R525 STO L1",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_STO_L1.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "40d1e90574d3bbd6",
-      "title": "R525 JE EE SOE",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_JE_EE_SOE.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "e67bf9b50c567f56",
-      "title": "R525 JE EE L1",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JE-EE-L1.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "6c10e9c7760474e4",
-      "title": "R525 JE CE L2",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JE-CE-L2.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "3eecb5301292dd90",
-      "title": "R525 JEEE L2",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JEEE-L2.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "3bb9b3cde2f3ef01",
-      "title": "R525 JA L2",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JA-L2.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
-    },
-    {
-      "id": "5df3f0f3081cab1b",
-      "title": "R425 LB PI",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R425_LB_PI.pdf",
-      "reasons": [
-        "generic_organization"
-      ]
+      ],
+      "scope": null,
+      "score": 0
     }
   ]
 }

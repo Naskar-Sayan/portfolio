@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-03T19:21:40.019939+00:00",
+  "generated_at": "2026-10-04T07:13:01.735103+00:00",
   "window_days": 30,
-  "cutoff": "2026-09-03",
+  "cutoff": "2026-09-04",
   "discovery": {
-    "seed_count": 132,
-    "pages_crawled": 791,
+    "seed_count": 138,
+    "pages_crawled": 694,
     "domains_crawled": 105,
     "source_stats": [
       {
@@ -14,8 +14,8 @@
         "jobs_found": 0
       },
       {
-        "host": "admissions.ge.iitm.ac.in",
-        "seed_count": 0,
+        "host": "aiimsexams.ac.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -56,15 +56,15 @@
         "jobs_found": 0
       },
       {
-        "host": "assamtourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 3,
-        "jobs_found": 0
-      },
-      {
         "host": "betacloud.ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "chennai.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 7,
         "jobs_found": 0
       },
       {
@@ -80,21 +80,9 @@
         "jobs_found": 0
       },
       {
-        "host": "delhitourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "dget.ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "doe.iitm.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -124,7 +112,7 @@
       {
         "host": "eemis.hp.gov.in",
         "seed_count": 1,
-        "pages_crawled": 1,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -164,28 +152,16 @@
         "jobs_found": 0
       },
       {
-        "host": "facapp.iitm.ac.in",
-        "seed_count": 0,
+        "host": "hmtwatches.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
-      },
-      {
-        "host": "ge.iitm.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 48,
-        "jobs_found": 4
       },
       {
         "host": "home.iitd.ac.in",
         "seed_count": 0,
         "pages_crawled": 60,
         "jobs_found": 27
-      },
-      {
-        "host": "icandsr.iitm.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 31,
-        "jobs_found": 0
       },
       {
         "host": "igod.gov.in",
@@ -196,12 +172,6 @@
       {
         "host": "in.iitd.ac.in",
         "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "indianrail.gov.in",
-        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -279,8 +249,8 @@
       },
       {
         "host": "maharashtratourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 2,
+        "seed_count": 2,
+        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -374,12 +344,6 @@
         "jobs_found": 0
       },
       {
-        "host": "recruit.iitm.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 60,
-        "jobs_found": 17
-      },
-      {
         "host": "recruitment.jharkhand.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -410,6 +374,12 @@
         "jobs_found": 0
       },
       {
+        "host": "sikkim.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 10,
+        "jobs_found": 0
+      },
+      {
         "host": "skill.arunachal.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -435,7 +405,13 @@
       },
       {
         "host": "ssc.gov.in",
-        "seed_count": 2,
+        "seed_count": 3,
+        "pages_crawled": 4,
+        "jobs_found": 0
+      },
+      {
+        "host": "ssccr.gov.in",
+        "seed_count": 1,
         "pages_crawled": 2,
         "jobs_found": 0
       },
@@ -453,6 +429,18 @@
       },
       {
         "host": "tnvelaivaaippu.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "tripura.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "tripuratourism.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -482,6 +470,12 @@
         "jobs_found": 0
       },
       {
+        "host": "www.aiimsexams.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 3,
+        "jobs_found": 0
+      },
+      {
         "host": "www.apprenticeship.gov.in",
         "seed_count": 0,
         "pages_crawled": 7,
@@ -506,6 +500,18 @@
         "jobs_found": 0
       },
       {
+        "host": "www.hmtindia.com",
+        "seed_count": 0,
+        "pages_crawled": 35,
+        "jobs_found": 9
+      },
+      {
+        "host": "www.hmtwatches.in",
+        "seed_count": 1,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "www.hrex.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -524,15 +530,9 @@
         "jobs_found": 0
       },
       {
-        "host": "www.iitm.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 34,
-        "jobs_found": 0
-      },
-      {
         "host": "www.incredibleindia.gov.in",
         "seed_count": 13,
-        "pages_crawled": 19,
+        "pages_crawled": 17,
         "jobs_found": 0
       },
       {
@@ -556,12 +556,6 @@
       {
         "host": "www.labour.gov.in",
         "seed_count": 2,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.moil.nic.in",
-        "seed_count": 1,
         "pages_crawled": 2,
         "jobs_found": 0
       },
@@ -596,6 +590,12 @@
         "jobs_found": 0
       },
       {
+        "host": "www.railyatri.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "www.rrbapply.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -604,7 +604,7 @@
       {
         "host": "www.sikkim.gov.in",
         "seed_count": 1,
-        "pages_crawled": 1,
+        "pages_crawled": 23,
         "jobs_found": 0
       },
       {
@@ -640,21 +640,200 @@
     ]
   },
   "quality": {
-    "raw_candidates": 419,
-    "published_jobs": 80,
-    "rejected_or_deduplicated": 339,
+    "raw_candidates": 355,
+    "published_jobs": 68,
+    "rejected_or_deduplicated": 287,
     "primary_source_required": true,
-    "scope_gate": "high_precision",
-    "published_jobs_before_scope_gate": 80,
-    "published_jobs_after_scope_gate": 3,
-    "rejected_by_scope_gate": 77,
+    "scope_gate": "multi_stage_v2",
+    "published_jobs_before_gate": 68,
+    "published_jobs_after_gate": 14,
+    "rejected_by_scope_gate": 54,
     "scope_counts": {
-      "central": 3
+      "central": 14
     },
-    "accuracy_target": ">=98% precision by hard scope/evidence gate; measured on QC set"
+    "publication_tier_counts": {
+      "verified": 14
+    },
+    "verified_precision_target": ">=98%",
+    "gate_architecture": "hard exclusions -> provenance -> ownership -> evidence -> tier",
+    "tier_qc": {
+      "verified": {
+        "rows": 14,
+        "failed": 0,
+        "score": 1.0
+      }
+    }
   },
   "registry_source": "Live NCS + IGOD government directories",
   "jobs": [
+    {
+      "id": "3be5d40ea1f987da",
+      "title": "TEACHING POSITIONS",
+      "organization": "NALANDA UNIVERSITY",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "deadline": "2026-09-15",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": "2026-09-12",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "NALANDA UNIVERSITY",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "12/09/2026 | NALANDA UNIVERSITY | TEACHING POSITIONS | Recruitment | 15/09/2026 Recruitment",
+      "normalized_key": "nalanda university|teaching positions",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "deadline",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
+    {
+      "id": "307139714d8ee2b8",
+      "title": "PROFESSOR",
+      "organization": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "deadline": "2026-09-17",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": "2026-09-07",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "07/09/2026 | NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS | PROFESSOR | Recruitment | 17/09/2026 Recruitment",
+      "normalized_key": "national institute of pharmaceutical education and research kolkata m o chemical and fertilizers|professor",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "deadline",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
+    {
+      "id": "bbc6a387001985d6",
+      "title": "ENGINEER & OTHERS",
+      "organization": "RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "deadline": "2026-09-24",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": "2026-09-07",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "07/09/2026 | RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED | ENGINEER & OTHERS | Recruitment | 24/09/2026 Recruitment",
+      "normalized_key": "ramagundam fertilizers and chemicals limited|engineer others",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "deadline",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
+    {
+      "id": "b0fff7e6cce858a4",
+      "title": "LECTURER",
+      "organization": "DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "deadline": "2026-09-27",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": "2026-09-12",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "12/09/2026 | DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT | LECTURER | Recruitment | 27/09/2026 Recruitment",
+      "normalized_key": "dns regional institute of cooperative management|lecturer",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "deadline",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
     {
       "id": "6610d10c5fd9e8c3",
       "title": "ACCOUNTANT & OTHERS",
@@ -668,7 +847,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-03T19:21:40.019939+00:00",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
       "source": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
       "official_source": true,
       "confidence": "primary_domain",
@@ -689,9 +868,13 @@
         ],
         "rejection_reasons": [],
         "scope": "central",
-        "scope_gate": "high_precision"
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
       },
-      "scope": "central"
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
     },
     {
       "id": "8d9e693bb4076159",
@@ -706,7 +889,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-08-31",
-      "discovered_at": "2026-10-03T19:21:40.019939+00:00",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
       "source": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
       "official_source": true,
       "confidence": "primary_domain",
@@ -727,9 +910,178 @@
         ],
         "rejection_reasons": [],
         "scope": "central",
-        "scope_gate": "high_precision"
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
       },
-      "scope": "central"
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
+    {
+      "id": "7da731296293778b",
+      "title": "Advertisement Associate Legal 27 08 2026",
+      "organization": "https://apeda.g...",
+      "url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
+      "application_url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
+      "document_url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": 45,
+      "pay": "Pay Level 10 of the Central Government. Position Position Remuneration per month (Rs.) Associate (Legal) Rs. 90,000",
+      "qualification": ", Experience and Vacancies : Applicants with the following qualifications and experience would be considered for engagement as Associate (Legal)",
+      "posting_date": null,
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "https://apeda.g...",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "update",
+      "is_update": true,
+      "kind": "recruitment_notice",
+      "raw_text": "Government of India Ministry of Commerce and Industry Department of Commerce Agricultural and Processed Food Products Export Development Authority (3 Floor, NCUI Building, 3 Siri Institutional Area, August Kranti Marg Opp. Asiad Village, New Delhi) F. No.: PAD-2023-24-000091 Dated: 27.08.2026 SUB: ENGAGEMENT OF ASSOCIATE (LEGAL) (ON CONTRACT) IN APEDA, NEW DELHI The Agricultural and Processed Food Products Export Develo pment Authority (APEDA), an autonomous organization under the Department of Commerce, Ministry of Commerce & Industry, Govt. of India is mandated with the responsibility for promotion of agricultural and processed food products from India. APEDA has been a ctively involved in agricultural trade facilitation and intends to improve market access for Indian agricultural products at international level. The process involves improving quality of produce and achieving optimum shelf life resulting into increased qu ality exports of Indian agriculture products. It also requires addressing the issues of Sanitary & Phyto-Sanitary (SPS) and Technical Barriers to Trade (TBT) which are currently resulting in poor market access and hampering exports. APEDA intends to hire talented, innovative and dynamic professional(s) for the position of Associate (Legal) (On Contract). 2. Type and Tenure of Engagement 2.1 The engagement shall be at the level of Associate (Legal). 2.2 Scope of Work : The selected candidate will be deputed b y APEDA who will work dedicatedly to ensure the following in collaboration with the concerned central/ state department/ agencies: 2.2.1 Liaise with law firms engaged to represent APEDA. 2.2.2 Be willing to learn and develop expertise in a niche area such as the law r elated to protection of geographical indications. 2.2.3 Be proactive and take initiative in handling the work expeditiously. 2.2.4 Prioritize the work and manage time efficiently. 2.2.5 Maintain strict confidentiality, given that the matters are highly sensitive. 2.3 The engagement shall be purely on a contractual basis. 2.4 The engagement shall be initially for a period of one year including probation period of three weeks. The tenure of engagement may be extended on a year to year basis, depending on the performance evaluation. Af ter three years no further extension will be permissible under any circumstances. 3. Qualification, Experience and Vacancies : Applicants with the following qualifications and experience would be considered for engagement as Associate (Lega",
+      "normalized_key": "https apeda g|advertisement associate legal 27 08 2026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 91,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 91
+    },
+    {
+      "id": "d789393336ab098c",
+      "title": "advtCVRDE02092026",
+      "organization": "https://drdo.go...",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
+      "deadline": null,
+      "vacancies": 1,
+      "age_limit_years": 18,
+      "pay": "rs,",
+      "qualification": null,
+      "posting_date": "2026-09-08",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "https://drdo.go...",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "भारत सरकार, र�ा मंत्रालय Government of India, Ministry of Defence र�ा अनुसंधान और �वकास संगठन Defence Research and Development Organization संगाम वाहन अनु संधान तथा �वकास स्थापन COMBAT VEHICLES RESEARCH & DEVELOPMENT ESTABLISHMENT आवडी, चेन्नई-600 054 /AVADI, CHENNAI-600 054 वाँक-इन इंटरव्यू/ WALK-IN INTERVIEW — 08/09/2026 to 09/09/2026 �व�ापन सं/ Advt No: CVRDE/ADMIN/2026-27 प्र�श�ु अ�ध�नयम 1961 के प्रावधान� के तहत, �नदेशक, संग्राम वाहन अनु संधान एवं �वकास स्थापन (सीवीआरडीई), आवडी, चेन्नई, योग्य उम्मीदवार� से वॉक-इन इंटरव्यू के माध्यम से प्र�श�ुता प्र�श�ण के �लए आवेदन आमं�त्रत करते है:- Under the provisions of the Apprentices Act, 1961, Director, Combat Vehicles Research & Development Establishment (CVRDE), Avadi, Chennai invites applications from eligible candidates for apprenticeship training through WALK-IN INTERVIEW as per details below:- 1. आईट�आई प्र�श�ु / ITI Apprentice Trainees क्रं म सं/ Si.No. �वषय / Trade छात्रवृ�� / Stipend (Rs) कुल �रिक्तयाँ/ Total Vacancy 1 Computer Operator & Programming Assistant (COPA) 10,560/- 13 2 Draughtsman (Mechanical) 11,040/- 10 3 Electrician 11,040/- 12 4 Fitter 11,040/- 10 5 Mechanic (Motor Vehicle) 11,040/- 8 6 Machinist 11,040/- 5 7 Painter 10,560/- 1 8 Plumber 11,040/- 3 9 Turner 11,040/- 5 10 Welder 10,560/- 5 11 Electronics Mechanic 11,040/- 6 12 Sheet Metal Worker 11,040/- 1 13 Computer Networking Technician 10,560/- 1 14 Computer & Peripherals hardware repair & maintenance mechanic 10,560/- 1 15 Photographer 11,040/- 4 16 Book Binder 11,040/- 2 17 CAD-CAM Operator Cum Programmer 10,560/- 3 18 Food Production (General) 10,560/- 3 कुल �रिक्तयां / Total Vacancies 93 श्रेणी / Category SC ST OBC EWS UR पद संख्या / Slots 13 06 25 09 40 सू चना :- ऊपर बताई गई �रिक्तय� क� संख्या के वल सांके�तक ह� और प्राप्त होने वाले योग्य आवेदन� के अं�तम मू ल्यांकन के आधार पर बाद म� बदल सकती ह�। The No. of vacancies mentioned above are only indicative and may change at a later stage depending on the final assessment of eligible applications received. भाग – 2 आयु सीमा (01/09/2026 तक) / Part – 2 Age Limit (As on 01/09/2026) • न्यूनतम आयु सीमा: 18 वषर् | अ�धकतम आयु सीमा: अनार��त – 27 वषर्, OBC – 30 वषर्, SC/ST – 32 वषर्, PWD – 37 वषर् • Minimum Age limit: 18 years | Maximum Age limit: Unreserved category – 27yrs, OBC – 30yrs, SC/ST – 32yrs, PWD – 37yrs भाग – 3 मह�वपूणर् �नद�श / Part – 3 Important Instructions प्र�श�ण क� अव�ध प्र�श�ु अ�ध�नयम 1961, प्र�श�ुता �नयम और समय-समय पर होने वाले संशोधन� के अनुसार होगी। Duration of training will",
+      "normalized_key": "https drdo go|advtcvrde02092026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "vacancy_count",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 91,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 91
+    },
+    {
+      "id": "32f2bd576c9a875b",
+      "title": "advtCVRDE08092026",
+      "organization": "https://drdo.go...",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": "₹५,०००",
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "https://drdo.go...",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Page 1 of 6 संग्राम वाहन अनुसंधान तथा ववकास स्थापन COMBAT VEHICLES RESEARCH & DEVELOPMENT ESTABLISHMENT रक्षा मंत्रालय, भारत सरकार MINISTRY OF DEFENCE, GOVERNMENT OF INDIA आवडी, चेन्नई – ६०० ०५४ AVADI, CHENNAI – 600 054 ववज्ञापन संख्या / Advertisement No. : CVRDE/HRD/PAID INTERNSHIP/2026 डीआरडीओ की पेड इंटननविप योजना क े वलए ववज्ञापन – वर्न २०२६-२७क े स्नातक / स्नातकोत्तर इंजीवनयररंग छात्रों क े वलए Advertisement for ‘Paid Internship Scheme of DRDO’ – for Under Graduate / Post Graduate Engineering students for the year 2026-27 सीवीआरडीई, डीआरडीओ भारतीय थल सेना, नौसेना और वायुसेना क े ललए अत्याधुलनक कवलित लड़ाकू वाहन ों (एएफवी) और प्रणाललय ों व तकनीक ों क े लडज़ाइन और लवकास का कायय करती है। सीवीआरडीई क े पास एएफवी से जुड़ी तकनीक ों में मुख्य लवशेषज्ञता है, जैसे लक - टरेट एवों हलथयार प्रणाली , िेलसस और ऑट म लटव हलथयार प्रणाली , पावरपैक तकनीक (इोंजन और ट ् ाोंसलमशन), रलनोंग लगयर तकनीक, वाहन इलेक्ट्र ् कल्स, इलेर ् ॉलनक्स और सोंिार आलि। Combat Vehicles Research & Development Establishment (CVRDE), DRDO is involved in the Design & Development of State -of-the-Art Armoured Fighting Vehicles (AFVs) and systems and technologies for the Indian Army, Air Force & Navy. CVRDE has the Core Competency in t he technologies relevant to AFVs – viz., Turret & Weapon System, Chassis & Automotive System, Powerpack Technologies (Engine & Transmission), Running Gear Technologies, Vehicle Electricals, Electronics and Communication, etc. सीवीआरडीई शैक्षलणक वषय २०२६-२७ क े ललए ०६ महीने की पेड इोंटनयलशप हेतु पात्र अभ्यलथयय ों से लनधायररत प्रारूप में आवेिन आमोंलत्रत करता है। लवज्ञापन क े प्रकाशन की लतलथ से १० लिन ों क े भीतर आवेिन प्रस्तुत लकए जाने िालहए। यह इोंटनयलशप लनम्नललक्ट्ित लवषय ों / शािाओों क े अोंलतम वषय में अध्ययनरत स्नातक (अोंडरग्रेजुएट) अथवा स्नातक त्तर (प स्टग्रेजुएट) इोंजीलनयररोंग लवद्यालथयय ों क े ललए है। स्नातक इोंजीलनयररोंग क े ७वें / ८वें सेमेस्टर तथा स्नातक त्तर इोंजीलनयररोंग क े प्रथम / लितीय वषय क े लवद्याथी आवेिन करने क े पात्र हैं। CVRDE invites Applications in the prescibed format from eligible final year students pursuing under graduation / post graduation engineering within 10 days from the date of publication of this advertisement for the following disciplines for a tenure of 06 months paid internship for the academic year 2026-27. Students in 7th / 8th semester of Under Graduate Engineering or 1st / 2nd year of Post Graduate Engineering are eligible to apply. ववर्यवार ररक्तियां /DISCIPLINE-WISE VACANCIES: श्रेणी (ए): स्नातक इंटननविप क े वलए (बी.ई / बी.टेक क",
+      "normalized_key": "https drdo go|advtcvrde08092026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
+    {
+      "id": "e940885a65b0b427",
+      "title": "advtDEBEL27082026",
+      "organization": "https://drdo.go...",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": 28,
+      "pay": null,
+      "qualification": "conditions are fulfilled , Candidates should download and fill the Application Form in the prescribed format enclosed (also available on the ‘what’s new’ section of the website www",
+      "posting_date": null,
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "https://drdo.go...",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "update",
+      "is_update": true,
+      "kind": "recruitment_notice",
+      "raw_text": "रक्षा जीव अभियाांभिकी तथा भिभकत्सा इलेक्ट्रॉभिकी प्रयोगशाला (डेबेल ) DEFENCE BIOENGINEERING AND ELECTROMEDICAL LABORATORY (DEBEL) रक्षा अिुसांधाि एवां भवकास सांगठि/ Defence Research & Development Organization (DRDO) रक्षा मांिालय / Ministry of Defence, िारत सरकार / Government of India, न्यू भतप्पसन्द्रा / New Thippsandra, बेंगलूरु /Bengaluru– 560075 Fax: 080-25282011 E-mail: hrd.debel.debel@gov.in Advt No. DEBEL/HRD/1/JRF-1/2026 ADVERTISEMENT FOR THE AWARD OF JUNIOR RESEARCH FELLOW (JRF) Defence Bioengineering and Electromedical Laboratory (DEBEL), Bangalore, a premier Institute of Defence Research and Development Organisation (DRDO), invites applications for Junior Research Fellow (JRF). DEBEL invites applications from young and meritorious Indian nationals with requisite qualifications, who desire to pursue defence-related research as Junior Research Fellows. Selection will be made on the basis of screening and interview. कोड Subject Code सांख्या No. of Fellowship s आवश्यक योग्यता Essential Qualifications JRF-01 02 BE/ BTech in Mechanical Engineering with 1 st Division and GATE Qualified with valid Score OR ME/ MTech in Mechanical Engineering with 1 st Division both at Graduate & Postgraduate level General Conditions: 1. Only candidates possessing the above -mentioned qualification(s) should apply. All the qualifications acquired should be from recognized Universities/ Institutions (approved by AICTE/UGC). 2. Tenure: JRF will be initially awarded for a period of 02 (Two) years. This may be upgraded as Senior Research Fellowship (SRF) for a period of one year (3rd Year) and further SRF may again be extended for a period of one more year (4th Year) based on performance. 3. Age Limit: The upper age limit for JRF is maximum 28 years as on the closing date of receipt of applications. The upper age limit shall be relaxable for the candidates belonging to SC/ST and OBC as per Govt. of India rules. THE CLOSING DATE OF RECEIPT OF APPLICATIONS is 18th Sep 2026. 4. How to apply : After ensuring that all the eligibility conditions are fulfilled , Candidates should download and fill the Application Form in the prescribed format enclosed (also available on the ‘what’s new’ section of the website www.drdo.gov.in). The signed Application Form along with certificate in support of minimum educational q ualification, matriculation certificate/ birth certificate in support of date of birth, GATE/ NET Score card (if applicable), valid as on closing date of application, caste",
+      "normalized_key": "https drdo go|advtdebel27082026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
     },
     {
       "id": "ea987702eb89001c",
@@ -744,7 +1096,7 @@
       "pay": "Rs. 37,000",
       "qualification": "certificates/Mark Sheets/Experience Certificates etc",
       "posting_date": "2026-09-04",
-      "discovered_at": "2026-10-03T19:21:40.019939+00:00",
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -764,22 +1116,151 @@
         ],
         "rejection_reasons": [],
         "scope": "central",
-        "scope_gate": "high_precision"
+        "publication_tier": "verified",
+        "publication_score": 91,
+        "scope_gate": "multi_stage_v2"
       },
-      "scope": "central"
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 91
+    },
+    {
+      "id": "677014af9188af5f",
+      "title": "advtLRDE07092026",
+      "organization": "https://drdo.go...",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": 28,
+      "pay": null,
+      "qualification": "Equivalent acceptable subjects of essential qualification 1 Electronics & Communication Engineering (ECE) 2 (Two) Graduate degree from recognized university in professional course (BE / B Tech in first division in respective subject with valid cut off GATE Score (2024, 2025 & 2026 are acceptable) Or Post graduate degree from recognized university i",
+      "posting_date": null,
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "https://drdo.go...",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "ELECTRONICS & RADAR DEVELOPMENT ESTABLISHMENT (LRDE) DRDO, MINISTRY OF DEFENCE CV. RAMAN NAGAR, BENGALURU – 560 093. LRDE: Advt. No. 03/2026/JRF ADVERTISEMENT FOR WALK-IN RECRUITMENT FOR THE AWARD OF JUNIOR RESEARCH FELLOWSHIP-2026 Electronics and Radar Development Establishment (LRDE) is one of the R&D Establishments set up under the Defence R&D organization, Government of India to address the needs of Defence Services in the field of Radar and related Technologies. LRDE invites applications from young and meritorious Indian citizens, who desire to pursue Radar related research as Junior Research Fellows possessing qualifications as indicated below. Sl. No. Discipline Number of vacanci es Educational Qualification Equivalent acceptable subjects of essential qualification 1 Electronics & Communication Engineering (ECE) 2 (Two) Graduate degree from recognized university in professional course (BE / B Tech in first division in respective subject with valid cut off GATE Score (2024, 2025 & 2026 are acceptable) Or Post graduate degree from recognized university in professional course (ME / M Tech) in first division both at Graduate and Post graduate level in respective subject. 1. Electronics Engg 2. Electronics & Communication Engg 3. Electronics & Telecommunication Engg 4. Electronics & Computer Engg. 5. Electronics & Communication Technology 6. Electronics & Communication System Engg 7. Electronics & Electrical Communication Engg 8. Any other relevant discipline with qualifying degree which mentions “Electronics” as the main discipline. Essential information regarding selection procedure: Fellowship Stipend: As per Govt. norms, currently ₹. 37,000/ - per month (plus admissible House Rent Allowance) Upper Age Limit : 28 years for JRF as on 01 st Sep 2026. The upper age limit shall be relaxable to the candidates belonging to Scheduled Castes, Scheduled Tribes and OBC as per Government of India rules. Tenure: The initial offer shall be for a period of 2 years extendable up to a maximum of 4 years as per provisions of scheme of Research fellows in DRDO. Nationality: Only Indian Nationals need to apply. Application Procedure: Eligible candidates who are willing to attend the walk -in interview are advised to send their willingness by email at hrdlrde2010@gmail.com by 25th Sep 2026. The subject field of the email must contain “Application for the post of JRF-ECE discipline”. Date of Walk-in: 08 Oct 2026 Interview Guidelines: 1. Venue: Electronics & Radar Developm",
+      "normalized_key": "https drdo go|advtlrde07092026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
+    {
+      "id": "cec740c28f96c0fb",
+      "title": "advtNPOL01092026",
+      "organization": "https://drdo.go...",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": 28,
+      "pay": "rs 2",
+      "qualification": "ate Date & Time of Walk-in Interview 1",
+      "posting_date": null,
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "https://drdo.go...",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Certified ISO 9001: 2015 DEFENCE RESEARCH & DEVELOPMENT ORGANISATION Government of India, Ministry of Defence NAVAL PHYSICAL AND OCEANOGRAPHIC LABORATORY THRIKKAKARA P.O., KOCHI, KERALA – 682 021 ADVT.NO.NPOL/JRF/01/2026 “ हर काम देश क े नाम ” ADVT NO. NPOL/JRF/01/2026: SELECTION FOR THE POSITION OF JUNIOR RESEARCH FELLOW (JRF) The following Research Fellowships are available at this Laboratory for candidates possessing requisite qualifications, in the subject/disciplines as detailed below:- Sl. No. Type of Fellowship Subject/ Discipline No of vacancies Essential Educational qualification ate Date & Time of Walk-in Interview 1. Junior Research Fellow (JRF) Computer Science & Engineering Anticipated B.E/B.Tech in Computer Science Engg in 1st Division with valid GATE qualification. or M.E/M.Tech in Computer Science Engg in 1st Division both at Graduate* and Post Graduate level. 10.10.2026 (Saturday) at 0930 hrs 2. Mechanical Engineering 04 BE/B.Tech in Mechanical Engg in 1st Division with valid GATE qualification. or ME/M.Tech in Mechanical Engg in 1st Division both at Graduate and Post Graduate level. 3. Chemical Engineering/ Rubber Technology/ Polymer Technology/ Nanotechnology/ Materials Science Anticipated BE/B.Tech in Chemical Engineering/ Rubber Technology/ Polymer Technology/ Nanotechnology/ Materials Science in 1st Division with valid GATE qualification. or ME/M.Tech in Chemical Engineering/ Rubber Technology/ Polymer Technology/ Nanotechnology/ Materials Science in 1st Division both at Graduate* and Post Graduate level. 4. Opto Electronics Anticipated BE/B.Tech in Opto Electronics in 1st Division with valid GATE qualification. or ME/M.Tech in Opto Electronics in 1st Division both at Graduate and Post Graduate level. or BE/B.Tech in Electrical & Electronics Engg/ Electronics & Communication Engg (with at least one paper on Fibre Optics/ Optoelectronics/ Laser Technologies) in 1st Division with valid GATE qualification. 5. Electrical & Electronics Engineering/ Electronics & Communication Engineering/ Instrumentation Engineering Anticipated BE/B.Tech in Electrical & Electronics Engg/ Electronics & Communication Engg/ Instrumentation Engineering in 1st Division with valid GATE qualification. or ME/M.Tech in Electrical & Electronics Engg/ Electronics & Communication Engg/ Instrumentation Engineering in 1st Division both at Graduate* and Post Graduate level. Contd….2/ -2- 6. Junior Research Fellow (JRF) Physics Anticipated Post Graduate Degree in Basic Sc",
+      "normalized_key": "https drdo go|advtnpol01092026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 91,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 91
+    },
+    {
+      "id": "ffb09edd2505b3a7",
+      "title": "advtVRDE31082026En",
+      "organization": "https://drdo.go...",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
+      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
+      "deadline": null,
+      "vacancies": 5,
+      "age_limit_years": 28,
+      "pay": "Stipend: Monthly emoluments of Rs.37,000",
+      "qualification": "as on Interview date Discipline/ Branch/Field acceptable Document Verification Written Test & Interview after document verification 1 Mechanical Engineering 05 BE/B",
+      "posting_date": null,
+      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "source": "https://drdo.go...",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "update",
+      "is_update": true,
+      "kind": "recruitment_notice",
+      "raw_text": "भारत सरकार रक्षा मंत्रालय रक्षा अनुसंधान तथा विकास संगठन िाहन अनुसंधान तथा विकास स्थापन िाहननगर डाकघर अवहल्यानगर – 414006 (महाराष्ट्र ) GOVERNMENT OF INDIA MINISTRY OF DEFENCE DEFENCE RESEARCH & DEV ORGN VEHICLES RESEARCH & DEV ESTT VAHANNAGAR PO AHILYANAGAR – 414006 (MAHARASHTRA) PHONE : 0241-2544004 (Exchange)NE FAX : 0241-2548410 E-MAIL : director.vrde@gov.in WALK–IN–INTERVIEW Vehicle Research and Development Organization (VRDE) under the aegis of DRDO is engaged in Research & Development in the area of light tracked, wheeled platform. VRDE is committed to design and develop advanced and reliable indigenous solutions in the are as of Mobility Systems, Wheeled & Light Tracked Combat Systems, Wheeled Launched Systems for Strategic & Tactical Programmes, High Mobility Gun Systems, Wheeled Autonomous Systems, UAV Engines and extensive evaluation & Certification of Military & commerci al Vehicles, by continual improvement and deployment of efficient resources. VRDE invites young and meritorious Indian nationals for walk -in Interview, desiring to pursue defense related research as Junior Research Fellow (JRF) in the following field:- Sr No Discipline No. of JRFs vacancies Qualification as on Interview date Discipline/ Branch/Field acceptable Document Verification Written Test & Interview after document verification 1 Mechanical Engineering 05 BE/B.Tech degree in First Division with a valid Cut off GATE Score OR ME/MTech with First Division both at graduate and post-graduate level Mechanical Engg, Mechanical & Automation Engg, Mechanical & Production Engg. 06 Oct 2026 09:30 am to 11:30 am 06 Oct 2026 & 07 Oct 2026 No. of vacancies: 05 * (* The number of fellowships may increase or decrease depending upon organizational/Lab requirement) (i) Place of Research Fellowship: VRDE, PO-Vahannagar, Ahilyanagar, Maharashtra – 414006. (ii) Tenure: Initially the offer shall be for a period of two years which may be extended for further two years period (one year at a time) subject to satisfactory performance after assessment by Review Committee. (iii) Stipend: Monthly emoluments of Rs.37,000/ - pm plus House Rent Allowance (HR A) as admissible. (iv) Education Qualification: BE/ B. Tech in above disciplines in first division with valid Cut off GATE score on the date of interview . Only GATE scores of Year 202 4, 2025 & 2026 are acceptable. Or ME / M.Tech in above disciplines in first division both at Graduate & Post–graduate level. (v) Upper Age Limit : 28 years as on as ",
+      "normalized_key": "https drdo go|advtvrde31082026en",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "vacancy_count",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central",
+        "publication_tier": "verified",
+        "publication_score": 100,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central",
+      "publication_tier": "verified",
+      "publication_score": 100
     }
   ],
   "scope_policy": {
-    "allowed_state_governments": [
+    "verified_state_governments": [
       "West Bengal",
       "Assam",
       "Tripura",
       "Odisha"
     ],
+    "all_other_indian_state_governments": "high_confidence_when_evidence_supports",
     "central_nationwide": true,
     "all_psu_cpse": true,
     "central_linked": true,
     "foreign_government_rejected": true,
-    "other_state_governments_rejected": true
+    "obvious_non_recruitment_rejected": true
   }
 }
