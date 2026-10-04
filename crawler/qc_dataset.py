@@ -26,7 +26,7 @@ def official(url,job=None):
 def audit(j):
     t=" ".join(str(j.get(k) or "") for k in ("title","organization","source","raw_text","qualification","pay")); low=t.lower(); reasons=[]
     if not official(j.get("url") or j.get("document_url"),j): reasons.append("untrusted_domain")
-    if any(x==f or x.endswith("."+f) for f in FOREIGN): reasons.append("foreign_domain")
+    if any(h(j.get("url") or j.get("document_url"))==f or h(j.get("url") or j.get("document_url")).endswith("."+f) for f in FOREIGN): reasons.append("foreign_domain")
     if NOISE.search(str(j.get("title") or "")): reasons.append("notice_noise")
     if not RECRUIT.search(t): reasons.append("no_recruitment_signal")
     if len(str(j.get("title") or "").strip())<4: reasons.append("weak_title")
