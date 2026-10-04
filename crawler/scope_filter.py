@@ -72,6 +72,7 @@ PSU_NAMES=load_json_names("data/psu_registry.json","cpse_names")
 TRUSTED_PSU_DOMAINS=load_json_names("data/psu_domains.json","domains")
 PSU_DOMAIN_OVERRIDES={
     "hmtindia.com":"HMT Ltd.",
+    "www.hmtindia.com":"HMT Ltd.",
     "nsic.co.in":"National Small Industries Corporation Ltd.",
     "ntpc.co.in":"NTPC Ltd.",
     "ntpc.com":"NTPC Ltd.",
@@ -174,10 +175,10 @@ def hard_reject(job):
     title=str(job.get("title") or "")
     if not url or not (is_indian_official(url,allow_trusted_psu=True) or psu_context_official(job)):
         return ["non_indian_or_untrusted_domain"]
+    if source_freshness_reject(job): return ["historical_recruitment"]
     if GENERIC_ORG_RE.fullmatch(org.strip()) and not (host(url) in PSU_DOMAIN_OVERRIDES or host(url) in INSTITUTIONAL_DOMAIN_ORGS): return ["generic_organization"]
     if GENERIC_TITLE_RE.fullmatch(title.strip()): return ["generic_page_title"]
     if NOISE_RE.search(title) or re.search(r"\b(?:shortlisted|shortlisting|not[- ]?shortlisted|provisional result|final list of|document verification|\bDV\b)\b",title,re.I): return ["non_recruitment_notice"]
-    if source_freshness_reject(job): return ["historical_recruitment"]
     if not title or len(title.strip())<4: return ["missing_specific_title"]
     if not RECRUITMENT_RE.search(title+" "+str(job.get("raw_text") or "")): return ["no_recruitment_signal"]
     return []
