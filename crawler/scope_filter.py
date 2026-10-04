@@ -178,9 +178,9 @@ def source_freshness_reject(job):
 def hard_reject(job):
     url=job.get("url") or job.get("document_url") or ""; org=str(job.get("organization") or "")
     title=str(job.get("title") or "")
+    if source_freshness_reject(job): return ["historical_recruitment"]
     if not url or not (is_indian_official(url,allow_trusted_psu=True) or psu_context_official(job)):
         return ["non_indian_or_untrusted_domain"]
-    if source_freshness_reject(job): return ["historical_recruitment"]
     if GENERIC_ORG_RE.fullmatch(org.strip()) and not (host(url) in PSU_DOMAIN_OVERRIDES or host(url) in INSTITUTIONAL_DOMAIN_ORGS): return ["generic_organization"]
     if GENERIC_TITLE_RE.fullmatch(title.strip()): return ["generic_page_title"]
     if NOISE_RE.search(title) or re.search(r"\b(?:shortlisted|shortlisting|not[- ]?shortlisted|provisional result|final list of|document verification|\bDV\b)\b",title,re.I): return ["non_recruitment_notice"]
