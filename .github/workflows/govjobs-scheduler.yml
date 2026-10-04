@@ -199,3 +199,5 @@ jobs:
 # Re-run after rejection-recovery and provenance hardening: 2026-10-04T15:30+05:30
 
 # Re-run after PSU alias ordering fix: 2026-10-04T15:34+05:30
+
+# Re-run after PSU archive filename parsing fix: 2026-10-04T15:36+05:30
