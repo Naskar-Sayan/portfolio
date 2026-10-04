@@ -1,327 +1,181 @@
 #!/usr/bin/env python3
-"""Hard publication-scope and high-precision quality gate for government jobs.
+"""Multi-stage publication gate for government-job discovery.
 
-This is the final firewall between discovery/crawling and the public dataset.
-Discovery can be broad; publication is intentionally conservative.
+Architecture:
+  0. hard safety exclusions (foreign/non-government/noise)
+  1. provenance classification (official/recognized Indian source)
+  2. ownership/scope classification (central/PSU/state/linked)
+  3. recruitment evidence scoring
+  4. publication tiering:
+       verified       = strongest evidence; included in 98% precision QC
+       high_confidence= strong government evidence; visible but separately labelled
+       verify         = useful lead with provenance but incomplete evidence
+  5. reject only when the record is unsafe, clearly irrelevant, duplicate, or
+     lacks enough provenance to be useful.
+
+The old single hard gate is intentionally replaced: recall is protected by
+publication tiers while the verified tier retains the strict quality target.
 """
 from __future__ import annotations
-
-import argparse
-import json
-import re
+import argparse, json, re
 from datetime import date, datetime, timezone
 from urllib.parse import urlparse
 
-ALLOWED_STATES = ("West Bengal", "Assam", "Tripura", "Odisha")
-EXCLUDED_STATE_NAMES = (
-    "Andhra Pradesh","Arunachal Pradesh","Bihar","Chhattisgarh","Goa","Gujarat",
-    "Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh",
-    "Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Punjab","Rajasthan",
-    "Sikkim","Tamil Nadu","Telangana","Uttar Pradesh","Uttarakhand","Delhi",
-    "Jammu Kashmir","Jammu and Kashmir","Ladakh","Puducherry","Pondicherry",
-    "Chandigarh","Andaman Nicobar","Lakshadweep","Dadra Nagar Haveli",
-    "Daman and Diu",
-)
+ALLOWED_STATES=("West Bengal","Assam","Tripura","Odisha")
+FOREIGN_HOST_MARKERS=("usajobs.gov","opm.gov","calcareers.ca.gov","kingcounty.gov","lacounty.gov",
+"ny.gov","mass.gov","illinois.gov","texas.gov","florida.gov","wa.gov","ohio.gov",
+"gov.uk","gov.au","govt.nz","canada.ca","ontario.ca")
+NATIONAL_HOSTS={"india.gov.in","ncs.gov.in","employmentnews.gov.in","upsc.gov.in","ssc.gov.in",
+"ibps.in","rrbapply.gov.in","dpe.gov.in","nic.in"}
+STATE_DOMAIN_MARKERS=("ap.gov.in","arunachal.gov.in","bihar.gov.in","cg.gov.in","chhattisgarh.gov.in",
+"goa.gov.in","gujarat.gov.in","haryana.gov.in","himachal.gov.in","jharkhand.gov.in","karnataka.gov.in",
+"kerala.gov.in","mp.gov.in","maharashtra.gov.in","manipur.gov.in","meghalaya.gov.in","mizoram.gov.in",
+"nagaland.gov.in","punjab.gov.in","rajasthan.gov.in","sikkim.gov.in","tn.gov.in","telangana.gov.in",
+"up.gov.in","uk.gov.in","delhi.gov.in","jk.gov.in","ladakh.gov.in","py.gov.in","chandigarh.gov.in",
+"andaman.gov.in","lakshadweep.gov.in","dnh.gov.in","ddd.gov.in")
+EXCLUDED_STATE_NAMES=("Andhra Pradesh","Arunachal Pradesh","Bihar","Chhattisgarh","Goa","Gujarat","Haryana",
+"Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram",
+"Nagaland","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Uttar Pradesh","Uttarakhand","Delhi",
+"Jammu Kashmir","Jammu and Kashmir","Ladakh","Puducherry","Pondicherry","Chandigarh","Andaman Nicobar",
+"Lakshadweep","Dadra Nagar Haveli","Daman and Diu")
+CENTRAL_ORG_TERMS=re.compile(r"\b(?:government of india|union government|central government|central govt|ministry of|"
+r"department of the government of india|upsc|ssc|railway|rrb|rrc|drdo|isro|barc|csir|icar|iari|aiims|"
+r"iit|nit|iiit|iiser|iisc|niser|niti aayog|cag|cbi|enforcement directorate|income tax department|"
+r"customs|central excise|esic|epfo|lic|sidbi|nabard|nhb|exim bank|nationalised bank|public sector bank|"
+r"central university)\b",re.I)
+CENTRAL_LINKED_TERMS=re.compile(r"\b(?:autonomous body|autonomous institute|statutory body|statutory authority|"
+r"central institute|central university|government of india|under ministry|institute of national importance|"
+r"aiims|csir|icar|drdo|isro|iiser|iit|nit|iiit|niser|iim|barc|national institute|regional institute|"
+r"tribunal|central commission)\b",re.I)
+PSU_TERMS=re.compile(r"\b(?:public sector undertaking|public sector enterprise|central public sector|cpse|psu|"
+r"government company|maharatna|navratna|miniratna|bharat petroleum|hindustan petroleum|indian oil|oil india|"
+r"ongc|gail|ntpc|nhpc|power grid|sail|coal india|ncl|bhel|bel|hal|ecil|bsnl|mtnl|ircon|rvnl|rites|nhai|"
+r"hudco|nbcc|nmdc|seci|pfc|rec limited|engineers india|concor|mazagon dock|cochin shipyard|"
+r"bharat dynamics|mishra dhatu nigam|hindustan aeronautics|new india assurance|oriental insurance|"
+r"national insurance company|united india insurance|life insurance corporation)\b",re.I)
+GENERIC_ORG_RE=re.compile(r"^(?:verified news lead|government portal|official portal|official website|"
+r"ncsnewwebsite|national career service|india\.gov\.in jobs|igod|employment news)$",re.I)
+GENERIC_TITLE_RE=re.compile(r"^(?:employment news|all jobs|latest jobs|current vacancies?|current openings?|"
+r"recruitment|careers?|jobs? at .*)$",re.I)
+NOISE_RE=re.compile(r"\b(?:tender|e[- ]tender|procurement|quotation|auction|rfp|expression of interest|"
+r"meeting|seminar|workshop|training|scholarship|admission|syllabus|answer key|result|merit list|"
+r"press release|interview schedule)\b",re.I)
+RECRUITMENT_RE=re.compile(r"\b(?:recruitment|vacanc(?:y|ies)|applications? invited|advertisement|"
+r"apprentice(?:ship)?|engagement|walk[- ]?in|selection|apply online|appointment to the post|hiring|"
+r"post of|posts?)\b",re.I)
 
-FOREIGN_HOST_MARKERS = (
-    "usajobs.gov", "opm.gov", "calcareers.ca.gov", "kingcounty.gov",
-    "lacounty.gov", "ny.gov", "mass.gov", "illinois.gov", "texas.gov",
-    "florida.gov", "wa.gov", "ohio.gov", "gov.uk", "gov.au", "govt.nz",
-    "canada.ca", "ontario.ca",
-)
-
-NATIONAL_HOSTS = {
-    "india.gov.in", "ncs.gov.in", "employmentnews.gov.in", "upsc.gov.in",
-    "ssc.gov.in", "ibps.in", "rrbapply.gov.in", "dpe.gov.in", "nic.in",
-}
-
-CENTRAL_ORG_TERMS = re.compile(
-    r"\b(?:government of india|union government|central government|central govt|"
-    r"ministry of|department of the government of india|upsc|ssc|railway|rrb|rrc|"
-    r"drdo|isro|barc|csir|icar|iari|aiims|iit|nit|iiit|iiser|iisc|niser|"
-    r"niti aayog|cag|cbi|enforcement directorate|income tax department|"
-    r"customs|central excise|esic|epfo|lic|sidbi|nabard|nhb|exim bank|"
-    r"nationalised bank|public sector bank|central university)\b",
-    re.I,
-)
-
-CENTRAL_LINKED_TERMS = re.compile(
-    r"\b(?:autonomous body|autonomous institute|statutory body|statutory authority|"
-    r"central institute|central university|government of india|under ministry|"
-    r"an institute of national importance|institute of national importance|"
-    r"aiims|csir|icar|drdo|isro|iiser|iit|nit|iiit|niser|iim|barc|"
-    r"national institute|regional institute|tribunal|central commission)\b",
-    re.I,
-)
-
-def load_psu_names():
+def load_json_names(path,key):
     try:
-        with open("data/psu_registry.json", encoding="utf-8") as f:
-            data = json.load(f)
-        return tuple(x.lower() for x in data.get("cpse_names", []))
-    except (OSError, json.JSONDecodeError):
-        return ()
+        with open(path,encoding="utf-8") as f: return tuple(str(x).lower() for x in json.load(f).get(key,[]))
+    except (OSError,json.JSONDecodeError): return ()
+PSU_NAMES=load_json_names("data/psu_registry.json","cpse_names")
+TRUSTED_PSU_DOMAINS=load_json_names("data/psu_domains.json","domains")
 
-PSU_NAMES = load_psu_names()
+def host(url): return (urlparse(url or "").hostname or "").lower().rstrip(".")
+def text(job): return " ".join(str(job.get(k) or "") for k in
+("title","organization","source","raw_text","qualification","pay"))
 
+def is_indian_official(url,allow_trusted_psu=False):
+    h=host(url)
+    if not h or any(h==x or h.endswith("."+x) for x in FOREIGN_HOST_MARKERS): return False
+    if allow_trusted_psu and h in TRUSTED_PSU_DOMAINS: return True
+    return h.endswith(".gov.in") or h.endswith(".nic.in") or h.endswith(".ac.in") or h.endswith(".edu.in") or h in NATIONAL_HOSTS or h.endswith(".co.in")
 
-def load_trusted_psu_domains():
-    try:
-        with open("data/psu_domains.json", encoding="utf-8") as f:
-            return tuple(str(x).lower().rstrip(".") for x in json.load(f).get("domains", []))
-    except (OSError, json.JSONDecodeError):
-        return ()
+def state_government_excluded(job):
+    t=text(job).lower(); h=host(str(job.get("url") or job.get("document_url") or ""))
+    return any(h==d or h.endswith("."+d) for d in STATE_DOMAIN_MARKERS) or any(
+        re.search(rf"(?:government of|govt\. of|{re.escape(s.lower())}\s+(?:psc|public service commission|staff selection commission|government|govt|secretariat|state government))",t)
+        for s in EXCLUDED_STATE_NAMES)
 
-TRUSTED_PSU_DOMAINS = load_trusted_psu_domains()
+def classify_scope(job):
+    t=text(job); low=t.lower(); h=host(job.get("url") or job.get("document_url") or "")
+    if state_government_excluded(job): return None,["excluded_state_government"]
+    if any(x in low for x in ("west bengal","wbpsc","wb govt")): return "west_bengal",["west_bengal_evidence"]
+    if any(x in low for x in ("assam government","assam govt","assam psc")): return "assam",["assam_evidence"]
+    if any(x in low for x in ("tripura government","tripura govt","tripura psc")): return "tripura",["tripura_evidence"]
+    if any(x in low for x in ("odisha government","odisha govt","odisha psc","odisha staff selection")): return "odisha",["odisha_evidence"]
+    if PSU_TERMS.search(t) or any(n and n in low for n in PSU_NAMES) or h in TRUSTED_PSU_DOMAINS: return "psu",["psu_registry_or_keyword"]
+    if h in NATIONAL_HOSTS or (h.endswith(".gov.in") and CENTRAL_ORG_TERMS.search(t)): return "central",["national_or_central_source"]
+    if CENTRAL_LINKED_TERMS.search(t) and (h.endswith((".ac.in",".edu.in",".gov.in",".nic.in"))): return "central_linked",["central_linked_evidence"]
+    # Other Indian official state sources are useful, but ownership is not strong enough
+    # for verified publication.
+    if h.endswith((".gov.in",".nic.in")): return "state_other",["indian_state_official_domain"]
+    if h.endswith((".ac.in",".edu.in")): return "institutional_indian_source",["indian_institutional_domain"]
+    return None,["scope_owner_not_verified"]
 
-PSU_TERMS = re.compile(
-    r"\b(?:public sector undertaking|public sector enterprise|central public sector|"
-    r"cpse|psu|government company|mah?aratna|navratna|miniratna|"
-    r"bharat petroleum|hindustan petroleum|indian oil|oil india|ongc|gail|"
-    r"ntpc|nhpc|power grid|sail|coal india|ncl|bhel|bel|hal|ecil|"
-    r"bsnl|mt?nl|ircon|rvnl|rites|nhai|hudco|nbcc|nmdc|seci|pfc|rec limited|"
-    r"power finance corporation|rural electrification corporation|"
-    r"engineers india|concor|container corporation|mazagon dock|cochin shipyard|"
-    r"garden reach shipbuilders|goa shipyard|bharat dynamics|mishra dhatu nigam|"
-    r"hindustan aeronautics|new india assurance|oriental insurance|"
-    r"national insurance company|united india insurance|life insurance corporation)\b",
-    re.I,
-)
+def hard_reject(job):
+    url=job.get("url") or job.get("document_url") or ""; org=str(job.get("organization") or "")
+    title=str(job.get("title") or "")
+    if not url or not is_indian_official(url,allow_trusted_psu=True): return ["non_indian_or_untrusted_domain"]
+    if GENERIC_ORG_RE.fullmatch(org.strip()): return ["generic_organization"]
+    if GENERIC_TITLE_RE.fullmatch(title.strip()): return ["generic_page_title"]
+    if NOISE_RE.search(title): return ["non_recruitment_notice"]
+    if not title or len(title.strip())<4: return ["missing_specific_title"]
+    if not RECRUITMENT_RE.search(title+" "+str(job.get("raw_text") or "")): return ["no_recruitment_signal"]
+    return []
 
-STATE_GOV_RE = re.compile(
-    r"\b(?:government|govt|psc|staff selection commission|public service commission|"
-    r"secretariat|directorate|department|state board|state corporation|"
-    r"state university|state health|state police|district administration)\b",
-    re.I,
-)
+def evidence_score(job):
+    fields=sum(bool(job.get(k)) for k in ("deadline","qualification","pay","application_url","document_url"))
+    fields += int(job.get("vacancies") is not None)
+    signal=int(bool(RECRUITMENT_RE.search(text(job))))
+    specific=int(bool(job.get("title") and not GENERIC_TITLE_RE.fullmatch(str(job.get("title")).strip())))
+    provenance=int(bool(job.get("official_source") or job.get("verification") or is_indian_official(job.get("url") or job.get("document_url"),True)))
+    return min(100, signal*20+specific*15+provenance*20+min(fields,5)*9)
 
-GENERIC_ORG_RE = re.compile(
-    r"^(?:verified news lead|government portal|official portal|official website|"
-    r"ncsnewwebsite|national career service|india\.gov\.in jobs|igod|employment news)$",
-    re.I,
-)
+def tier_for(job,scope,score):
+    has_core=score>=85
+    if scope in {"central","psu","central_linked","west_bengal","assam","tripura","odisha"} and has_core:
+        return "verified"
+    if scope in {"state_other","institutional_indian_source","central","psu","central_linked","west_bengal","assam","tripura","odisha"} and score>=65:
+        return "high_confidence"
+    if scope and score>=50:
+        return "verify"
+    return None
 
-GENERIC_TITLE_RE = re.compile(r"^(?:employment news|all jobs|latest jobs|current vacancies?|current openings?|recruitment|careers?|jobs? at .*)$", re.I)
+def evaluate(job):
+    reasons=hard_reject(job)
+    if reasons: return None,reasons,None,0
+    scope,scope_reasons=classify_scope(job)
+    if scope is None: return None,scope_reasons,None,0
+    score=evidence_score(job)
+    tier=tier_for(job,scope,score)
+    if tier is None: return None,["insufficient_evidence"],scope,score
+    return tier,scope_reasons,scope,score
 
-NOISE_RE = re.compile(
-    r"\b(?:tender|e[- ]tender|procurement|quotation|auction|rfp|expression of interest|"
-    r"meeting|seminar|workshop|training|scholarship|admission|syllabus|answer key|"
-    r"result|merit list|press release|interview schedule)\b",
-    re.I,
-)
-
-RECRUITMENT_RE = re.compile(
-    r"\b(?:recruitment|vacanc(?:y|ies)|applications? invited|advertisement|"
-    r"apprentice(?:ship)?|engagement|walk[- ]?in|selection|apply online|"
-    r"appointment to the post|hiring)\b",
-    re.I,
-)
-
-
-def host(url: str) -> str:
-    return (urlparse(url or "").hostname or "").lower().rstrip(".")
-
-
-def text(job: dict) -> str:
-    return " ".join(str(job.get(k) or "") for k in (
-        "title", "organization", "source", "raw_text", "qualification", "pay"
-    ))
-
-
-def is_indian_official(url: str, allow_trusted_psu: bool = False) -> bool:
-    h = host(url)
-    if not h or any(h == x or h.endswith("." + x) for x in FOREIGN_HOST_MARKERS):
-        return False
-    if allow_trusted_psu and h in TRUSTED_PSU_DOMAINS:
-        return True
-    return (
-        h.endswith(".gov.in") or h.endswith(".nic.in") or
-        h.endswith(".ac.in") or h.endswith(".edu.in") or
-        h in NATIONAL_HOSTS or h.endswith(".co.in")
-    )
-
-
-STATE_DOMAIN_MARKERS = (
-    "ap.gov.in","arunachal.gov.in","bihar.gov.in","cg.gov.in","chhattisgarh.gov.in",
-    "goa.gov.in","gujarat.gov.in","haryana.gov.in","himachal.gov.in","jharkhand.gov.in",
-    "karnataka.gov.in","kerala.gov.in","mp.gov.in","maharashtra.gov.in","manipur.gov.in",
-    "meghalaya.gov.in","mizoram.gov.in","nagaland.gov.in","punjab.gov.in","rajasthan.gov.in",
-    "sikkim.gov.in","tn.gov.in","telangana.gov.in","up.gov.in","uk.gov.in","delhi.gov.in",
-    "jk.gov.in","ladakh.gov.in","py.gov.in","chandigarh.gov.in","andaman.gov.in",
-    "lakshadweep.gov.in","dnh.gov.in","ddd.gov.in",
-)
-
-def state_government_excluded(job: dict) -> bool:
-    t = text(job)
-    low = t.lower()
-    h = host(str(job.get("url") or job.get("document_url") or ""))
-    if any(h == d or h.endswith("." + d) for d in STATE_DOMAIN_MARKERS):
-        return True
-    for state in EXCLUDED_STATE_NAMES:
-        s = state.lower()
-        # Do not reject a central job merely because its location is in another
-        # state; reject explicit state-government ownership markers.
-        if re.search(
-            rf"(?:government of|govt\. of|{re.escape(s)}\s+(?:psc|public service commission|"
-            rf"staff selection commission|government|govt|secretariat|state government))",
-            low,
-        ):
-            return True
-    return False
-
-
-def classify_scope(job: dict) -> tuple[str | None, list[str]]:
-    reasons = []
-    url = job.get("url") or job.get("document_url") or ""
-    org = str(job.get("organization") or "")
-    t = text(job)
-
-    h = host(url)
-    trusted_psu = h in TRUSTED_PSU_DOMAINS or any(name and name in t.lower() for name in PSU_NAMES)
-    if not url or not is_indian_official(url, allow_trusted_psu=trusted_psu):
-        return None, ["non_indian_or_untrusted_domain"]
-    if GENERIC_ORG_RE.fullmatch(org.strip()):
-        return None, ["generic_organization"]
-    if GENERIC_TITLE_RE.fullmatch(str(job.get("title") or "").strip()):
-        return None, ["generic_page_title"]
-    if NOISE_RE.search(str(job.get("title") or "")):
-        return None, ["non_recruitment_notice"]
-    if state_government_excluded(job):
-        return None, ["excluded_state_government"]
-
-    h = host(url)
-    low = t.lower()
-
-    if any(x in low for x in ("west bengal", "west bengal government", "wbpsc", "wb govt")):
-        return "west_bengal", ["west_bengal_evidence"]
-
-    if any(x in low for x in ("assam government", "assam govt", "assam psc")):
-        return "assam", ["assam_evidence"]
-
-    if any(x in low for x in ("tripura government", "tripura govt", "tripura psc")):
-        return "tripura", ["tripura_evidence"]
-
-    if any(x in low for x in ("odisha government", "odisha govt", "odisha psc", "odisha staff selection")):
-        return "odisha", ["odisha_evidence"]
-
-    if PSU_TERMS.search(t) or any(name and name in low for name in PSU_NAMES) or h in TRUSTED_PSU_DOMAINS:
-        return "psu", ["psu_cpse_registry_or_keyword_evidence"]
-
-    if h in NATIONAL_HOSTS or (h.endswith(".gov.in") and CENTRAL_ORG_TERMS.search(t)):
-        return "central", ["national_or_central_source"]
-
-    if CENTRAL_LINKED_TERMS.search(t) and (h.endswith(".ac.in") or h.endswith(".edu.in") or h.endswith(".gov.in") or h.endswith(".nic.in")):
-        return "central_linked", ["central_linked_evidence"]
-
-    # A .gov.in/.nic.in page with no identifiable allowed ownership is too
-    # ambiguous for a 98%+ precision public feed.
-    return None, ["scope_owner_not_verified"]
-
-
-def high_precision_valid(job: dict) -> tuple[bool, list[str], str | None]:
-    scope, scope_reasons = classify_scope(job)
-    # classify_scope returns positive evidence labels for accepted scopes.
-    # Only actual classification failures should invalidate the record.
-    reasons = [] if scope is not None else list(scope_reasons)
-    title = str(job.get("title") or "")
-    raw = str(job.get("raw_text") or "")
-    combined = title + " " + raw
-
-    if not title or len(title.strip()) < 4:
-        reasons.append("missing_specific_title")
-    if not RECRUITMENT_RE.search(combined):
-        reasons.append("no_recruitment_signal")
-
-    independent = sum(bool(x) for x in (
-        job.get("deadline"),
-        job.get("vacancies") is not None,
-        job.get("qualification"),
-        job.get("pay"),
-        job.get("document_url") or str(job.get("url") or "").lower().split("?")[0].endswith(".pdf"),
-        job.get("application_url"),
-    ))
-    if independent < 2:
-        reasons.append("insufficient_independent_evidence")
-
-    deadline = job.get("deadline")
-    if deadline:
-        try:
-            if datetime.fromisoformat(str(deadline)).date() < date.today() and not job.get("is_update"):
-                # Expired notices may remain only when recently issued; the
-                # crawler's freshness policy handles that separately.
-                reasons.append("expired_notice")
-        except ValueError:
-            pass
-
-    return (scope is not None and not reasons), reasons, scope
-
-
-def filter_dataset(dataset: dict) -> tuple[dict, dict]:
-    jobs = dataset.get("jobs", [])
-    kept, rejected = [], []
-    counts = {}
-    for job in jobs:
-        ok, reasons, scope = high_precision_valid(job)
-        if ok:
-            row = dict(job)
-            row["scope"] = scope
-            row["quality"]["scope"] = scope
-            row["quality"]["scope_gate"] = "high_precision"
-            kept.append(row)
-            counts[scope] = counts.get(scope, 0) + 1
+def filter_dataset(dataset):
+    kept=[]; rejected=[]; counts={}; tier_counts={}
+    for job in dataset.get("jobs",[]):
+        tier,reasons,scope,score=evaluate(job)
+        if tier:
+            row=dict(job); q=dict(row.get("quality") or {})
+            row["scope"]=scope; row["publication_tier"]=tier; row["publication_score"]=score
+            q.update({"scope":scope,"publication_tier":tier,"publication_score":score,"scope_gate":"multi_stage_v2"})
+            row["quality"]=q
+            kept.append(row); counts[scope]=counts.get(scope,0)+1; tier_counts[tier]=tier_counts.get(tier,0)+1
         else:
-            rejected.append({
-                "id": job.get("id"),
-                "title": job.get("title"),
-                "organization": job.get("organization"),
-                "url": job.get("url"),
-                "reasons": reasons,
-            })
+            rejected.append({"id":job.get("id"),"title":job.get("title"),"organization":job.get("organization"),
+                             "url":job.get("url"),"reasons":reasons,"scope":scope,"score":score})
+    # Verified first, then confidence, then verification leads; within tier deadline first.
+    rank={"verified":0,"high_confidence":1,"verify":2}
+    kept.sort(key=lambda j:(rank.get(j.get("publication_tier"),9),j.get("deadline") or "9999-12-31",j.get("title") or ""))
+    out=dict(dataset); out["jobs"]=kept
+    q=dict(out.get("quality") or {})
+    q.update({"scope_gate":"multi_stage_v2","published_jobs_before_gate":len(dataset.get("jobs",[])),
+              "published_jobs_after_gate":len(kept),"rejected_by_scope_gate":len(rejected),
+              "scope_counts":counts,"publication_tier_counts":tier_counts,
+              "verified_precision_target":">=98%","gate_architecture":"hard exclusions -> provenance -> ownership -> evidence -> tier"})
+    out["quality"]=q
+    out["scope_policy"]={"verified_state_governments":list(ALLOWED_STATES),"all_other_indian_state_governments":"high_confidence_when_evidence_supports",
+                         "central_nationwide":True,"all_psu_cpse":True,"central_linked":True,
+                         "foreign_government_rejected":True,"obvious_non_recruitment_rejected":True}
+    return out,{"rejected":rejected,"counts":counts,"tier_counts":tier_counts}
 
-    out = dict(dataset)
-    out["jobs"] = kept
-    q = dict(out.get("quality") or {})
-    q["scope_gate"] = "high_precision"
-    q["published_jobs_before_scope_gate"] = len(jobs)
-    q["published_jobs_after_scope_gate"] = len(kept)
-    q["rejected_by_scope_gate"] = len(rejected)
-    q["scope_counts"] = counts
-    q["accuracy_target"] = ">=98% precision by hard scope/evidence gate; measured on QC set"
-    out["quality"] = q
-    out["scope_policy"] = {
-        "allowed_state_governments": list(ALLOWED_STATES),
-        "central_nationwide": True,
-        "all_psu_cpse": True,
-        "central_linked": True,
-        "foreign_government_rejected": True,
-        "other_state_governments_rejected": True,
-    }
-    return out, {"rejected": rejected, "counts": counts}
+def main():
+    p=argparse.ArgumentParser(); p.add_argument("--input",default="data/jobs.json"); p.add_argument("--output",default="data/jobs.json"); p.add_argument("--rejected-output",default="data/scope_rejections.json"); a=p.parse_args()
+    with open(a.input,encoding="utf-8") as f: dataset=json.load(f)
+    out,report=filter_dataset(dataset)
+    with open(a.output,"w",encoding="utf-8") as f: json.dump(out,f,ensure_ascii=False,indent=2)
+    with open(a.rejected_output,"w",encoding="utf-8") as f: json.dump({"generated_at":datetime.now(timezone.utc).isoformat(),"rejected_count":len(report["rejected"]),"scope_counts":report["counts"],"tier_counts":report["tier_counts"],"rejected":report["rejected"][:2000]},f,ensure_ascii=False,indent=2)
+    print(f"Multi-stage gate: {len(out['jobs'])} published; tiers={report['tier_counts']}; rejected={len(report['rejected'])}")
 
-
-def main() -> None:
-    p = argparse.ArgumentParser()
-    p.add_argument("--input", default="data/jobs.json")
-    p.add_argument("--output", default="data/jobs.json")
-    p.add_argument("--rejected-output", default="data/scope_rejections.json")
-    args = p.parse_args()
-    with open(args.input, encoding="utf-8") as f:
-        dataset = json.load(f)
-    out, report = filter_dataset(dataset)
-    with open(args.output, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
-    with open(args.rejected_output, "w", encoding="utf-8") as f:
-        json.dump({
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "rejected_count": len(report["rejected"]),
-            "scope_counts": report["counts"],
-            "rejected": report["rejected"][:1000],
-        }, f, ensure_ascii=False, indent=2)
-    print(
-        f"Scope gate: {len(out['jobs'])} published, "
-        f"{len(report['rejected'])} rejected; counts={report['counts']}"
-    )
-
-
-if __name__ == "__main__":
-    main()
+if __name__=="__main__": main()
