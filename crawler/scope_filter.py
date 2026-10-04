@@ -160,7 +160,7 @@ def source_freshness_reject(job):
     if m:
         year,month=int(m.group(1)),int(m.group(2))
     else:
-        m=re.search(r"/(20\d{2})(\d{2})(\d{2})\d{4,}(?:\D|$)",u)
+        m=re.search(r"/(20\d{2})(0?[1-9]|1[0-2])([0-3]\d)\d{4,}(?:\D|$)",u)
         if not m:
             return False
         year,month=int(m.group(1)),int(m.group(2))
