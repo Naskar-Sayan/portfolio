@@ -1,20 +1,44 @@
 {
-  "generated_at": "2026-10-04T10:41:56.962826+00:00",
-  "rejected_count": 1,
+  "generated_at": "2026-10-04T11:47:04.619073+00:00",
+  "rejected_count": 3,
   "scope_counts": {
-    "central": 14
+    "psu": 7,
+    "central": 8
   },
   "tier_counts": {
-    "verified": 14
+    "verified": 12,
+    "high_confidence": 3
   },
   "rejected": [
     {
-      "id": "4961d667715e9e3c",
-      "title": "YOUNG CONSULTANT (FOREST FIRE RISK MANAGEMENT)",
-      "organization": "NATIONAL DISASTER MANAGEMENT AUTHORITY",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "id": "104985f80c495cfe",
+      "title": "Advertisement for Job vacancies 03Sep2026",
+      "organization": "Verified news lead",
+      "url": "https://indianembassyusa.gov.in/pdf/news/Advertisement_for_Job_vacancies_03Sep2026.pdf",
       "reasons": [
-        "no_recruitment_signal"
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8b8234902172fa54",
+      "title": "Marketing Asst Advertisement july2026",
+      "organization": "Verified news lead",
+      "url": "https://indianembassyusa.gov.in/pdf/news/Marketing_Asst_Advertisement_july2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ffd98940803e9dfa",
+      "title": "Washington Job 070526",
+      "organization": "Verified news lead",
+      "url": "https://indianembassyusa.gov.in/pdf/news/Washington_Job_070526.pdf",
+      "reasons": [
+        "generic_organization"
       ],
       "scope": null,
       "score": 0
