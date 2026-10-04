@@ -364,6 +364,23 @@ def crawl(page_limit=1200, days=30):
         rec = make_record(source, page_title, final, text, discovered, find_apply_link(soup,final), None, "page")
         if rec: raw_jobs.append(rec)
 
+        # Extract specific linked recruitment notices; final QC remains authoritative.
+        for a in soup.find_all("a", href=True):
+            href = urljoin(final, a["href"])
+            label = clean(a.get_text(" ", strip=True), 220) or ""
+            if not official(href) or len(label) < 18:
+                continue
+            if not re.search(r"vacanc|recruit|advertis|notification|appointment|engagement|walk.in", label, re.I):
+                continue
+            if not STRONG_RE.search(label):
+                continue
+            context = clean(a.parent.get_text(" ", strip=True), 1000) if a.parent else label
+            document = href if urlparse(href).path.lower().endswith(".pdf") else None
+            candidate = make_record(source, label, href, context or label, discovered,
+                                    href, document, "linked_notice")
+            if candidate:
+                raw_jobs.append(candidate)
+
         # Follow only likely recruitment/discovery links on official domains.
         for a in soup.find_all("a", href=True):
             href = urljoin(final, a["href"])
@@ -385,8 +402,7 @@ def crawl(page_limit=1200, days=30):
         # Keep currently open notices, recently issued notices, and undated
         # primary PDFs whose parent source explicitly surfaced them.
         if deadline and deadline < today:
-            if not posting or posting < cutoff:
-                continue
+            continue
         if posting and posting < cutoff and deadline and deadline < today:
             continue
         active.append(job)
