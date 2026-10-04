@@ -197,3 +197,5 @@ jobs:
 # Re-run after QC audit fix: 2026-10-04T07:02Z
 
 # Re-run after rejection-recovery and provenance hardening: 2026-10-04T15:30+05:30
+
+# Re-run after PSU alias ordering fix: 2026-10-04T15:34+05:30
