@@ -3,24 +3,29 @@
 from __future__ import annotations
 import argparse,json,re
 from urllib.parse import urlparse
+import sys
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
+from scope_filter import psu_context_official
 
 FOREIGN=("usajobs.gov","opm.gov","calcareers.ca.gov","kingcounty.gov","lacounty.gov","gov.uk","gov.au","canada.ca","ontario.ca")
 NOISE=re.compile(r"\b(tender|procurement|quotation|auction|rfp|meeting|seminar|workshop|scholarship|admission|syllabus|answer key|result|merit list|press release)\b",re.I)
 RECRUIT=re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advertisement|apprentice(?:ship)?|engagement|walk[- ]?in|selection|apply online|appointment to the post|hiring|post of|posts?)\b",re.I)
 def h(url): return (urlparse(url or "").hostname or "").lower().rstrip(".")
-def official(url):
+def official(url,job=None):
     x=h(url)
     if x.endswith((".gov.in",".nic.in",".ac.in",".edu.in")) or x in {"ibps.in","rrbapply.gov.in","india.gov.in","ncs.gov.in","employmentnews.gov.in"}:
+        return True
+    if job and psu_context_official(job):
         return True
     try:
         with open("data/psu_domains.json",encoding="utf-8") as f:
             domains={str(v).lower().rstrip(".") for v in json.load(f).get("domains",[])}
-        return x in domains
+        return x in domains and x.endswith((".co.in",".gov.in",".nic.in",".ac.in",".edu.in",".in"))
     except (OSError,ValueError,TypeError):
         return False
 def audit(j):
     t=" ".join(str(j.get(k) or "") for k in ("title","organization","source","raw_text","qualification","pay")); low=t.lower(); reasons=[]
-    if not official(j.get("url") or j.get("document_url")): reasons.append("untrusted_domain")
+    if not official(j.get("url") or j.get("document_url"),j): reasons.append("untrusted_domain")
     if any(x==f or x.endswith("."+f) for f in FOREIGN): reasons.append("foreign_domain")
     if NOISE.search(str(j.get("title") or "")): reasons.append("notice_noise")
     if not RECRUIT.search(t): reasons.append("no_recruitment_signal")
