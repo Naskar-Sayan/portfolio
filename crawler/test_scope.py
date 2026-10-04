@@ -22,3 +22,18 @@ def test_foreign_gov_not_central():
 def test_employment_news_landing_record_is_rejected():
     tier,reasons,_,_=evaluate(job(title="Employment News",organization="Employment News",url="https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",application_url="https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",deadline="2099-10-30",pay="Rs.530",raw_text="Employment News All JOBS recruitment vacancy"))
     assert tier is None and ("generic_organization" in reasons or "generic_page_title" in reasons)
+
+def test_iitd_generic_lead_recovers_institution():
+    tier,reasons,scope,score=evaluate(job(title="Advertisement for the post of Director, IIT Delhi",organization="Verified news lead",url="https://home.iitd.ac.in/jobs-iitd/uploads/Advertisement.pdf",document_url="https://home.iitd.ac.in/jobs-iitd/uploads/Advertisement.pdf",raw_text="IIT Delhi recruitment advertisement for the post of Director."))
+    assert tier=="verified",(tier,reasons,scope,score)
+    assert scope=="central_linked"
+
+def test_hmt_trusted_domain_recovers_psu():
+    tier,reasons,scope,score=evaluate(job(title="Engagement of Young Professionals",organization="Verified news lead",url="https://www.hmtindia.com/wp-content/uploads/2026/09/YP-Engagement-Notifictaion-2026.pdf",document_url="https://www.hmtindia.com/wp-content/uploads/2026/09/YP-Engagement-Notifictaion-2026.pdf",raw_text="HMT Limited engagement of Young Professionals recruitment."))
+    assert tier=="verified",(tier,reasons,scope,score)
+    assert scope=="psu"
+
+def test_nsic_historical_archive_rejected():
+    tier,reasons,scope,score=evaluate(job(title="2026522202851",organization="Verified news lead",url="https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",document_url="https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",raw_text="National Small Industries Corporation recruitment for Young Professionals. Last date 08.06.2026."))
+    assert tier is None
+    assert "historical_recruitment" in reasons
