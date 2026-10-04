@@ -182,6 +182,39 @@ def resolve_search_url(url):
     return url
 
 
+def _norm_token(value):
+    return re.sub(r"[^a-z0-9]+", "", str(value or "").lower())
+
+
+def _cpse_domain_matches(url):
+    """Return True only when a hostname is plausibly derived from a DPE CPSE name.
+
+    This is a corroboration filter for discovered PSU domains, not a claim that
+    every company website follows its legal name exactly.  Common legal suffixes
+    are removed and both direct-name and acronym-style matches are supported.
+    """
+    h = _norm_token(host(url))
+    if not h:
+        return False
+    for name in load_cpse_names():
+        tokens = [t for t in re.findall(r"[a-z0-9]+", str(name).lower())
+                  if len(t) >= 3 and t not in {"limited", "private", "company", "corporation", "india", "the"}]
+        if not tokens:
+            continue
+        normalized = _norm_token("".join(tokens))
+        if normalized and (normalized in h or h in normalized):
+            return True
+        initials = "".join(t[0] for t in tokens)
+        if len(initials) >= 3 and initials in h:
+            return True
+        # Match distinctive long tokens, e.g. hmtindia -> HMT Ltd.,
+        # nsic -> National Small Industries Corporation Ltd.
+        distinctive = [t for t in tokens if len(t) >= 4]
+        if any(t in h for t in distinctive[:6]):
+            return True
+    return False
+
+
 def cpse_context_matches(url, cpse_name):
     if not url or not cpse_name:
         return False
