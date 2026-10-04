@@ -19,7 +19,8 @@ def audit(j):
     if not RECRUIT.search(t): reasons.append("no_recruitment_signal")
     if len(str(j.get("title") or "").strip())<4: reasons.append("weak_title")
     evidence=sum(bool(v) for v in (j.get("deadline"),j.get("vacancies") is not None,j.get("qualification"),j.get("pay"),j.get("document_url") or str(j.get("url") or "").lower().split("?")[0].endswith(".pdf"),j.get("application_url")))
-    if evidence<2: reasons.append("insufficient_evidence")
+    required={"verified":2,"high_confidence":1,"verify":0}.get(j.get("publication_tier","verified"),2)
+    if evidence<required: reasons.append("insufficient_evidence")
     return reasons
 
 def main():
