@@ -1,24 +1,12 @@
 {
-  "generated_at": "2026-10-04T07:13:01.735103+00:00",
+  "generated_at": "2026-10-04T10:30:49.740823+00:00",
   "window_days": 30,
   "cutoff": "2026-09-04",
   "discovery": {
-    "seed_count": 138,
-    "pages_crawled": 694,
-    "domains_crawled": 105,
+    "seed_count": 109,
+    "pages_crawled": 436,
+    "domains_crawled": 88,
     "source_stats": [
-      {
-        "host": "academics.iitd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "aiimsexams.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
       {
         "host": "anubandham.gujarat.gov.in",
         "seed_count": 1,
@@ -35,12 +23,6 @@
         "host": "api.ncs.gov.in",
         "seed_count": 9,
         "pages_crawled": 9,
-        "jobs_found": 0
-      },
-      {
-        "host": "apps.odishatourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -62,9 +44,9 @@
         "jobs_found": 0
       },
       {
-        "host": "chennai.nic.in",
+        "host": "chandigarhtourism.gov.in",
         "seed_count": 1,
-        "pages_crawled": 7,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -75,6 +57,12 @@
       },
       {
         "host": "da.ncs.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "delhitourism.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -101,12 +89,6 @@
         "host": "dsde.goa.gov.in",
         "seed_count": 1,
         "pages_crawled": 14,
-        "jobs_found": 0
-      },
-      {
-        "host": "ecampus.iitd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -152,39 +134,9 @@
         "jobs_found": 0
       },
       {
-        "host": "hmtwatches.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "home.iitd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 60,
-        "jobs_found": 27
-      },
-      {
         "host": "igod.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "in.iitd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "internal.iitd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "international.iitd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 29,
         "jobs_found": 0
       },
       {
@@ -272,6 +224,12 @@
         "jobs_found": 0
       },
       {
+        "host": "mybharat.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "naipunyam.ap.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -293,18 +251,6 @@
         "host": "nsedm.nagaland.gov.in",
         "seed_count": 1,
         "pages_crawled": 11,
-        "jobs_found": 0
-      },
-      {
-        "host": "ocs.iitd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "odisha.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -332,26 +278,26 @@
         "jobs_found": 0
       },
       {
+        "host": "powermin.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "rajemployment.rajasthan.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "recruit-ndl.nielit.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 3,
-        "jobs_found": 0
-      },
-      {
-        "host": "recruitment.jharkhand.gov.in",
+        "host": "recindia.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "recruitment.nta.nic.in",
-        "seed_count": 0,
+        "host": "recruitment.jharkhand.gov.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -405,13 +351,7 @@
       },
       {
         "host": "ssc.gov.in",
-        "seed_count": 3,
-        "pages_crawled": 4,
-        "jobs_found": 0
-      },
-      {
-        "host": "ssccr.gov.in",
-        "seed_count": 1,
+        "seed_count": 2,
         "pages_crawled": 2,
         "jobs_found": 0
       },
@@ -434,13 +374,7 @@
         "jobs_found": 0
       },
       {
-        "host": "tripura.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "tripuratourism.gov.in",
+        "host": "tourism.cgstate.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -459,20 +393,14 @@
       },
       {
         "host": "upsconline.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
+        "seed_count": 4,
+        "pages_crawled": 4,
         "jobs_found": 0
       },
       {
         "host": "utcsdm.chdtechnicaleducation.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.aiimsexams.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -500,18 +428,6 @@
         "jobs_found": 0
       },
       {
-        "host": "www.hmtindia.com",
-        "seed_count": 0,
-        "pages_crawled": 35,
-        "jobs_found": 9
-      },
-      {
-        "host": "www.hmtwatches.in",
-        "seed_count": 1,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
         "host": "www.hrex.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -524,15 +440,9 @@
         "jobs_found": 0
       },
       {
-        "host": "www.iitd.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "www.incredibleindia.gov.in",
-        "seed_count": 13,
-        "pages_crawled": 17,
+        "seed_count": 10,
+        "pages_crawled": 15,
         "jobs_found": 0
       },
       {
@@ -548,14 +458,14 @@
         "jobs_found": 0
       },
       {
-        "host": "www.irel.co.in",
+        "host": "www.labour.gov.in",
         "seed_count": 2,
-        "pages_crawled": 32,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
-        "host": "www.labour.gov.in",
-        "seed_count": 2,
+        "host": "www.moil.nic.in",
+        "seed_count": 1,
         "pages_crawled": 2,
         "jobs_found": 0
       },
@@ -569,18 +479,6 @@
         "host": "www.ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 3,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.nsic.co.in",
-        "seed_count": 1,
-        "pages_crawled": 56,
-        "jobs_found": 17
-      },
-      {
-        "host": "www.odishatourism.gov.in",
-        "seed_count": 19,
-        "pages_crawled": 19,
         "jobs_found": 0
       },
       {
@@ -640,14 +538,14 @@
     ]
   },
   "quality": {
-    "raw_candidates": 355,
-    "published_jobs": 68,
-    "rejected_or_deduplicated": 287,
+    "raw_candidates": 208,
+    "published_jobs": 15,
+    "rejected_or_deduplicated": 193,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 68,
+    "published_jobs_before_gate": 15,
     "published_jobs_after_gate": 14,
-    "rejected_by_scope_gate": 54,
+    "rejected_by_scope_gate": 1,
     "scope_counts": {
       "central": 14
     },
@@ -679,7 +577,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "NALANDA UNIVERSITY",
       "official_source": true,
       "confidence": "primary_domain",
@@ -721,7 +619,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-07",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS",
       "official_source": true,
       "confidence": "primary_domain",
@@ -763,7 +661,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-07",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED",
       "official_source": true,
       "confidence": "primary_domain",
@@ -805,7 +703,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT",
       "official_source": true,
       "confidence": "primary_domain",
@@ -847,7 +745,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
       "official_source": true,
       "confidence": "primary_domain",
@@ -889,7 +787,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-08-31",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
       "official_source": true,
       "confidence": "primary_domain",
@@ -931,7 +829,7 @@
       "pay": "Pay Level 10 of the Central Government. Position Position Remuneration per month (Rs.) Associate (Legal) Rs. 90,000",
       "qualification": ", Experience and Vacancies : Applicants with the following qualifications and experience would be considered for engagement as Associate (Legal)",
       "posting_date": null,
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://apeda.g...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -972,7 +870,7 @@
       "pay": "rs,",
       "qualification": null,
       "posting_date": "2026-09-08",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1014,7 +912,7 @@
       "pay": "₹५,०००",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1055,7 +953,7 @@
       "pay": null,
       "qualification": "conditions are fulfilled , Candidates should download and fill the Application Form in the prescribed format enclosed (also available on the ‘what’s new’ section of the website www",
       "posting_date": null,
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1096,7 +994,7 @@
       "pay": "Rs. 37,000",
       "qualification": "certificates/Mark Sheets/Experience Certificates etc",
       "posting_date": "2026-09-04",
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1137,7 +1035,7 @@
       "pay": null,
       "qualification": "Equivalent acceptable subjects of essential qualification 1 Electronics & Communication Engineering (ECE) 2 (Two) Graduate degree from recognized university in professional course (BE / B Tech in first division in respective subject with valid cut off GATE Score (2024, 2025 & 2026 are acceptable) Or Post graduate degree from recognized university i",
       "posting_date": null,
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1178,7 +1076,7 @@
       "pay": "rs 2",
       "qualification": "ate Date & Time of Walk-in Interview 1",
       "posting_date": null,
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1219,7 +1117,7 @@
       "pay": "Stipend: Monthly emoluments of Rs.37,000",
       "qualification": "as on Interview date Discipline/ Branch/Field acceptable Document Verification Written Test & Interview after document verification 1 Mechanical Engineering 05 BE/B",
       "posting_date": null,
-      "discovered_at": "2026-10-04T07:13:01.735103+00:00",
+      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
