@@ -205,3 +205,5 @@ jobs:
 # Re-run after compact archive date parsing correction: 2026-10-04T15:38+05:30
 
 # Force validation after PSU domain corroboration helper fix.
+
+# Force validation after upstream recruitment-quality recall fix.
