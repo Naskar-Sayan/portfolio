@@ -185,3 +185,5 @@ jobs:
             git commit -m "Publish high-precision government jobs dataset"
             git push origin HEAD:master
           fi
+
+# Manual validation trigger: 2026-10-04
