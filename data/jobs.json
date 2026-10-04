@@ -1,12 +1,18 @@
 {
-  "generated_at": "2026-10-04T10:30:49.740823+00:00",
+  "generated_at": "2026-10-04T11:29:00.074645+00:00",
   "window_days": 30,
   "cutoff": "2026-09-04",
   "discovery": {
-    "seed_count": 109,
-    "pages_crawled": 436,
-    "domains_crawled": 88,
+    "seed_count": 145,
+    "pages_crawled": 575,
+    "domains_crawled": 99,
     "source_stats": [
+      {
+        "host": "aiimsexams.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
       {
         "host": "anubandham.gujarat.gov.in",
         "seed_count": 1,
@@ -23,6 +29,12 @@
         "host": "api.ncs.gov.in",
         "seed_count": 9,
         "pages_crawled": 9,
+        "jobs_found": 0
+      },
+      {
+        "host": "apps.odishatourism.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -44,7 +56,19 @@
         "jobs_found": 0
       },
       {
+        "host": "bhuiyan.cg.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "chandigarhtourism.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "chhattisgarh.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -118,8 +142,8 @@
       {
         "host": "employmentnews.gov.in",
         "seed_count": 2,
-        "pages_crawled": 60,
-        "jobs_found": 7
+        "pages_crawled": 2,
+        "jobs_found": 0
       },
       {
         "host": "empmission.odisha.gov.in",
@@ -138,6 +162,12 @@
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
+      },
+      {
+        "host": "indianembassyusa.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 3
       },
       {
         "host": "itiadmission.goa.gov.in",
@@ -224,16 +254,16 @@
         "jobs_found": 0
       },
       {
-        "host": "mybharat.gov.in",
+        "host": "naipunyam.ap.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "naipunyam.ap.gov.in",
+        "host": "nbccindia.in",
         "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
+        "pages_crawled": 31,
+        "jobs_found": 3
       },
       {
         "host": "ncs.gov.in",
@@ -251,6 +281,18 @@
         "host": "nsedm.nagaland.gov.in",
         "seed_count": 1,
         "pages_crawled": 11,
+        "jobs_found": 0
+      },
+      {
+        "host": "ntpc.co.in",
+        "seed_count": 2,
+        "pages_crawled": 60,
+        "jobs_found": 4
+      },
+      {
+        "host": "odisha.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -278,19 +320,7 @@
         "jobs_found": 0
       },
       {
-        "host": "powermin.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "rajemployment.rajasthan.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "recindia.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -302,7 +332,19 @@
         "jobs_found": 0
       },
       {
+        "host": "revenue.cg.nic.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "rojgar.mahaswayam.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "sailstudent.sairam.edu.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -310,6 +352,12 @@
       {
         "host": "sdct.goa.gov.in",
         "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "sewasetu.cgstate.gov.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -351,7 +399,13 @@
       },
       {
         "host": "ssc.gov.in",
-        "seed_count": 2,
+        "seed_count": 3,
+        "pages_crawled": 4,
+        "jobs_found": 0
+      },
+      {
+        "host": "ssccr.gov.in",
+        "seed_count": 1,
         "pages_crawled": 2,
         "jobs_found": 0
       },
@@ -374,7 +428,13 @@
         "jobs_found": 0
       },
       {
-        "host": "tourism.cgstate.gov.in",
+        "host": "tripura.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "tripuratourism.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -404,6 +464,12 @@
         "jobs_found": 0
       },
       {
+        "host": "www.aiimsexams.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 3,
+        "jobs_found": 0
+      },
+      {
         "host": "www.apprenticeship.gov.in",
         "seed_count": 0,
         "pages_crawled": 7,
@@ -422,12 +488,6 @@
         "jobs_found": 0
       },
       {
-        "host": "www.eneversion.nic.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "www.hrex.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -441,14 +501,20 @@
       },
       {
         "host": "www.incredibleindia.gov.in",
-        "seed_count": 10,
-        "pages_crawled": 15,
+        "seed_count": 13,
+        "pages_crawled": 20,
         "jobs_found": 0
       },
       {
         "host": "www.india.gov.in",
+        "seed_count": 3,
+        "pages_crawled": 3,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.indianembassyusa.gov.in",
         "seed_count": 2,
-        "pages_crawled": 2,
+        "pages_crawled": 11,
         "jobs_found": 0
       },
       {
@@ -464,12 +530,6 @@
         "jobs_found": 0
       },
       {
-        "host": "www.moil.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
         "host": "www.msde.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -478,13 +538,13 @@
       {
         "host": "www.ncs.gov.in",
         "seed_count": 1,
-        "pages_crawled": 3,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
-        "host": "www.publicationsdivision.nic.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
+        "host": "www.odishatourism.gov.in",
+        "seed_count": 19,
+        "pages_crawled": 19,
         "jobs_found": 0
       },
       {
@@ -524,6 +584,12 @@
         "jobs_found": 0
       },
       {
+        "host": "www.ugc.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "www.upsc.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -538,25 +604,32 @@
     ]
   },
   "quality": {
-    "raw_candidates": 208,
-    "published_jobs": 15,
-    "rejected_or_deduplicated": 193,
+    "raw_candidates": 410,
+    "published_jobs": 18,
+    "rejected_or_deduplicated": 392,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 15,
-    "published_jobs_after_gate": 14,
-    "rejected_by_scope_gate": 1,
+    "published_jobs_before_gate": 18,
+    "published_jobs_after_gate": 15,
+    "rejected_by_scope_gate": 3,
     "scope_counts": {
-      "central": 14
+      "psu": 7,
+      "central": 8
     },
     "publication_tier_counts": {
-      "verified": 14
+      "verified": 12,
+      "high_confidence": 3
     },
     "verified_precision_target": ">=98%",
     "gate_architecture": "hard exclusions -> provenance -> ownership -> evidence -> tier",
     "tier_qc": {
       "verified": {
-        "rows": 14,
+        "rows": 12,
+        "failed": 0,
+        "score": 1.0
+      },
+      "high_confidence": {
+        "rows": 3,
         "failed": 0,
         "score": 1.0
       }
@@ -565,256 +638,86 @@
   "registry_source": "Live NCS + IGOD government directories",
   "jobs": [
     {
-      "id": "3be5d40ea1f987da",
-      "title": "TEACHING POSITIONS",
-      "organization": "NALANDA UNIVERSITY",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "deadline": "2026-09-15",
+      "id": "102b25314aa03d77",
+      "title": "Home | NTPC Limited",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/",
+      "application_url": "https://ntpc.co.in/",
+      "document_url": null,
+      "deadline": "2026-10-26",
       "vacancies": null,
       "age_limit_years": null,
-      "pay": null,
+      "pay": "₹ 529",
       "qualification": null,
-      "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
-      "source": "NALANDA UNIVERSITY",
+      "posting_date": null,
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
+      "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
       "verification": "primary_domain_match",
       "notice_type": "recruitment",
       "is_update": false,
       "kind": "recruitment_notice",
-      "raw_text": "12/09/2026 | NALANDA UNIVERSITY | TEACHING POSITIONS | Recruitment | 15/09/2026 Recruitment",
-      "normalized_key": "nalanda university|teaching positions",
+      "raw_text": "Home | NTPC Limited Loading... NTPC Limited Home Page Logo Skip to Main Content Navigate directly to the About NTPC section Screen Reader Access Instructions for screen reader accessibility Use these controls to change the text size and contrast mode of the website English Hindi Opens the keyword search input box Search Main site navigation menu Home About Us About Us NTPC Overview Our Journey Board of Directors Diversified Growth Installed Capacity Corporate Functions Future Capacity Additions Joint Ventures and Subsidiaries Consultancy Sustainability Approach Stakeholder Management Materiality Analysis Strategies Policies Governance Membership Reports and Publications ESG Disclosure Investors Chairman's Statement Financial Performance Conference call/analyst meet with Investors Corporate Governance Disclosures and Announcements Shareholding Pattern Shareholders Meetings Compliances Policies Investor Services IEPF Details Bonds Investors Foreign Bonds Commercial Paper Investors Disclosures under Regulation 46 and 62 of SEBI (LODR) Regulations NTPC Buyback 2020 Media 50 Years Celebration Print Advertisements Govt/MOP Initiatives Power Sector Coverage Video Gallery Photo Gallery Press Releases Awards Join Us Jobs at NTPC Career Growth & Opportunities Employee Speak Medical Norms NTPC Values & Culture Recruitment System in NTPC Leading India's Power Sector Energy is indispensable and is one of the essential pillars on which our economy thrives. NTPC is committed to provide uninterrupted and affordable power to fulfill this requirement, thereby bringing cheers to the farthest reaches of the country. Today, with an installed capacity of over 91 GW , NTPC is steering ahead to be India’s largest integrated power company and targets to become a 149 GW firm with diversified fuel mix and a 650+ BU company in terms of generation by 2032 . Read more POWERING ENERGY TRANSITION First Energy company to declare its Energy Compact Goals as part of UN High-level Dialogue on Energy (HLDE), NTPC has been spearheading India's Renewable Energy ecosystem by strengthening its RE footprint, expanding to new areas like Green Hydrogen, Waste to Energy, Battery Storage and Nuclear Energy, with an aim to have 50% non-fossil based capacity by 2032. more than 8 GW of renewable energy under operation and more than13 GW under implementation, the company aims to have 60 GW of RE capacity under its belt by 2032. It has teamed with NITI Aayog for the Net Energy Zero effort. Read more Connec",
+      "normalized_key": "verified news lead|home ntpc limited",
       "quality": {
         "valid": true,
         "evidence": [
           "strong_recruitment_term",
           "deadline",
           "application_link",
-          "recruitment_document",
           "specific_title"
         ],
         "rejection_reasons": [],
-        "scope": "central",
+        "scope": "psu",
         "publication_tier": "verified",
         "publication_score": 82,
         "scope_gate": "multi_stage_v2"
       },
-      "scope": "central",
+      "scope": "psu",
       "publication_tier": "verified",
       "publication_score": 82
     },
     {
-      "id": "307139714d8ee2b8",
-      "title": "PROFESSOR",
-      "organization": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "deadline": "2026-09-17",
+      "id": "7267f1fa33678795",
+      "title": "Ad 01 2026",
+      "organization": "NBCC (India) Limited",
+      "url": "https://nbccindia.in/pdfData/jobs/Ad_01_2026.pdf",
+      "application_url": "https://nbccindia.in/pdfData/jobs/Ad_01_2026.pdf",
+      "document_url": "https://nbccindia.in/pdfData/jobs/Ad_01_2026.pdf",
+      "deadline": null,
       "vacancies": null,
       "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": "2026-09-07",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
-      "source": "NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS",
+      "pay": "Rs. 755",
+      "qualification": "Essential Post Qualification Experience 01 GENERAL MANAGER (ENGG",
+      "posting_date": null,
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
+      "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
       "verification": "primary_domain_match",
       "notice_type": "recruitment",
       "is_update": false,
       "kind": "recruitment_notice",
-      "raw_text": "07/09/2026 | NATIONAL INSTITUTE OF PHARMACEUTICAL EDUCATION AND RESEARCH KOLKATA, M/O CHEMICAL AND FERTILIZERS | PROFESSOR | Recruitment | 17/09/2026 Recruitment",
-      "normalized_key": "national institute of pharmaceutical education and research kolkata m o chemical and fertilizers|professor",
+      "raw_text": "Page 1 of 9 Advt. No. - 01/2026 NBCC (India) Limited is a Schedule “A” premier Government of India Navratna Public Sector Enterprise under the aegis of Ministry of Housing and Urban Affairs. The consolidated profit of the Company and its subsidiaries is Rs. 755.01 Crores while its total consolidated income is Rs. 12,038.57 Crores during FY 202 4-25. Having an immense strength in the construction sector, NBCC has a PAN India as well as global presence. Certified with ISO 9001:2015 from the Bureau of Indian Standards in respect of Project Management Consultancy & Execution of the Projects, the Company’s present area of operations are categorized into four main segments, i.e. (i) Project Management Consultancy (PMC) including Re -Development, (ii) Real Estate Development (iii) EPC Contracting & (iv) Smart City Projects. For its ambitious expansion plan both in India and overseas, the company requires dynamic and result oriented professionals on regular basis who are passionate to excel & take the organization to new heights. S. No Post/ Scale of Pay (IDA)/ No. of vacancy (s) Upper Age as on Closing date Essential Qualification Essential Post Qualification Experience 01 GENERAL MANAGER (ENGG.) IDA Pay scale – Rs. 90,000-2,40,000/-, E-6 No. of Post – 01 – (ST-01) Backlog 54 Years Full time Degree in Civil Engineering or equivalent from Government recognized University / Institute. Total 15 years’ experience in the field of PMC / EPC / Real Estate / Infrastructure. Should be presently working on regular basis for a minimum period of 02 years in one step below post (E -5) in the scale of pay of Rs. 80,000 -2,20,000/- (IDA) or Level 13 - 1,23,100-2,15,900/- (CDA) if working in Government/ PSU or otherwise drawing minimum annual CTC of Rs. 3 3 Lacs, if working in Banks / private sector company. Candidate should have experience in execution of large value civil projects in the areas such as residential buildings, commercial buildings, industrial civil works and institutional buildings etc. The incumbent should have good understanding of Government/CPSE tendering process, contract management, Dispute Redressal Mechanism, project financing and liaison works with Govt. departments/Ministries Desirable qualification: Knowledge of various tender formats including CPWD, FIDIC conditions, PPP projects and its execution along with execution experience in infrastructure projects. Page 2 of 9 02 MANAGER (ARCHITECTURE & PLANNING) IDA Pay scale – Rs. 60,000- 1,80,000/-, E-3 No.",
+      "normalized_key": "verified news lead|ad 01 2026",
       "quality": {
         "valid": true,
         "evidence": [
           "strong_recruitment_term",
-          "deadline",
           "application_link",
           "recruitment_document",
           "specific_title"
         ],
         "rejection_reasons": [],
-        "scope": "central",
+        "scope": "psu",
         "publication_tier": "verified",
-        "publication_score": 82,
+        "publication_score": 91,
         "scope_gate": "multi_stage_v2"
       },
-      "scope": "central",
+      "scope": "psu",
       "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
-      "id": "bbc6a387001985d6",
-      "title": "ENGINEER & OTHERS",
-      "organization": "RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "deadline": "2026-09-24",
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": "2026-09-07",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
-      "source": "RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "07/09/2026 | RAMAGUNDAM FERTILIZERS AND CHEMICALS LIMITED | ENGINEER & OTHERS | Recruitment | 24/09/2026 Recruitment",
-      "normalized_key": "ramagundam fertilizers and chemicals limited|engineer others",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "deadline",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
-      "id": "b0fff7e6cce858a4",
-      "title": "LECTURER",
-      "organization": "DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "deadline": "2026-09-27",
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
-      "source": "DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "12/09/2026 | DNS REGIONAL INSTITUTE OF COOPERATIVE MANAGEMENT | LECTURER | Recruitment | 27/09/2026 Recruitment",
-      "normalized_key": "dns regional institute of cooperative management|lecturer",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "deadline",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
-      "id": "6610d10c5fd9e8c3",
-      "title": "ACCOUNTANT & OTHERS",
-      "organization": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "deadline": "2026-10-11",
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
-      "source": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "12/09/2026 | MINERAL EXPLORATION AND CONSULTANCY LIMITED | ACCOUNTANT & OTHERS | Recruitment | 11/10/2026 Recruitment",
-      "normalized_key": "mineral exploration and consultancy limited|accountant others",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "deadline",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
-      "id": "8d9e693bb4076159",
-      "title": "EXECUTIVE DIRECTOR",
-      "organization": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
-      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "document_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "deadline": "2026-10-30",
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": "2026-08-31",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
-      "source": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "31/08/2026 | NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES | EXECUTIVE DIRECTOR | Recruitment | 30/10/2026 Recruitment",
-      "normalized_key": "national board of examinations in medical sciences|executive director",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "deadline",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 82
+      "publication_score": 91
     },
     {
       "id": "7da731296293778b",
@@ -829,7 +732,7 @@
       "pay": "Pay Level 10 of the Central Government. Position Position Remuneration per month (Rs.) Associate (Legal) Rs. 90,000",
       "qualification": ", Experience and Vacancies : Applicants with the following qualifications and experience would be considered for engagement as Associate (Legal)",
       "posting_date": null,
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://apeda.g...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -858,6 +761,89 @@
       "publication_score": 91
     },
     {
+      "id": "45719cc3916a6bc6",
+      "title": "DP%20Vancancy 25022026",
+      "organization": "NBCC (India) Limited",
+      "url": "https://nbccindia.in/pdfData/jobs/DP%20Vancancy_25022026.pdf",
+      "application_url": "https://nbccindia.in/pdfData/jobs/DP%20Vancancy_25022026.pdf",
+      "document_url": "https://nbccindia.in/pdfData/jobs/DP%20Vancancy_25022026.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": "Rs. 180000",
+      "qualification": "The applicant should be an Engineering Graduate with good academic record from a recognized University/ Institution",
+      "posting_date": "2026-11-07",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Page 1 of 5 Advt.No. - 29/2026 No. : 7/11/2026-PESB Dated : 25/02/2026 NBCC (India) Limited Director (Projects) 23.12.2025 Schedule A Rs. 180000 – 340000 (IDA) I. COMPANY PROFILE NBCC (India) Limited was incorporated in November, 1960 under the Indian Companies Act, 1956 with the objective of becoming a leadingcompany in the construction engineering and consultancy services and providing efficient and quality execution of projects. NBCC(India) Ltd. is a Schedule - 'A'/ ‘Navratna’ CPSE in Contract and Construction Services sector with the administrative jurisdiction of Ministry of Housing and Urban Affairs. The company employed 1362 regular employees (Executives: 903 and Non -Executives: 459) as on 31.3.2023. Its Registered and Corporate offices are in New Delhi. The authorized and paid up capital of the Company were Rs.200 crore and Rs. 180 crore respectively as on 31.03.2023. The shareholding of the Government of India in the company is 61.75%. II. JOB DESCRIPTION AND RESPONSIBILITIES Director (Projects) is a member of Board of Directors and reports to the Chairman -cum-Managing Director. He / She shall be Responsible for execution, implementation and maintenance of Projects both in PMC and EPC Contracts. However, he/she may have to deal with Redevelopment and Real Estate projects, overseas projects and business development also as per the requirement of the Company. Page 2 of 5 III. ELIGIBILITY 1. AGE : On the date of occurrence of vacancy (DOV) Age of superannuation 60 years Internal Others Minimum Maximum Minimum Maximum 45 2 years residual service as on the date of vacancy w.r.t. the date of superannuation. 45 3 years residual service as on the date of vacancy w.r.t. the date of superannuation. 2. EMPLOYMENT STATUS: The applicant must, on the date of application, as well as on the date of interview, be employed in a regular capacity – and not in a contractual/ad-hoc capacity – in one of the followings:- (a) Central Public Sector Enterprise (CPSE) (including a full -time functional Director in the Board of a CPSE); (b) Central Government Group 'A' Officers including the Armed Forces of the Union and All India Services and officers from Publ ic Sector Banks/ Financial Institutions/ Autonomous Bodies, etc; (c) State Public Sector Enterprise (SPSE) where the annual turnover is *Rs.5,000 crore or more; (d) Private Sector Company/ Joint Venture (JV) [50:50 JVs of Central Government/ State Governments and JVs of CPSEs with other CPSEs/organisations (50:50 JV",
+      "normalized_key": "verified news lead|dp 20vancancy 25022026",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "verified",
+        "publication_score": 91,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "verified",
+      "publication_score": 91
+    },
+    {
+      "id": "80deba3af29d0f45",
+      "title": "Job description 0",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "deadline": null,
+      "vacancies": 1,
+      "age_limit_years": null,
+      "pay": "₹ 200000",
+      "qualification": "The applicant should be an Engineering Graduate/ Chartered Accountant/ Cost Accountant/ Post Graduate/ Graduate with MBA/PGDIM from a leading Institute",
+      "posting_date": "2024-01-08",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "No.8/1/2024-Th.(Part-I)(277298) Government of India Ministry of Power ***** Shram Shakti Bhawan, Rafi Marg New Delhi, Dated: 28th February, 2026 Subject: Appointment to the post of Chairman and Managing Director, NTPC Limited through Search-cum-selection Committee. Name of the CPSE : NTPC Ltd. Name of the post : Chairman & Managing Director (CMD) Date of Vacancy : 01.08.2026 Schedule of the CPSE : Schedule A Scale of the Post : ₹ 200000 – 370000 (IDA) l. COMPANY PROFILE: NTPC Limited was incorporated in 1975 under the companies act, 1956 with objective to develop and provide reliable power, related projects and services at competitive prices, integrating multiple energy sources with innovative and eco-friendly technologies and contribute to society. NTPC became a listed company in 2004, with majority holding of 89.50% with the Government of India which was further reduced from time to time. The Company has over the years, developed from a thermal power generator to an integrated power company with presence across entire energy value chain through backward and forward integration into areas such as coal mining power trading, distribution etc. On 19th May 2010, NTPC was granted the status of 'Maharatna' that resulted in enhanced autonomy in decision making. Its registered and corporate offices are at New Delhi. The company employed 16,689 regular employees (Executives: 12,319 and Non- executives: 4,370) as on 31.03.2025. The authorized and paid up capital of the Company was Rs. 16,600 crores and Rs. 9,696.7 crores respectively as on 31.03.2025. Government of India's equity in NTPC, stands at 51.10% as on 31.03.2025, the rest being held by Institutional Investors, public & others. ll. JOB DESCRIPTION AND RESPONSIBILITIES: The Chairman and Managing Director is the Chief Executive of the Corporation and is accountable to the Board of Directors and the Government. He/ She is responsible for the overall management and performance of the organization, including providing strategic direction, ensuring effective corporate governance, and overseeing the operations of the Corporation, its subsidiaries, and joint ventures. CMD shall lead the formulation and implementation of the Corporation’s long-term vision and strategy, ensure sustainable growth, and align organizational objectives with national priorities. The role also encompasses guiding expansion both organic and inorganic, across the power value chain, including generation, mining, renewables, nuclear, energy s",
+      "normalized_key": "verified news lead|job description 0",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "vacancy_count",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "verified",
+        "publication_score": 100,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "verified",
+      "publication_score": 100
+    },
+    {
       "id": "d789393336ab098c",
       "title": "advtCVRDE02092026",
       "organization": "https://drdo.go...",
@@ -870,7 +856,7 @@
       "pay": "rs,",
       "qualification": null,
       "posting_date": "2026-09-08",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -912,7 +898,7 @@
       "pay": "₹५,०००",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -953,7 +939,7 @@
       "pay": null,
       "qualification": "conditions are fulfilled , Candidates should download and fill the Application Form in the prescribed format enclosed (also available on the ‘what’s new’ section of the website www",
       "posting_date": null,
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -994,7 +980,7 @@
       "pay": "Rs. 37,000",
       "qualification": "certificates/Mark Sheets/Experience Certificates etc",
       "posting_date": "2026-09-04",
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1035,7 +1021,7 @@
       "pay": null,
       "qualification": "Equivalent acceptable subjects of essential qualification 1 Electronics & Communication Engineering (ECE) 2 (Two) Graduate degree from recognized university in professional course (BE / B Tech in first division in respective subject with valid cut off GATE Score (2024, 2025 & 2026 are acceptable) Or Post graduate degree from recognized university i",
       "posting_date": null,
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1076,7 +1062,7 @@
       "pay": "rs 2",
       "qualification": "ate Date & Time of Walk-in Interview 1",
       "posting_date": null,
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1117,7 +1103,7 @@
       "pay": "Stipend: Monthly emoluments of Rs.37,000",
       "qualification": "as on Interview date Discipline/ Branch/Field acceptable Document Verification Written Test & Interview after document verification 1 Mechanical Engineering 05 BE/B",
       "posting_date": null,
-      "discovered_at": "2026-10-04T10:30:49.740823+00:00",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1145,6 +1131,129 @@
       "scope": "central",
       "publication_tier": "verified",
       "publication_score": 100
+    },
+    {
+      "id": "4af8c149da1019bd",
+      "title": "- 1.1 ) - Revised Advertisement - Advt. No. 09/2025 for engagement of an Expert (Disciplinary/Administrative Matters) on a contractual basis. The last date for submission of applications for the aforesaid post is 21.12.2025. Published: 15-12-2025",
+      "organization": "NBCC (India) Limited",
+      "url": "https://nbccindia.in/pdfData/jobs/Advt - Discipline and Administrative Matters_15122025.pdf",
+      "application_url": "https://nbccindia.in/pdfData/jobs/Advt - Discipline and Administrative Matters_15122025.pdf",
+      "document_url": "https://nbccindia.in/pdfData/jobs/Advt - Discipline and Administrative Matters_15122025.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": "2025-12-15",
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "update",
+      "is_update": true,
+      "kind": "recruitment_notice",
+      "raw_text": "| - 1.1 ) - Revised Advertisement - Advt. No. 09/2025 for engagement of an Expert (Disciplinary/Administrative Matters) on a contractual basis. The last date for submission of applications for the aforesaid post is 21.12.2025. Published: 15-12-2025",
+      "normalized_key": "verified news lead|1 1 advertisement advt no 09 2025 for engagement of an expert disciplinary administrative matters on a contractual basis the last date for submission of applications for the aforesaid post is 21 12 2025 published 15 12 2025",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
+    },
+    {
+      "id": "16e6ead6e6c420fa",
+      "title": "NTPC Recruitment Ad",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "",
+      "normalized_key": "verified news lead|ntpc recruitment ad",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
+    },
+    {
+      "id": "d2008c8d6407c129",
+      "title": "Special Recruitment Drive for the persons with disabilities",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-04T11:29:00.074645+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "",
+      "normalized_key": "verified news lead|special recruitment drive for the persons with disabilities",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
     }
   ],
   "scope_policy": {
