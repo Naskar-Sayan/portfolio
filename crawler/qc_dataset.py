@@ -10,7 +10,14 @@ RECRUIT=re.compile(r"\b(recruitment|vacanc(?:y|ies)|applications? invited|advert
 def h(url): return (urlparse(url or "").hostname or "").lower().rstrip(".")
 def official(url):
     x=h(url)
-    return x.endswith((".gov.in",".nic.in",".ac.in",".edu.in",".co.in")) or x in {"ibps.in","rrbapply.gov.in","india.gov.in","ncs.gov.in","employmentnews.gov.in"}
+    if x.endswith((".gov.in",".nic.in",".ac.in",".edu.in")) or x in {"ibps.in","rrbapply.gov.in","india.gov.in","ncs.gov.in","employmentnews.gov.in"}:
+        return True
+    try:
+        with open("data/psu_domains.json",encoding="utf-8") as f:
+            domains={str(v).lower().rstrip(".") for v in json.load(f).get("domains",[])}
+        return x in domains
+    except (OSError,ValueError,TypeError):
+        return False
 def audit(j):
     t=" ".join(str(j.get(k) or "") for k in ("title","organization","source","raw_text","qualification","pay")); low=t.lower(); reasons=[]
     if not official(j.get("url") or j.get("document_url")): reasons.append("untrusted_domain")
