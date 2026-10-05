@@ -1,15 +1,391 @@
 {
-  "generated_at": "2026-10-04T11:47:04.619073+00:00",
-  "rejected_count": 3,
+  "generated_at": "2026-10-05T11:16:15.745478+00:00",
+  "rejected_count": 37,
   "scope_counts": {
-    "psu": 7,
-    "central": 8
+    "central": 10,
+    "psu": 18,
+    "central_linked": 12,
+    "institutional_indian_source": 5
   },
   "tier_counts": {
-    "verified": 12,
-    "high_confidence": 3
+    "verified": 32,
+    "high_confidence": 13
   },
   "rejected": [
+    {
+      "id": "42b4856c52a402e3",
+      "title": "Details â€” Advertisement No.SIC/Advisor/01/2026 w.r.t. Engagement of Advisor for NVCFL (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "65e3c5f4e6d3e34b",
+      "title": "Details â€” Engagement of Young Professionals on Contract Basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "774c30060aa87aed",
+      "title": "Details â€” Notice dated 27.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026127191629.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "654c6d5fae7bc10b",
+      "title": "Details â€” Notice dated 20.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026120184824.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b09bbca33a2a07ed",
+      "title": "Details â€” Advertisement for Engagement of MSME Relationship Manager (On Contract Basis) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251118183938.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ae52409fd5b3e5da",
+      "title": "Details â€” Advertisement for Engagement of Civil Engineer (On Contract Basis) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112258.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "326ccec0e828ab38",
+      "title": "Details â€” Advertisement for Engagement of Electrical Engineer (On Contract Basis) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112220.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0866d731cd1917a8",
+      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entry to the various posts at Executive level (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ec6e633aad4810d7",
+      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Recruitment for lateral entry to the various posts at Executive Level (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c675a92e7b929f5c",
+      "title": "Details â€” Corrigendum w.r.t. Advertisement No. NSIC/HR/15/2025 dated 03.09.2025 inviting applications from Professionals with suitable domain expertise to be engaged as Lead- TReDs (on contract basis) in the Corporatio",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202595173243.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f067061f308b4023",
+      "title": "Details â€” Notice dt. 09.05.2025 w.r.t. Schedule of Interview against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 Special Recruitment Drive to the post of General Manager (E-5) / Deputy General Manager (E-4), Chief Mana",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025510201915.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "408cbe5dace4b9c9",
+      "title": "Details â€” Schedule of Interview against Special Recruitment Drive for SC, ST, OBC (including PwBD) against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 for the post of Deputy General Manager (Finance & Accounts) (E-4 Le",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/HR_Noticedated01052025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e9414782f84592cd",
+      "title": "Details â€” Schedule of Interview against Advt. No. Advt. No. NSIC/HR/13/2025 Dated: 08.02.2025 for the post of Deputy Manager (Finance & Accounts) (E-1 Level), Special Recruitment Drive for SC, ST, OBC (including PwBD)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/Notice_ 29042025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0826763720660135",
+      "title": "Details â€” Notice: Advertisement No. NSIC/HR/14/2025 dated 28.01.2025 w.r.t. engagement of Consultants in the field of MSME Credit Product Structuring and Implementation, NBFC Regulation and Operation, Strategy & Ventur",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025212174123.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b58805602bf9f2cf",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025 , Special Recruitment Drive for SC, ST, OBC (Including PwBD) to the various posts (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "22729a8282109af6",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Deputy Manager (Finance & Accounts) and Manager (Finance & Accounts) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "94b77ea920ef8caa",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Technology (Works & Estate) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "557d5747c56fc623",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Human Resource (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c9eae95a1ff1599f",
+      "title": "Details â€” Engagement of Consultant (MSME Credit Product Structuring and Implementation) on part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134013.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "209d3b157cd77793",
+      "title": "Details â€” Engagement of Consultant (NBFC Regulations & Operations) on part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134052.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b57e9b3b17b52a05",
+      "title": "Details â€” Engagement of Consultant (Strategy and Venture) on part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134129.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6206d5684a37447a",
+      "title": "Details â€” Engagement of Consultant (Human Resource) on Part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "dd2c73238ef05abd",
+      "title": "Job Vacancies at Embassy of India, Washington DC",
+      "organization": "Verified news lead",
+      "url": "https://indianembassyusa.gov.in/pdf/news/Advertisement_for_Job_vacancies_03Sep2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b7cc604e0325c3a4",
+      "title": "Marketing Assistant Advertisement",
+      "organization": "Verified news lead",
+      "url": "https://indianembassyusa.gov.in/pdf/news/Marketing_Asst_Advertisement_july2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "288b493754d65035",
+      "title": "2026714181514",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026714181514.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b554794bfbc176b3",
+      "title": "202672195435",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9a4b882fbc30407d",
+      "title": "2026522202851",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b0236f9d4ad9ecb6",
+      "title": "20251024224149A",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2a6d8a8b264964f9",
+      "title": "20251024224228",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2d2ab36fd0d2a3b6",
+      "title": "202527174223",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "7c3434ff774594bd",
+      "title": "202527174446",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "4624f177988a9abd",
+      "title": "202527174750",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "94ae38e18eda06a5",
+      "title": "20252717492",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a2975d0184757593",
+      "title": "202512813422",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
     {
       "id": "104985f80c495cfe",
       "title": "Advertisement for Job vacancies 03Sep2026",
