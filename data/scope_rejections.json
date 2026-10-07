@@ -1,28 +1,17 @@
 {
-  "generated_at": "2026-10-06T11:19:11.779511+00:00",
-  "rejected_count": 265,
+  "generated_at": "2026-10-07T11:04:44.056043+00:00",
+  "rejected_count": 108,
   "scope_counts": {
     "central": 10,
     "central_linked": 12,
     "institutional_indian_source": 5,
-    "psu": 10
+    "psu": 11
   },
   "tier_counts": {
-    "verified": 30,
+    "verified": 31,
     "high_confidence": 7
   },
   "rejected": [
-    {
-      "id": "07081cf617ec7d5f",
-      "title": "Advertisment 2JRF 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisment-2JRF-2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
     {
       "id": "4c2a4f801ce90813",
       "title": "Internships Fellowships Opportunities | OGE IIT Madras",
@@ -35,10 +24,10 @@
       "score": 0
     },
     {
-      "id": "aae56d59aee3e62a",
-      "title": "Advt.%20No. %20IITPKD R F 03 2026%20Dated %2009%20July%202026",
+      "id": "ca69a40dfb658c9e",
+      "title": "Morehead-Cain Global Fellows Program (2027–2028) | OGE IIT Madras",
       "organization": "Verified news lead",
-      "url": "https://facap.iitpkd.ac.in/sites/faculty-recruitment.iitp-portal.local/files/2026-07/Advt.%20No._%20IITPKD_R_F_03_2026%20Dated_%2009%20July%202026.pdf",
+      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/morehead-cain-global-fellows-program-20272028",
       "reasons": [
         "generic_organization"
       ],
@@ -46,10 +35,10 @@
       "score": 0
     },
     {
-      "id": "3e1986a1b7fb9526",
-      "title": "Advertisement for the post of Director, IIT Delhi",
+      "id": "25ea258ad1b221dd",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector (Post Code NR19124) in National Center for Vector Borne Diseases Control under Selection Post Phase-XII/2024-Reg. [31 Aug 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.iitsystem.ac.in/sites/default/files/news/5/Advertisement-iit-delhi-director-to-be-uploaded.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -57,10 +46,10 @@
       "score": 0
     },
     {
-      "id": "74ae7c14a2bbe1dc",
-      "title": "Advertisement for the post of Director, IIT Indore",
+      "id": "6118cb31de932b4f",
+      "title": "Corrigendum Recruitment to the post of Office Superintendent advertised vide post code NR21024 Phase-XII/2024/Selection Posts- reg.[06 June 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.iitsystem.ac.in/sites/default/files/news/14/Advertisement-iit-indore-director-to-be-uploaded.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -68,10 +57,164 @@
       "score": 0
     },
     {
-      "id": "1d6cf85b2e8f8619",
-      "title": "Advertisement for the post of Director, IIT Mandi",
+      "id": "d2c5cecdd4595ebc",
+      "title": "Corrigendum regarding withdrawal of 01 vacancy for the Post of Library & Information Assistant advertised vide Post Code NR18724 Phase-XII/2024/Selection Post.[24 April 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.iitsystem.ac.in/sites/default/files/news/15/Advertisement-iit-mandi-director-to-be-uploaded.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1e59ea63d90d3ae8",
+      "title": "Cancellation Notice Cancellation of Post Code NR12724 (01-SC Vacancy) – Research Investigator in Department of Land Resources under Selection Post Phase-XII/2024-Reg. [23 Mar 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "de81b9367e8f79da",
+      "title": "Cancellation Notice Cancellation of the vacancy of Mud Plaster in National Crafts Museum & Hastkala Academy, M/o Textiles Post Category No. NR21524 advertised under Phase-XII/2024 Selection Posts-reg. [21 Jan 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "979ee11dc2344b70",
+      "title": "Cancellation Notice Cancellation of the following vacancies in National Crafts Museum & Hastkala Academy, M/o Textiles advertised under Phase XIII/2025 Selection Posts-reg. [21 Jan 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0531911ccabcf5c6",
+      "title": "Corrigendum Recruitment to the post of Civil Motor Driver (Ordinary Grade) Post Category No. NR32623 advertised under Phase-XI/2023/Selection Posts Examination. [23 Dec 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "821056094e819e3f",
+      "title": "Corrigendum WITHDRAWAL OF 05 VACANCIES FOR THE POST CODE NR28823 PHASE-XI/2023 (DATA ENTRY OPERATOR (DEO). [18 Aug 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9370b28653b33ffc",
+      "title": "Corrigendum Vacancy reserved for Ex-servicemen (ESM) as “NIL” for the Post Code NR10424 of Selection Posts Phase-XII/2024. [12 Aug 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "679cf3846a2b5e0c",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code-NR12923 Phase XI/2023. [15 July 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "36962373c9646c34",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code NR12723 and NR12823 Phase XI/2023. [12 Mar 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12723_NR12823_12032025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e8acaae4c9ea7122",
+      "title": "Advertisement for Junior Research Fellow (JRF) Position under ANRF PAIR SAKSHAM Indian Institute of Technology, Indore – Bundelkhand University, Jhansi [ News ]",
+      "organization": "Verified news lead",
+      "url": "https://www.bujhansi.ac.in/media/mczlbkhz/jrf_advt_2nd_drive.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "92d869fbac12e683",
+      "title": "Advertisement for Junior Research Fellow (JRF) Position under ANRF PAIR SAKSHAM Indian Institute of Technology, Indore – Bundelkhand University, Jhansi",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/q2fdmeyq/bu-jhansi-jrf-advt-under-anrf-pair-saksham-dated-21_09_26.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3f3363821c1d5011",
+      "title": "Advertisement for the one (01) post of “Junior Research Assistant” in the research project funded and sponsored by CSTUP, Lucknow, India",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/3u1p5omu/bu-jhansi-advt-for-project-assistant-in-upcst-project-department-of-botany-25-august-2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "7673a072dbf9d532",
+      "title": "Advertisement for the post of Professor of Practice (on a Purely on temporary basis) as per UGC guidelines and Government order no.- 2001/सत्तर-1-2025 dated - 19.09.2025.",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/txwotefx/bu-jhansi-recruitment-prof-of-practice-dated-30_07_26.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8639b4a6f63d5275",
+      "title": "Advertisement for filling up Various Teaching Posts in Regular Departments of the University",
+      "organization": "Verified news lead",
+      "url": "https://www.bujhansi.ac.in/media/e23ebhu1/bu_regular_teaching_advertisement_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "885212e1cc958c63",
+      "title": "Advertisement for filling up Various Teaching Posts in Self Financing(SFS) Departments of the University",
+      "organization": "Verified news lead",
+      "url": "https://www.bujhansi.ac.in/media/m0xdtggs/bu_sfs_teaching_advertisement_2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -90,10 +233,10 @@
       "score": 0
     },
     {
-      "id": "7247a08482e68505",
-      "title": "Advertisement iit delhi director to be uploaded",
+      "id": "169319dcddb4d011",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector",
       "organization": "Verified news lead",
-      "url": "https://www.iitsystem.ac.in/sites/default/files/news/5/Advertisement-iit-delhi-director-to-be-uploaded.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -101,10 +244,10 @@
       "score": 0
     },
     {
-      "id": "4fe273ba9701fa9f",
-      "title": "Advertisement iit indore director to be uploaded",
+      "id": "726306cd71838359",
+      "title": "Cancellation Notice NR15125",
       "organization": "Verified news lead",
-      "url": "https://www.iitsystem.ac.in/sites/default/files/news/14/Advertisement-iit-indore-director-to-be-uploaded.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_Notice_NR15125.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -112,10 +255,10 @@
       "score": 0
     },
     {
-      "id": "d886a64dff78ede0",
-      "title": "Advertisement iit mandi director to be uploaded",
+      "id": "ffe434ec6f53ac85",
+      "title": "Corrigendum NR21024",
       "organization": "Verified news lead",
-      "url": "https://www.iitsystem.ac.in/sites/default/files/news/15/Advertisement-iit-mandi-director-to-be-uploaded.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -123,10 +266,10 @@
       "score": 0
     },
     {
-      "id": "abd3e9ce6b9ec806",
-      "title": "IIT Goa",
+      "id": "f84210518433afce",
+      "title": "CancelNotice 31623",
       "organization": "Verified news lead",
-      "url": "https://iitgoa.ac.in/faculty-position/",
+      "url": "https://sscnr.nic.in/newlook/downloads/CancelNotice_31623.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -134,10 +277,10 @@
       "score": 0
     },
     {
-      "id": "e0b687945fa48947",
-      "title": "IIT Bhubaneswar",
+      "id": "1f301afd527fed84",
+      "title": "Corrigendum NR 18724",
       "organization": "Verified news lead",
-      "url": "https://www.iitbbs.ac.in/notice/noticeb_1589356959.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -145,10 +288,10 @@
       "score": 0
     },
     {
-      "id": "a396f9b8b701265e",
-      "title": "IIT Ropar",
+      "id": "13053bd431eb72bb",
+      "title": "Cancellation Notice NR12724",
       "organization": "Verified news lead",
-      "url": "https://www.iitrpr.ac.in/staff-positions",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -156,10 +299,10 @@
       "score": 0
     },
     {
-      "id": "7ae9dd2f2fd5c681",
-      "title": "IIT Bhilai",
+      "id": "87b41b5962751332",
+      "title": "Cancel Notice NR21524",
       "organization": "Verified news lead",
-      "url": "https://www.iitbhilai.ac.in/index.php?pid=rec_faculty",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -167,10 +310,10 @@
       "score": 0
     },
     {
-      "id": "8ceaec5b821c9289",
-      "title": "Courses from HSS for 1st and 2nd Year Students' Summer Vacation Engagement.",
+      "id": "6fa64bd6b74d8228",
+      "title": "Cancel Notice NR17525 NR17625 NR17725 NR17825",
       "organization": "Verified news lead",
-      "url": "https://www.iitbbs.ac.in/notice/noticeb_1589356959.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -178,109 +321,10 @@
       "score": 0
     },
     {
-      "id": "42b4856c52a402e3",
-      "title": "Details â€” Advertisement No.SIC/Advisor/01/2026 w.r.t. Engagement of Advisor for NVCFL (opens in new tab)",
+      "id": "6442f55acf66c7a1",
+      "title": "Corr 32623 231222025",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "65e3c5f4e6d3e34b",
-      "title": "Details â€” Engagement of Young Professionals on Contract Basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "774c30060aa87aed",
-      "title": "Details â€” Notice dated 27.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026127191629.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "654c6d5fae7bc10b",
-      "title": "Details â€” Notice dated 20.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026120184824.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b09bbca33a2a07ed",
-      "title": "Details â€” Advertisement for Engagement of MSME Relationship Manager (On Contract Basis) (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251118183938.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ae52409fd5b3e5da",
-      "title": "Details â€” Advertisement for Engagement of Civil Engineer (On Contract Basis) (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112258.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "326ccec0e828ab38",
-      "title": "Details â€” Advertisement for Engagement of Electrical Engineer (On Contract Basis) (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112220.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0866d731cd1917a8",
-      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entry to the various posts at Executive level (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ec6e633aad4810d7",
-      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Recruitment for lateral entry to the various posts at Executive Level (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c675a92e7b929f5c",
-      "title": "Details â€” Corrigendum w.r.t. Advertisement No. NSIC/HR/15/2025 dated 03.09.2025 inviting applications from Professionals with suitable domain expertise to be engaged as Lead- TReDs (on contract basis) in the Corporatio",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202595173243.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -288,21 +332,10 @@
       "score": 0
     },
     {
-      "id": "f067061f308b4023",
-      "title": "Details â€” Notice dt. 09.05.2025 w.r.t. Schedule of Interview against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 Special Recruitment Drive to the post of General Manager (E-5) / Deputy General Manager (E-4), Chief Mana",
+      "id": "5a9e0e0d7e053216",
+      "title": "Corrigendum SSC NR11925 NR12025 and NR16325",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025510201915.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "408cbe5dace4b9c9",
-      "title": "Details â€” Schedule of Interview against Special Recruitment Drive for SC, ST, OBC (including PwBD) against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 for the post of Deputy General Manager (Finance & Accounts) (E-4 Le",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/HR_Noticedated01052025.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corrigendum_SSC_NR11925_NR12025_and_NR16325.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -310,10 +343,10 @@
       "score": 0
     },
     {
-      "id": "e9414782f84592cd",
-      "title": "Details â€” Schedule of Interview against Advt. No. Advt. No. NSIC/HR/13/2025 Dated: 08.02.2025 for the post of Deputy Manager (Finance & Accounts) (E-1 Level), Special Recruitment Drive for SC, ST, OBC (including PwBD)",
+      "id": "c04d5202cbb7e3d0",
+      "title": "CORRIGENDUM NR28823 18082025",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/Notice_ 29042025.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -321,21 +354,10 @@
       "score": 0
     },
     {
-      "id": "0826763720660135",
-      "title": "Details â€” Notice: Advertisement No. NSIC/HR/14/2025 dated 28.01.2025 w.r.t. engagement of Consultants in the field of MSME Credit Product Structuring and Implementation, NBFC Regulation and Operation, Strategy & Ventur",
+      "id": "e2c48abb3061cde3",
+      "title": "Cancel Notice NR25024 12082025",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025212174123.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b58805602bf9f2cf",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025 , Special Recruitment Drive for SC, ST, OBC (Including PwBD) to the various posts (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancel_Notice_NR25024_12082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -343,10 +365,10 @@
       "score": 0
     },
     {
-      "id": "22729a8282109af6",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Deputy Manager (Finance & Accounts) and Manager (Finance & Accounts) (opens in new tab)",
+      "id": "2d86c838d2763226",
+      "title": "Corrigendum NR10424 12082025",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -354,10 +376,10 @@
       "score": 0
     },
     {
-      "id": "94b77ea920ef8caa",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Technology (Works & Estate) (opens in new tab)",
+      "id": "3494d0a9be88d62e",
+      "title": "CORRIGENDUM NR12923 15072025",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -365,10 +387,10 @@
       "score": 0
     },
     {
-      "id": "557d5747c56fc623",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Human Resource (opens in new tab)",
+      "id": "e0e89127ab4654b1",
+      "title": "Cancellation Notice for NR14122 to NR15722 25062025",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR14122_to_NR15722_25062025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -376,54 +398,10 @@
       "score": 0
     },
     {
-      "id": "c9eae95a1ff1599f",
-      "title": "Details â€” Engagement of Consultant (MSME Credit Product Structuring and Implementation) on part time basis (opens in new tab)",
+      "id": "54feaec5e5272e32",
+      "title": "Cancellation Notice for NR11322 NR11422 NR11622",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134013.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "209d3b157cd77793",
-      "title": "Details â€” Engagement of Consultant (NBFC Regulations & Operations) on part time basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134052.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b57e9b3b17b52a05",
-      "title": "Details â€” Engagement of Consultant (Strategy and Venture) on part time basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134129.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6206d5684a37447a",
-      "title": "Details â€” Engagement of Consultant (Human Resource) on Part time basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6c22c1a0ac48f406",
-      "title": "Rolling Advertisement No. L-10/25-26 | भारतीय प्रौद्योगिकी संस्थान मुंबई",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/job-vacancy-ad/rolling-advertisement-no-l-1025-26",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR11322_NR11422_NR11622.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -431,10 +409,10 @@
       "score": 0
     },
     {
-      "id": "4e17771d5bb2a7ba",
-      "title": "Areas of Specialization for Rolling Advertisement No.L-10.pdf",
+      "id": "0eef9c935f8a2099",
+      "title": "CANCELLATION NOTICE NR14423 NR17623 28032025",
       "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-01/Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L-10.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR14423_NR17623_28032025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -442,10 +420,10 @@
       "score": 0
     },
     {
-      "id": "b40377cc4ef666a4",
-      "title": "Eligibility criteria for Rolling advertisement No.L-10 for Assistant Professor_Associate Professor_Professor.pdf",
+      "id": "b883c0ccfc6d6594",
+      "title": "CANCELLATION NOTICE NR15523 07012025",
       "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-04/Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L-10%20for%20Assistant%20Professor_Associate%20Professor_Professor.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR15523_07012025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -453,10 +431,10 @@
       "score": 0
     },
     {
-      "id": "1d83aaf9f7f950bf",
-      "title": "Advertisement for Foreign Faculty and Foreign Post Doctoral Fellows | भारतीय प्रौद्योगिकी संस्थान मुंबई",
+      "id": "a047268c6fd0e73e",
+      "title": "Advertisement (Signed Document) for Junior Research Fellow (JRF) Position under ANRF PAIR SAKSHАМ Indian Institute of Technology, Indore – Bundelkhand University, Jhansi",
       "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/job-vacancy-ad/advertisement-foreign-faculty-and-foreign-post-doctoral-fellows",
+      "url": "https://bujhansi.ac.in/media/j2kjrckv/bu-jhansi-advertisement-signed-document-21_09_26.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -464,10 +442,10 @@
       "score": 0
     },
     {
-      "id": "49570306ac141a6f",
-      "title": "Advertisement for Institute Post-Doctoral Fellows | भारतीय प्रौद्योगिकी संस्थान मुंबई",
+      "id": "69b19a183cafd0d5",
+      "title": "Information of eligible and ineligible candidates for the department of PHARMACY (S.F.S.) under Advertisement No. 22/2025-26 dated 10.02.2026 is available on Samarth Portal.",
       "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/career/apply/postdoc",
+      "url": "https://bujhansi.ac.in/media/ukjb1pek/bu-jhansi-recruitment-sfs-pharmacy-19_09_26.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -475,10 +453,120 @@
       "score": 0
     },
     {
-      "id": "95509e272a49fc58",
-      "title": "Advertisement No. M-3/26-27 | भारतीय प्रौद्योगिकी संस्थान मुंबई",
+      "id": "895ba4f44420ddbe",
+      "title": "Information of eligible and ineligible candidates for the department of ECONOMICS, BANKING and FINANCE (REGULAR) under Advertisement No. 21/2025-26 dated 10.02.2026 is available on Samarth Portal.",
       "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/node/6816",
+      "url": "https://bujhansi.ac.in/media/pmgnfvtz/bu-jhansi-recruitment-regular-banking_economics-dated-17_09_26.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "97656abbd5eb7cd8",
+      "title": "Information of eligible and ineligible candidates for the department of Mathematics and Computer Applications(Regular & SFS) under Advertisement No. 21/2025-26 and 22/2025-26 dated 10.02.2026 is available on Samarth Port",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/4ijf2n5e/bu-jhansi-recruitment-sfs-mathematics-dated-14_08_26.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f0bc7016563c871d",
+      "title": "Information of eligible and ineligible candidates for the department of Business Administration(Regular) under Advertisement No. 21/2025-26 dated 10.02.2026 is available on Samarth Portal.",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/if5pff1i/bu-jhansi-recruitment-business-adminstration-api-dated-06_08_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1845aaf1782c14e6",
+      "title": "In accordance with the orders, the marks obtained in the written recruitment examination—conducted in three shifts on June 11 and 12, 2026, for the recruitment of Assistant Professors against vacancies advertised under A",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/jijbqydl/bu-jhansi-recruitment-ap-result-2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8f10341478f410e9",
+      "title": "Information: The revised examination schedule for the recruitment of Assistant Professor advertised for regular and self-financed departments vide Advertisement No. 21/2025-26 and 22/2025-26 dated 10.02.2026 will be cond",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/050lll3u/7883-assistant-professor-recruitment-related-information.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "bc6ef977c6caed24",
+      "title": "jrf advt 2nd drive",
+      "organization": "Verified news lead",
+      "url": "https://www.bujhansi.ac.in/media/mczlbkhz/jrf_advt_2nd_drive.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "7da3efb0fe82c32b",
+      "title": "bu jhansi jrf advt under anrf pair saksham dated 21 09 26",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/q2fdmeyq/bu-jhansi-jrf-advt-under-anrf-pair-saksham-dated-21_09_26.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "58e2ca5315cef78b",
+      "title": "bu jhansi advt for project assistant in upcst project department of botany 25 august 2026",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/3u1p5omu/bu-jhansi-advt-for-project-assistant-in-upcst-project-department-of-botany-25-august-2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "61c14b872f55e097",
+      "title": "bu jhansi recruitment prof of practice dated 30 07 26",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/txwotefx/bu-jhansi-recruitment-prof-of-practice-dated-30_07_26.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "57e10c1b314379b0",
+      "title": "nss coordinator recruitment",
+      "organization": "Verified news lead",
+      "url": "https://bujhansi.ac.in/media/g4thx2pp/nss-coordinator-recruitment.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5c38e7920c74ccb7",
+      "title": "bu sfs teaching advertisement 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.bujhansi.ac.in/media/m0xdtggs/bu_sfs_teaching_advertisement_2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -530,10 +618,10 @@
       "score": 0
     },
     {
-      "id": "08ebe8d0011982c6",
-      "title": "Advertisement for Research Associate (RA) position (Project Title:Oxidation behaviour of multicomponent CoCrNi-Tax alloys:experimental measurements and ab-initio calculations), IIT Hyderabad",
+      "id": "2435f7bf0bfcfe50",
+      "title": "Advertisement for Marketing Executive",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/RA Advertisement_ 2026_Dr. Mayur Vaidya.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -541,10 +629,10 @@
       "score": 0
     },
     {
-      "id": "6ec72ce304c47d88",
-      "title": "Advertisement for the post of Project Research Scientist-I (Non-Medical) in ICMR sponsored projects, IIT Hyderabad",
+      "id": "16e10f1d88d1e648",
+      "title": "Advertisement for post of Chauffeur",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement for Project Research Scientist-I_Non-Medical_ICMR (1).pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -552,10 +640,10 @@
       "score": 0
     },
     {
-      "id": "3b6a6ccb7668e6bf",
-      "title": "Advertisement for the post of Project Technical Support-III and I (Non-Medical) in ICMR sponsored projects, IIT Hyderabad",
+      "id": "c51770faa7cc33ea",
+      "title": "Advertisement for Clerk",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement for Project Technical Scientist-III and I_Non-Medical_ICMR.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Clerk_280126.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -563,10 +651,10 @@
       "score": 0
     },
     {
-      "id": "34179e218a21366b",
-      "title": "Advertisement for the PhD position in National Quantum Mission funded project, IIT Hyderabad",
+      "id": "af80fe87ecd9890f",
+      "title": "Advertisement for Marketing Assistant",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PhD-position-in-National-Quantum-Mission.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Assistant_250126.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -574,10 +662,10 @@
       "score": 0
     },
     {
-      "id": "c0cff2111c6a963e",
-      "title": "Advertisement for the Post of Project Technical Support-III in ICMR sponsored project, IIT Hyderabad",
+      "id": "692010ef0afbc186",
+      "title": "Advertisement for Messenger",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ICMR_Int_IITH-CCMB_AKR2.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Messenger_220126.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -585,10 +673,10 @@
       "score": 0
     },
     {
-      "id": "a5b439c6a2b2dc7d",
-      "title": "Advertisement for the Post of Project Research Scientist – 1 in ICMR sponsored project, IIT Hyderabad",
+      "id": "aee1e074bcf326ed",
+      "title": "Advertisement for post of Chauffeur - 1",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ICMR_Intermediate_RA_AKR3.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_1.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -596,10 +684,10 @@
       "score": 0
     },
     {
-      "id": "77ef8ba773ace0b5",
-      "title": "Advertisement for the Post of Project Research Scientist – 1 and Project Technical Support-III in ICMR sponsored project, IIT Hyderabad",
+      "id": "feabfdd34d917abe",
+      "title": "bu jhansi advertisement signed document 21 09 26",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ICMR_FIW_Level-II_AKR1.pdf",
+      "url": "https://bujhansi.ac.in/media/j2kjrckv/bu-jhansi-advertisement-signed-document-21_09_26.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -607,10 +695,10 @@
       "score": 0
     },
     {
-      "id": "d7fbf4a51a1f48c8",
-      "title": "Advertisement for JRF positions in the aMRIt lab of the BME department at IIT Hyderabad",
+      "id": "ed341b2d3b764b11",
+      "title": "bu jhansi recruitment sfs pharmacy 19 09 26",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement for JRF positions at IIT Hyderabad-1.pdf",
+      "url": "https://bujhansi.ac.in/media/ukjb1pek/bu-jhansi-recruitment-sfs-pharmacy-19_09_26.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -618,10 +706,10 @@
       "score": 0
     },
     {
-      "id": "131750be1c11c90f",
-      "title": "Advertisement for the post of Project Research Scientist-I (Non-Medical) (No. of Posts: One), IIT Hyderabad.",
+      "id": "e4d931f7014667b3",
+      "title": "bu jhansi recruitment regular banking economics dated 17 09 26",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement for Project Research Scientist-I_Non-Medical_ICMR.pdf",
+      "url": "https://bujhansi.ac.in/media/pmgnfvtz/bu-jhansi-recruitment-regular-banking_economics-dated-17_09_26.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -629,10 +717,10 @@
       "score": 0
     },
     {
-      "id": "dc6b477e5f99c396",
-      "title": "Advertisement for the Postdoc position - under the research project titled ‘Expertise in Digital Image Correlation (DIC) - 2D and 3D’, IIT Hyderabad.",
+      "id": "f71a1fb54e5ced9c",
+      "title": "bu jhansi recruitment sfs mathematics dated 14 08 26",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Postdoctoral-Fellow-Advertisement-DIC.pdf",
+      "url": "https://bujhansi.ac.in/media/4ijf2n5e/bu-jhansi-recruitment-sfs-mathematics-dated-14_08_26.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -640,10 +728,10 @@
       "score": 0
     },
     {
-      "id": "3b3b25c534a6094e",
-      "title": "Advertisement for the Postdoc position - under the research project titled ‘Development of superconducting electrical resonators and vertical interconnects for quantum applications.’, IIT Hyderabad.",
+      "id": "fa07464f28366852",
+      "title": "bu jhansi recruitment business adminstration api dated 06 08 2026",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisment_quantum.pdf",
+      "url": "https://bujhansi.ac.in/media/if5pff1i/bu-jhansi-recruitment-business-adminstration-api-dated-06_08_2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -651,1011 +739,10 @@
       "score": 0
     },
     {
-      "id": "5c8fd051eb9b0017",
-      "title": "Advertisement for Post-Doctoral Fellow (RA-I) position under NQM (Quantum Algorithms) in the Department of Physics, IIT Hyderabad",
+      "id": "d2686f4ef9449fa6",
+      "title": "7883 assistant professor recruitment related information",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertizement_RA_Atanu.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "adeed88a62e099d1",
-      "title": "Advertisement for the posts of Project Research Scientist – I (Non-Medical) in the project of Ultrasound-triggered Active Drug Delivery (uADD) System for Triple Negative Breast Cancer Therapy, IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PRS-I_ADVT.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2942c3eeb526feb6",
-      "title": "Advertisement for the posts of Post-Doctoral Fellow (Modelling of combustion & multiphase flow) under CLEANZ CoE, IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Postdocadvt_CoalSlurry-G795E.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "eb9d18fbc3f9dca5",
-      "title": "Advertisement for the posts of Post-Doctoral Fellow (Coal Supply Chain Optimization using AI) under CLEANZ CoE, IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Applications_Invited_forPost-Docg795.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4ae990134b2bbff3",
-      "title": "Advertisement for the posts of Two (2) Post-Doctoral Fellow in the CARBON Lab, IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PostdoctoralFellow-Advertisement_CARBONLab.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e433591fa7c85bb6",
-      "title": "Advertisement for the post of Research Associate-I h Associate - I under the research project titled ‘Nanoscale microstructure engineering of advanced high strength steels to mitigate hydrogen embrittlement’, IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Research_Associate_Hydrogen_Embrittlement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b80af36ce8dbc34c",
-      "title": "Advertisement for JRF/Ph.D. positions sponsored by DRDO, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_Advertisement -Dr_Mayur_Vaidya.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "75714f022003a465",
-      "title": "Applications are invited for the Post of Junior Research Fellow (JRF) in the Department of Chemical Engineering at IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF__PMECRG_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0adb4ca05832c726",
-      "title": "Advertisement for the post of Research Associate-I h Associate - I on a Department of Science & Technology-Cognitive Science Research Initiative (DST-CSRI), IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement-for-RA-I-DST-CSRI.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "949d02fa54c42707",
-      "title": "Advertisement for the Post of JRF in ICMR-sponsored project, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_Advt_ICMR_FIW.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a0148ea9978d3ccf",
-      "title": "Advertisement for the post of JRF in the project 'Matrix inhomogeneity and degradation regulate tissue growth', IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Ad_JRF_IITH_CRG_ANRF.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fb952f9bd30d8ec3",
-      "title": "Advertisement for the post of JRF in Hydraulic and Water Resources Engineering, Department of Civil Engineering, IIT Hyderabad (Project title: Fate and transport of nanoatrazine in soil and its implication on soil-plant interaction)",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Fate_and_Transport_of_Nanoatrazine_in_Soil.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6352a04c3201dfc2",
-      "title": "Advertisement for Junior Research Fellow in the project 'Integrated converter design for stator and rotor of EESM for EV applications', IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/02_Advertisement_JRF_24-07-2026_Link.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "93bff5a85fa84201",
-      "title": "Advertisement for Post-Doctoral Research Fellow in the Project 'AI-Driven Multisensor Framework', IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/2Postdoc-Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "552f5aa784272f04",
-      "title": "Advertisement for the post of Project Research Scientist- II (Non-Medical) (No. of Posts: One), IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PRS_II_Non_Medical_Advertisement_1_Post.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "217871772b9fdbfb",
-      "title": "Applications invited for the post of Project Assistant on a time-limited contract, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement_ProjectAssistant_Environmental_science.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b383faff0633cc03",
-      "title": "Applications invited for the post of Project Scientist, on a time- limited contract, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement_ProjectScientist_Environmental_GIS.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0afdb5376618fdca",
-      "title": "Advertisement for Post-Doctoral Research Fellow under SUT QUAD project, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Applications_Invited_for_Post-Doc_S410.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "84d79a5709fd1b9d",
-      "title": "Advertisement for the post of JRF under SUT QUAD project (Conver?ble to PhD), IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Applications_Invited_for_JRF_S410.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4e86094215b0e4ef",
-      "title": "Advertisement for the post of Research Associate-II under an ANRF project, Department of Chemistry, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ANRF_RA-II_Chemistry-2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6889e9cc3c16137f",
-      "title": "Advertisement for the post of JRF in Digital Video Technologies and Women Filmmakers: An Exploration of the Emergent Narratives in Indie cinema, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/DigitalVideo_WomenFilmmakers_IndieCinema.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ef8e4de52c8909a9",
-      "title": "Advertisement for Operations Manager in SATHI Centre, (A Section 8 Company registered under the India), IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/IITH_Mail_Approval_Advertisements_SATHI.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "83d3f0aceb7bb0ab",
-      "title": "Advertisement for the posts of 1 Post-Doctoral Fellow in the project Developing solutions to reduce human heat strain and extending safe exposure in extreme heat, IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/post-doctoral-fellow-human-heat.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d6f6be763458edae",
-      "title": "Advertisement for the posts of 1 JRF in Environmental Engineering under an ANRF-Sponsored project, Department of Civil Engineering, IIT Hyderabad.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/jrf-advertisement-environmental-engineering.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "286075334500f275",
-      "title": "Applications are invited for the post of Junior Research Fellow (JRF) or Senior Research Fellow(SRF) at IIT Hyderabad (IITH) in a Defence Research and Development Organisation (DRDO),Government of India, sponsored project.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_SRF_Advertisement_IITH_DRDO.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ee0f96c720ee34d4",
-      "title": "Applications are invited for the post of Research Associate (RA) at IIT Hyderabad (IITH) in a Defence Research and Development Organisation (DRDO), Government of India, sponsored project.",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/RA_Advertisement_IITH_DRDO.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "99ae8468b1e0682d",
-      "title": "Applications Invited for Postdoctoral Research Fellow (Topic: Gasification of High Ash Coal in Building Fluidized Bed Gasifier), IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PostDoc_Research_Fellowship_Gasification_High_Ash_Coal.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d2b4ce85316086d0",
-      "title": "Advertisement for Postdoctoral Fellow on 'Modeling membrane-based water filtration systems', Department of Civil Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Postdoc_MembraneFiltration_IITH_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a35edabfcad10437",
-      "title": "Advertisement for the posts of 1 Post-Doctoral Fellow in an ANRF-Sponsered project (Rolling Advertisement), Department of Mechanical and Aerospace Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/research_associate_1_advertisement_mae_april_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "52668f1467f49e2c",
-      "title": "Advertisement for Consultant Positions - HMDA: 2D GIS Base Map for HMR & 3D Digital Twin for TCUR Region Project by Centre for Geospatial AI and Digital Twins (CGDT) & Department of Design, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/advertisement_hmda_project_design_department_iith_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2b5df4e404d1bca4",
-      "title": "Advertisement for Junior Research Fellow, Department of Civil Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/jrf_advertisement_ce_06_2026_iith.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "03af386b1a94254b",
-      "title": "Advertisement for Research Associate (Postdoctoral Fellow) in the field of lasers and photonics at IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/careers/",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "578f6086e8fa6647",
-      "title": "Advertisement for Junior Research Fellow in the field of lasers and photonics at IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/careers/",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5aa522129ea56ccc",
-      "title": "Advertisement for Project Assistant in the field of lasers and photonics at IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/careers/",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6959bd1ceee51967",
-      "title": "Advertisement for Junior Research Fellow, Department of Mechanical and Aerospace Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF-Recruitment-Advertisement-Sep-2025-iith-mae.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "338ada4476d49bdb",
-      "title": "Advertisement for the Post of Research Associate-I, Department of Physics, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/advertisement-RA-physics-09-2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "09f83fdcb3e86e4d",
-      "title": "Advertisement for Junior Research Fellow, Department of Physics, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/advertisement-JRF-MP-09-2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8ec20b7be0e1bc5f",
-      "title": "Applications Invited for Junior Research Fellow in the Department of Electrical Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_EE_Advertisement_dated_22_07_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "495fc19f537d7ad6",
-      "title": "Advertisement for Research Associate-I, Department of Electrical Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement-ee-iith-04-2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5881a04d030bdc5f",
-      "title": "Advertisement for JRF in Design and Fabrication of Lightweight Meta Material Structures for Flapping Wing Systems, Department of Mechanical and Aerospace Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_Recruitment_Advertisement_mae_2025_DYSL-SM.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "cc74c016c35b93a2",
-      "title": "IITH invites ONLINE applications from eligible Indian Nationals for filling up the vacant regular posts through Direct Recruitment. Recruitment Notification No. NF/20 Detailed Advertisement (Application Links Included) Notice No. 01/NF-20: Post wise number of applications received CRITERIA FOR RELAT",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/nf20/Final-Detailed_NotificationsNF-20-1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1ac06ce01283f70e",
-      "title": "Advertisement for Chief Technical Officer (CTO), CLEANZ CoE at IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement for CTO_V2.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0a3ee11c6028b867",
-      "title": "Notification for Recruitment of Senior Project Staff, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement_Sr_Language_Editor_Sr_Research_Fellow_Updated_Email.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "103dac7c56e3b9cc",
-      "title": "Notification for Recruitment of Project Associate II (Accountant), CLEANZ.COE, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement Draft copy_CLEANZ.COE.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "442d7c1d02ad6082",
-      "title": "Notification for Recruitment of project manager for CoDE project, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/CoDE_Recruitment_Project_Manager_September2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "44a3dba1d35e9b02",
-      "title": "Schedule of selection process for the position of Accountant (Contractual)",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/NoticeNo.CS-59-01Dated11.09.2026-1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "000e5d4a579caf58",
-      "title": "Notification for Recruitment of Accountant on Contract, IIT Hyderabad Apply Here",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_59_Accountant_Dt_02-09-2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d930566a22b38aaf",
-      "title": "Notification for Recruitment of Senior Consultant – Corporate Relations on Contract, IIT Hyderabad Apply Here",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_58_SeniorConsultant.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ff4948664fe32a91",
-      "title": "Notification for Recruitment of Alumni Relations Manager on Contract, IIT Hyderabad Apply Here",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_57_Alumni-Relations-Manager_Dt_02-09-2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "f0d844b495a3dab5",
-      "title": "Applications are invited for the post of Project Manager, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Project-Manager-JD.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "45641a516d229133",
-      "title": "Advertisement for the post of Security Engineer – Detection, SIEM & Automation",
-      "organization": "Verified news lead",
-      "url": "https://careers.iith.ac.in/jobs/15",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b18a372615e5bbdd",
-      "title": "Advertisement for the post of L2 Security Analyst – Incident Response & Threat Analysis",
-      "organization": "Verified news lead",
-      "url": "https://careers.iith.ac.in/jobs/14",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2a611f962920941a",
-      "title": "Advertisement for the post of L1 Security Analyst – SOC Monitoring",
-      "organization": "Verified news lead",
-      "url": "https://careers.iith.ac.in/jobs/13",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9c7c385d839fcb29",
-      "title": "Notice: Cancellation of Advertisement for the position of Senior Research Fellow",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/notice_01_cancellation_advertisement_srf.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0b9255ee8a38fbd3",
-      "title": "Advertisement for Skilled Technicians (Networking) on ad-hoc basis, Computer Centre, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://careers.iith.ac.in/jobs/5",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b471dad6867b05f0",
-      "title": "Advertisement for Web Developer on ad-hoc basis, Computer Centre, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://careers.iith.ac.in/jobs/6",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1371aea12ec33ad3",
-      "title": "Advertisement for IT Staff (Core Labs) on ad-hoc basis, Computer Centre, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://careers.iith.ac.in/jobs/7",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0900b593b2cb3dd4",
-      "title": "Advertisement for Audio Visual (AV) Technician on ad-hoc basis, Computer Centre, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://careers.iith.ac.in/jobs/8",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "037a3c3503e7c7df",
-      "title": "Advertisement for various positions, in CoDE IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/code_recruitment_notice_january_iith_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "dc8f44ff17d8c101",
-      "title": "Advertisement for Consultant Positions - HMDA: 2D GIS Base Map for HMR & 3D Digital Twin for TCUR Region Project by Centre for Geospatial AI and Digital Twins (CGDT) & Department of Design, IIT Hyderabad GIS Poster 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/advertisement_hmda_project_design_department_iith_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "82ab158e3a94f614",
-      "title": "Advertisement for Project Assistant, Department of Mechanical and Aerospace Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Project-Assistant-Recruitment-Advertisement-Sep-2025-iith-mae.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8c8fe85cdcf77133",
-      "title": "Advertisement for various positions on ad-hoc basis, sponsored by Govt of West Bengal - Commercial Taxes Department",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Rolling_Advertisement_WB_cse_ad-hoc_basis_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7562209797e0717f",
-      "title": "Advertisement for Project Officer Engineer 3 and Senior Project Officers/ Engineer-4 positions",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ProjectOfficer_3_4_5g_6g_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "14137e94a1899872",
-      "title": "Advertisement for various positions in the Center for Cryptography and Cybersecurity at the Department of Computer Science & Engineering, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Job-Openings-CCS-Rolling-Advert-cse-iith-2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c45c52fd582ea114",
-      "title": "Advertisement for Project Officer-4 role in 5G/6G Project, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Project-Officer-4-6G-2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "920001e8817dbd28",
-      "title": "Advertisement for Project Officer Engineer-3 role in 5G/6G Project, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Project-Officer-Engineer-3-ICPS-2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c0a7d835013bb75b",
-      "title": "Advertisement for Project Associate role in 5G/6G Project, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ProjectAssociateEngineer-ICPS-5g-2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "203287ed22962ec9",
-      "title": "Advertisement for Senior Project Associate Engineer, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/SeniorProject_Assiocate_iith_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c5ede364e5ca28ae",
-      "title": "Advertisement for Project Officer-I, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement-for-the-position-of-ProjectOfficer1-iith.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8321dc708089369e",
-      "title": "Advertisement for the post of Research Associate-I h Associate - I under the research project titled ‘Nanoscale microstructure engineering of advanced high strength steels to mitigate hydrogen embrittlement’, IIT Hyderab",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Research_Associate_Hydrogen_Embrittlement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8fa456c2e9fc9ea2",
-      "title": "Advertisement for the post of JRF in Hydraulic and Water Resources Engineering, Department of Civil Engineering, IIT Hyderabad (Project title: Fate and transport of nanoatrazine in soil and its implication on soil-plant",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Fate_and_Transport_of_Nanoatrazine_in_Soil.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "351ec175aa2d046c",
-      "title": "Advertisement for the post of JRF and SRF",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/advertisement_winet_nov_2024_iith.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "19d8bbef8458dd64",
-      "title": "Advertisement for post of JRF (Digital Twin, BIM) in AI CoE, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF AI CoE Digital Twin Architecture updated.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "bcedc1b3f84037b4",
-      "title": "Advertisement for the post of Research Associate (RA) positions in the project of MEMS based Piezo Sensors and Bio Sensors",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/EE_2024_Research Associate Position.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "209e5be9f36d106e",
-      "title": "Advertisement for the post of Junior Research Fellow in SERB funded Research Project at Department of Electrical Engineering",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_Advertisement_Hyd_Rolling.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "13d20ae913435d69",
-      "title": "Advertisement for the post of JRF/PhD",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_Ad_Project_G483.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7491139349158338",
-      "title": "Detailed Advertisement (Application Links Included)",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/nf20/Final-Detailed_NotificationsNF-20-1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0d5040b35c4fe7a4",
-      "title": "Notification for Recruitment of Accountant on Contract, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_59_Accountant_Dt_02-09-2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d447c68bd4b331dc",
-      "title": "Notification for Recruitment of Senior Consultant – Corporate Relations on Contract, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_58_SeniorConsultant.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "024296a1a997efe5",
-      "title": "Notification for Recruitment of Alumni Relations Manager on Contract, IIT Hyderabad",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_57_Alumni-Relations-Manager_Dt_02-09-2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "288b493754d65035",
-      "title": "2026714181514",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026714181514.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b554794bfbc176b3",
-      "title": "202672195435",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9a4b882fbc30407d",
-      "title": "2026522202851",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b0236f9d4ad9ecb6",
-      "title": "20251024224149A",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2a6d8a8b264964f9",
-      "title": "20251024224228",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2d2ab36fd0d2a3b6",
-      "title": "202527174223",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7c3434ff774594bd",
-      "title": "202527174446",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4624f177988a9abd",
-      "title": "202527174750",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "94ae38e18eda06a5",
-      "title": "20252717492",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a2975d0184757593",
-      "title": "202512813422",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "bf72dcbba2a7c023",
-      "title": "Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L 10%20for%20Assistant%20Professor Associate%20Professor Professor",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-04/Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L-10%20for%20Assistant%20Professor_Associate%20Professor_Professor.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "53bd6a930b3b6167",
-      "title": "Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L 10",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-01/Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L-10.pdf",
+      "url": "https://bujhansi.ac.in/media/050lll3u/7883-assistant-professor-recruitment-related-information.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -2081,10 +1168,10 @@
       "score": 0
     },
     {
-      "id": "1ad3cd2f43ab0b3b",
-      "title": "Declaration of results Faculty recruitment special drive",
+      "id": "34c37ad62e93a74a",
+      "title": "Marketing Executive 05 06 2026",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/faculty/Declaration-of-results_Faculty-recruitment-special-drive.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -2092,10 +1179,10 @@
       "score": 0
     },
     {
-      "id": "a1a591fcdda9d675",
-      "title": "RA%20Advertisement %202026 Dr.%20Mayur%20Vaidya",
+      "id": "e841f80e3d2cf05d",
+      "title": "Advertisement for post of Chauffeur 19feb2026",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/RA%20Advertisement_%202026_Dr.%20Mayur%20Vaidya.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -2103,824 +1190,10 @@
       "score": 0
     },
     {
-      "id": "cce0fae536f56489",
-      "title": "Advertisement%20for%20Project%20Research%20Scientist I Non Medical ICMR%20(1)",
+      "id": "b90a7e28dd639d82",
+      "title": "Advertisement for post of Chauffeur in CGI Boston 260825",
       "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement%20for%20Project%20Research%20Scientist-I_Non-Medical_ICMR%20(1).pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "bdd9980837aaae7a",
-      "title": "Advertisement%20for%20Project%20Technical%20Scientist III%20and%20I Non Medical ICMR",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement%20for%20Project%20Technical%20Scientist-III%20and%20I_Non-Medical_ICMR.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1d639d03c9ef0bb2",
-      "title": "PhD position in National Quantum Mission",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PhD-position-in-National-Quantum-Mission.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ea9e8a77e4cdf4d5",
-      "title": "ICMR Int IITH CCMB AKR2",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ICMR_Int_IITH-CCMB_AKR2.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "cb64e497c51268b3",
-      "title": "ICMR Intermediate RA AKR3",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ICMR_Intermediate_RA_AKR3.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d49684ea774b1da9",
-      "title": "ICMR FIW Level II AKR1",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ICMR_FIW_Level-II_AKR1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "f7dc3164275b7c35",
-      "title": "Advertisement%20for%20JRF%20positions%20at%20IIT%20Hyderabad 1",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement%20for%20JRF%20positions%20at%20IIT%20Hyderabad-1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fc5316666ae7471a",
-      "title": "Advertisement%20for%20Project%20Research%20Scientist I Non Medical ICMR",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement%20for%20Project%20Research%20Scientist-I_Non-Medical_ICMR.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "674e4f2ac67b5fb6",
-      "title": "Advertisment quantum",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisment_quantum.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "675f37ef95667fa6",
-      "title": "PRS I ADVT",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PRS-I_ADVT.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0aaf35e9098812dd",
-      "title": "Postdocadvt CoalSlurry G795E",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Postdocadvt_CoalSlurry-G795E.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4a2e86d20033e70c",
-      "title": "Applications Invited forPost Docg795",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Applications_Invited_forPost-Docg795.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3d8659da3cd32cda",
-      "title": "PostdoctoralFellow Advertisement CARBONLab",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PostdoctoralFellow-Advertisement_CARBONLab.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fe19aa93fbd9ed0d",
-      "title": "Research Associate Hydrogen Embrittlement",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Research_Associate_Hydrogen_Embrittlement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4c15bc1e7bf30632",
-      "title": "JRF Advertisement%20 Dr Mayur Vaidya",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_Advertisement%20-Dr_Mayur_Vaidya.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d212269a3721af06",
-      "title": "JRF PMECRG 2025",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF__PMECRG_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d1b839c38c0ee6cf",
-      "title": "Advertisement for RA I DST CSRI",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement-for-RA-I-DST-CSRI.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "27774c965450410e",
-      "title": "JRF Advt ICMR FIW",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_Advt_ICMR_FIW.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "51e4ee487bd9c61a",
-      "title": "Ad JRF IITH CRG ANRF",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Ad_JRF_IITH_CRG_ANRF.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "99b0ce75160da083",
-      "title": "Fate and Transport of Nanoatrazine in Soil",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Fate_and_Transport_of_Nanoatrazine_in_Soil.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "edbabb23861f1b4e",
-      "title": "02 Advertisement JRF 24 07 2026 Link",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/02_Advertisement_JRF_24-07-2026_Link.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "378ef11be0be8f6e",
-      "title": "2Postdoc Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/2Postdoc-Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c9a2470a4c01f861",
-      "title": "PRS II Non Medical Advertisement 1 Post",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PRS_II_Non_Medical_Advertisement_1_Post.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ef4169f4279a618e",
-      "title": "Advertisement ProjectAssistant Environmental science",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement_ProjectAssistant_Environmental_science.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "31aaaf3a73c05e37",
-      "title": "Advertisement ProjectScientist Environmental GIS",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Advertisement_ProjectScientist_Environmental_GIS.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5f845cbbdb564171",
-      "title": "Applications Invited for Post Doc S410",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Applications_Invited_for_Post-Doc_S410.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7f73efd8035f4063",
-      "title": "Applications Invited for JRF S410",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Applications_Invited_for_JRF_S410.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "369b4229f1f601a0",
-      "title": "ANRF RA II Chemistry 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ANRF_RA-II_Chemistry-2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "935743e7a3b2b8bc",
-      "title": "IITH Mail Approval Advertisements SATHI",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/IITH_Mail_Approval_Advertisements_SATHI.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "511edbce3d74ece7",
-      "title": "post doctoral fellow human heat",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/post-doctoral-fellow-human-heat.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9bb1cd9f549502a1",
-      "title": "JRF SRF Advertisement IITH DRDO",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF_SRF_Advertisement_IITH_DRDO.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "536938709e6af098",
-      "title": "RA Advertisement IITH DRDO",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/RA_Advertisement_IITH_DRDO.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7f755c0f1f2c06be",
-      "title": "PostDoc Research Fellowship Gasification High Ash Coal",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/PostDoc_Research_Fellowship_Gasification_High_Ash_Coal.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "96f8294caf145d81",
-      "title": "CoDE Recruitment Notice June 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/CoDE_Recruitment_Notice_June_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6dbdb8f61f05af84",
-      "title": "Postdoc MembraneFiltration IITH 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/Postdoc_MembraneFiltration_IITH_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "84ca3953128aabbf",
-      "title": "research associate 1 advertisement mae april 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/research_associate_1_advertisement_mae_april_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "512e57eb5e17a18e",
-      "title": "ra recruitment aerodynamic droplets",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/ra_recruitment_aerodynamic_droplets.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6cfe2438b9ab1b9b",
-      "title": "applications invited post doc g795b feb 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/applications_invited_post_doc_g795b_feb_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "bea63ecf3086cc27",
-      "title": "applications invited post doc g795i feb 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/applications_invited_post_doc_g795i_feb_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ada0ae337fe09aec",
-      "title": "advertisement hmda project design department iith 2026",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/advertisement_hmda_project_design_department_iith_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "98fc05081954be47",
-      "title": "jrf advertisement ce 06 2026 iith",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/jrf_advertisement_ce_06_2026_iith.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4dd6c4862d953e5a",
-      "title": "JRF Recruitment Advertisement Sep 2025 iith mae",
-      "organization": "Verified news lead",
-      "url": "https://iith.ac.in/assets/files/careers/staff/JRF-Recruitment-Advertisement-Sep-2025-iith-mae.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9a35dbf019de4eb0",
-      "title": "IIT Gandhinagar | faculty-rolling-advertisement",
-      "organization": "Verified news lead",
-      "url": "https://iitgn.ac.in/careers/faculty-rolling-advertisement",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4b24914a53648f3b",
-      "title": "Corrigendum to Advt. No._ IITPKD_R_F_01_2025 Dated_ 25 Nov 2025 - Special Recruitment Drive",
-      "organization": "Verified news lead",
-      "url": "https://facap.iitpkd.ac.in/sites/faculty-recruitment.iitp-portal.local/files/2025-11/Corrigendum%20to%20Advt.%20No._%20IITPKD_R_F_01_2025%20Dated_%2025%20Nov%202025%20-%20%20Special%20Recruitment%20Drive%20%281%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "f897420aea61352a",
-      "title": "Special Recruitment Drive 2026-001",
-      "organization": "Verified news lead",
-      "url": "https://iitk.ac.in:443/dofa/special-recruitment-drive-2026-001",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8827aa1ccddb4783",
-      "title": "Rolling 2026-001 Advertisement (domain specific)",
-      "organization": "Verified news lead",
-      "url": "https://iitk.ac.in:443/dofa/rolling-2026-001-advertisement-domain-specific",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ab1a9de7fe51a612",
-      "title": "Special Recruitment Drive 2025-001 Advertisement DF-1-2025",
-      "organization": "Verified news lead",
-      "url": "https://iitk.ac.in:443/dofa/special-recruitment-drive-2025-001-advertisement-df-1-2025",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "869d50e7ba42578f",
-      "title": "adv04092026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/CH/2026/adv04092026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "dbb6cdeaa14b894a",
-      "title": "adv25082026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/PH/2026/adv25082026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3e0f47c68135eb19",
-      "title": "adv200820264",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/MI/2026/adv200820264.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9a2c467eb8323c85",
-      "title": "adv13092024",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/ICED/2024/adv13092024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c2d7f0c7368c9e10",
-      "title": "adv03102026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CE/2026/adv03102026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "21b87b74864c7f0c",
-      "title": "adv01102026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv01102026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a3828ac22e39d453",
-      "title": "adv30092026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv30092026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3abcc1d9c3aeebb5",
-      "title": "adv05102026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/DPT/2026/adv05102026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b675aeef8c3ab99c",
-      "title": "adv29092026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/MME/2026/adv29092026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "699f2ad45fdfdf25",
-      "title": "adv280920262",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HY/2026/adv280920262.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "176ae5cd5dfb3ee2",
-      "title": "adv250920261",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920261.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ae7471fd8b41521c",
-      "title": "adv250920268",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920268.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4aa9b94912fc512f",
-      "title": "adv250920267",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920267.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d7c73391e65f10bb",
-      "title": "adv250920266",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920266.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "faf40e16665e629a",
-      "title": "adv250920265",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920265.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "abda99989b3a394e",
-      "title": "adv250920264",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920264.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "cfd6a6fca7e2b188",
-      "title": "adv250920263",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920263.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "156ca0cbc8a7e930",
-      "title": "adv250920262",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HSS/2026/adv250920262.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c90992bb126bfb81",
-      "title": "adv200920261",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/EQ/2026/adv200920261.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5cb6314c50a7a2aa",
-      "title": "adv190920261",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ES/2026/adv190920261.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2c83798e50fea48a",
-      "title": "adv170920262",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv170920262.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c0eda3d15a76643e",
-      "title": "adv140920261",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv140920261.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fd1b8f2ea7f1bd32",
-      "title": "भा.प्रौ.सं. गाँधीनगर | faculty-rolling-advertisement",
-      "organization": "Verified news lead",
-      "url": "https://iitgn.ac.in/hi/careers/faculty-rolling-advertisement",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6d43809d528e6bb2",
-      "title": "Advertisement No. IITGN/STAFF/RECT/01/2026-27",
-      "organization": "Verified news lead",
-      "url": "https://iitgn.ac.in/assets/pdfs/careers/Advertisement_IITGN-STAFF-RECT-01-2026-27.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fe1bea9d58c83cfb",
-      "title": "Advertisement No. IITGN/STAFF/RECT/01/2025-26",
-      "organization": "Verified news lead",
-      "url": "https://iitgn.ac.in/assets/pdfs/careers/Advertisement_No._IITGN-STAFF-RECT-01-2025-26.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4edc2946ac8e1bd7",
-      "title": "faq",
-      "organization": "Verified news lead",
-      "url": "https://iitgn.ac.in/assets/pdfs/careers/faq.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9c43046d23b86a32",
-      "title": "Advt.%20No. %20IITPKD R F 02 2026%20Dated %2004%20June%202026",
-      "organization": "Verified news lead",
-      "url": "https://facap.iitpkd.ac.in/sites/faculty-recruitment.iitp-portal.local/files/2026-06/Advt.%20No._%20IITPKD_R_F_02_2026%20Dated_%2004%20June%202026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c7f47fa889fffbfb",
-      "title": "Corrigendum%20to%20Advt.%20No. %20IITPKD R F 01 2025%20Dated %2025%20Nov%202025%20 %20%20Special%20Recruitment%20Drive%20%281%29",
-      "organization": "Verified news lead",
-      "url": "https://facap.iitpkd.ac.in/sites/faculty-recruitment.iitp-portal.local/files/2025-11/Corrigendum%20to%20Advt.%20No._%20IITPKD_R_F_01_2025%20Dated_%2025%20Nov%202025%20-%20%20Special%20Recruitment%20Drive%20%281%29.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_in_CGI_Boston_260825.pdf",
       "reasons": [
         "generic_organization"
       ],
