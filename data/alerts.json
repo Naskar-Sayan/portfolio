@@ -1,57 +1,29 @@
 {
-  "generated_at": "2026-10-07T11:04:44.177204+00:00",
+  "generated_at": "2026-10-08T11:23:38.511431+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 1,
-    "updated_jobs": 1,
-    "deadline_alerts": 0,
+    "new_jobs": 0,
+    "updated_jobs": 0,
+    "deadline_alerts": 1,
     "total_jobs_checked": 38
   },
-  "new_jobs": [
+  "new_jobs": [],
+  "updated_jobs": [],
+  "deadline_alerts": [
     {
-      "id": "57b2d7997ae34c7f",
-      "title": "Rollling%20Advt.%20IITD%202026%20AP 1 23.3.2026",
-      "organization": "Indian Institute of Technology Delhi",
-      "deadline": null,
+      "id": "6610d10c5fd9e8c3",
+      "title": "ACCOUNTANT & OTHERS",
+      "organization": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
+      "deadline": "2026-10-11",
       "vacancies": null,
-      "pay": "rs,",
-      "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rollling%20Advt.%20IITD%202026%20AP-1_23.3.2026.pdf",
-      "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rollling%20Advt.%20IITD%202026%20AP-1_23.3.2026.pdf",
+      "pay": null,
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
       "official_source": true,
       "is_update": false,
-      "notice_type": "recruitment"
+      "notice_type": "recruitment",
+      "days_left": 3
     }
   ],
-  "updated_jobs": [
-    {
-      "previous": {
-        "id": "0989f155ca29286e",
-        "title": "Rolling Advertisement",
-        "organization": "Indian Institute of Technology Delhi",
-        "deadline": null,
-        "vacancies": null,
-        "pay": "rs,",
-        "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
-        "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
-        "official_source": true,
-        "is_update": false,
-        "notice_type": "recruitment"
-      },
-      "current": {
-        "id": "0989f155ca29286e",
-        "title": "Rolling Advertisement",
-        "organization": "Indian Institute of Technology Delhi",
-        "deadline": null,
-        "vacancies": null,
-        "pay": null,
-        "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
-        "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
-        "official_source": true,
-        "is_update": false,
-        "notice_type": "recruitment"
-      }
-    }
-  ],
-  "deadline_alerts": [],
-  "notification_text": "NEW: Rollling%20Advt.%20IITD%202026%20AP 1 23.3.2026 | Indian Institute of Technology Delhi | Last date: N/A | https://home.iitd.ac.in/jobs-iitd/uploads/Rollling%20Advt.%20IITD%202026%20AP-1_23.3.2026.pdf\\nUPDATED: Rolling Advertisement | Indian Institute of Technology Delhi | Last date: N/A | https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf"
+  "notification_text": "DEADLINE IN 3 DAY(S): ACCOUNTANT & OTHERS | MINERAL EXPLORATION AND CONSULTANCY LIMITED | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"
 }
