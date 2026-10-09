@@ -1,13 +1,105 @@
 {
-  "generated_at": "2026-10-08T11:23:38.511431+00:00",
+  "generated_at": "2026-10-09T11:15:58.181843+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 0,
+    "new_jobs": 7,
     "updated_jobs": 0,
     "deadline_alerts": 1,
-    "total_jobs_checked": 38
+    "total_jobs_checked": 17
   },
-  "new_jobs": [],
+  "new_jobs": [
+    {
+      "id": "102b25314aa03d77",
+      "title": "Home | NTPC Limited",
+      "organization": "NTPC Ltd.",
+      "deadline": "2026-10-26",
+      "vacancies": null,
+      "pay": "₹ 529",
+      "url": "https://ntpc.co.in/",
+      "application_url": "https://ntpc.co.in/",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    },
+    {
+      "id": "80deba3af29d0f45",
+      "title": "Job description 0",
+      "organization": "NTPC Ltd.",
+      "deadline": null,
+      "vacancies": 1,
+      "pay": "₹ 200000",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    },
+    {
+      "id": "5edc974ae1a4478e",
+      "title": "Advertisement for \"Special Recruitment Drive for the persons with disabilities\"",
+      "organization": "NTPC Ltd.",
+      "deadline": null,
+      "vacancies": null,
+      "pay": null,
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    },
+    {
+      "id": "264af47d05913609",
+      "title": "Dedication to the nation Dadri Stage II Advertisement",
+      "organization": "NTPC Ltd.",
+      "deadline": null,
+      "vacancies": null,
+      "pay": null,
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    },
+    {
+      "id": "16e6ead6e6c420fa",
+      "title": "NTPC Recruitment Ad",
+      "organization": "NTPC Ltd.",
+      "deadline": null,
+      "vacancies": null,
+      "pay": null,
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    },
+    {
+      "id": "cb0e983a9ac76745",
+      "title": "Price Discovery Advertisement",
+      "organization": "NTPC Ltd.",
+      "deadline": null,
+      "vacancies": null,
+      "pay": null,
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    },
+    {
+      "id": "d2008c8d6407c129",
+      "title": "Special Recruitment Drive for the persons with disabilities",
+      "organization": "NTPC Ltd.",
+      "deadline": null,
+      "vacancies": null,
+      "pay": null,
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    }
+  ],
   "updated_jobs": [],
   "deadline_alerts": [
     {
@@ -22,8 +114,8 @@
       "official_source": true,
       "is_update": false,
       "notice_type": "recruitment",
-      "days_left": 3
+      "days_left": 2
     }
   ],
-  "notification_text": "DEADLINE IN 3 DAY(S): ACCOUNTANT & OTHERS | MINERAL EXPLORATION AND CONSULTANCY LIMITED | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"
+  "notification_text": "NEW: Home | NTPC Limited | NTPC Ltd. | Last date: 2026-10-26 | https://ntpc.co.in/\\nNEW: Job description 0 | NTPC Ltd. | Last date: N/A | https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf\\nNEW: Advertisement for \"Special Recruitment Drive for the persons with disabilities\" | NTPC Ltd. | Last date: N/A | https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf\\nNEW: Dedication to the nation Dadri Stage II Advertisement | NTPC Ltd. | Last date: N/A | https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf\\nNEW: NTPC Recruitment Ad | NTPC Ltd. | Last date: N/A | https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf\\nNEW: Price Discovery Advertisement | NTPC Ltd. | Last date: N/A | https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf\\nNEW: Special Recruitment Drive for the persons with disabilities | NTPC Ltd. | Last date: N/A | https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf\\nDEADLINE IN 2 DAY(S): ACCOUNTANT & OTHERS | MINERAL EXPLORATION AND CONSULTANCY LIMITED | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"
 }
