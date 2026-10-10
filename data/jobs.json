@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-09T11:01:37.797044+00:00",
+  "generated_at": "2026-10-10T10:16:34.683866+00:00",
   "window_days": 30,
-  "cutoff": "2026-09-09",
+  "cutoff": "2026-09-10",
   "discovery": {
-    "seed_count": 135,
-    "pages_crawled": 628,
-    "domains_crawled": 92,
+    "seed_count": 143,
+    "pages_crawled": 659,
+    "domains_crawled": 102,
     "source_stats": [
       {
         "host": "anubandham.gujarat.gov.in",
@@ -23,12 +23,6 @@
         "host": "api.ncs.gov.in",
         "seed_count": 9,
         "pages_crawled": 9,
-        "jobs_found": 0
-      },
-      {
-        "host": "apps.odishatourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -50,6 +44,24 @@
         "jobs_found": 0
       },
       {
+        "host": "bhuiyan.cg.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "chandigarhtourism.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "chhattisgarh.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "cssda.cg.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -63,8 +75,8 @@
       },
       {
         "host": "delhitourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
+        "seed_count": 2,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -134,13 +146,13 @@
         "jobs_found": 0
       },
       {
-        "host": "gailonline.com",
+        "host": "igod.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "igod.gov.in",
+        "host": "indianculture.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -218,6 +230,12 @@
         "jobs_found": 0
       },
       {
+        "host": "mopng.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "mprojgar.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -225,6 +243,12 @@
       },
       {
         "host": "mpskills.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "myaadhaar.uidai.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -242,9 +266,9 @@
         "jobs_found": 0
       },
       {
-        "host": "newspace.co.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
+        "host": "newmangaloreport.gov.in",
+        "seed_count": 11,
+        "pages_crawled": 11,
         "jobs_found": 0
       },
       {
@@ -260,12 +284,6 @@
         "jobs_found": 0
       },
       {
-        "host": "ntpc.co.in",
-        "seed_count": 2,
-        "pages_crawled": 60,
-        "jobs_found": 7
-      },
-      {
         "host": "odisha.gov.in",
         "seed_count": 2,
         "pages_crawled": 2,
@@ -274,7 +292,7 @@
       {
         "host": "odishatourism.gov.in",
         "seed_count": 1,
-        "pages_crawled": 16,
+        "pages_crawled": 10,
         "jobs_found": 0
       },
       {
@@ -297,8 +315,14 @@
       },
       {
         "host": "powermin.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "pramit.indiainnewyork.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -314,6 +338,12 @@
         "jobs_found": 0
       },
       {
+        "host": "revenue.cg.nic.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "rojgar.mahaswayam.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -322,6 +352,12 @@
       {
         "host": "sdct.goa.gov.in",
         "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "sewasetu.cgstate.gov.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -363,8 +399,8 @@
       },
       {
         "host": "ssc.gov.in",
-        "seed_count": 3,
-        "pages_crawled": 4,
+        "seed_count": 7,
+        "pages_crawled": 8,
         "jobs_found": 0
       },
       {
@@ -376,8 +412,8 @@
       {
         "host": "sscnr.nic.in",
         "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
+        "pages_crawled": 33,
+        "jobs_found": 29
       },
       {
         "host": "sulm.delhi.gov.in",
@@ -393,8 +429,8 @@
       },
       {
         "host": "thdc.co.in",
-        "seed_count": 1,
-        "pages_crawled": 41,
+        "seed_count": 4,
+        "pages_crawled": 40,
         "jobs_found": 2
       },
       {
@@ -404,7 +440,13 @@
         "jobs_found": 0
       },
       {
-        "host": "tourism.cgstate.gov.in",
+        "host": "tripura.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "tripuratourism.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -413,6 +455,24 @@
         "host": "uppbpb.gov.in",
         "seed_count": 0,
         "pages_crawled": 10,
+        "jobs_found": 0
+      },
+      {
+        "host": "upsc.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "upsconline.gov.in",
+        "seed_count": 4,
+        "pages_crawled": 4,
+        "jobs_found": 0
+      },
+      {
+        "host": "upsconline.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -430,12 +490,6 @@
       {
         "host": "www.apprenticeshipindia.gov.in",
         "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.delhitourism.gov.in",
-        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -465,8 +519,8 @@
       },
       {
         "host": "www.incredibleindia.gov.in",
-        "seed_count": 13,
-        "pages_crawled": 20,
+        "seed_count": 11,
+        "pages_crawled": 17,
         "jobs_found": 0
       },
       {
@@ -474,6 +528,12 @@
         "seed_count": 3,
         "pages_crawled": 3,
         "jobs_found": 0
+      },
+      {
+        "host": "www.indiainnewyork.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 58,
+        "jobs_found": 15
       },
       {
         "host": "www.indiapost.gov.in",
@@ -484,6 +544,12 @@
       {
         "host": "www.labour.gov.in",
         "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.moil.nic.in",
+        "seed_count": 1,
         "pages_crawled": 2,
         "jobs_found": 0
       },
@@ -501,15 +567,9 @@
       },
       {
         "host": "www.nsic.co.in",
-        "seed_count": 1,
-        "pages_crawled": 56,
+        "seed_count": 2,
+        "pages_crawled": 57,
         "jobs_found": 32
-      },
-      {
-        "host": "www.odishatourism.gov.in",
-        "seed_count": 19,
-        "pages_crawled": 19,
-        "jobs_found": 0
       },
       {
         "host": "www.publicationsdivision.nic.in",
@@ -562,32 +622,25 @@
     ]
   },
   "quality": {
-    "raw_candidates": 939,
-    "published_jobs": 51,
-    "rejected_or_deduplicated": 888,
+    "raw_candidates": 1094,
+    "published_jobs": 88,
+    "rejected_or_deduplicated": 1006,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 51,
-    "published_jobs_after_gate": 17,
-    "rejected_by_scope_gate": 34,
+    "published_jobs_before_gate": 88,
+    "published_jobs_after_gate": 10,
+    "rejected_by_scope_gate": 78,
     "scope_counts": {
-      "central": 10,
-      "psu": 7
+      "central": 10
     },
     "publication_tier_counts": {
-      "verified": 12,
-      "high_confidence": 5
+      "verified": 10
     },
     "verified_precision_target": ">=98%",
     "gate_architecture": "hard exclusions -> provenance -> ownership -> evidence -> tier",
     "tier_qc": {
       "verified": {
-        "rows": 12,
-        "failed": 0,
-        "score": 1.0
-      },
-      "high_confidence": {
-        "rows": 5,
+        "rows": 10,
         "failed": 0,
         "score": 1.0
       }
@@ -608,7 +661,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-09-12",
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "MINERAL EXPLORATION AND CONSULTANCY LIMITED",
       "official_source": true,
       "confidence": "primary_domain",
@@ -638,47 +691,6 @@
       "publication_score": 82
     },
     {
-      "id": "102b25314aa03d77",
-      "title": "Home | NTPC Limited",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/",
-      "application_url": "https://ntpc.co.in/",
-      "document_url": null,
-      "deadline": "2026-10-26",
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": "₹ 529",
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Home | NTPC Limited Loading... NTPC Limited Home Page Logo Skip to Main Content Navigate directly to the About NTPC section Screen Reader Access Instructions for screen reader accessibility Use these controls to change the text size and contrast mode of the website English Hindi Opens the keyword search input box Search Main site navigation menu Home About Us About Us NTPC Overview Our Journey Board of Directors Diversified Growth Installed Capacity Corporate Functions Future Capacity Additions Joint Ventures and Subsidiaries Consultancy Sustainability Approach Stakeholder Management Materiality Analysis Strategies Policies Governance Membership Reports and Publications ESG Disclosure Investors Chairman's Statement Financial Performance Conference call/analyst meet with Investors Corporate Governance Disclosures and Announcements Shareholding Pattern Shareholders Meetings Compliances Policies Investor Services IEPF Details Bonds Investors Foreign Bonds Commercial Paper Investors Disclosures under Regulation 46 and 62 of SEBI (LODR) Regulations NTPC Buyback 2020 Media 50 Years Celebration Print Advertisements Govt/MOP Initiatives Power Sector Coverage Video Gallery Photo Gallery Press Releases Awards Join Us Jobs at NTPC Career Growth & Opportunities Employee Speak Medical Norms NTPC Values & Culture Recruitment System in NTPC Leading India's Power Sector Energy is indispensable and is one of the essential pillars on which our economy thrives. NTPC is committed to provide uninterrupted and affordable power to fulfill this requirement, thereby bringing cheers to the farthest reaches of the country. Today, with an installed capacity of over 91 GW , NTPC is steering ahead to be India’s largest integrated power company and targets to become a 149 GW firm with diversified fuel mix and a 650+ BU company in terms of generation by 2032 . Read more POWERING ENERGY TRANSITION First Energy company to declare its Energy Compact Goals as part of UN High-level Dialogue on Energy (HLDE), NTPC has been spearheading India's Renewable Energy ecosystem by strengthening its RE footprint, expanding to new areas like Green Hydrogen, Waste to Energy, Battery Storage and Nuclear Energy, with an aim to have 50% non-fossil based capacity by 2032. more than 8 GW of renewable energy under operation and more than13 GW under implementation, the company aims to have 60 GW of RE capacity under its belt by 2032. It has teamed with NITI Aayog for the Net Energy Zero effort. Read more Connec",
-      "normalized_key": "verified news lead|home ntpc limited",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "deadline",
-          "application_link",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
       "id": "8d9e693bb4076159",
       "title": "EXECUTIVE DIRECTOR",
       "organization": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
@@ -691,7 +703,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-08-31",
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
       "official_source": true,
       "confidence": "primary_domain",
@@ -733,7 +745,7 @@
       "pay": "Pay Level 10 of the Central Government. Position Position Remuneration per month (Rs.) Associate (Legal) Rs. 90,000",
       "qualification": ", Experience and Vacancies : Applicants with the following qualifications and experience would be considered for engagement as Associate (Legal)",
       "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://apeda.g...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -762,48 +774,6 @@
       "publication_score": 91
     },
     {
-      "id": "80deba3af29d0f45",
-      "title": "Job description 0",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
-      "deadline": null,
-      "vacancies": 1,
-      "age_limit_years": null,
-      "pay": "₹ 200000",
-      "qualification": "The applicant should be an Engineering Graduate/ Chartered Accountant/ Cost Accountant/ Post Graduate/ Graduate with MBA/PGDIM from a leading Institute",
-      "posting_date": "2024-01-08",
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "No.8/1/2024-Th.(Part-I)(277298) Government of India Ministry of Power ***** Shram Shakti Bhawan, Rafi Marg New Delhi, Dated: 28th February, 2026 Subject: Appointment to the post of Chairman and Managing Director, NTPC Limited through Search-cum-selection Committee. Name of the CPSE : NTPC Ltd. Name of the post : Chairman & Managing Director (CMD) Date of Vacancy : 01.08.2026 Schedule of the CPSE : Schedule A Scale of the Post : ₹ 200000 – 370000 (IDA) l. COMPANY PROFILE: NTPC Limited was incorporated in 1975 under the companies act, 1956 with objective to develop and provide reliable power, related projects and services at competitive prices, integrating multiple energy sources with innovative and eco-friendly technologies and contribute to society. NTPC became a listed company in 2004, with majority holding of 89.50% with the Government of India which was further reduced from time to time. The Company has over the years, developed from a thermal power generator to an integrated power company with presence across entire energy value chain through backward and forward integration into areas such as coal mining power trading, distribution etc. On 19th May 2010, NTPC was granted the status of 'Maharatna' that resulted in enhanced autonomy in decision making. Its registered and corporate offices are at New Delhi. The company employed 16,689 regular employees (Executives: 12,319 and Non- executives: 4,370) as on 31.03.2025. The authorized and paid up capital of the Company was Rs. 16,600 crores and Rs. 9,696.7 crores respectively as on 31.03.2025. Government of India's equity in NTPC, stands at 51.10% as on 31.03.2025, the rest being held by Institutional Investors, public & others. ll. JOB DESCRIPTION AND RESPONSIBILITIES: The Chairman and Managing Director is the Chief Executive of the Corporation and is accountable to the Board of Directors and the Government. He/ She is responsible for the overall management and performance of the organization, including providing strategic direction, ensuring effective corporate governance, and overseeing the operations of the Corporation, its subsidiaries, and joint ventures. CMD shall lead the formulation and implementation of the Corporation’s long-term vision and strategy, ensure sustainable growth, and align organizational objectives with national priorities. The role also encompasses guiding expansion both organic and inorganic, across the power value chain, including generation, mining, renewables, nuclear, energy s",
-      "normalized_key": "verified news lead|job description 0",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "vacancy_count",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "verified",
-        "publication_score": 100,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "verified",
-      "publication_score": 100
-    },
-    {
       "id": "d789393336ab098c",
       "title": "advtCVRDE02092026",
       "organization": "https://drdo.go...",
@@ -816,7 +786,7 @@
       "pay": "rs,",
       "qualification": null,
       "posting_date": "2026-09-08",
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -858,7 +828,7 @@
       "pay": "₹५,०००",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -899,7 +869,7 @@
       "pay": null,
       "qualification": "conditions are fulfilled , Candidates should download and fill the Application Form in the prescribed format enclosed (also available on the ‘what’s new’ section of the website www",
       "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -940,7 +910,7 @@
       "pay": "Rs. 37,000",
       "qualification": "certificates/Mark Sheets/Experience Certificates etc",
       "posting_date": "2026-09-04",
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -981,7 +951,7 @@
       "pay": null,
       "qualification": "Equivalent acceptable subjects of essential qualification 1 Electronics & Communication Engineering (ECE) 2 (Two) Graduate degree from recognized university in professional course (BE / B Tech in first division in respective subject with valid cut off GATE Score (2024, 2025 & 2026 are acceptable) Or Post graduate degree from recognized university i",
       "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1022,7 +992,7 @@
       "pay": "rs 2",
       "qualification": "ate Date & Time of Walk-in Interview 1",
       "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1063,7 +1033,7 @@
       "pay": "Stipend: Monthly emoluments of Rs.37,000",
       "qualification": "as on Interview date Discipline/ Branch/Field acceptable Document Verification Written Test & Interview after document verification 1 Mechanical Engineering 05 BE/B",
       "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
+      "discovered_at": "2026-10-10T10:16:34.683866+00:00",
       "source": "https://drdo.go...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1091,211 +1061,6 @@
       "scope": "central",
       "publication_tier": "verified",
       "publication_score": 100
-    },
-    {
-      "id": "5edc974ae1a4478e",
-      "title": "Advertisement for \"Special Recruitment Drive for the persons with disabilities\"",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Advertisement for \"Special Recruitment Drive for the persons with disabilities\"",
-      "normalized_key": "verified news lead|advertisement for special recruitment drive for the persons with disabilities",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
-      "id": "264af47d05913609",
-      "title": "Dedication to the nation Dadri Stage II Advertisement",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Dedication to the nation Dadri Stage II Advertisement",
-      "normalized_key": "verified news lead|dedication to the nation dadri stage ii advertisement",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
-      "id": "16e6ead6e6c420fa",
-      "title": "NTPC Recruitment Ad",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "",
-      "normalized_key": "verified news lead|ntpc recruitment ad",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
-      "id": "cb0e983a9ac76745",
-      "title": "Price Discovery Advertisement",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Price Discovery Advertisement",
-      "normalized_key": "verified news lead|price discovery advertisement",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
-      "id": "d2008c8d6407c129",
-      "title": "Special Recruitment Drive for the persons with disabilities",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-10-09T11:01:37.797044+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "",
-      "normalized_key": "verified news lead|special recruitment drive for the persons with disabilities",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
     }
   ],
   "scope_policy": {

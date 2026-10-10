@@ -1,18 +1,346 @@
 {
-  "generated_at": "2026-10-09T11:15:58.100210+00:00",
-  "rejected_count": 34,
+  "generated_at": "2026-10-10T10:32:24.435893+00:00",
+  "rejected_count": 78,
   "scope_counts": {
-    "central": 10,
-    "psu": 7
+    "central": 10
   },
   "tier_counts": {
-    "verified": 12,
-    "high_confidence": 5
+    "verified": 10
   },
   "rejected": [
     {
       "id": "0d5a82dcef257188",
       "title": "1",
+      "organization": "Verified news lead",
+      "url": "https://thdc.co.in/sites/default/files/career/RECRUITMENT_OF_SENIOR%20MANAGER_DEPUTY_GENERAL_MANAGER_AND_ADDITIONAL_GENERAL_MANAGER.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "25ea258ad1b221dd",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector (Post Code NR19124) in National Center for Vector Borne Diseases Control under Selection Post Phase-XII/2024-Reg. [31 Aug 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6118cb31de932b4f",
+      "title": "Corrigendum Recruitment to the post of Office Superintendent advertised vide post code NR21024 Phase-XII/2024/Selection Posts- reg.[06 June 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d2c5cecdd4595ebc",
+      "title": "Corrigendum regarding withdrawal of 01 vacancy for the Post of Library & Information Assistant advertised vide Post Code NR18724 Phase-XII/2024/Selection Post.[24 April 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1e59ea63d90d3ae8",
+      "title": "Cancellation Notice Cancellation of Post Code NR12724 (01-SC Vacancy) – Research Investigator in Department of Land Resources under Selection Post Phase-XII/2024-Reg. [23 Mar 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "de81b9367e8f79da",
+      "title": "Cancellation Notice Cancellation of the vacancy of Mud Plaster in National Crafts Museum & Hastkala Academy, M/o Textiles Post Category No. NR21524 advertised under Phase-XII/2024 Selection Posts-reg. [21 Jan 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "979ee11dc2344b70",
+      "title": "Cancellation Notice Cancellation of the following vacancies in National Crafts Museum & Hastkala Academy, M/o Textiles advertised under Phase XIII/2025 Selection Posts-reg. [21 Jan 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0531911ccabcf5c6",
+      "title": "Corrigendum Recruitment to the post of Civil Motor Driver (Ordinary Grade) Post Category No. NR32623 advertised under Phase-XI/2023/Selection Posts Examination. [23 Dec 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "821056094e819e3f",
+      "title": "Corrigendum WITHDRAWAL OF 05 VACANCIES FOR THE POST CODE NR28823 PHASE-XI/2023 (DATA ENTRY OPERATOR (DEO). [18 Aug 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9370b28653b33ffc",
+      "title": "Corrigendum Vacancy reserved for Ex-servicemen (ESM) as “NIL” for the Post Code NR10424 of Selection Posts Phase-XII/2024. [12 Aug 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "679cf3846a2b5e0c",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code-NR12923 Phase XI/2023. [15 July 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "36962373c9646c34",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code NR12723 and NR12823 Phase XI/2023. [12 Mar 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12723_NR12823_12032025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "169319dcddb4d011",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "726306cd71838359",
+      "title": "Cancellation Notice NR15125",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_Notice_NR15125.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ffe434ec6f53ac85",
+      "title": "Corrigendum NR21024",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f84210518433afce",
+      "title": "CancelNotice 31623",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/CancelNotice_31623.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1f301afd527fed84",
+      "title": "Corrigendum NR 18724",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "13053bd431eb72bb",
+      "title": "Cancellation Notice NR12724",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "87b41b5962751332",
+      "title": "Cancel Notice NR21524",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6fa64bd6b74d8228",
+      "title": "Cancel Notice NR17525 NR17625 NR17725 NR17825",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6442f55acf66c7a1",
+      "title": "Corr 32623 231222025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5a9e0e0d7e053216",
+      "title": "Corrigendum SSC NR11925 NR12025 and NR16325",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corrigendum_SSC_NR11925_NR12025_and_NR16325.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c04d5202cbb7e3d0",
+      "title": "CORRIGENDUM NR28823 18082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e2c48abb3061cde3",
+      "title": "Cancel Notice NR25024 12082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancel_Notice_NR25024_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2d86c838d2763226",
+      "title": "Corrigendum NR10424 12082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3494d0a9be88d62e",
+      "title": "CORRIGENDUM NR12923 15072025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e0e89127ab4654b1",
+      "title": "Cancellation Notice for NR14122 to NR15722 25062025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR14122_to_NR15722_25062025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "54feaec5e5272e32",
+      "title": "Cancellation Notice for NR11322 NR11422 NR11622",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR11322_NR11422_NR11622.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0eef9c935f8a2099",
+      "title": "CANCELLATION NOTICE NR14423 NR17623 28032025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR14423_NR17623_28032025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b883c0ccfc6d6594",
+      "title": "CANCELLATION NOTICE NR15523 07012025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR15523_07012025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "60ff6c3b00a97c49",
+      "title": "RECRUITMENT OF SENIOR%20MANAGER DEPUTY GENERAL MANAGER AND ADDITIONAL GENERAL MANAGER",
       "organization": "Verified news lead",
       "url": "https://thdc.co.in/sites/default/files/career/RECRUITMENT_OF_SENIOR%20MANAGER_DEPUTY_GENERAL_MANAGER_AND_ADDITIONAL_GENERAL_MANAGER.pdf",
       "reasons": [
@@ -264,10 +592,98 @@
       "score": 0
     },
     {
-      "id": "60ff6c3b00a97c49",
-      "title": "RECRUITMENT OF SENIOR%20MANAGER DEPUTY GENERAL MANAGER AND ADDITIONAL GENERAL MANAGER",
+      "id": "7a006c4355fea7b5",
+      "title": "Advertisement for the post of Office Errand Staff",
       "organization": "Verified news lead",
-      "url": "https://thdc.co.in/sites/default/files/career/RECRUITMENT_OF_SENIOR%20MANAGER_DEPUTY_GENERAL_MANAGER_AND_ADDITIONAL_GENERAL_MANAGER.pdf",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Office_Errand_Staff_08_10_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8ec1d5d2ad8dfa02",
+      "title": "Advertisement for the post of Receptionist iro CGI Boston",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_the_post_of_Receptionist_08_10_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "494a2a0673c29bce",
+      "title": "Advertisement for the post of Marketing Executive",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Marketing_Executive_08_10_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2435f7bf0bfcfe50",
+      "title": "Advertisement for Marketing Executive",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "16e10f1d88d1e648",
+      "title": "Advertisement for post of Chauffeur",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c51770faa7cc33ea",
+      "title": "Advertisement for Clerk",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Clerk_280126.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "af80fe87ecd9890f",
+      "title": "Advertisement for Marketing Assistant",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Assistant_250126.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "692010ef0afbc186",
+      "title": "Advertisement for Messenger",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Messenger_220126.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "aee1e074bcf326ed",
+      "title": "Advertisement for post of Chauffeur - 1",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_1.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -380,6 +796,72 @@
       "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
       "reasons": [
         "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1de90ce0b0f42f66",
+      "title": "Advertisement for Office Errand Staff 08 10 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Office_Errand_Staff_08_10_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b7d5d5afb536ecae",
+      "title": "Advertisement for the post of Receptionist 08 10 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_the_post_of_Receptionist_08_10_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c4560a869c7c2e2c",
+      "title": "Advertisement for Marketing Executive 08 10 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Marketing_Executive_08_10_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "34c37ad62e93a74a",
+      "title": "Marketing Executive 05 06 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e841f80e3d2cf05d",
+      "title": "Advertisement for post of Chauffeur 19feb2026",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b90a7e28dd639d82",
+      "title": "Advertisement for post of Chauffeur in CGI Boston 260825",
+      "organization": "Verified news lead",
+      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_in_CGI_Boston_260825.pdf",
+      "reasons": [
+        "generic_organization"
       ],
       "scope": null,
       "score": 0
