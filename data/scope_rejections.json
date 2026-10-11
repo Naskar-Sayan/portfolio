@@ -1,18 +1,44 @@
 {
-  "generated_at": "2026-10-10T10:32:24.435893+00:00",
-  "rejected_count": 78,
+  "generated_at": "2026-10-11T10:49:55.051126+00:00",
+  "rejected_count": 107,
   "scope_counts": {
-    "central": 10
+    "central": 10,
+    "central_linked": 12,
+    "institutional_indian_source": 5,
+    "psu": 11
   },
   "tier_counts": {
-    "verified": 10
+    "verified": 31,
+    "high_confidence": 7
   },
   "rejected": [
     {
-      "id": "0d5a82dcef257188",
-      "title": "1",
+      "id": "ca69a40dfb658c9e",
+      "title": "Morehead-Cain Global Fellows Program (2027–2028) | OGE IIT Madras",
       "organization": "Verified news lead",
-      "url": "https://thdc.co.in/sites/default/files/career/RECRUITMENT_OF_SENIOR%20MANAGER_DEPUTY_GENERAL_MANAGER_AND_ADDITIONAL_GENERAL_MANAGER.pdf",
+      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/morehead-cain-global-fellows-program-20272028",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "4c2a4f801ce90813",
+      "title": "Internships Fellowships Opportunities | OGE IIT Madras",
+      "organization": "Verified news lead",
+      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5a8356d78adcb210",
+      "title": "2027 CCU/CoE International Internship Program | OGE IIT Madras",
+      "organization": "Verified news lead",
+      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/2027-ccucoe-international-internship-program",
       "reasons": [
         "generic_organization"
       ],
@@ -134,6 +160,17 @@
       "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code NR12723 and NR12823 Phase XI/2023. [12 Mar 2025]",
       "organization": "Verified news lead",
       "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12723_NR12823_12032025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "064756ebefb5159f",
+      "title": "View the Recruitment and Promotion Norms",
+      "organization": "Verified news lead",
+      "url": "https://www.iitm.ac.in/sites/default/files/Promotion%20Norms/recruitment-and-promotion-norms.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -332,17 +369,6 @@
       "title": "CANCELLATION NOTICE NR15523 07012025",
       "organization": "Verified news lead",
       "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR15523_07012025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "60ff6c3b00a97c49",
-      "title": "RECRUITMENT OF SENIOR%20MANAGER DEPUTY GENERAL MANAGER AND ADDITIONAL GENERAL MANAGER",
-      "organization": "Verified news lead",
-      "url": "https://thdc.co.in/sites/default/files/career/RECRUITMENT_OF_SENIOR%20MANAGER_DEPUTY_GENERAL_MANAGER_AND_ADDITIONAL_GENERAL_MANAGER.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -592,10 +618,10 @@
       "score": 0
     },
     {
-      "id": "7a006c4355fea7b5",
-      "title": "Advertisement for the post of Office Errand Staff",
+      "id": "b4ae2cdf33d82cc6",
+      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS [IITM/R/5/2025 dated 24.09.2025]",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Office_Errand_Staff_08_10_2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -603,10 +629,10 @@
       "score": 0
     },
     {
-      "id": "8ec1d5d2ad8dfa02",
-      "title": "Advertisement for the post of Receptionist iro CGI Boston",
+      "id": "51560ca86ca60e86",
+      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS (Application portal will open on 27.09.2025)",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_the_post_of_Receptionist_08_10_2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -614,10 +640,10 @@
       "score": 0
     },
     {
-      "id": "494a2a0673c29bce",
-      "title": "Advertisement for the post of Marketing Executive",
+      "id": "e77c68acbfd6b662",
+      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Marketing_Executive_08_10_2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R425_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -625,65 +651,10 @@
       "score": 0
     },
     {
-      "id": "2435f7bf0bfcfe50",
-      "title": "Advertisement for Marketing Executive",
+      "id": "8e1bc5e6f39c90f2",
+      "title": "Recruitment Job Portal",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "16e10f1d88d1e648",
-      "title": "Advertisement for post of Chauffeur",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c51770faa7cc33ea",
-      "title": "Advertisement for Clerk",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Clerk_280126.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "af80fe87ecd9890f",
-      "title": "Advertisement for Marketing Assistant",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Assistant_250126.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "692010ef0afbc186",
-      "title": "Advertisement for Messenger",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Messenger_220126.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "aee1e074bcf326ed",
-      "title": "Advertisement for post of Chauffeur - 1",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_1.pdf",
+      "url": "https://icandsr.iitm.ac.in/careers/",
       "reasons": [
         "generic_organization"
       ],
@@ -801,10 +772,10 @@
       "score": 0
     },
     {
-      "id": "1de90ce0b0f42f66",
-      "title": "Advertisement for Office Errand Staff 08 10 2026",
+      "id": "ad3dcc1bf4c16247",
+      "title": "R525 Detailed Advt and instructions",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Office_Errand_Staff_08_10_2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -812,10 +783,10 @@
       "score": 0
     },
     {
-      "id": "b7d5d5afb536ecae",
-      "title": "Advertisement for the post of Receptionist 08 10 2026",
+      "id": "410bcf5677cf7587",
+      "title": "R525 DR L1list",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_the_post_of_Receptionist_08_10_2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525-DR-L1list.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -823,10 +794,10 @@
       "score": 0
     },
     {
-      "id": "c4560a869c7c2e2c",
-      "title": "Advertisement for Marketing Executive 08 10 2026",
+      "id": "8ca86983478404c3",
+      "title": "R525 DR L1 addshortlisted",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Marketing_Executive_08_10_2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525-DR-L1-addshortlisted.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -834,10 +805,10 @@
       "score": 0
     },
     {
-      "id": "34c37ad62e93a74a",
-      "title": "Marketing Executive 05 06 2026",
+      "id": "19e2360c7dc4bb68",
+      "title": "R525 DRAR L1Schedule",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525-DRAR-L1Schedule.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -845,10 +816,10 @@
       "score": 0
     },
     {
-      "id": "e841f80e3d2cf05d",
-      "title": "Advertisement for post of Chauffeur 19feb2026",
+      "id": "56646570288316f6",
+      "title": "R525 DRAR L2 Schedule",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525_DRAR_L2_Schedule.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -856,10 +827,362 @@
       "score": 0
     },
     {
-      "id": "b90a7e28dd639d82",
-      "title": "Advertisement for post of Chauffeur in CGI Boston 260825",
+      "id": "55b2356cbe265131",
+      "title": "R525 DR Selected",
       "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_in_CGI_Boston_260825.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525-DR-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "10eb809f1f4b6bcb",
+      "title": "R525 AR L1list",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-AR-L1list.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8fad1beade097cf5",
+      "title": "R525 AR L1 addshortlisted",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-AR-L1-addshortlisted.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b5427bc2e1a58c5a",
+      "title": "R525 AR Selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-AR-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e59a4c5ba444f683",
+      "title": "R525 HVAC Officer L1",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_HVAC_Officer_L1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d9af9ec47c2e4ce2",
+      "title": "R525 HVACOfficer L1L2schedule",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_HVACOfficer_L1L2schedule.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "553a5c038e88f510",
+      "title": "R525 HVAC Officer Selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-HVAC_Officer-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b0627348feb2b2ce",
+      "title": "R525 TO SOE",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_TO_SOE.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2ed8a728df394284",
+      "title": "R525 TO L1",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_TO_L1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6d573d2d41752f7c",
+      "title": "R525 TO Selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-TO-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e707147f4b839bde",
+      "title": "R525 EE Selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-EE-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "50093a13a46de2e8",
+      "title": "R525 AEE L1",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_AEE_L1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "78be1156473dfd3e",
+      "title": "R525 AEE Selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-AEE-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "abb24e7216399266",
+      "title": "R525 STO L1",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_STO_L1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d224c78042d21c29",
+      "title": "R525 STO L1 addshortlisted",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-STO-L1-addshortlisted.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "66166215adafd9b4",
+      "title": "R525 STO L1L2Schedule",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_STO_L1L2Schedule.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e3be26b3c838d22e",
+      "title": "R525 STO Selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-STO-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b49bb391b196dfa5",
+      "title": "R525 JE CE SOE",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_JE_CE_SOE.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "40d1e90574d3bbd6",
+      "title": "R525 JE EE SOE",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_JE_EE_SOE.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "98353f873049d2c5",
+      "title": "R525 JE HVAC SOE",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_JE_HVAC_SOE.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "31adf17c25151282",
+      "title": "R525 JE CE L1",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JE-CE-L1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "660b70d786ab3f53",
+      "title": "R525 JECE L1 addshorlisted",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JECE-L1-addshorlisted.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e67bf9b50c567f56",
+      "title": "R525 JE EE L1",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JE-EE-L1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6c10e9c7760474e4",
+      "title": "R525 JE CE L2",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JE-CE-L2.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3eecb5301292dd90",
+      "title": "R525 JEEE L2",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JEEE-L2.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "bebac9062dc4dcb2",
+      "title": "R525 JE L1L2Schedule",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_JE_L1L2Schedule.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6dbd36c26ec38d6d",
+      "title": "R525 Corrigendum",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525_Corrigendum.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "dd79a00315898d87",
+      "title": "R525 JE Selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JE-Selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9051ecd46ae85828",
+      "title": "R525 JA L1list",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JA-L1list.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8ecf0a78def94955",
+      "title": "R525 JA L1 addshortlisted",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JA-L1-addshortlisted.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3bb9b3cde2f3ef01",
+      "title": "R525 JA L2",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R525-JA-L2.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5df3f0f3081cab1b",
+      "title": "R425 LB PI",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R425_LB_PI.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "32775a14dad62d76",
+      "title": "R425 LB selected",
+      "organization": "Verified news lead",
+      "url": "https://recruit.iitm.ac.in/include/R425_LB_selected.pdf",
       "reasons": [
         "generic_organization"
       ],
