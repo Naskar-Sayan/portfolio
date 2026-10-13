@@ -1,117 +1,18 @@
 {
-  "generated_at": "2026-10-12T11:38:54.976650+00:00",
-  "rejected_count": 37,
+  "generated_at": "2026-10-13T11:25:27.008502+00:00",
+  "rejected_count": 34,
   "scope_counts": {
-    "central": 8
+    "central": 9
   },
   "tier_counts": {
-    "verified": 8
+    "verified": 9
   },
   "rejected": [
     {
-      "id": "42b4856c52a402e3",
-      "title": "Details â€” Advertisement No.SIC/Advisor/01/2026 w.r.t. Engagement of Advisor for NVCFL (opens in new tab)",
+      "id": "25ea258ad1b221dd",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector (Post Code NR19124) in National Center for Vector Borne Diseases Control under Selection Post Phase-XII/2024-Reg. [31 Aug 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "65e3c5f4e6d3e34b",
-      "title": "Details â€” Engagement of Young Professionals on Contract Basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "774c30060aa87aed",
-      "title": "Details â€” Notice dated 27.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026127191629.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "654c6d5fae7bc10b",
-      "title": "Details â€” Notice dated 20.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026120184824.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b09bbca33a2a07ed",
-      "title": "Details â€” Advertisement for Engagement of MSME Relationship Manager (On Contract Basis) (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251118183938.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ae52409fd5b3e5da",
-      "title": "Details â€” Advertisement for Engagement of Civil Engineer (On Contract Basis) (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112258.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "326ccec0e828ab38",
-      "title": "Details â€” Advertisement for Engagement of Electrical Engineer (On Contract Basis) (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112220.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0866d731cd1917a8",
-      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entry to the various posts at Executive level (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ec6e633aad4810d7",
-      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Recruitment for lateral entry to the various posts at Executive Level (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c675a92e7b929f5c",
-      "title": "Details â€” Corrigendum w.r.t. Advertisement No. NSIC/HR/15/2025 dated 03.09.2025 inviting applications from Professionals with suitable domain expertise to be engaged as Lead- TReDs (on contract basis) in the Corporatio",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202595173243.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -119,21 +20,10 @@
       "score": 0
     },
     {
-      "id": "f067061f308b4023",
-      "title": "Details â€” Notice dt. 09.05.2025 w.r.t. Schedule of Interview against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 Special Recruitment Drive to the post of General Manager (E-5) / Deputy General Manager (E-4), Chief Mana",
+      "id": "6118cb31de932b4f",
+      "title": "Corrigendum Recruitment to the post of Office Superintendent advertised vide post code NR21024 Phase-XII/2024/Selection Posts- reg.[06 June 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025510201915.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "408cbe5dace4b9c9",
-      "title": "Details â€” Schedule of Interview against Special Recruitment Drive for SC, ST, OBC (including PwBD) against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 for the post of Deputy General Manager (Finance & Accounts) (E-4 Le",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/HR_Noticedated01052025.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -141,10 +31,10 @@
       "score": 0
     },
     {
-      "id": "e9414782f84592cd",
-      "title": "Details â€” Schedule of Interview against Advt. No. Advt. No. NSIC/HR/13/2025 Dated: 08.02.2025 for the post of Deputy Manager (Finance & Accounts) (E-1 Level), Special Recruitment Drive for SC, ST, OBC (including PwBD)",
+      "id": "d2c5cecdd4595ebc",
+      "title": "Corrigendum regarding withdrawal of 01 vacancy for the Post of Library & Information Assistant advertised vide Post Code NR18724 Phase-XII/2024/Selection Post.[24 April 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/Notice_ 29042025.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -152,21 +42,10 @@
       "score": 0
     },
     {
-      "id": "0826763720660135",
-      "title": "Details â€” Notice: Advertisement No. NSIC/HR/14/2025 dated 28.01.2025 w.r.t. engagement of Consultants in the field of MSME Credit Product Structuring and Implementation, NBFC Regulation and Operation, Strategy & Ventur",
+      "id": "1e59ea63d90d3ae8",
+      "title": "Cancellation Notice Cancellation of Post Code NR12724 (01-SC Vacancy) – Research Investigator in Department of Land Resources under Selection Post Phase-XII/2024-Reg. [23 Mar 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025212174123.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b58805602bf9f2cf",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025 , Special Recruitment Drive for SC, ST, OBC (Including PwBD) to the various posts (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -174,10 +53,10 @@
       "score": 0
     },
     {
-      "id": "22729a8282109af6",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Deputy Manager (Finance & Accounts) and Manager (Finance & Accounts) (opens in new tab)",
+      "id": "de81b9367e8f79da",
+      "title": "Cancellation Notice Cancellation of the vacancy of Mud Plaster in National Crafts Museum & Hastkala Academy, M/o Textiles Post Category No. NR21524 advertised under Phase-XII/2024 Selection Posts-reg. [21 Jan 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -185,10 +64,10 @@
       "score": 0
     },
     {
-      "id": "94b77ea920ef8caa",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Technology (Works & Estate) (opens in new tab)",
+      "id": "979ee11dc2344b70",
+      "title": "Cancellation Notice Cancellation of the following vacancies in National Crafts Museum & Hastkala Academy, M/o Textiles advertised under Phase XIII/2025 Selection Posts-reg. [21 Jan 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -196,10 +75,10 @@
       "score": 0
     },
     {
-      "id": "557d5747c56fc623",
-      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Human Resource (opens in new tab)",
+      "id": "0531911ccabcf5c6",
+      "title": "Corrigendum Recruitment to the post of Civil Motor Driver (Ordinary Grade) Post Category No. NR32623 advertised under Phase-XI/2023/Selection Posts Examination. [23 Dec 2025]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -207,109 +86,10 @@
       "score": 0
     },
     {
-      "id": "c9eae95a1ff1599f",
-      "title": "Details â€” Engagement of Consultant (MSME Credit Product Structuring and Implementation) on part time basis (opens in new tab)",
+      "id": "821056094e819e3f",
+      "title": "Corrigendum WITHDRAWAL OF 05 VACANCIES FOR THE POST CODE NR28823 PHASE-XI/2023 (DATA ENTRY OPERATOR (DEO). [18 Aug 2025]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134013.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "209d3b157cd77793",
-      "title": "Details â€” Engagement of Consultant (NBFC Regulations & Operations) on part time basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134052.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b57e9b3b17b52a05",
-      "title": "Details â€” Engagement of Consultant (Strategy and Venture) on part time basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134129.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6206d5684a37447a",
-      "title": "Details â€” Engagement of Consultant (Human Resource) on Part time basis (opens in new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "288b493754d65035",
-      "title": "2026714181514",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026714181514.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b554794bfbc176b3",
-      "title": "202672195435",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9a4b882fbc30407d",
-      "title": "2026522202851",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b0236f9d4ad9ecb6",
-      "title": "20251024224149A",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2a6d8a8b264964f9",
-      "title": "20251024224228",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
-      "reasons": [
-        "historical_recruitment"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2d2ab36fd0d2a3b6",
-      "title": "202527174223",
-      "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -317,10 +97,10 @@
       "score": 0
     },
     {
-      "id": "7c3434ff774594bd",
-      "title": "202527174446",
+      "id": "9370b28653b33ffc",
+      "title": "Corrigendum Vacancy reserved for Ex-servicemen (ESM) as “NIL” for the Post Code NR10424 of Selection Posts Phase-XII/2024. [12 Aug 2025]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -328,10 +108,10 @@
       "score": 0
     },
     {
-      "id": "4624f177988a9abd",
-      "title": "202527174750",
+      "id": "679cf3846a2b5e0c",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code-NR12923 Phase XI/2023. [15 July 2025]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -339,10 +119,10 @@
       "score": 0
     },
     {
-      "id": "94ae38e18eda06a5",
-      "title": "20252717492",
+      "id": "36962373c9646c34",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code NR12723 and NR12823 Phase XI/2023. [12 Mar 2025]",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12723_NR12823_12032025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -350,12 +130,199 @@
       "score": 0
     },
     {
-      "id": "a2975d0184757593",
-      "title": "202512813422",
+      "id": "169319dcddb4d011",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector",
       "organization": "Verified news lead",
-      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
       "reasons": [
-        "historical_recruitment"
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "726306cd71838359",
+      "title": "Cancellation Notice NR15125",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_Notice_NR15125.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ffe434ec6f53ac85",
+      "title": "Corrigendum NR21024",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f84210518433afce",
+      "title": "CancelNotice 31623",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/CancelNotice_31623.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1f301afd527fed84",
+      "title": "Corrigendum NR 18724",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "13053bd431eb72bb",
+      "title": "Cancellation Notice NR12724",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "87b41b5962751332",
+      "title": "Cancel Notice NR21524",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6fa64bd6b74d8228",
+      "title": "Cancel Notice NR17525 NR17625 NR17725 NR17825",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6442f55acf66c7a1",
+      "title": "Corr 32623 231222025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5a9e0e0d7e053216",
+      "title": "Corrigendum SSC NR11925 NR12025 and NR16325",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corrigendum_SSC_NR11925_NR12025_and_NR16325.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c04d5202cbb7e3d0",
+      "title": "CORRIGENDUM NR28823 18082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e2c48abb3061cde3",
+      "title": "Cancel Notice NR25024 12082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancel_Notice_NR25024_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2d86c838d2763226",
+      "title": "Corrigendum NR10424 12082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3494d0a9be88d62e",
+      "title": "CORRIGENDUM NR12923 15072025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e0e89127ab4654b1",
+      "title": "Cancellation Notice for NR14122 to NR15722 25062025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR14122_to_NR15722_25062025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "54feaec5e5272e32",
+      "title": "Cancellation Notice for NR11322 NR11422 NR11622",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR11322_NR11422_NR11622.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0eef9c935f8a2099",
+      "title": "CANCELLATION NOTICE NR14423 NR17623 28032025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR14423_NR17623_28032025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b883c0ccfc6d6594",
+      "title": "CANCELLATION NOTICE NR15523 07012025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR15523_07012025.pdf",
+      "reasons": [
+        "generic_organization"
       ],
       "scope": null,
       "score": 0

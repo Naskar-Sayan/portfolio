@@ -1,14 +1,28 @@
 {
-  "generated_at": "2026-10-12T11:38:55.090300+00:00",
+  "generated_at": "2026-10-13T11:25:27.089476+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 0,
+    "new_jobs": 1,
     "updated_jobs": 0,
     "deadline_alerts": 0,
-    "total_jobs_checked": 8
+    "total_jobs_checked": 9
   },
-  "new_jobs": [],
+  "new_jobs": [
+    {
+      "id": "ea987702eb89001c",
+      "title": "advtDYSLSM08092026",
+      "organization": "https://drdo.go...",
+      "deadline": null,
+      "vacancies": null,
+      "pay": "Rs. 37,000",
+      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
+      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    }
+  ],
   "updated_jobs": [],
   "deadline_alerts": [],
-  "notification_text": ""
+  "notification_text": "NEW: advtDYSLSM08092026 | https://drdo.go... | Last date: N/A | https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf"
 }
