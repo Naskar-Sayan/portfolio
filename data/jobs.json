@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T08:58:32.690934+00:00",
+  "generated_at": "2026-10-21T08:59:51.987855+00:00",
   "window_days": 30,
-  "cutoff": "2026-09-20",
+  "cutoff": "2026-09-21",
   "discovery": {
-    "seed_count": 112,
-    "pages_crawled": 702,
-    "domains_crawled": 108,
+    "seed_count": 118,
+    "pages_crawled": 1200,
+    "domains_crawled": 144,
     "source_stats": [
       {
         "host": "academics.iitd.ac.in",
@@ -17,6 +17,12 @@
         "host": "admissions.ge.iitm.ac.in",
         "seed_count": 0,
         "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "admser.chd.nic.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -45,8 +51,14 @@
       },
       {
         "host": "assam.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "assamtourism.gov.in",
         "seed_count": 1,
-        "pages_crawled": 1,
+        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -56,9 +68,27 @@
         "jobs_found": 0
       },
       {
-        "host": "chandigarhtourism.gov.in",
+        "host": "careers.iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 12,
+        "jobs_found": 10
+      },
+      {
+        "host": "cdc.iitpkd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 14,
+        "jobs_found": 0
+      },
+      {
+        "host": "cds.iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 5,
+        "jobs_found": 0
+      },
+      {
+        "host": "chandigarhdistrict.nic.in",
         "seed_count": 1,
-        "pages_crawled": 1,
+        "pages_crawled": 5,
         "jobs_found": 0
       },
       {
@@ -88,14 +118,14 @@
       {
         "host": "doe.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 3,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
         "host": "drdo.gov.in",
         "seed_count": 7,
         "pages_crawled": 7,
-        "jobs_found": 7
+        "jobs_found": 0
       },
       {
         "host": "dsd.jk.gov.in",
@@ -152,10 +182,28 @@
         "jobs_found": 0
       },
       {
+        "host": "ep.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "erojgar.cg.gov.in",
         "seed_count": 1,
         "pages_crawled": 24,
         "jobs_found": 0
+      },
+      {
+        "host": "erp.iitkgp.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "facap.iitpkd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 14,
+        "jobs_found": 4
       },
       {
         "host": "facapp.iitm.ac.in",
@@ -164,9 +212,27 @@
         "jobs_found": 0
       },
       {
+        "host": "facultyrecruitment.iitbhu.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "facultyselection.iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "gailonline.com",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "ge.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 49,
+        "pages_crawled": 48,
         "jobs_found": 3
       },
       {
@@ -178,8 +244,14 @@
       {
         "host": "icandsr.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 15,
+        "pages_crawled": 14,
         "jobs_found": 1
+      },
+      {
+        "host": "icc.iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 0
       },
       {
         "host": "igod.gov.in",
@@ -188,20 +260,62 @@
         "jobs_found": 0
       },
       {
-        "host": "in.iitd.ac.in",
+        "host": "iitbhilai.ac.in",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "indianrail.gov.in",
-        "seed_count": 1,
+        "host": "iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 48,
+        "jobs_found": 6
+      },
+      {
+        "host": "iitgoa.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 0,
+        "jobs_found": 1
+      },
+      {
+        "host": "iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 2
+      },
+      {
+        "host": "iiti.ac.in",
+        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "industries.tripura.gov.in",
-        "seed_count": 1,
+        "host": "iitk.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 25,
+        "jobs_found": 3
+      },
+      {
+        "host": "iitpkd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 21,
+        "jobs_found": 0
+      },
+      {
+        "host": "iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 19
+      },
+      {
+        "host": "iittp.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "in.iitd.ac.in",
+        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -218,6 +332,24 @@
         "jobs_found": 0
       },
       {
+        "host": "ir.iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "ir.iitpkd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 3,
+        "jobs_found": 0
+      },
+      {
+        "host": "ir.iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 17,
+        "jobs_found": 0
+      },
+      {
         "host": "itiadmission.goa.gov.in",
         "seed_count": 0,
         "pages_crawled": 1,
@@ -231,12 +363,6 @@
       },
       {
         "host": "jakemp.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "jammu.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -278,24 +404,6 @@
         "jobs_found": 0
       },
       {
-        "host": "maharashtratourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "main.ecgc.in",
-        "seed_count": 1,
-        "pages_crawled": 60,
-        "jobs_found": 5
-      },
-      {
-        "host": "maitri.maharashtra.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "mprojgar.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -320,10 +428,22 @@
         "jobs_found": 0
       },
       {
+        "host": "news.iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "nsedm.nagaland.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
+      },
+      {
+        "host": "ntpc.co.in",
+        "seed_count": 2,
+        "pages_crawled": 60,
+        "jobs_found": 7
       },
       {
         "host": "ocs.iitd.ac.in",
@@ -332,9 +452,21 @@
         "jobs_found": 0
       },
       {
+        "host": "ocs.iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "odisha.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "odishatourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 17,
+        "seed_count": 2,
+        "pages_crawled": 18,
         "jobs_found": 0
       },
       {
@@ -368,9 +500,9 @@
         "jobs_found": 0
       },
       {
-        "host": "powermin.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
+        "host": "portal.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -392,6 +524,12 @@
         "jobs_found": 41
       },
       {
+        "host": "recruitment.iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "recruitment.jharkhand.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -410,12 +548,6 @@
         "jobs_found": 0
       },
       {
-        "host": "rrb.indianrailways.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "sdct.goa.gov.in",
         "seed_count": 0,
         "pages_crawled": 1,
@@ -425,12 +557,6 @@
         "host": "sewayojan.up.nic.in",
         "seed_count": 1,
         "pages_crawled": 7,
-        "jobs_found": 0
-      },
-      {
-        "host": "sikkim.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 10,
         "jobs_found": 0
       },
       {
@@ -458,7 +584,25 @@
         "jobs_found": 0
       },
       {
+        "host": "spark.iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "ssc.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "ssccr.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "sscnr.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -488,18 +632,6 @@
         "jobs_found": 0
       },
       {
-        "host": "tripura.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "tripuratourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "upsc.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -507,8 +639,8 @@
       },
       {
         "host": "upsconline.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
+        "seed_count": 4,
+        "pages_crawled": 4,
         "jobs_found": 0
       },
       {
@@ -518,9 +650,9 @@
         "jobs_found": 0
       },
       {
-        "host": "www.aiimsexams.ac.in",
-        "seed_count": 2,
-        "pages_crawled": 4,
+        "host": "web.iitk.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 6,
         "jobs_found": 0
       },
       {
@@ -560,8 +692,50 @@
         "jobs_found": 0
       },
       {
+        "host": "www.idc.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 4,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitb.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 60,
+        "jobs_found": 8
+      },
+      {
+        "host": "www.iitbbs.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 2
+      },
+      {
+        "host": "www.iitbhilai.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 1
+      },
+      {
         "host": "www.iitd.ac.in",
         "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitdh.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iith.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 60,
+        "jobs_found": 134
+      },
+      {
+        "host": "www.iitkgp.ac.in",
+        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -572,19 +746,67 @@
         "jobs_found": 1
       },
       {
+        "host": "www.iitmandi.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 13,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitrpr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 1
+      },
+      {
+        "host": "www.iitsystem.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 14,
+        "jobs_found": 6
+      },
+      {
         "host": "www.incredibleindia.gov.in",
-        "seed_count": 10,
-        "pages_crawled": 16,
+        "seed_count": 11,
+        "pages_crawled": 17,
         "jobs_found": 0
       },
       {
         "host": "www.india.gov.in",
-        "seed_count": 3,
-        "pages_crawled": 3,
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.indianembassyusa.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
         "host": "www.indiapost.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ir.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ircc.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 5,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.isro.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -622,7 +844,7 @@
       {
         "host": "www.sikkim.gov.in",
         "seed_count": 1,
-        "pages_crawled": 23,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -658,34 +880,34 @@
     ]
   },
   "quality": {
-    "raw_candidates": 1014,
-    "published_jobs": 88,
-    "rejected_or_deduplicated": 926,
+    "raw_candidates": 4351,
+    "published_jobs": 280,
+    "rejected_or_deduplicated": 4071,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 88,
-    "published_jobs_after_gate": 37,
-    "rejected_by_scope_gate": 51,
+    "published_jobs_before_gate": 280,
+    "published_jobs_after_gate": 38,
+    "rejected_by_scope_gate": 242,
     "scope_counts": {
-      "central": 9,
-      "central_linked": 12,
-      "institutional_indian_source": 5,
-      "psu": 11
+      "psu": 18,
+      "central": 2,
+      "central_linked": 13,
+      "institutional_indian_source": 5
     },
     "publication_tier_counts": {
-      "verified": 30,
-      "high_confidence": 7
+      "verified": 25,
+      "high_confidence": 13
     },
     "verified_precision_target": ">=98%",
     "gate_architecture": "hard exclusions -> provenance -> ownership -> evidence -> tier",
     "tier_qc": {
       "verified": {
-        "rows": 30,
+        "rows": 25,
         "failed": 0,
         "score": 1.0
       },
       "high_confidence": {
-        "rows": 7,
+        "rows": 13,
         "failed": 0,
         "score": 1.0
       }
@@ -693,6 +915,47 @@
   },
   "registry_source": "Live NCS + IGOD government directories",
   "jobs": [
+    {
+      "id": "102b25314aa03d77",
+      "title": "Home | NTPC Limited",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/",
+      "application_url": "https://ntpc.co.in/",
+      "document_url": null,
+      "deadline": "2026-10-26",
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": "₹ 529",
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Home | NTPC Limited Loading... NTPC Limited Home Page Logo Skip to Main Content Navigate directly to the About NTPC section Screen Reader Access Instructions for screen reader accessibility Use these controls to change the text size and contrast mode of the website English Hindi Opens the keyword search input box Search Main site navigation menu Home About Us About Us NTPC Overview Our Journey Board of Directors Diversified Growth Installed Capacity Corporate Functions Future Capacity Additions Joint Ventures and Subsidiaries Consultancy Sustainability Approach Stakeholder Management Materiality Analysis Strategies Policies Governance Membership Reports and Publications ESG Disclosure Investors Chairman's Statement Financial Performance Conference call/analyst meet with Investors Corporate Governance Disclosures and Announcements Shareholding Pattern Shareholders Meetings Compliances Policies Investor Services IEPF Details Bonds Investors Foreign Bonds Commercial Paper Investors Disclosures under Regulation 46 and 62 of SEBI (LODR) Regulations NTPC Buyback 2020 Media 50 Years Celebration Print Advertisements Govt/MOP Initiatives Power Sector Coverage Video Gallery Photo Gallery Press Releases Awards Join Us Jobs at NTPC Career Growth & Opportunities Employee Speak Medical Norms NTPC Values & Culture Recruitment System in NTPC Leading India's Power Sector Energy is indispensable and is one of the essential pillars on which our economy thrives. NTPC is committed to provide uninterrupted and affordable power to fulfill this requirement, thereby bringing cheers to the farthest reaches of the country. Today, with an installed capacity of over 91 GW , NTPC is steering ahead to be India’s largest integrated power company and targets to become a 149 GW firm with diversified fuel mix and a 650+ BU company in terms of generation by 2032 . Read more POWERING ENERGY TRANSITION First Energy company to declare its Energy Compact Goals as part of UN High-level Dialogue on Energy (HLDE), NTPC has been spearheading India's Renewable Energy ecosystem by strengthening its RE footprint, expanding to new areas like Green Hydrogen, Waste to Energy, Battery Storage and Nuclear Energy, with an aim to have 50% non-fossil based capacity by 2032. more than 8 GW of renewable energy under operation and more than13 GW under implementation, the company aims to have 60 GW of RE capacity under its belt by 2032. It has teamed with NITI Aayog for the Net Energy Zero effort. Read more Connec",
+      "normalized_key": "verified news lead|home ntpc limited",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "deadline",
+          "application_link",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "verified",
+        "publication_score": 82,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "verified",
+      "publication_score": 82
+    },
     {
       "id": "8d9e693bb4076159",
       "title": "EXECUTIVE DIRECTOR",
@@ -706,7 +969,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-08-31",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
       "official_source": true,
       "confidence": "primary_domain",
@@ -748,7 +1011,7 @@
       "pay": "Pay Level 10 of the Central Government. Position Position Remuneration per month (Rs.) Associate (Legal) Rs. 90,000",
       "qualification": ", Experience and Vacancies : Applicants with the following qualifications and experience would be considered for engagement as Associate (Legal)",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "https://apeda.g...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -789,7 +1052,7 @@
       "pay": "pay ol Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -830,7 +1093,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -871,7 +1134,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -912,7 +1175,7 @@
       "pay": "Rs. 15,000",
       "qualification": null,
       "posting_date": "2026-05-08",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -953,7 +1216,7 @@
       "pay": "rs. 2",
       "qualification": null,
       "posting_date": "2026-03-01",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -994,7 +1257,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1035,7 +1298,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1076,7 +1339,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2025-03-01",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1117,7 +1380,7 @@
       "pay": "rs,",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1158,7 +1421,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2026-01-01",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1187,6 +1450,48 @@
       "publication_score": 91
     },
     {
+      "id": "80deba3af29d0f45",
+      "title": "Job description 0",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
+      "deadline": null,
+      "vacancies": 1,
+      "age_limit_years": null,
+      "pay": "₹ 200000",
+      "qualification": "The applicant should be an Engineering Graduate/ Chartered Accountant/ Cost Accountant/ Post Graduate/ Graduate with MBA/PGDIM from a leading Institute",
+      "posting_date": "2024-01-08",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "No.8/1/2024-Th.(Part-I)(277298) Government of India Ministry of Power ***** Shram Shakti Bhawan, Rafi Marg New Delhi, Dated: 28th February, 2026 Subject: Appointment to the post of Chairman and Managing Director, NTPC Limited through Search-cum-selection Committee. Name of the CPSE : NTPC Ltd. Name of the post : Chairman & Managing Director (CMD) Date of Vacancy : 01.08.2026 Schedule of the CPSE : Schedule A Scale of the Post : ₹ 200000 – 370000 (IDA) l. COMPANY PROFILE: NTPC Limited was incorporated in 1975 under the companies act, 1956 with objective to develop and provide reliable power, related projects and services at competitive prices, integrating multiple energy sources with innovative and eco-friendly technologies and contribute to society. NTPC became a listed company in 2004, with majority holding of 89.50% with the Government of India which was further reduced from time to time. The Company has over the years, developed from a thermal power generator to an integrated power company with presence across entire energy value chain through backward and forward integration into areas such as coal mining power trading, distribution etc. On 19th May 2010, NTPC was granted the status of 'Maharatna' that resulted in enhanced autonomy in decision making. Its registered and corporate offices are at New Delhi. The company employed 16,689 regular employees (Executives: 12,319 and Non- executives: 4,370) as on 31.03.2025. The authorized and paid up capital of the Company was Rs. 16,600 crores and Rs. 9,696.7 crores respectively as on 31.03.2025. Government of India's equity in NTPC, stands at 51.10% as on 31.03.2025, the rest being held by Institutional Investors, public & others. ll. JOB DESCRIPTION AND RESPONSIBILITIES: The Chairman and Managing Director is the Chief Executive of the Corporation and is accountable to the Board of Directors and the Government. He/ She is responsible for the overall management and performance of the organization, including providing strategic direction, ensuring effective corporate governance, and overseeing the operations of the Corporation, its subsidiaries, and joint ventures. CMD shall lead the formulation and implementation of the Corporation’s long-term vision and strategy, ensure sustainable growth, and align organizational objectives with national priorities. The role also encompasses guiding expansion both organic and inorganic, across the power value chain, including generation, mining, renewables, nuclear, energy s",
+      "normalized_key": "verified news lead|job description 0",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "vacancy_count",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "verified",
+        "publication_score": 100,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "verified",
+      "publication_score": 100
+    },
+    {
       "id": "17e07fdd920c2db6",
       "title": "MAIN%20SRD 18.8.2026",
       "organization": "Indian Institute of Technology Delhi",
@@ -1199,7 +1504,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2026-02-01",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1240,7 +1545,7 @@
       "pay": null,
       "qualification": "required and the ‘General Terms and Conditions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1281,7 +1586,7 @@
       "pay": "Pay of Rs. 8700",
       "qualification": "required and the ‘General Terms and Conditions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1322,7 +1627,7 @@
       "pay": null,
       "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1363,7 +1668,7 @@
       "pay": "Pay of Rs. 6600",
       "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1404,7 +1709,7 @@
       "pay": "Rs. 15,000",
       "qualification": "/ age was considered on the closing date of the Advertisement",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1445,7 +1750,7 @@
       "pay": null,
       "qualification": "criteria as per the advertisement",
       "posting_date": "2026-06-29",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1486,7 +1791,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1527,7 +1832,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1568,7 +1873,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-2",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1609,7 +1914,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-2",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1638,295 +1943,6 @@
       "publication_score": 91
     },
     {
-      "id": "d789393336ab098c",
-      "title": "advtCVRDE02092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
-      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
-      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE02092026.pdf",
-      "deadline": null,
-      "vacancies": 1,
-      "age_limit_years": 18,
-      "pay": "rs,",
-      "qualification": null,
-      "posting_date": "2026-09-08",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
-      "source": "https://drdo.go...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "भारत सरकार, र�ा मंत्रालय Government of India, Ministry of Defence र�ा अनुसंधान और �वकास संगठन Defence Research and Development Organization संगाम वाहन अनु संधान तथा �वकास स्थापन COMBAT VEHICLES RESEARCH & DEVELOPMENT ESTABLISHMENT आवडी, चेन्नई-600 054 /AVADI, CHENNAI-600 054 वाँक-इन इंटरव्यू/ WALK-IN INTERVIEW — 08/09/2026 to 09/09/2026 �व�ापन सं/ Advt No: CVRDE/ADMIN/2026-27 प्र�श�ु अ�ध�नयम 1961 के प्रावधान� के तहत, �नदेशक, संग्राम वाहन अनु संधान एवं �वकास स्थापन (सीवीआरडीई), आवडी, चेन्नई, योग्य उम्मीदवार� से वॉक-इन इंटरव्यू के माध्यम से प्र�श�ुता प्र�श�ण के �लए आवेदन आमं�त्रत करते है:- Under the provisions of the Apprentices Act, 1961, Director, Combat Vehicles Research & Development Establishment (CVRDE), Avadi, Chennai invites applications from eligible candidates for apprenticeship training through WALK-IN INTERVIEW as per details below:- 1. आईट�आई प्र�श�ु / ITI Apprentice Trainees क्रं म सं/ Si.No. �वषय / Trade छात्रवृ�� / Stipend (Rs) कुल �रिक्तयाँ/ Total Vacancy 1 Computer Operator & Programming Assistant (COPA) 10,560/- 13 2 Draughtsman (Mechanical) 11,040/- 10 3 Electrician 11,040/- 12 4 Fitter 11,040/- 10 5 Mechanic (Motor Vehicle) 11,040/- 8 6 Machinist 11,040/- 5 7 Painter 10,560/- 1 8 Plumber 11,040/- 3 9 Turner 11,040/- 5 10 Welder 10,560/- 5 11 Electronics Mechanic 11,040/- 6 12 Sheet Metal Worker 11,040/- 1 13 Computer Networking Technician 10,560/- 1 14 Computer & Peripherals hardware repair & maintenance mechanic 10,560/- 1 15 Photographer 11,040/- 4 16 Book Binder 11,040/- 2 17 CAD-CAM Operator Cum Programmer 10,560/- 3 18 Food Production (General) 10,560/- 3 कुल �रिक्तयां / Total Vacancies 93 श्रेणी / Category SC ST OBC EWS UR पद संख्या / Slots 13 06 25 09 40 सू चना :- ऊपर बताई गई �रिक्तय� क� संख्या के वल सांके�तक ह� और प्राप्त होने वाले योग्य आवेदन� के अं�तम मू ल्यांकन के आधार पर बाद म� बदल सकती ह�। The No. of vacancies mentioned above are only indicative and may change at a later stage depending on the final assessment of eligible applications received. भाग – 2 आयु सीमा (01/09/2026 तक) / Part – 2 Age Limit (As on 01/09/2026) • न्यूनतम आयु सीमा: 18 वषर् | अ�धकतम आयु सीमा: अनार��त – 27 वषर्, OBC – 30 वषर्, SC/ST – 32 वषर्, PWD – 37 वषर् • Minimum Age limit: 18 years | Maximum Age limit: Unreserved category – 27yrs, OBC – 30yrs, SC/ST – 32yrs, PWD – 37yrs भाग – 3 मह�वपूणर् �नद�श / Part – 3 Important Instructions प्र�श�ण क� अव�ध प्र�श�ु अ�ध�नयम 1961, प्र�श�ुता �नयम और समय-समय पर होने वाले संशोधन� के अनुसार होगी। Duration of training will",
-      "normalized_key": "https drdo go|advtcvrde02092026",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "vacancy_count",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 91,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 91
-    },
-    {
-      "id": "32f2bd576c9a875b",
-      "title": "advtCVRDE08092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
-      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
-      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtCVRDE08092026.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": "₹५,०००",
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
-      "source": "https://drdo.go...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Page 1 of 6 संग्राम वाहन अनुसंधान तथा ववकास स्थापन COMBAT VEHICLES RESEARCH & DEVELOPMENT ESTABLISHMENT रक्षा मंत्रालय, भारत सरकार MINISTRY OF DEFENCE, GOVERNMENT OF INDIA आवडी, चेन्नई – ६०० ०५४ AVADI, CHENNAI – 600 054 ववज्ञापन संख्या / Advertisement No. : CVRDE/HRD/PAID INTERNSHIP/2026 डीआरडीओ की पेड इंटननविप योजना क े वलए ववज्ञापन – वर्न २०२६-२७क े स्नातक / स्नातकोत्तर इंजीवनयररंग छात्रों क े वलए Advertisement for ‘Paid Internship Scheme of DRDO’ – for Under Graduate / Post Graduate Engineering students for the year 2026-27 सीवीआरडीई, डीआरडीओ भारतीय थल सेना, नौसेना और वायुसेना क े ललए अत्याधुलनक कवलित लड़ाकू वाहन ों (एएफवी) और प्रणाललय ों व तकनीक ों क े लडज़ाइन और लवकास का कायय करती है। सीवीआरडीई क े पास एएफवी से जुड़ी तकनीक ों में मुख्य लवशेषज्ञता है, जैसे लक - टरेट एवों हलथयार प्रणाली , िेलसस और ऑट म लटव हलथयार प्रणाली , पावरपैक तकनीक (इोंजन और ट ् ाोंसलमशन), रलनोंग लगयर तकनीक, वाहन इलेक्ट्र ् कल्स, इलेर ् ॉलनक्स और सोंिार आलि। Combat Vehicles Research & Development Establishment (CVRDE), DRDO is involved in the Design & Development of State -of-the-Art Armoured Fighting Vehicles (AFVs) and systems and technologies for the Indian Army, Air Force & Navy. CVRDE has the Core Competency in t he technologies relevant to AFVs – viz., Turret & Weapon System, Chassis & Automotive System, Powerpack Technologies (Engine & Transmission), Running Gear Technologies, Vehicle Electricals, Electronics and Communication, etc. सीवीआरडीई शैक्षलणक वषय २०२६-२७ क े ललए ०६ महीने की पेड इोंटनयलशप हेतु पात्र अभ्यलथयय ों से लनधायररत प्रारूप में आवेिन आमोंलत्रत करता है। लवज्ञापन क े प्रकाशन की लतलथ से १० लिन ों क े भीतर आवेिन प्रस्तुत लकए जाने िालहए। यह इोंटनयलशप लनम्नललक्ट्ित लवषय ों / शािाओों क े अोंलतम वषय में अध्ययनरत स्नातक (अोंडरग्रेजुएट) अथवा स्नातक त्तर (प स्टग्रेजुएट) इोंजीलनयररोंग लवद्यालथयय ों क े ललए है। स्नातक इोंजीलनयररोंग क े ७वें / ८वें सेमेस्टर तथा स्नातक त्तर इोंजीलनयररोंग क े प्रथम / लितीय वषय क े लवद्याथी आवेिन करने क े पात्र हैं। CVRDE invites Applications in the prescibed format from eligible final year students pursuing under graduation / post graduation engineering within 10 days from the date of publication of this advertisement for the following disciplines for a tenure of 06 months paid internship for the academic year 2026-27. Students in 7th / 8th semester of Under Graduate Engineering or 1st / 2nd year of Post Graduate Engineering are eligible to apply. ववर्यवार ररक्तियां /DISCIPLINE-WISE VACANCIES: श्रेणी (ए): स्नातक इंटननविप क े वलए (बी.ई / बी.टेक क",
-      "normalized_key": "https drdo go|advtcvrde08092026",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
-      "id": "e940885a65b0b427",
-      "title": "advtDEBEL27082026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
-      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
-      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDEBEL27082026.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": 28,
-      "pay": null,
-      "qualification": "conditions are fulfilled , Candidates should download and fill the Application Form in the prescribed format enclosed (also available on the ‘what’s new’ section of the website www",
-      "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
-      "source": "https://drdo.go...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "update",
-      "is_update": true,
-      "kind": "recruitment_notice",
-      "raw_text": "रक्षा जीव अभियाांभिकी तथा भिभकत्सा इलेक्ट्रॉभिकी प्रयोगशाला (डेबेल ) DEFENCE BIOENGINEERING AND ELECTROMEDICAL LABORATORY (DEBEL) रक्षा अिुसांधाि एवां भवकास सांगठि/ Defence Research & Development Organization (DRDO) रक्षा मांिालय / Ministry of Defence, िारत सरकार / Government of India, न्यू भतप्पसन्द्रा / New Thippsandra, बेंगलूरु /Bengaluru– 560075 Fax: 080-25282011 E-mail: hrd.debel.debel@gov.in Advt No. DEBEL/HRD/1/JRF-1/2026 ADVERTISEMENT FOR THE AWARD OF JUNIOR RESEARCH FELLOW (JRF) Defence Bioengineering and Electromedical Laboratory (DEBEL), Bangalore, a premier Institute of Defence Research and Development Organisation (DRDO), invites applications for Junior Research Fellow (JRF). DEBEL invites applications from young and meritorious Indian nationals with requisite qualifications, who desire to pursue defence-related research as Junior Research Fellows. Selection will be made on the basis of screening and interview. कोड Subject Code सांख्या No. of Fellowship s आवश्यक योग्यता Essential Qualifications JRF-01 02 BE/ BTech in Mechanical Engineering with 1 st Division and GATE Qualified with valid Score OR ME/ MTech in Mechanical Engineering with 1 st Division both at Graduate & Postgraduate level General Conditions: 1. Only candidates possessing the above -mentioned qualification(s) should apply. All the qualifications acquired should be from recognized Universities/ Institutions (approved by AICTE/UGC). 2. Tenure: JRF will be initially awarded for a period of 02 (Two) years. This may be upgraded as Senior Research Fellowship (SRF) for a period of one year (3rd Year) and further SRF may again be extended for a period of one more year (4th Year) based on performance. 3. Age Limit: The upper age limit for JRF is maximum 28 years as on the closing date of receipt of applications. The upper age limit shall be relaxable for the candidates belonging to SC/ST and OBC as per Govt. of India rules. THE CLOSING DATE OF RECEIPT OF APPLICATIONS is 18th Sep 2026. 4. How to apply : After ensuring that all the eligibility conditions are fulfilled , Candidates should download and fill the Application Form in the prescribed format enclosed (also available on the ‘what’s new’ section of the website www.drdo.gov.in). The signed Application Form along with certificate in support of minimum educational q ualification, matriculation certificate/ birth certificate in support of date of birth, GATE/ NET Score card (if applicable), valid as on closing date of application, caste",
-      "normalized_key": "https drdo go|advtdebel27082026",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
-      "id": "ea987702eb89001c",
-      "title": "advtDYSLSM08092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
-      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
-      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtDYSLSM08092026.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": 28,
-      "pay": "Rs. 37,000",
-      "qualification": "certificates/Mark Sheets/Experience Certificates etc",
-      "posting_date": "2026-09-04",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
-      "source": "https://drdo.go...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "DEFENCE RESEARCH AND DEVELOPMENT ORGANISATION (www.drdo.gov.in) Advertisement No. DYSL-SM/HRD/JRF/REC/2026/1 dated 04-09-2026 DRDO YOUNG SCIENTISTS’ LABORATORY FOR SMART MATERIALS (DYSL-SM) Kanchanbagh, Hyderabad – 500 058 URL: http://www.drdo.gov.in Walk-in-Interview for the award of Junior Research Fellowship (JRF) DRDO Young Scientists’ Laboratory for Smart Materials (DYSL-SM) is dedicated to the development of smart material technology solutions for national defence. The laboratory specialises in accelerated materials development, micro-robotics and stealth technologies. Indian Nationals are invited for walk-in-interview on 06.10.2026 @ 09:30 hrs for the position of One (01) Junior Research Fellow (JRF) to work on project in the area of Development of Smart Materials based robotic application including shape memory alloy and piezoelectric Materials. S. No. Subject Qualification Post / Nos. 01. Mechanical Engineering Essential Qualification: B.E/B.Tech. in Mechanical/Mechatronics Engineering with First Class with a valid GATE score (OR) M.E./M.Tech. with First class in MechanicalMechatronics / Robotics & Automation/Machine Design/Solid Mechanics and B.E/B.Tech in Mechanical/Mechatronics Engineering with First class. Desirable criteria: Working knowledge of finite element packages, CAD, 3D Printing, Composite Materials, basic electronics and instrumentation JRF / 01 No. General Conditions: 1. The eligible candidates can “WALK IN FOR INTERVIEW ” at DRDO Young Scientists Laboratory for Smart Materials (DYSL- SM), AMTL Campus (near DMRL), KANCHANBAGH, HYDERABAD-500058 on 06.10.2026 @ 09:30 hrs. Late comers will not be allowed. 2. While appearing for interview, the candidates are required to bring all original certificates and submit the prescribed application form with recent passport size photograph affixed on top right corner of the first page and one set of self -attested copies of all Degrees/Academic qualification certificates/Mark Sheets/Experience Certificates etc. Application Form can be downloaded from the DRDO website www.drdo.gov.in ( DRDO website > Vacancies). Duly filled in application form with supporting documents in PDF format shall be submitted online on email ID: hrd.dysl-sm@gov.in (below 10MB). 3. Screening of eligible applications will be based on GATE score, marks secured in degree, fulfilment of desirability criteria and relevant work experience (if any). The GATE score should be valid as on the date of interview in the aforementioned ",
-      "normalized_key": "https drdo go|advtdyslsm08092026",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 91,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 91
-    },
-    {
-      "id": "677014af9188af5f",
-      "title": "advtLRDE07092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
-      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
-      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE07092026.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": 28,
-      "pay": null,
-      "qualification": "Equivalent acceptable subjects of essential qualification 1 Electronics & Communication Engineering (ECE) 2 (Two) Graduate degree from recognized university in professional course (BE / B Tech in first division in respective subject with valid cut off GATE Score (2024, 2025 & 2026 are acceptable) Or Post graduate degree from recognized university i",
-      "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
-      "source": "https://drdo.go...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "ELECTRONICS & RADAR DEVELOPMENT ESTABLISHMENT (LRDE) DRDO, MINISTRY OF DEFENCE CV. RAMAN NAGAR, BENGALURU – 560 093. LRDE: Advt. No. 03/2026/JRF ADVERTISEMENT FOR WALK-IN RECRUITMENT FOR THE AWARD OF JUNIOR RESEARCH FELLOWSHIP-2026 Electronics and Radar Development Establishment (LRDE) is one of the R&D Establishments set up under the Defence R&D organization, Government of India to address the needs of Defence Services in the field of Radar and related Technologies. LRDE invites applications from young and meritorious Indian citizens, who desire to pursue Radar related research as Junior Research Fellows possessing qualifications as indicated below. Sl. No. Discipline Number of vacanci es Educational Qualification Equivalent acceptable subjects of essential qualification 1 Electronics & Communication Engineering (ECE) 2 (Two) Graduate degree from recognized university in professional course (BE / B Tech in first division in respective subject with valid cut off GATE Score (2024, 2025 & 2026 are acceptable) Or Post graduate degree from recognized university in professional course (ME / M Tech) in first division both at Graduate and Post graduate level in respective subject. 1. Electronics Engg 2. Electronics & Communication Engg 3. Electronics & Telecommunication Engg 4. Electronics & Computer Engg. 5. Electronics & Communication Technology 6. Electronics & Communication System Engg 7. Electronics & Electrical Communication Engg 8. Any other relevant discipline with qualifying degree which mentions “Electronics” as the main discipline. Essential information regarding selection procedure: Fellowship Stipend: As per Govt. norms, currently ₹. 37,000/ - per month (plus admissible House Rent Allowance) Upper Age Limit : 28 years for JRF as on 01 st Sep 2026. The upper age limit shall be relaxable to the candidates belonging to Scheduled Castes, Scheduled Tribes and OBC as per Government of India rules. Tenure: The initial offer shall be for a period of 2 years extendable up to a maximum of 4 years as per provisions of scheme of Research fellows in DRDO. Nationality: Only Indian Nationals need to apply. Application Procedure: Eligible candidates who are willing to attend the walk -in interview are advised to send their willingness by email at hrdlrde2010@gmail.com by 25th Sep 2026. The subject field of the email must contain “Application for the post of JRF-ECE discipline”. Date of Walk-in: 08 Oct 2026 Interview Guidelines: 1. Venue: Electronics & Radar Developm",
-      "normalized_key": "https drdo go|advtlrde07092026",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
-      "id": "cec740c28f96c0fb",
-      "title": "advtNPOL01092026",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
-      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
-      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtNPOL01092026.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": 28,
-      "pay": "rs 2",
-      "qualification": "ate Date & Time of Walk-in Interview 1",
-      "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
-      "source": "https://drdo.go...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Certified ISO 9001: 2015 DEFENCE RESEARCH & DEVELOPMENT ORGANISATION Government of India, Ministry of Defence NAVAL PHYSICAL AND OCEANOGRAPHIC LABORATORY THRIKKAKARA P.O., KOCHI, KERALA – 682 021 ADVT.NO.NPOL/JRF/01/2026 “ हर काम देश क े नाम ” ADVT NO. NPOL/JRF/01/2026: SELECTION FOR THE POSITION OF JUNIOR RESEARCH FELLOW (JRF) The following Research Fellowships are available at this Laboratory for candidates possessing requisite qualifications, in the subject/disciplines as detailed below:- Sl. No. Type of Fellowship Subject/ Discipline No of vacancies Essential Educational qualification ate Date & Time of Walk-in Interview 1. Junior Research Fellow (JRF) Computer Science & Engineering Anticipated B.E/B.Tech in Computer Science Engg in 1st Division with valid GATE qualification. or M.E/M.Tech in Computer Science Engg in 1st Division both at Graduate* and Post Graduate level. 10.10.2026 (Saturday) at 0930 hrs 2. Mechanical Engineering 04 BE/B.Tech in Mechanical Engg in 1st Division with valid GATE qualification. or ME/M.Tech in Mechanical Engg in 1st Division both at Graduate and Post Graduate level. 3. Chemical Engineering/ Rubber Technology/ Polymer Technology/ Nanotechnology/ Materials Science Anticipated BE/B.Tech in Chemical Engineering/ Rubber Technology/ Polymer Technology/ Nanotechnology/ Materials Science in 1st Division with valid GATE qualification. or ME/M.Tech in Chemical Engineering/ Rubber Technology/ Polymer Technology/ Nanotechnology/ Materials Science in 1st Division both at Graduate* and Post Graduate level. 4. Opto Electronics Anticipated BE/B.Tech in Opto Electronics in 1st Division with valid GATE qualification. or ME/M.Tech in Opto Electronics in 1st Division both at Graduate and Post Graduate level. or BE/B.Tech in Electrical & Electronics Engg/ Electronics & Communication Engg (with at least one paper on Fibre Optics/ Optoelectronics/ Laser Technologies) in 1st Division with valid GATE qualification. 5. Electrical & Electronics Engineering/ Electronics & Communication Engineering/ Instrumentation Engineering Anticipated BE/B.Tech in Electrical & Electronics Engg/ Electronics & Communication Engg/ Instrumentation Engineering in 1st Division with valid GATE qualification. or ME/M.Tech in Electrical & Electronics Engg/ Electronics & Communication Engg/ Instrumentation Engineering in 1st Division both at Graduate* and Post Graduate level. Contd….2/ -2- 6. Junior Research Fellow (JRF) Physics Anticipated Post Graduate Degree in Basic Sc",
-      "normalized_key": "https drdo go|advtnpol01092026",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 91,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 91
-    },
-    {
-      "id": "ffb09edd2505b3a7",
-      "title": "advtVRDE31082026En",
-      "organization": "https://drdo.go...",
-      "url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
-      "application_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
-      "document_url": "https://drdo.gov.in/drdo/sites/default/files/vacancy/advtVRDE31082026En.pdf",
-      "deadline": null,
-      "vacancies": 5,
-      "age_limit_years": 28,
-      "pay": "Stipend: Monthly emoluments of Rs.37,000",
-      "qualification": "as on Interview date Discipline/ Branch/Field acceptable Document Verification Written Test & Interview after document verification 1 Mechanical Engineering 05 BE/B",
-      "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
-      "source": "https://drdo.go...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "update",
-      "is_update": true,
-      "kind": "recruitment_notice",
-      "raw_text": "भारत सरकार रक्षा मंत्रालय रक्षा अनुसंधान तथा विकास संगठन िाहन अनुसंधान तथा विकास स्थापन िाहननगर डाकघर अवहल्यानगर – 414006 (महाराष्ट्र ) GOVERNMENT OF INDIA MINISTRY OF DEFENCE DEFENCE RESEARCH & DEV ORGN VEHICLES RESEARCH & DEV ESTT VAHANNAGAR PO AHILYANAGAR – 414006 (MAHARASHTRA) PHONE : 0241-2544004 (Exchange)NE FAX : 0241-2548410 E-MAIL : director.vrde@gov.in WALK–IN–INTERVIEW Vehicle Research and Development Organization (VRDE) under the aegis of DRDO is engaged in Research & Development in the area of light tracked, wheeled platform. VRDE is committed to design and develop advanced and reliable indigenous solutions in the are as of Mobility Systems, Wheeled & Light Tracked Combat Systems, Wheeled Launched Systems for Strategic & Tactical Programmes, High Mobility Gun Systems, Wheeled Autonomous Systems, UAV Engines and extensive evaluation & Certification of Military & commerci al Vehicles, by continual improvement and deployment of efficient resources. VRDE invites young and meritorious Indian nationals for walk -in Interview, desiring to pursue defense related research as Junior Research Fellow (JRF) in the following field:- Sr No Discipline No. of JRFs vacancies Qualification as on Interview date Discipline/ Branch/Field acceptable Document Verification Written Test & Interview after document verification 1 Mechanical Engineering 05 BE/B.Tech degree in First Division with a valid Cut off GATE Score OR ME/MTech with First Division both at graduate and post-graduate level Mechanical Engg, Mechanical & Automation Engg, Mechanical & Production Engg. 06 Oct 2026 09:30 am to 11:30 am 06 Oct 2026 & 07 Oct 2026 No. of vacancies: 05 * (* The number of fellowships may increase or decrease depending upon organizational/Lab requirement) (i) Place of Research Fellowship: VRDE, PO-Vahannagar, Ahilyanagar, Maharashtra – 414006. (ii) Tenure: Initially the offer shall be for a period of two years which may be extended for further two years period (one year at a time) subject to satisfactory performance after assessment by Review Committee. (iii) Stipend: Monthly emoluments of Rs.37,000/ - pm plus House Rent Allowance (HR A) as admissible. (iv) Education Qualification: BE/ B. Tech in above disciplines in first division with valid Cut off GATE score on the date of interview . Only GATE scores of Year 202 4, 2025 & 2026 are acceptable. Or ME / M.Tech in above disciplines in first division both at Graduate & Post–graduate level. (v) Upper Age Limit : 28 years as on as ",
-      "normalized_key": "https drdo go|advtvrde31082026en",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "vacancy_count",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "central",
-        "publication_tier": "verified",
-        "publication_score": 100,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "central",
-      "publication_tier": "verified",
-      "publication_score": 100
-    },
-    {
       "id": "7c8eda7b69c1bfa7",
       "title": "Advertisement (English)",
       "organization": "Indian Institute of Technology Delhi",
@@ -1939,7 +1955,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1968,6 +1984,47 @@
       "publication_score": 73
     },
     {
+      "id": "5edc974ae1a4478e",
+      "title": "Advertisement for \"Special Recruitment Drive for the persons with disabilities\"",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Advertisement for \"Special Recruitment Drive for the persons with disabilities\"",
+      "normalized_key": "verified news lead|advertisement for special recruitment drive for the persons with disabilities",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
+    },
+    {
       "id": "6aafa6acf24e3fd2",
       "title": "Advertisement%20 %20IIT%20Kharagpur%20 %20To%20be%20Published%20in%20Newspapers",
       "organization": "Indian Institute of Technology Delhi",
@@ -1980,7 +2037,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2021,7 +2078,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2062,7 +2119,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2091,6 +2148,47 @@
       "publication_score": 73
     },
     {
+      "id": "5a9af1ba819109bb",
+      "title": "Assistant Manager-Industry Engagement",
+      "organization": "IIT Gandhinagar Research Park",
+      "url": "https://iitgn.ac.in/careers/staff",
+      "application_url": "https://forms.gle/D8uDUb2RPZnyVSMm8",
+      "document_url": "https://iitgn.ac.in/careers/staff",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "IIT Gandhinagar Research Park",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Assistant Manager-Industry Engagement | IIT Gandhinagar Research Park | Mr. Anand Pandey | 13.10.2026 | 23.10.2026 | Detail Apply | Open",
+      "normalized_key": "iit gandhinagar research park|assistant manager industry engagement",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "central_linked",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "central_linked",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
+    },
+    {
       "id": "3517193562424911",
       "title": "Corrigendum to Advt. No. IITD/Apprentice (1) / 2025 dated 29.12.2025 for engagement of Apprentices under the Apprentices Act, 1961 at IIT DELHI",
       "organization": "Indian Institute of Technology Delhi",
@@ -2103,7 +2201,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2132,6 +2230,47 @@
       "publication_score": 73
     },
     {
+      "id": "264af47d05913609",
+      "title": "Dedication to the nation Dadri Stage II Advertisement",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Dedication to the nation Dadri Stage II Advertisement",
+      "normalized_key": "verified news lead|dedication to the nation dadri stage ii advertisement",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
+    },
+    {
       "id": "3e8fb5705c00e5c2",
       "title": "Hindi 2025 Advt.for Apprenticeship",
       "organization": "Indian Institute of Technology Delhi",
@@ -2144,7 +2283,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-01-19",
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2173,6 +2312,88 @@
       "publication_score": 73
     },
     {
+      "id": "16e6ead6e6c420fa",
+      "title": "NTPC Recruitment Ad",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "",
+      "normalized_key": "verified news lead|ntpc recruitment ad",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
+    },
+    {
+      "id": "cb0e983a9ac76745",
+      "title": "Price Discovery Advertisement",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "Price Discovery Advertisement",
+      "normalized_key": "verified news lead|price discovery advertisement",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
+      "publication_tier": "high_confidence",
+      "publication_score": 73
+    },
+    {
       "id": "0989f155ca29286e",
       "title": "Rolling Advertisement",
       "organization": "Indian Institute of Technology Delhi",
@@ -2182,10 +2403,10 @@
       "deadline": null,
       "vacancies": null,
       "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
+      "pay": "rs,",
+      "qualification": "(for all faculty positions): Ph",
       "posting_date": null,
-      "discovered_at": "2026-10-20T08:58:32.690934+00:00",
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2206,10 +2427,51 @@
         "rejection_reasons": [],
         "scope": "institutional_indian_source",
         "publication_tier": "high_confidence",
-        "publication_score": 73,
+        "publication_score": 91,
         "scope_gate": "multi_stage_v2"
       },
       "scope": "institutional_indian_source",
+      "publication_tier": "high_confidence",
+      "publication_score": 91
+    },
+    {
+      "id": "d2008c8d6407c129",
+      "title": "Special Recruitment Drive for the persons with disabilities",
+      "organization": "NTPC Ltd.",
+      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
+      "deadline": null,
+      "vacancies": null,
+      "age_limit_years": null,
+      "pay": null,
+      "qualification": null,
+      "posting_date": null,
+      "discovered_at": "2026-10-21T08:59:51.987855+00:00",
+      "source": "Verified news lead",
+      "official_source": true,
+      "confidence": "primary_domain",
+      "verification": "primary_domain_match",
+      "notice_type": "recruitment",
+      "is_update": false,
+      "kind": "recruitment_notice",
+      "raw_text": "",
+      "normalized_key": "verified news lead|special recruitment drive for the persons with disabilities",
+      "quality": {
+        "valid": true,
+        "evidence": [
+          "strong_recruitment_term",
+          "application_link",
+          "recruitment_document",
+          "specific_title"
+        ],
+        "rejection_reasons": [],
+        "scope": "psu",
+        "publication_tier": "high_confidence",
+        "publication_score": 73,
+        "scope_gate": "multi_stage_v2"
+      },
+      "scope": "psu",
       "publication_tier": "high_confidence",
       "publication_score": 73
     }
