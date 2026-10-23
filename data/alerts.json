@@ -1,14 +1,29 @@
 {
-  "generated_at": "2026-10-22T09:36:46.228133+00:00",
+  "generated_at": "2026-10-23T09:17:22.093760+00:00",
   "baseline": false,
   "summary": {
     "new_jobs": 0,
     "updated_jobs": 0,
-    "deadline_alerts": 0,
-    "total_jobs_checked": 38
+    "deadline_alerts": 1,
+    "total_jobs_checked": 8
   },
   "new_jobs": [],
   "updated_jobs": [],
-  "deadline_alerts": [],
-  "notification_text": ""
+  "deadline_alerts": [
+    {
+      "id": "102b25314aa03d77",
+      "title": "Home | NTPC Limited",
+      "organization": "NTPC Ltd.",
+      "deadline": "2026-10-26",
+      "vacancies": null,
+      "pay": "₹ 529",
+      "url": "https://ntpc.co.in/",
+      "application_url": "https://ntpc.co.in/",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment",
+      "days_left": 3
+    }
+  ],
+  "notification_text": "DEADLINE IN 3 DAY(S): Home | NTPC Limited | NTPC Ltd. | https://ntpc.co.in/"
 }
