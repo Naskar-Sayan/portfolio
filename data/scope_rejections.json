@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-25T09:13:45.471862+00:00",
-  "rejected_count": 58,
+  "generated_at": "2026-10-26T09:47:50.654824+00:00",
+  "rejected_count": 54,
   "scope_counts": {
     "central": 1,
     "central_linked": 12,
@@ -50,28 +50,6 @@
       "title": "View the Recruitment and Promotion Norms",
       "organization": "Verified news lead",
       "url": "https://www.iitm.ac.in/sites/default/files/Promotion%20Norms/recruitment-and-promotion-norms.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0566e34fcdb35f8b",
-      "title": "Advertisement for the post of Director(Strategy &amp; Corporate Affairs) in ONGC",
-      "organization": "Verified news lead",
-      "url": "https://mopng.gov.in/files/events/Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "854f06fd81fc0a70",
-      "title": "Vacancy Circular -Engagement of retired Central Government officers as &quot;Consultants&quot; on contract basis in the Ministry of Petroleum and Natural Gas.",
-      "organization": "Verified news lead",
-      "url": "https://mopng.gov.in/files/events/Consultant-Vacancy.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -182,28 +160,6 @@
       "title": "Advertisement No. M-3/26-27 | भारतीय प्रौद्योगिकी संस्थान मुंबई",
       "organization": "Verified news lead",
       "url": "https://www.iitb.ac.in/node/6816",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5675628c83a5149f",
-      "title": "Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://mopng.gov.in/files/events/Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "752cfe091c6cb334",
-      "title": "Consultant Vacancy",
-      "organization": "Verified news lead",
-      "url": "https://mopng.gov.in/files/events/Consultant-Vacancy.pdf",
       "reasons": [
         "generic_organization"
       ],
