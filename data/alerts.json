@@ -1,28 +1,14 @@
 {
-  "generated_at": "2026-10-25T09:13:45.588706+00:00",
+  "generated_at": "2026-10-26T09:47:50.774506+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 1,
+    "new_jobs": 0,
     "updated_jobs": 0,
     "deadline_alerts": 0,
     "total_jobs_checked": 29
   },
-  "new_jobs": [
-    {
-      "id": "7da731296293778b",
-      "title": "Advertisement Associate Legal 27 08 2026",
-      "organization": "https://apeda.g...",
-      "deadline": null,
-      "vacancies": null,
-      "pay": "Pay Level 10 of the Central Government. Position Position Remuneration per month (Rs.) Associate (Legal) Rs. 90,000",
-      "url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
-      "application_url": "https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf",
-      "official_source": true,
-      "is_update": true,
-      "notice_type": "update"
-    }
-  ],
+  "new_jobs": [],
   "updated_jobs": [],
   "deadline_alerts": [],
-  "notification_text": "NEW: Advertisement Associate Legal 27 08 2026 | https://apeda.g... | Last date: N/A | https://apeda.gov.in/sites/default/files/recruitment_appointment/Advertisement_Associate_Legal_27_08_2026.pdf"
+  "notification_text": ""
 }
