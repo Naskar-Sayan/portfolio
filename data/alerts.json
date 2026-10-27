@@ -1,14 +1,43 @@
 {
-  "generated_at": "2026-10-26T09:47:50.774506+00:00",
+  "generated_at": "2026-10-27T09:40:51.715557+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 0,
+    "new_jobs": 1,
     "updated_jobs": 0,
-    "deadline_alerts": 0,
-    "total_jobs_checked": 29
+    "deadline_alerts": 1,
+    "total_jobs_checked": 2
   },
-  "new_jobs": [],
+  "new_jobs": [
+    {
+      "id": "8d9e693bb4076159",
+      "title": "EXECUTIVE DIRECTOR",
+      "organization": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
+      "deadline": "2026-10-30",
+      "vacancies": null,
+      "pay": null,
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    }
+  ],
   "updated_jobs": [],
-  "deadline_alerts": [],
-  "notification_text": ""
+  "deadline_alerts": [
+    {
+      "id": "8d9e693bb4076159",
+      "title": "EXECUTIVE DIRECTOR",
+      "organization": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES",
+      "deadline": "2026-10-30",
+      "vacancies": null,
+      "pay": null,
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment",
+      "days_left": 3
+    }
+  ],
+  "notification_text": "NEW: EXECUTIVE DIRECTOR | NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES | Last date: 2026-10-30 | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All\\nDEADLINE IN 3 DAY(S): EXECUTIVE DIRECTOR | NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"
 }
