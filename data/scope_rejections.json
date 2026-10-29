@@ -1,23 +1,45 @@
 {
-  "generated_at": "2026-10-28T10:37:25.142963+00:00",
-  "rejected_count": 311,
+  "generated_at": "2026-10-29T11:01:18.684802+00:00",
+  "rejected_count": 240,
   "scope_counts": {
     "central": 2,
-    "state_other": 1,
+    "state_other": 2,
     "institutional_indian_source": 3,
-    "central_linked": 10,
-    "psu": 17
+    "central_linked": 9,
+    "psu": 11
   },
   "tier_counts": {
-    "verified": 22,
-    "high_confidence": 11
+    "verified": 20,
+    "high_confidence": 7
   },
   "rejected": [
+    {
+      "id": "ca69a40dfb658c9e",
+      "title": "Morehead-Cain Global Fellows Program (2027–2028) | OGE IIT Madras",
+      "organization": "Verified news lead",
+      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/morehead-cain-global-fellows-program-20272028",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
     {
       "id": "4c2a4f801ce90813",
       "title": "Internships Fellowships Opportunities | OGE IIT Madras",
       "organization": "Verified news lead",
       "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5a8356d78adcb210",
+      "title": "2027 CCU/CoE International Internship Program | OGE IIT Madras",
+      "organization": "Verified news lead",
+      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/2027-ccucoe-international-internship-program",
       "reasons": [
         "generic_organization"
       ],
@@ -62,28 +84,6 @@
       "title": "Advertisement for the post of Director, IIT Mandi",
       "organization": "Verified news lead",
       "url": "https://www.iitsystem.ac.in/sites/default/files/news/15/Advertisement-iit-mandi-director-to-be-uploaded.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b79bb117218259c4",
-      "title": "Job vacancy circular for Office Clerk New (PDF, opens in a new tab)",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/marquee/newyork_15_10_26_notice.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "bfbfc2cc9a28318b",
-      "title": "Recruitment of Staff nurse on contract - Selection list - Chennai City Urban Health Mission",
-      "organization": "Verified news lead",
-      "url": "https://chennaicorporation.gov.in/gcc/pdf/Selection list_Contractual Staff Nurses.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -190,457 +190,6 @@
       "score": 0
     },
     {
-      "id": "5264b9863ec28833",
-      "title": "Detailed Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/ET2027_Detailed_Advertisement_For%20Website_1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3bb2772660f5701a",
-      "title": "Window Advertisement -English",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/023-Powergrid-8x10-Recruitment-Ad.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7cf04f6e08f595c6",
-      "title": "Window Advertisement-Hindi",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/024-Powergrid-8x10-Recruitment-Ad.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b9b9ec9f34b0435f",
-      "title": "Notice-1-Recruitment Portal Unavailable from 12 AM to 01 AM for 1 Hour on 30th April 2026",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-1-Recruitment%20Portal%20Unavailable%20from%2012%20AM%20to%2001%20AM%20for%201%20Hour%20on%2030th%20April%202026_0.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "38bfc0c3d1e15fbe",
-      "title": "Notice 01-2025 dtd 30-09-2025 - Vacancy Notification",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/DetailedAdvt_2_ETGATE2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6b399ad0bbc34fcd",
-      "title": "Notice-4 Regarding unfilled vacancies",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice4_1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "efc25a2f7b2922bb",
-      "title": "Notice 04/2025 dtd 25-04-2025 - Recruitment Closure Notice (EE/CS)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice_04_2025_dtd_25_04_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "29e507cd10c10329",
-      "title": "Notice 05/2025 dtd 10-09-2025 - Recruitment Closure Notice (CE/EC)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Closure_Notice_CE_EC.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b4b3ff00a59be803",
-      "title": "Detailed Advertisement (Application Window Dates are tentative)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Aot_HR_Detailed_Advertisement_09012023.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "52344bc3830a857e",
-      "title": "Notice-6 regarding 2nd Attempt for filling of balance vacancies of DVC for the post of Management Trainee (HR)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-6-dtd-18-10-2023-2nd-Attempt-for-filling-of-balance-vacancies-of-DVC-for-MT-HR.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fb9f5de8ae0e8ce9",
-      "title": "Call Letter for Interview in 2nd Attempt for Balance vacancies of DVC",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-7-dated-27-10-2023-Call-Letter-for-Interview-DVC.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e3bff29e900eb9c9",
-      "title": "Notice-5-Revision in notified vacancies and opportunity to revise the choice of Region",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-5-Revision%20in%20notified%20vacancies%20and%20opportunity%20to%20revise%20the%20choice%20of%20Region.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5888e28cc3c01b4e",
-      "title": "Notice-15-Notice regarding recruitment for CTUIL",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-15-%20Notice%20regarding%20recruitment%20for%20CTUIL.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5f2e0880312569f1",
-      "title": "Corrigendum to Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Corrigendum_to_Advertisement_0.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "439f351815ce3c35",
-      "title": "Notice 8_Notification of vacancies",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice8_0.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fabc7187baf0985e",
-      "title": "Notification of vacancies for RDSS project",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice%20for%20vacancies%20for%20RDSS%20project.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "f78a108c824878f6",
-      "title": "Regarding change of jurisdiction of Regions and addition of vacancies for ER-I & ER-II",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-9_Jurisdiction%20of%20Regions.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fa9b582b2d0c1854",
-      "title": "Notice-10_Notification of vacancies in second phase",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-10_Notification%20of%20vacancies%20in%20second%20phase.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "972b6c5ef61ddf83",
-      "title": "Recruitment Closure Notice dated 09.10.2025",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/ClosurenoticeCSProfOC_0.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3b498c72dc761be9",
-      "title": "Detail Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Detailed_Advertisement_1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5123db70991a3e9a",
-      "title": "Vacancy Notification - Director (Projects)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/inline-files/Vacancy%20notification%20for%20POWERGRID%20website.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8da83706ddfe71c4",
-      "title": "Vacancy Notification - Director (Operations)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/inline-files/Vacancy_notification_Dir_operations.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0929a02ff1d6517c",
-      "title": "Vacancy Notification - Director (Finance)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/inline-files/Director_Finance_Vacancy.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3ac1147c1c6a799b",
-      "title": "CC Detailed Advertisement,,.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/CC%20%20Detailed%20Advertisement%2C%2C.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "547940f723593e36",
-      "title": "NR-I Detailed Advertisement..pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NR-I%20Detailed%20Advertisement..pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "83fc5e1cd9e199ff",
-      "title": "NR-II Detailed Advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NR-II%20%20Detailed%20Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1dc0de7cda3bfeee",
-      "title": "NR III Detailed Advertisement;.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NR%20III%20Detailed%20Advertisement%3B.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "68261526fec5edf2",
-      "title": "NWR Detailed Advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NWR%20%20Detailed%20Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "eb163037af1ddafb",
-      "title": "ER-I Detailed advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/ER-I%20Detailed%20advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "15a4d50dd4fac170",
-      "title": "ER-II Detailed Advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/ER-II%20Detailed%20Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "df188d3727d10932",
-      "title": "WR-1 Detailed Advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/WR-1%20Detailed%20Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "669f6abed9c2654d",
-      "title": "WR-II Detailed Advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/WR-II%20Detailed%20Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "cb6752b4375a76d3",
-      "title": "SR-1 Detailed Advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/SR-1%20Detailed%20Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a21efe16266a0b91",
-      "title": "Odisha Projects Detailed Advertisement.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/Odisha%20Projects%20Detailed%20Advertisement.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "98856bface41691e",
-      "title": "NER Detailed Advertisement...pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NER%20Detailed%20Advertisement...pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6c22c1a0ac48f406",
-      "title": "Rolling Advertisement No. L-10/25-26 | भारतीय प्रौद्योगिकी संस्थान मुंबई",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/job-vacancy-ad/rolling-advertisement-no-l-1025-26",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4e17771d5bb2a7ba",
-      "title": "Areas of Specialization for Rolling Advertisement No.L-10.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-01/Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L-10.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b40377cc4ef666a4",
-      "title": "Eligibility criteria for Rolling advertisement No.L-10 for Assistant Professor_Associate Professor_Professor.pdf",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-04/Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L-10%20for%20Assistant%20Professor_Associate%20Professor_Professor.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1d83aaf9f7f950bf",
-      "title": "Advertisement for Foreign Faculty and Foreign Post Doctoral Fellows | भारतीय प्रौद्योगिकी संस्थान मुंबई",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/job-vacancy-ad/advertisement-foreign-faculty-and-foreign-post-doctoral-fellows",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "49570306ac141a6f",
-      "title": "Advertisement for Institute Post-Doctoral Fellows | भारतीय प्रौद्योगिकी संस्थान मुंबई",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/career/apply/postdoc",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "95509e272a49fc58",
-      "title": "Advertisement No. M-3/26-27 | भारतीय प्रौद्योगिकी संस्थान मुंबई",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/node/6816",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
       "id": "b4ae2cdf33d82cc6",
       "title": "Detailed Advertisement & GENERAL INSTRUCTIONS [IITM/R/5/2025 dated 24.09.2025]",
       "organization": "Verified news lead",
@@ -678,6 +227,204 @@
       "title": "Recruitment Job Portal",
       "organization": "Verified news lead",
       "url": "https://icandsr.iitm.ac.in/careers/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a22fea0ecd35248d",
+      "title": "adv261020262",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/MI/2026/adv261020262.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5e8e83f1b8ff9e52",
+      "title": "adv26102026",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/IIC/2026/adv26102026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "95359e5008061c7b",
+      "title": "adv161020263",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/MI/2026/adv161020263.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9a2c467eb8323c85",
+      "title": "adv13092024",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/ICED/2024/adv13092024.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f37077c6e2c76bde",
+      "title": "adv281020261",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv281020261.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a57a32bee2dd35b3",
+      "title": "adv28102026",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/MI/2026/adv28102026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "cb99aecac43be66c",
+      "title": "adv27102026",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv27102026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f27f5db347d68d62",
+      "title": "adv221020264",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CE/2026/adv221020264.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5dba0449c4046fbe",
+      "title": "adv221020261",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv221020261.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1f4e1980c575ac24",
+      "title": "adv16102026",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv16102026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5ac69e003788d7d3",
+      "title": "adv141020265",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/SRIC/2026/adv141020265.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "faf264df86a2c6ce",
+      "title": "adv161020262",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HRE/2026/adv161020262.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ea7fb692663c16e1",
+      "title": "adv231020262",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HRE/2026/adv231020262.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2cbe9c7942931830",
+      "title": "adv141020263",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/SRIC/2026/adv141020263.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b7c796bbed1f61dc",
+      "title": "adv161020261",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv161020261.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8ead72e02a116dbf",
+      "title": "adv221020263",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv221020263.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3abcc1d9c3aeebb5",
+      "title": "adv05102026",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/DPT/2026/adv05102026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0ae50f058798e4af",
+      "title": "adv260920241",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ICED/2024/adv260920241.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1774,534 +1521,6 @@
       "score": 0
     },
     {
-      "id": "a22fea0ecd35248d",
-      "title": "adv261020262",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/MI/2026/adv261020262.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5e8e83f1b8ff9e52",
-      "title": "adv26102026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/IIC/2026/adv26102026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "95359e5008061c7b",
-      "title": "adv161020263",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/MI/2026/adv161020263.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9a2c467eb8323c85",
-      "title": "adv13092024",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/ICED/2024/adv13092024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "cb99aecac43be66c",
-      "title": "adv27102026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv27102026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "f27f5db347d68d62",
-      "title": "adv221020264",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CE/2026/adv221020264.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5dba0449c4046fbe",
-      "title": "adv221020261",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv221020261.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1f4e1980c575ac24",
-      "title": "adv16102026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv16102026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5ac69e003788d7d3",
-      "title": "adv141020265",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/SRIC/2026/adv141020265.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "faf264df86a2c6ce",
-      "title": "adv161020262",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HRE/2026/adv161020262.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ea7fb692663c16e1",
-      "title": "adv231020262",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HRE/2026/adv231020262.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2cbe9c7942931830",
-      "title": "adv141020263",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/SRIC/2026/adv141020263.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b7c796bbed1f61dc",
-      "title": "adv161020261",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv161020261.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8ead72e02a116dbf",
-      "title": "adv221020263",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv221020263.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3abcc1d9c3aeebb5",
-      "title": "adv05102026",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/DPT/2026/adv05102026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0ae50f058798e4af",
-      "title": "adv260920241",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ICED/2024/adv260920241.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "94ea16b429d48924",
-      "title": "adv07092024",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HY/2024/adv07092024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e4bcbe92903c04dc",
-      "title": "adv280820245",
-      "organization": "Verified news lead",
-      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ICED/2024/adv280820245.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "355c6672648973ea",
-      "title": "Job vacancy circular for Office Clerk",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/newyork_15_10_26_notice.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7a006c4355fea7b5",
-      "title": "Advertisement for the post of Office Errand Staff",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Office_Errand_Staff_08_10_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8ec1d5d2ad8dfa02",
-      "title": "Advertisement for the post of Receptionist iro CGI Boston",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_the_post_of_Receptionist_08_10_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "494a2a0673c29bce",
-      "title": "Advertisement for the post of Marketing Executive",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Marketing_Executive_08_10_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2435f7bf0bfcfe50",
-      "title": "Advertisement for Marketing Executive",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "16e10f1d88d1e648",
-      "title": "Advertisement for post of Chauffeur",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c51770faa7cc33ea",
-      "title": "Advertisement for Clerk",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Clerk_280126.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "af80fe87ecd9890f",
-      "title": "Advertisement for Marketing Assistant",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Assistant_250126.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "692010ef0afbc186",
-      "title": "Advertisement for Messenger",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Messenger_220126.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "aee1e074bcf326ed",
-      "title": "Advertisement for post of Chauffeur - 1",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "82256f5b0a6cc664",
-      "title": "Closure of Recruitment Process for the Post of Junior Officer Trainee (HR)",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice7dated30082024ClosureofJOTHRRecruitment.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5eefd21e9992fb0c",
-      "title": "Walk In Interview in UT of Ladakh",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Walk_In_Interview_in_UT_of_Ladakh.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1fafe207fabff0c5",
-      "title": "FE CTDS 2026 Detailed Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/FE%20CTDS%202026%20Detailed_Advertisement%20%20Final%20f.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "2f4eda247d6a8aaa",
-      "title": "FE CTDS 2026 Window Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Window%20Advertisement%20FE%20CTDS%202026%20Final_1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "af91932995c32d13",
-      "title": "ET2027 Detailed Advertisement For%20Website 1",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/ET2027_Detailed_Advertisement_For%20Website_1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "cf7d0dbed1e58af8",
-      "title": "023 Powergrid 8x10 Recruitment Ad",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/023-Powergrid-8x10-Recruitment-Ad.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0d3039071f438467",
-      "title": "024 Powergrid 8x10 Recruitment Ad",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/024-Powergrid-8x10-Recruitment-Ad.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "355697c7305087fc",
-      "title": "Notice 1 Recruitment%20Portal%20Unavailable%20from%2012%20AM%20to%2001%20AM%20for%201%20Hour%20on%2030th%20April%202026 0",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-1-Recruitment%20Portal%20Unavailable%20from%2012%20AM%20to%2001%20AM%20for%201%20Hour%20on%2030th%20April%202026_0.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9982688ef6e34fa0",
-      "title": "FAQs",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/FAQs.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "345db8d40d3af5f6",
-      "title": "Notice 2 Application%20in%20Draft%20Mode",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-2-Application%20in%20Draft%20Mode.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "988f5aa642005517",
-      "title": "Notice 3 Application%20Count",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-3_Application%20Count.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "674b0eaf80560c0c",
-      "title": "Notice 4 Date%20of%20CBT%20and%20eligibility%20status",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice_4_Date%20of%20CBT%20and%20eligibility%20status.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e3819837693c5e00",
-      "title": "Notice 5 Admit%20card",
-      "organization": "Verified news lead",
-      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-5_Admit%20card.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b8526d9a7963e21f",
-      "title": "Apprenticeship%20Advertisement Hindi",
-      "organization": "Verified news lead",
-      "url": "https://main.ecgc.in/wp-content/themes/pcwebecgc/images/CareerWithEcgc/Apprenticeship%20Advertisement-Hindi.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "57cbcf5e46ac432f",
-      "title": "ECGC PO Recruitment FY 2024 25(Hindi)",
-      "organization": "Verified news lead",
-      "url": "https://main.ecgc.in/wp-content/themes/pcwebecgc/images/CareerWithEcgc/ECGC_PO_Recruitment_FY_2024-25(Hindi).pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "0766d2f1db5bbbe6",
-      "title": "Apprenticeship Advertisement FY 2024 25 Hindi final",
-      "organization": "Verified news lead",
-      "url": "https://main.ecgc.in/wp-content/uploads/2025/02/Apprenticeship-Advertisement-FY-2024-25-Hindi-final.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "503a9520b1a507ca",
-      "title": "CTO%20Deputy%20CTO%20Application%20Form",
-      "organization": "Verified news lead",
-      "url": "https://main.ecgc.in/wp-content/themes/pcwebecgc/images/CareerWithEcgc/CTO%20Deputy%20CTO%20Application%20Form.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e79fa65a823208bb",
-      "title": "Vacancy%20Circular%20for%20the%20post%20of%20Chairman cum Managing%20Director%2C%20ECGC%20Limited",
-      "organization": "Verified news lead",
-      "url": "https://main.ecgc.in/wp-content/themes/pcwebecgc/images/pcECGPagePDF/Vacancy%20Circular%20for%20the%20post%20of%20Chairman-cum-Managing%20Director%2C%20ECGC%20Limited.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "bf72dcbba2a7c023",
-      "title": "Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L 10%20for%20Assistant%20Professor Associate%20Professor Professor",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-04/Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L-10%20for%20Assistant%20Professor_Associate%20Professor_Professor.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "53bd6a930b3b6167",
-      "title": "Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L 10",
-      "organization": "Verified news lead",
-      "url": "https://www.iitb.ac.in/sites/default/files/2026-01/Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L-10.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
       "id": "ad3dcc1bf4c16247",
       "title": "R525 Detailed Advt and instructions",
       "organization": "Verified news lead",
@@ -2713,6 +1932,17 @@
       "title": "R425 LB selected",
       "organization": "Verified news lead",
       "url": "https://recruit.iitm.ac.in/include/R425_LB_selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9486ca526bf3c3bd",
+      "title": "DAAD Bilateral Exchange of Academics",
+      "organization": "Verified news lead",
+      "url": "https://ir.iitr.ac.in/notifications/DAAD-Bilateral-Exchange-of-Academics.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -3248,87 +2478,21 @@
       "score": 0
     },
     {
+      "id": "ada370f5d08794f9",
+      "title": "Non Faculty",
+      "organization": "Verified news lead",
+      "url": "https://www.iitism.ac.in/storage/CareerDocument/Career_1793263562.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
       "id": "4b24914a53648f3b",
       "title": "Corrigendum to Advt. No._ IITPKD_R_F_01_2025 Dated_ 25 Nov 2025 - Special Recruitment Drive",
       "organization": "Verified news lead",
       "url": "https://facap.iitpkd.ac.in/sites/faculty-recruitment.iitp-portal.local/files/2025-11/Corrigendum%20to%20Advt.%20No._%20IITPKD_R_F_01_2025%20Dated_%2025%20Nov%202025%20-%20%20Special%20Recruitment%20Drive%20%281%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "9486ca526bf3c3bd",
-      "title": "DAAD Bilateral Exchange of Academics",
-      "organization": "Verified news lead",
-      "url": "https://ir.iitr.ac.in/notifications/DAAD-Bilateral-Exchange-of-Academics.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1de90ce0b0f42f66",
-      "title": "Advertisement for Office Errand Staff 08 10 2026",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Office_Errand_Staff_08_10_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b7d5d5afb536ecae",
-      "title": "Advertisement for the post of Receptionist 08 10 2026",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_the_post_of_Receptionist_08_10_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "c4560a869c7c2e2c",
-      "title": "Advertisement for Marketing Executive 08 10 2026",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_Marketing_Executive_08_10_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "34c37ad62e93a74a",
-      "title": "Marketing Executive 05 06 2026",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Marketing_Executive_05_06_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e841f80e3d2cf05d",
-      "title": "Advertisement for post of Chauffeur 19feb2026",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_19feb2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b90a7e28dd639d82",
-      "title": "Advertisement for post of Chauffeur in CGI Boston 260825",
-      "organization": "Verified news lead",
-      "url": "https://www.indiainnewyork.gov.in/pdf/careers/Advertisement_for_post_of_Chauffeur_in_CGI_Boston_260825.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -3413,6 +2577,17 @@
       "score": 0
     },
     {
+      "id": "ec47c6a9b9b405fd",
+      "title": "Career 1793263196",
+      "organization": "Verified news lead",
+      "url": "https://www.iitism.ac.in/storage/CareerDocument/Career_1793263196.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
       "id": "9c43046d23b86a32",
       "title": "Advt.%20No. %20IITPKD R F 02 2026%20Dated %2004%20June%202026",
       "organization": "Verified news lead",
@@ -3428,6 +2603,50 @@
       "title": "Corrigendum%20to%20Advt.%20No. %20IITPKD R F 01 2025%20Dated %2025%20Nov%202025%20 %20%20Special%20Recruitment%20Drive%20%281%29",
       "organization": "Verified news lead",
       "url": "https://facap.iitpkd.ac.in/sites/faculty-recruitment.iitp-portal.local/files/2025-11/Corrigendum%20to%20Advt.%20No._%20IITPKD_R_F_01_2025%20Dated_%2025%20Nov%202025%20-%20%20Special%20Recruitment%20Drive%20%281%29.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "496a61afce80e302",
+      "title": "FAQ Faculty%20Recruitment",
+      "organization": "Verified news lead",
+      "url": "https://recruitment.iitgn.ac.in/faculty/pdf/FAQ_Faculty%20Recruitment.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "4a73498eb81e3b4a",
+      "title": "Placement%20and%20Internship%20Procedure",
+      "organization": "Verified news lead",
+      "url": "https://cdc.iitpkd.ac.in/sites/default/files/Placement%20and%20Internship%20Procedure.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "503aea3d8f02a209",
+      "title": "Internship%20Policy%20CDC%20IIT%20PKD",
+      "organization": "Verified news lead",
+      "url": "https://cdc.iitpkd.ac.in/sites/default/files/Internship%20Policy%20CDC%20IIT%20PKD.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ee3014cad2263c6c",
+      "title": "Internship%20Policy%20CDC",
+      "organization": "Verified news lead",
+      "url": "https://cdc.iitpkd.ac.in/sites/default/files/Internship%20Policy%20CDC.pdf",
       "reasons": [
         "generic_organization"
       ],
