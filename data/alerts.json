@@ -1,28 +1,43 @@
 {
-  "generated_at": "2026-10-29T11:01:18.794384+00:00",
+  "generated_at": "2026-10-30T10:49:20.180603+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 1,
-    "updated_jobs": 0,
+    "new_jobs": 0,
+    "updated_jobs": 1,
     "deadline_alerts": 1,
     "total_jobs_checked": 27
   },
-  "new_jobs": [
+  "new_jobs": [],
+  "updated_jobs": [
     {
-      "id": "56e650cc38f0de02",
-      "title": "final advt 05 2026",
-      "organization": "https://dsssb.d...",
-      "deadline": "2026-11-11",
-      "vacancies": 12,
-      "pay": "Pay Scale:- ₹5,200-20,200/- + Grade Pay ₹2000",
-      "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026.pdf",
-      "application_url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026.pdf",
-      "official_source": true,
-      "is_update": false,
-      "notice_type": "recruitment"
+      "previous": {
+        "id": "0989f155ca29286e",
+        "title": "Rolling Advertisement",
+        "organization": "Indian Institute of Technology Delhi",
+        "deadline": null,
+        "vacancies": null,
+        "pay": "rs,",
+        "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
+        "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
+        "official_source": true,
+        "is_update": false,
+        "notice_type": "recruitment"
+      },
+      "current": {
+        "id": "0989f155ca29286e",
+        "title": "Rolling Advertisement",
+        "organization": "Indian Institute of Technology Delhi",
+        "deadline": null,
+        "vacancies": null,
+        "pay": null,
+        "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
+        "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
+        "official_source": true,
+        "is_update": false,
+        "notice_type": "recruitment"
+      }
     }
   ],
-  "updated_jobs": [],
   "deadline_alerts": [
     {
       "id": "8d9e693bb4076159",
@@ -36,8 +51,8 @@
       "official_source": true,
       "is_update": false,
       "notice_type": "recruitment",
-      "days_left": 1
+      "days_left": 0
     }
   ],
-  "notification_text": "NEW: final advt 05 2026 | https://dsssb.d... | Last date: 2026-11-11 | https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026.pdf\\nDEADLINE IN 1 DAY(S): EXECUTIVE DIRECTOR | NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"
+  "notification_text": "UPDATED: Rolling Advertisement | Indian Institute of Technology Delhi | Last date: N/A | https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf\\nDEADLINE TODAY: EXECUTIVE DIRECTOR | NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All"
 }
