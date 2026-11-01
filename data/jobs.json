@@ -1,14 +1,20 @@
 {
-  "generated_at": "2026-10-31T10:04:55.651686+00:00",
+  "generated_at": "2026-11-01T10:55:34.526346+00:00",
   "window_days": 30,
-  "cutoff": "2026-10-01",
+  "cutoff": "2026-10-02",
   "discovery": {
-    "seed_count": 123,
-    "pages_crawled": 950,
-    "domains_crawled": 126,
+    "seed_count": 124,
+    "pages_crawled": 1200,
+    "domains_crawled": 159,
     "source_stats": [
       {
         "host": "academics.iitd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "adminfacultyselection.iitr.ac.in",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -20,39 +26,15 @@
         "jobs_found": 0
       },
       {
-        "host": "affiliation-dgt.skillindiadigital.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "aiimsexams.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "anubandham.gujarat.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "api.hindustanuniv.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 5,
-        "jobs_found": 4
-      },
-      {
         "host": "api.ncs.gov.in",
         "seed_count": 9,
         "pages_crawled": 9,
-        "jobs_found": 0
-      },
-      {
-        "host": "apply.hindustanuniv.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 10,
         "jobs_found": 0
       },
       {
@@ -68,28 +50,46 @@
         "jobs_found": 0
       },
       {
+        "host": "becbapatla.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "betacloud.ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "bharatskills.gov.in",
+        "host": "cag.gov.in",
         "seed_count": 1,
-        "pages_crawled": 9,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "bujhansi.ac.in",
+        "host": "careers.iith.ac.in",
         "seed_count": 0,
-        "pages_crawled": 23,
-        "jobs_found": 18
+        "pages_crawled": 12,
+        "jobs_found": 10
       },
       {
-        "host": "cdn.s3waas.gov.in",
+        "host": "cdc.iitpkd.ac.in",
         "seed_count": 0,
+        "pages_crawled": 22,
+        "jobs_found": 3
+      },
+      {
+        "host": "cds.iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 14,
+        "jobs_found": 0
+      },
+      {
+        "host": "cgiti.admissions.nic.in",
+        "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 1
+        "jobs_found": 0
       },
       {
         "host": "chennaicorporation.gov.in",
@@ -98,7 +98,7 @@
         "jobs_found": 1
       },
       {
-        "host": "chhattisgarh.nic.in",
+        "host": "cic.gov.in",
         "seed_count": 2,
         "pages_crawled": 2,
         "jobs_found": 0
@@ -134,15 +134,9 @@
         "jobs_found": 0
       },
       {
-        "host": "district.odisha.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "doe.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 3,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -212,10 +206,28 @@
         "jobs_found": 0
       },
       {
+        "host": "ep.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "erojgar.cg.gov.in",
         "seed_count": 1,
         "pages_crawled": 23,
         "jobs_found": 0
+      },
+      {
+        "host": "erp.iitkgp.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "facap.iitpkd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 14,
+        "jobs_found": 4
       },
       {
         "host": "facapp.iitm.ac.in",
@@ -224,22 +236,22 @@
         "jobs_found": 0
       },
       {
-        "host": "gailonline.com",
-        "seed_count": 1,
+        "host": "facultyrecruitment.iitbhu.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "facultyselection.iitr.ac.in",
+        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
         "host": "ge.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 50,
-        "jobs_found": 3
-      },
-      {
-        "host": "hindustanuniv.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 52,
-        "jobs_found": 0
+        "pages_crawled": 28,
+        "jobs_found": 1
       },
       {
         "host": "home.iitd.ac.in",
@@ -254,8 +266,80 @@
         "jobs_found": 0
       },
       {
+        "host": "icc.iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "igod.gov.in",
         "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "igotkarmayogi.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "iitbhilai.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 5
+      },
+      {
+        "host": "iitgoa.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 0,
+        "jobs_found": 1
+      },
+      {
+        "host": "iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 136
+      },
+      {
+        "host": "iiti.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "iitk.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 29,
+        "jobs_found": 3
+      },
+      {
+        "host": "iitpkd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 21,
+        "jobs_found": 0
+      },
+      {
+        "host": "iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 18
+      },
+      {
+        "host": "iittp.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "ims.iitgn.ac.in",
+        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -272,6 +356,12 @@
         "jobs_found": 1
       },
       {
+        "host": "indianculture.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "internal.iitd.ac.in",
         "seed_count": 0,
         "pages_crawled": 2,
@@ -284,8 +374,38 @@
         "jobs_found": 0
       },
       {
+        "host": "ir.iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "ir.iitism.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "ir.iitpkd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 3,
+        "jobs_found": 0
+      },
+      {
+        "host": "ir.iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 19,
+        "jobs_found": 1
+      },
+      {
         "host": "itiadmission.goa.gov.in",
         "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "itidelhi.admissions.nic.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -297,12 +417,6 @@
       },
       {
         "host": "jakemp.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "jammu.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -344,14 +458,14 @@
         "jobs_found": 0
       },
       {
-        "host": "maharashtratourism.gov.in",
+        "host": "mcrhrdi.gov.in",
         "seed_count": 1,
-        "pages_crawled": 2,
+        "pages_crawled": 6,
         "jobs_found": 0
       },
       {
-        "host": "maitri.maharashtra.gov.in",
-        "seed_count": 0,
+        "host": "mdo.igotkarmayogi.gov.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -368,12 +482,6 @@
         "jobs_found": 0
       },
       {
-        "host": "mumbaicity.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 32,
-        "jobs_found": 0
-      },
-      {
         "host": "naipunyam.ap.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -383,6 +491,18 @@
         "host": "ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 28,
+        "jobs_found": 0
+      },
+      {
+        "host": "news.iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "nonfr.iitism.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -404,6 +524,12 @@
         "jobs_found": 0
       },
       {
+        "host": "ocs.iith.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "odisha.gov.in",
         "seed_count": 2,
         "pages_crawled": 2,
@@ -411,8 +537,8 @@
       },
       {
         "host": "odishatourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 17,
+        "seed_count": 2,
+        "pages_crawled": 18,
         "jobs_found": 0
       },
       {
@@ -434,21 +560,27 @@
         "jobs_found": 0
       },
       {
+        "host": "people.iitism.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "pminternship.mca.gov.in",
         "seed_count": 0,
         "pages_crawled": 2,
         "jobs_found": 0
       },
       {
-        "host": "portal.ge.iitm.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 2,
+        "host": "portal.igotkarmayogi.gov.in",
+        "seed_count": 3,
+        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
-        "host": "powermin.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
+        "host": "portal.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -458,7 +590,7 @@
         "jobs_found": 0
       },
       {
-        "host": "ratnagiri.gov.in",
+        "host": "rcf.indianrailways.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -476,6 +608,12 @@
         "jobs_found": 41
       },
       {
+        "host": "recruitment.iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 7,
+        "jobs_found": 1
+      },
+      {
         "host": "recruitment.jharkhand.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -489,6 +627,18 @@
       },
       {
         "host": "rojgar.mahaswayam.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "rrb.indianrailways.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "scvtwb.wb.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -536,9 +686,15 @@
         "jobs_found": 0
       },
       {
+        "host": "spark.iitr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "ssc.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 2,
+        "seed_count": 3,
+        "pages_crawled": 4,
         "jobs_found": 0
       },
       {
@@ -546,12 +702,6 @@
         "seed_count": 1,
         "pages_crawled": 2,
         "jobs_found": 0
-      },
-      {
-        "host": "sscnr.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 33,
-        "jobs_found": 29
       },
       {
         "host": "sulm.delhi.gov.in",
@@ -572,33 +722,15 @@
         "jobs_found": 0
       },
       {
-        "host": "upsc.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "upsconline.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "upsconline.nic.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
         "host": "utcsdm.chdtechnicaleducation.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "www.aiimsexams.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 3,
+        "host": "web.iitk.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 6,
         "jobs_found": 0
       },
       {
@@ -614,10 +746,10 @@
         "jobs_found": 0
       },
       {
-        "host": "www.bujhansi.ac.in",
-        "seed_count": 1,
-        "pages_crawled": 7,
-        "jobs_found": 5
+        "host": "www.dst.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
       },
       {
         "host": "www.employment.kerala.gov.in",
@@ -632,9 +764,9 @@
         "jobs_found": 0
       },
       {
-        "host": "www.eprocurentpc.nic.in",
+        "host": "www.gmuniversity.ac.in",
         "seed_count": 1,
-        "pages_crawled": 3,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -650,8 +782,62 @@
         "jobs_found": 0
       },
       {
+        "host": "www.idc.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 4,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.igotkarmayogi.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitb.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 60,
+        "jobs_found": 8
+      },
+      {
+        "host": "www.iitbbs.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 2
+      },
+      {
+        "host": "www.iitbhilai.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 1
+      },
+      {
         "host": "www.iitd.ac.in",
         "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitdh.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitgn.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitism.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 8,
+        "jobs_found": 2
+      },
+      {
+        "host": "www.iitkgp.ac.in",
+        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -662,15 +848,57 @@
         "jobs_found": 1
       },
       {
+        "host": "www.iitmandi.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitr.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 40,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.iitrpr.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 1
+      },
+      {
+        "host": "www.iitsystem.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 22,
+        "jobs_found": 6
+      },
+      {
         "host": "www.incredibleindia.gov.in",
-        "seed_count": 9,
-        "pages_crawled": 15,
+        "seed_count": 7,
+        "pages_crawled": 13,
         "jobs_found": 0
       },
       {
         "host": "www.india.gov.in",
         "seed_count": 2,
         "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.indiainla.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ir.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ircc.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 6,
         "jobs_found": 0
       },
       {
@@ -690,30 +918,6 @@
         "seed_count": 1,
         "pages_crawled": 3,
         "jobs_found": 0
-      },
-      {
-        "host": "www.nqr.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 3,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.nsic.co.in",
-        "seed_count": 1,
-        "pages_crawled": 55,
-        "jobs_found": 32
-      },
-      {
-        "host": "www.pminternship.mca.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.powergrid.in",
-        "seed_count": 1,
-        "pages_crawled": 55,
-        "jobs_found": 47
       },
       {
         "host": "www.publicationsdivision.nic.in",
@@ -753,8 +957,8 @@
       },
       {
         "host": "www.upsc.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -766,14 +970,14 @@
     ]
   },
   "quality": {
-    "raw_candidates": 1960,
-    "published_jobs": 214,
-    "rejected_or_deduplicated": 1746,
+    "raw_candidates": 3486,
+    "published_jobs": 278,
+    "rejected_or_deduplicated": 3208,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 214,
+    "published_jobs_before_gate": 278,
     "published_jobs_after_gate": 32,
-    "rejected_by_scope_gate": 182,
+    "rejected_by_scope_gate": 246,
     "scope_counts": {
       "state_other": 2,
       "central": 1,
@@ -815,7 +1019,7 @@
       "pay": "pay ol Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -856,7 +1060,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -897,7 +1101,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -938,7 +1142,7 @@
       "pay": "rs. 2",
       "qualification": null,
       "posting_date": "2026-03-01",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -979,7 +1183,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1020,7 +1224,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1061,7 +1265,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2025-03-01",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1102,7 +1306,7 @@
       "pay": "rs,",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1143,7 +1347,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2026-01-01",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1184,7 +1388,7 @@
       "pay": "₹ 200000",
       "qualification": "The applicant should be an Engineering Graduate/ Chartered Accountant/ Cost Accountant/ Post Graduate/ Graduate with MBA/PGDIM from a leading Institute",
       "posting_date": "2024-01-08",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1226,7 +1430,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2026-02-01",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1267,7 +1471,7 @@
       "pay": null,
       "qualification": "required and the ‘General Terms and Conditions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1308,7 +1512,7 @@
       "pay": "Pay of Rs. 8700",
       "qualification": "required and the ‘General Terms and Conditions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1349,7 +1553,7 @@
       "pay": null,
       "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1390,7 +1594,7 @@
       "pay": null,
       "qualification": "/experience and the ‘‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1431,7 +1635,7 @@
       "pay": "Pay of Rs. 6600",
       "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1472,7 +1676,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1513,7 +1717,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1554,7 +1758,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-2",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1595,7 +1799,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-2",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1636,7 +1840,7 @@
       "pay": "Pay Scale:- ₹5,200-20,200/- + Grade Pay ₹2000",
       "qualification": "as per the Recruitment Rules of the indenting departments for the above vacancies",
       "posting_date": "2026-10-13",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "https://dsssb.d...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1679,7 +1883,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1720,7 +1924,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1761,7 +1965,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1802,7 +2006,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1843,7 +2047,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-10",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Indian Coast Guard",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1884,7 +2088,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1925,7 +2129,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-09",
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "DRDO - ITR, Chandipur",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1966,7 +2170,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2007,7 +2211,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2045,10 +2249,10 @@
       "deadline": null,
       "vacancies": null,
       "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
+      "pay": "rs,",
+      "qualification": "(for all faculty positions): Ph",
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2069,12 +2273,12 @@
         "rejection_reasons": [],
         "scope": "institutional_indian_source",
         "publication_tier": "high_confidence",
-        "publication_score": 73,
+        "publication_score": 91,
         "scope_gate": "multi_stage_v2"
       },
       "scope": "institutional_indian_source",
       "publication_tier": "high_confidence",
-      "publication_score": 73
+      "publication_score": 91
     },
     {
       "id": "d2008c8d6407c129",
@@ -2089,7 +2293,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-10-31T10:04:55.651686+00:00",
+      "discovered_at": "2026-11-01T10:55:34.526346+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
