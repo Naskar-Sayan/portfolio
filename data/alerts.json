@@ -1,13 +1,40 @@
 {
-  "generated_at": "2026-11-01T11:23:42.028866+00:00",
+  "generated_at": "2026-11-02T12:00:01.374450+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 0,
+    "new_jobs": 2,
     "updated_jobs": 1,
     "deadline_alerts": 0,
-    "total_jobs_checked": 32
+    "total_jobs_checked": 28
   },
-  "new_jobs": [],
+  "new_jobs": [
+    {
+      "id": "b838aaf76b0dc137",
+      "title": "TGT (COMPUTER SCIENCE) & OTHERS",
+      "organization": "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE",
+      "deadline": "2026-11-21",
+      "vacancies": null,
+      "pay": null,
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    },
+    {
+      "id": "c99f87b409695af3",
+      "title": "LOWER DIVISION CLERK",
+      "organization": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM",
+      "deadline": "2026-11-30",
+      "vacancies": null,
+      "pay": null,
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "application_url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "official_source": true,
+      "is_update": false,
+      "notice_type": "recruitment"
+    }
+  ],
   "updated_jobs": [
     {
       "previous": {
@@ -16,7 +43,7 @@
         "organization": "Indian Institute of Technology Delhi",
         "deadline": null,
         "vacancies": null,
-        "pay": null,
+        "pay": "rs,",
         "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
         "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
         "official_source": true,
@@ -29,7 +56,7 @@
         "organization": "Indian Institute of Technology Delhi",
         "deadline": null,
         "vacancies": null,
-        "pay": "rs,",
+        "pay": null,
         "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
         "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
         "official_source": true,
@@ -39,5 +66,5 @@
     }
   ],
   "deadline_alerts": [],
-  "notification_text": "UPDATED: Rolling Advertisement | Indian Institute of Technology Delhi | Last date: N/A | https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf"
+  "notification_text": "NEW: TGT (COMPUTER SCIENCE) & OTHERS | SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE | Last date: 2026-11-21 | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All\\nNEW: LOWER DIVISION CLERK | INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM | Last date: 2026-11-30 | https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All\\nUPDATED: Rolling Advertisement | Indian Institute of Technology Delhi | Last date: N/A | https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf"
 }
