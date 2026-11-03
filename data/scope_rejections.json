@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T12:00:01.283463+00:00",
-  "rejected_count": 162,
+  "generated_at": "2026-11-03T11:46:39.292227+00:00",
+  "rejected_count": 108,
   "scope_counts": {
     "state_other": 2,
     "central": 3,
     "institutional_indian_source": 3,
     "central_linked": 9,
-    "psu": 11
+    "psu": 17
   },
   "tier_counts": {
-    "high_confidence": 7,
-    "verified": 21
+    "high_confidence": 12,
+    "verified": 22
   },
   "rejected": [
     {
@@ -58,659 +58,10 @@
       "score": 0
     },
     {
-      "id": "922890c96f47a93f",
-      "title": "Advertisement in Hindi",
+      "id": "064756ebefb5159f",
+      "title": "View the Recruitment and Promotion Norms",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_01_2025%20%20final%20V2%20%281%29%20%282%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5a1f86783d5e4dc8",
-      "title": "Advertisement - Recruitment of Executives for HR / DT / Metro & Commuter Rail Business / Engine Projects / Maritime Business",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_01_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ae2d05b72ea26d0d",
-      "title": "Advertisement - Recruitment of Assistant Officer Security, Security Guard & Fire Service Personnel",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_02_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "cf5df7069cf4fde2",
-      "title": "Advertisement - Recruitment of Junior Executives – Official Language on Fixed Term (Contract) Basis",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Result%20Web%20hosting%20Offl%20Lng%20%20PDF.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "6f719c6bd4099094",
-      "title": "Walk – In - Interview : Recruitment of Junior Executives On Fixed Term (Contract) Basis",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_04_2025%20%281%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "78d9b097f16ccc23",
-      "title": "Advertisement KP/S/11/2025",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_11_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "73ff337272c2c151",
-      "title": "Advertisement in English",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_06_2024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "5c2e9c0b6a761f5b",
-      "title": "ENGAGEMENT OF APPRENTICES for FY 2026-27",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/LND_012626_1.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e6a2f1b7003d7c54",
-      "title": "RECRUITMENT OF EXECUTIVES FOR VARIOUS FUNCTIONS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_01_2026_050226.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "f66f207a9c0a27c2",
-      "title": "RECRUITMENT OF EXECUTIVES FOR FPI & IC, COMMUTER RAIL, MARITIME & AEROSPACE BUSINESS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_02_2026_Final.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "59359dbde681b63c",
-      "title": "RECRUITMENT OF JUNIOR EXECUTIVES ON FIXED TERM (CONTRACT) BASIS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_03_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "995ff30b2ba2225f",
-      "title": "Cancellation of Recruitment Notification",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/cancle_KP_S_04_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "8a8c3890023152bf",
-      "title": "Recruitment of Executives for Engine Project",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_05_2025%20Final%20%282%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "403128a328846e70",
-      "title": "WALK-IN INTERVIEW – RECRUITMENT OF EXECUTIVES FOR TOOLING",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_05_2026%20Tooling.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "34f7e4f44d322b22",
-      "title": "RECRUITMENT OF EXECUTIVES FOR CIVIL CONSTRUCTION.",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_06_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "39e5e0345999e6e0",
-      "title": "RECRUITMENT OF EXECUTIVES FOR VARIOUS SYSTEMS OF HIGH-SPEED RAIL - R&D DOMAIN",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_06_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "85fe156ca340a51b",
-      "title": "Extension of last date for submission of on-line applications for advertisement No.KP/S/06/2026",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Corrigendumdated14.04.2026_6.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fbde2e1f184f0c6b",
-      "title": "WALK-IN-INTERVIEW : APPLICATION FORM",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/BL_Application_Form.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d668ee43dc3b3268",
-      "title": "WALK-IN-INTERVIEW : ENGAGEMENT OF CONSULTANTS – QUALITY ON TENURE BASIS.",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_07_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "7e4bd687c1bad2c0",
-      "title": "Recruitment of Executives for Rail/Engine Project",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_07_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "44fa1b76a10e0a91",
-      "title": "Extension of last date for submission of on-line applications for advertisement No.KP/S/07/2026",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Corrigendumdated14.04.2026_7.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d659d03ddfaa956c",
-      "title": "RECRUITMENT OF EXECUTIVES FOR HUMAN RESOURCE.",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_08_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "797a932d8d569191",
-      "title": "Recruitment of Executives for Rajbasha-Official Language",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_08_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ab787f373335cfbc",
-      "title": "Extension of last date for submission of on-line applications for advertisement No.KP/S/08/2026",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Corrigendumdated14.04.2026_8.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ecd01e24947b186f",
-      "title": "Special Recruitment Drive for SC/ST & OBC (10th attempt)",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_9_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "63190eefb41ea8bb",
-      "title": "Extension of last date for submission of on-line applications for advertisement No.KP/S/09/2026",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Corrigendumdated14.04.2026_9.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3dff6293fcd8851e",
-      "title": "Recruitment of Executives for Metro & Commuter Rail Business",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_10_2024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "01ae18515515c3a1",
-      "title": "RECRUITMENT OF NON-EXECUTIVES ON TENURE BASIS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_10_2026Tenurebased.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a17970e3f5c478ab",
-      "title": "Recruitment of Executives for Defence Business",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_11_2024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e82600f78203ee86",
-      "title": "RECRUITMENT OF EXECUTIVES FOR FINANCE & COMPANY SECRETARY",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_11_2026_Final.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "98d1d7c27930d711",
-      "title": "RECRUITMENT OF DOCTORS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_12_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "30695a3e17848e40",
-      "title": "RECRUITMENT OF EXECUTIVES",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_12_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fb9a5bdecb5614e2",
-      "title": "Cancellation of position code no.108 & 120 in advertisement No. KP/S/12/2026",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Webhosting-Cancellationof2post020926.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d8bc8a0ad15a0a51",
-      "title": "Results for recruitment of CGM (Gr IX) Head Engine R&D Positions",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/kps1226%20HeadEngineR%26D.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "bdebe3931df961c2",
-      "title": "RECRUITMENT OF EXECUTIVE FOR INDUSTRIAL SAFETY",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_13_2026.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "dfb8433cedfc6d4b",
-      "title": "Recruitment of Group ‘C’ Positions across BEML Limited: ITI & Office Assistant Trainees",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_14_2024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "fb958ff92da17f81",
-      "title": "Advertisement Copy",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_14_2024%20English%20Final.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "f519e9554c6bef03",
-      "title": "ENGAGEMENT OF SPECIALIST DOCTORS AS CONSULTANTS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_14_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "726c28d5d2fca122",
-      "title": "Walk-In Interview - Recruitment of PR/CC Executives for Manufacturing Locations",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Advt%20KP_S_16_2024.%20%281%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "73ea7d7e241116f0",
-      "title": "Recruitment of Chief General Manager – HR",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_16_2026%20-%20V6.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a28816f9fee3805d",
-      "title": "RECRUITMENT OF EXECUTIVES FOR METRO & COMMUTER RAIL BUSINESS, FINANCE & HR FUNCTIONS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_17_2024-Final%20%281%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "83fdf33bf776de43",
-      "title": "Engagement of Travel Desk Officer on Contract",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_18_2024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "a33c59416ab9aa87",
-      "title": "RECRUITMENT OF MANAGEMENT TRAINEES",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_18_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "d9f9a31d89ee1344",
-      "title": "RECRUITMENT OF SECURITY GUARD & FIRE SERVICE PERSONNEL",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_19_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "368e59007f83c697",
-      "title": "RECRUITMENT OF STAFF NURSE & PHARMACISTS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_20_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "98b3fa5795ea4595",
-      "title": "RECRUITMENT OF NON-EXECUTIVES ON FIXED TENURE BASIS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_22_2025%20-%20%28Fixed%20Tenure%29%20%282%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1715cc8210664061",
-      "title": "RECRUITMENT OF JUNIOR EXECUTIVES ON FIXED TERM BASIS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_23_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "22b4fbe510a40b6b",
-      "title": "RECRUITMENT OF ADVISOR (STRATEGY & STAKEHOLDER RELATIONS)",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP-S-24-2025_Final.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "1d193f1774a5d231",
-      "title": "Walk-in for Recruitment Of Junior Executives On Fixed Term (Contract) Basis.",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/advBC_kps25_25.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b5f7fe8f5d1b59f7",
-      "title": "RECRUITMENT OF EXECUTIVES FOR DIGITAL TRANSFORMATION / CONSTRUCTION EQUIPMENT / ENGINE / TOOLING / MARITIME / RAJ BASHA / SECURITY / DOCTORS",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_27_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3af6905b13ed0bdb",
-      "title": "Special Recruitment Drive - Window Advertisement",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/SRD_Web_Hosting.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "999a79fa857e5379",
-      "title": "Special Recruitment Drive for SC/ST & OBC Group ‘A’ (9th Attempt), Group ‘B’ & ‘C’ Posts (7th Attempt)",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Final_KP_S_28_2025.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "aa17a4f5fffb3674",
-      "title": "Notice – Status of Recruitment",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/1021985bebf2e4baef7fb51ea7dc7144.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "577d1a9c98a44f46",
-      "title": "Advertisement - Recruitment of Group ‘C’ Positions across BEML Limited",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Advt_KP_S_06_2023.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e83d4380de97bce6",
-      "title": "Walk-in Interview - Recruitment of PR/CC Executives for manufacturing & office locations",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/4884a9b3f17265301123fe03b1cc592a.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e66f769540f463c7",
-      "title": "Walk-in Interview for Engagement of Consultant Maritime Business",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/951b8ca73043ce626a1a30ecbc49f31a.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4b1d13b1bdd3f89f",
-      "title": "Recruitment of Management Trainee - Company Secretary",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_09_2023_MT_CS%20%281%29.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "52afe764081e2a34",
-      "title": "Recruitment of Executives and Admin Officers",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/2a31d63ddf22b2c2e37976bad7eb0843.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "3e7d8244bb5d4a40",
-      "title": "Engagement of Contract Medical Officer",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Advt_KP_S_13_2024.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "021eff21c83f11b6",
-      "title": "Walk-in Interview for Industrial Design and Industrial Safety Executives",
-      "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_04_2024%20-%20Final.pdf",
+      "url": "https://www.iitm.ac.in/sites/default/files/Promotion%20Norms/recruitment-and-promotion-norms.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -971,10 +322,10 @@
       "score": 0
     },
     {
-      "id": "064756ebefb5159f",
-      "title": "View the Recruitment and Promotion Norms",
+      "id": "b4ae2cdf33d82cc6",
+      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS [IITM/R/5/2025 dated 24.09.2025]",
       "organization": "Verified news lead",
-      "url": "https://www.iitm.ac.in/sites/default/files/Promotion%20Norms/recruitment-and-promotion-norms.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -982,10 +333,10 @@
       "score": 0
     },
     {
-      "id": "0b1ab9d1a1aa5ff3",
-      "title": "KP S 01 2025",
+      "id": "51560ca86ca60e86",
+      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS (Application portal will open on 27.09.2025)",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_01_2025.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -993,10 +344,10 @@
       "score": 0
     },
     {
-      "id": "06cf99e0e6f9f9b0",
-      "title": "WEB%20HOSTING%20INTERVIEW%20SHORTLISTED%20%282%29",
+      "id": "e77c68acbfd6b662",
+      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/WEB%20HOSTING%20INTERVIEW%20SHORTLISTED%20%282%29.pdf",
+      "url": "https://recruit.iitm.ac.in/include/R425_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1004,10 +355,10 @@
       "score": 0
     },
     {
-      "id": "683f8b981ead2348",
-      "title": "Results%20for%20web%20hosting%20%281%29",
+      "id": "6c22c1a0ac48f406",
+      "title": "Rolling Advertisement No. L-10/25-26 | भारतीय प्रौद्योगिकी संस्थान मुंबई",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Results%20for%20web%20hosting%20%281%29.pdf",
+      "url": "https://www.iitb.ac.in/job-vacancy-ad/rolling-advertisement-no-l-1025-26",
       "reasons": [
         "generic_organization"
       ],
@@ -1015,10 +366,10 @@
       "score": 0
     },
     {
-      "id": "d836e2edd5dd4850",
-      "title": "Results%20for%20web%20hosting%20PDF%20%282%29",
+      "id": "4e17771d5bb2a7ba",
+      "title": "Areas of Specialization for Rolling Advertisement No.L-10.pdf",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Results%20for%20web%20hosting%20PDF%20%282%29.pdf",
+      "url": "https://www.iitb.ac.in/sites/default/files/2026-01/Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L-10.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1026,10 +377,10 @@
       "score": 0
     },
     {
-      "id": "562ce428dbcc7f21",
-      "title": "KP S 02 2025",
+      "id": "b40377cc4ef666a4",
+      "title": "Eligibility criteria for Rolling advertisement No.L-10 for Assistant Professor_Associate Professor_Professor.pdf",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_02_2025.pdf",
+      "url": "https://www.iitb.ac.in/sites/default/files/2026-04/Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L-10%20for%20Assistant%20Professor_Associate%20Professor_Professor.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1037,10 +388,10 @@
       "score": 0
     },
     {
-      "id": "a4242ae7f5bfec9a",
-      "title": "PSC kps02025",
+      "id": "1d83aaf9f7f950bf",
+      "title": "Advertisement for Foreign Faculty and Foreign Post Doctoral Fellows | भारतीय प्रौद्योगिकी संस्थान मुंबई",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/PSC_kps02025.pdf",
+      "url": "https://www.iitb.ac.in/job-vacancy-ad/advertisement-foreign-faculty-and-foreign-post-doctoral-fellows",
       "reasons": [
         "generic_organization"
       ],
@@ -1048,10 +399,10 @@
       "score": 0
     },
     {
-      "id": "b54b84deb1bafd7b",
-      "title": "WHIS SecurityGuard Fire%20Service 280126",
+      "id": "49570306ac141a6f",
+      "title": "Advertisement for Institute Post-Doctoral Fellows | भारतीय प्रौद्योगिकी संस्थान मुंबई",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/WHIS_SecurityGuard_Fire%20Service_280126.pdf",
+      "url": "https://www.iitb.ac.in/career/apply/postdoc",
       "reasons": [
         "generic_organization"
       ],
@@ -1059,10 +410,10 @@
       "score": 0
     },
     {
-      "id": "d50a714c10b7bb55",
-      "title": "KP S 04 2025%20%281%29",
+      "id": "95509e272a49fc58",
+      "title": "Advertisement No. M-3/26-27 | भारतीय प्रौद्योगिकी संस्थान मुंबई",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_04_2025%20%281%29.pdf",
+      "url": "https://www.iitb.ac.in/node/6816",
       "reasons": [
         "generic_organization"
       ],
@@ -1070,10 +421,10 @@
       "score": 0
     },
     {
-      "id": "468d84f33f30c52a",
-      "title": "NOTIFICATION",
+      "id": "a22fea0ecd35248d",
+      "title": "adv261020262",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/NOTIFICATION.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/MI/2026/adv261020262.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1081,10 +432,10 @@
       "score": 0
     },
     {
-      "id": "193245e2a860a9db",
-      "title": "KP S 11 2025",
+      "id": "5e8e83f1b8ff9e52",
+      "title": "adv26102026",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_11_2025.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/IIC/2026/adv26102026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1092,10 +443,10 @@
       "score": 0
     },
     {
-      "id": "226eb177fb2dcdb4",
-      "title": "WebhostingFinalResult PDF",
+      "id": "95359e5008061c7b",
+      "title": "adv161020263",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/WebhostingFinalResult-PDF.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/MI/2026/adv161020263.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1103,10 +454,10 @@
       "score": 0
     },
     {
-      "id": "828b8455c125f35c",
-      "title": "FinalResultkp21125",
+      "id": "9a2c467eb8323c85",
+      "title": "adv13092024",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/FinalResultkp21125.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Post_Doctoral_Fellowship/ICED/2024/adv13092024.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1114,10 +465,10 @@
       "score": 0
     },
     {
-      "id": "c813761bae536cb7",
-      "title": "WHfor CGM GMandotherpositions",
+      "id": "5da04e741b9544a7",
+      "title": "adv021120261",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/WHfor_CGM_GMandotherpositions.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ES/2026/adv021120261.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1125,10 +476,10 @@
       "score": 0
     },
     {
-      "id": "0402fbf1120d6251",
-      "title": "LND 012626 1",
+      "id": "bf10c0b595137083",
+      "title": "adv02112026",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/LND_012626_1.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ES/2026/adv02112026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1136,10 +487,10 @@
       "score": 0
     },
     {
-      "id": "f8b86146a0f14bbe",
-      "title": "Webhosting 012026 140726",
+      "id": "f37077c6e2c76bde",
+      "title": "adv281020261",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Webhosting-012026_140726.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv281020261.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1147,10 +498,10 @@
       "score": 0
     },
     {
-      "id": "fa4035a03ff7e937",
-      "title": "CancellationCGMHRkps0126",
+      "id": "a57a32bee2dd35b3",
+      "title": "adv28102026",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/CancellationCGMHRkps0126.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/MI/2026/adv28102026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1158,10 +509,10 @@
       "score": 0
     },
     {
-      "id": "ef642cbcdabfbf64",
-      "title": "kps0126ShortlistedDGMpost",
+      "id": "4b17148f81ba8308",
+      "title": "adv03112026",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/kps0126ShortlistedDGMpost.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/IR/2026/adv03112026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1169,10 +520,10 @@
       "score": 0
     },
     {
-      "id": "61b0c99286895ebf",
-      "title": "Webhosting%20 Postponement KP S 1 2026",
+      "id": "cb99aecac43be66c",
+      "title": "adv27102026",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/Webhosting%20_Postponement_KP_S_1_2026.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv27102026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1180,10 +531,10 @@
       "score": 0
     },
     {
-      "id": "9753458cf611718e",
-      "title": "KP S 01 2026 050226",
+      "id": "f27f5db347d68d62",
+      "title": "adv221020264",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_01_2026_050226.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CE/2026/adv221020264.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1191,10 +542,10 @@
       "score": 0
     },
     {
-      "id": "9c9b6ef645cd86a9",
-      "title": "LPSC KPS012626 030626",
+      "id": "5dba0449c4046fbe",
+      "title": "adv221020261",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/LPSC_KPS012626_030626.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv221020261.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1202,10 +553,10 @@
       "score": 0
     },
     {
-      "id": "e93c739bf1f37fbf",
-      "title": "WebhostingShortlisted kps012026 190626",
+      "id": "1f4e1980c575ac24",
+      "title": "adv16102026",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/WebhostingShortlisted_kps012026_190626.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv16102026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1213,10 +564,10 @@
       "score": 0
     },
     {
-      "id": "adfa33b1b66a5f57",
-      "title": "KP S 02 2026 Final",
+      "id": "5ac69e003788d7d3",
+      "title": "adv141020265",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_02_2026_Final.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/SRIC/2026/adv141020265.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1224,10 +575,65 @@
       "score": 0
     },
     {
-      "id": "5a8f9c5ee2cf21d7",
-      "title": "ShortlistedGII 250926 CR",
+      "id": "faf264df86a2c6ce",
+      "title": "adv161020262",
       "organization": "Verified news lead",
-      "url": "https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/ShortlistedGII_250926_CR.pdf",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HRE/2026/adv161020262.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ea7fb692663c16e1",
+      "title": "adv231020262",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/HRE/2026/adv231020262.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2cbe9c7942931830",
+      "title": "adv141020263",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/SRIC/2026/adv141020263.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b7c796bbed1f61dc",
+      "title": "adv161020261",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/ECE/2026/adv161020261.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "8ead72e02a116dbf",
+      "title": "adv221020263",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2026/adv221020263.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3abcc1d9c3aeebb5",
+      "title": "adv05102026",
+      "organization": "Verified news lead",
+      "url": "https://iitr.ac.in/Careers/static/Project_Jobs/DPT/2026/adv05102026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1338,39 +744,6 @@
       "title": "Advertisement No. - 05 - 2026",
       "organization": "Verified news lead",
       "url": "http://cms.upsc.gov.in/archived-advertisements/",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "b4ae2cdf33d82cc6",
-      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS [IITM/R/5/2025 dated 24.09.2025]",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "51560ca86ca60e86",
-      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS (Application portal will open on 27.09.2025)",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "e77c68acbfd6b662",
-      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS",
-      "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R425_Detailed_Advt_and_instructions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -1789,6 +1162,39 @@
       "title": "R425 LB selected",
       "organization": "Verified news lead",
       "url": "https://recruit.iitm.ac.in/include/R425_LB_selected.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "bf72dcbba2a7c023",
+      "title": "Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L 10%20for%20Assistant%20Professor Associate%20Professor Professor",
+      "organization": "Verified news lead",
+      "url": "https://www.iitb.ac.in/sites/default/files/2026-04/Eligibility%20criteria%20for%20Rolling%20advertisement%20No.L-10%20for%20Assistant%20Professor_Associate%20Professor_Professor.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "53bd6a930b3b6167",
+      "title": "Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L 10",
+      "organization": "Verified news lead",
+      "url": "https://www.iitb.ac.in/sites/default/files/2026-01/Areas%20of%20Specialization%20for%20Rolling%20Advertisement%20No.L-10.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9486ca526bf3c3bd",
+      "title": "DAAD Bilateral Exchange of Academics",
+      "organization": "Verified news lead",
+      "url": "https://ir.iitr.ac.in/notifications/DAAD-Bilateral-Exchange-of-Academics.pdf",
       "reasons": [
         "generic_organization"
       ],
