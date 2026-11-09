@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-11-08T11:10:44.098558+00:00",
+  "generated_at": "2026-11-09T12:21:10.924513+00:00",
   "rejected_count": 0,
   "scope_counts": {
     "state_other": 2,
-    "central": 3
+    "central": 3,
+    "psu": 6
   },
   "tier_counts": {
-    "high_confidence": 3,
-    "verified": 2
+    "high_confidence": 8,
+    "verified": 3
   },
   "rejected": []
 }
