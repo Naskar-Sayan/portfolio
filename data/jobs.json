@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-09T12:08:17.474553+00:00",
+  "generated_at": "2026-11-10T11:41:27.471184+00:00",
   "window_days": 30,
-  "cutoff": "2026-10-10",
+  "cutoff": "2026-10-11",
   "discovery": {
-    "seed_count": 104,
-    "pages_crawled": 391,
-    "domains_crawled": 86,
+    "seed_count": 107,
+    "pages_crawled": 383,
+    "domains_crawled": 87,
     "source_stats": [
       {
         "host": "admser.chd.nic.in",
@@ -44,6 +44,12 @@
         "jobs_found": 0
       },
       {
+        "host": "cms.upsc.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "cssda.cg.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -51,12 +57,6 @@
       },
       {
         "host": "da.ncs.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "delhitourism.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -82,7 +82,7 @@
       {
         "host": "dsde.goa.gov.in",
         "seed_count": 1,
-        "pages_crawled": 14,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -130,7 +130,7 @@
       {
         "host": "erojgar.cg.gov.in",
         "seed_count": 1,
-        "pages_crawled": 23,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -152,12 +152,6 @@
         "jobs_found": 0
       },
       {
-        "host": "itiadmission.goa.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "itiemp.karnataka.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -167,6 +161,12 @@
         "host": "jakemp.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "jammu.nic.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -243,21 +243,9 @@
       },
       {
         "host": "ntpc.co.in",
-        "seed_count": 2,
+        "seed_count": 4,
         "pages_crawled": 60,
         "jobs_found": 6
-      },
-      {
-        "host": "odisha.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "odishatourism.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 17,
-        "jobs_found": 0
       },
       {
         "host": "onlineemploymentportal.delhi.gov.in",
@@ -284,6 +272,12 @@
         "jobs_found": 0
       },
       {
+        "host": "powermin.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "rajemployment.rajasthan.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -298,12 +292,6 @@
       {
         "host": "rojgar.mahaswayam.gov.in",
         "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "sdct.goa.gov.in",
-        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -345,8 +333,14 @@
       },
       {
         "host": "ssc.gov.in",
-        "seed_count": 3,
+        "seed_count": 2,
         "pages_crawled": 3,
+        "jobs_found": 0
+      },
+      {
+        "host": "ssccr.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -386,21 +380,33 @@
         "jobs_found": 0
       },
       {
+        "host": "upsc.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "upsconline.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "upsconline.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "utcsdm.chdtechnicaleducation.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "www.apprenticeship.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 7,
-        "jobs_found": 0
-      },
-      {
         "host": "www.apprenticeshipindia.gov.in",
         "seed_count": 0,
-        "pages_crawled": 3,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -413,12 +419,6 @@
         "host": "www.eneversion.nic.in",
         "seed_count": 0,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.eprocurentpc.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
@@ -435,8 +435,8 @@
       },
       {
         "host": "www.incredibleindia.gov.in",
-        "seed_count": 8,
-        "pages_crawled": 14,
+        "seed_count": 5,
+        "pages_crawled": 7,
         "jobs_found": 0
       },
       {
@@ -447,12 +447,6 @@
       },
       {
         "host": "www.indianculture.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.indianrail.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -476,8 +470,20 @@
         "jobs_found": 0
       },
       {
+        "host": "www.nsic.co.in",
+        "seed_count": 2,
+        "pages_crawled": 56,
+        "jobs_found": 32
+      },
+      {
         "host": "www.publicationsdivision.nic.in",
         "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.railyatri.in",
+        "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -526,14 +532,14 @@
     ]
   },
   "quality": {
-    "raw_candidates": 480,
-    "published_jobs": 11,
-    "rejected_or_deduplicated": 469,
+    "raw_candidates": 542,
+    "published_jobs": 43,
+    "rejected_or_deduplicated": 499,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 11,
+    "published_jobs_before_gate": 43,
     "published_jobs_after_gate": 11,
-    "rejected_by_scope_gate": 0,
+    "rejected_by_scope_gate": 32,
     "scope_counts": {
       "state_other": 2,
       "central": 3,
@@ -573,7 +579,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE",
       "official_source": true,
       "confidence": "primary_domain",
@@ -615,7 +621,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM",
       "official_source": true,
       "confidence": "primary_domain",
@@ -657,7 +663,7 @@
       "pay": "₹ 200000",
       "qualification": "The applicant should be an Engineering Graduate/ Chartered Accountant/ Cost Accountant/ Post Graduate/ Graduate with MBA/PGDIM from a leading Institute",
       "posting_date": "2024-01-08",
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -699,7 +705,7 @@
       "pay": "Pay Scale:- ₹5,200-20,200/- + Grade Pay ₹2000",
       "qualification": "as per the Recruitment Rules of the indenting departments for the above vacancies",
       "posting_date": "2026-10-13",
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "https://dsssb.d...",
       "official_source": true,
       "confidence": "primary_domain",
@@ -742,7 +748,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -783,7 +789,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-10",
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "Indian Coast Guard",
       "official_source": true,
       "confidence": "primary_domain",
@@ -824,7 +830,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -865,7 +871,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-09",
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "DRDO - ITR, Chandipur",
       "official_source": true,
       "confidence": "primary_domain",
@@ -906,7 +912,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -947,7 +953,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -988,7 +994,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-09T12:08:17.474553+00:00",
+      "discovered_at": "2026-11-10T11:41:27.471184+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
