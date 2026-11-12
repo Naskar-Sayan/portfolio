@@ -1,12 +1,18 @@
 {
-  "generated_at": "2026-11-11T11:29:17.812254+00:00",
+  "generated_at": "2026-11-12T11:47:15.669694+00:00",
   "window_days": 30,
-  "cutoff": "2026-10-12",
+  "cutoff": "2026-10-13",
   "discovery": {
-    "seed_count": 106,
-    "pages_crawled": 1130,
-    "domains_crawled": 139,
+    "seed_count": 113,
+    "pages_crawled": 1200,
+    "domains_crawled": 152,
     "source_stats": [
+      {
+        "host": "academics.iitd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
       {
         "host": "adminfacultyselection.iitr.ac.in",
         "seed_count": 0,
@@ -15,6 +21,12 @@
       },
       {
         "host": "admissions.ge.iitm.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "admser.chd.nic.in",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -44,12 +56,6 @@
         "jobs_found": 0
       },
       {
-        "host": "bhuiyan.cg.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "careers.iith.ac.in",
         "seed_count": 0,
         "pages_crawled": 9,
@@ -68,15 +74,9 @@
         "jobs_found": 0
       },
       {
-        "host": "chennaicorporation.gov.in",
+        "host": "chandigarhdistrict.nic.in",
         "seed_count": 1,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "cms.upsc.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
+        "pages_crawled": 5,
         "jobs_found": 0
       },
       {
@@ -92,6 +92,12 @@
         "jobs_found": 0
       },
       {
+        "host": "delhitourism.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "dget.ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -100,7 +106,7 @@
       {
         "host": "doe.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 3,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -118,19 +124,19 @@
       {
         "host": "dsde.goa.gov.in",
         "seed_count": 1,
-        "pages_crawled": 1,
+        "pages_crawled": 14,
         "jobs_found": 0
       },
       {
         "host": "dsssb.delhi.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 1
+        "jobs_found": 0
       },
       {
         "host": "ecampus.iitd.ac.in",
         "seed_count": 0,
-        "pages_crawled": 2,
+        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -170,6 +176,12 @@
         "jobs_found": 0
       },
       {
+        "host": "ep.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "erojgar.cg.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -206,10 +218,16 @@
         "jobs_found": 0
       },
       {
+        "host": "gailonline.com",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "ge.iitm.ac.in",
         "seed_count": 0,
-        "pages_crawled": 51,
-        "jobs_found": 4
+        "pages_crawled": 28,
+        "jobs_found": 1
       },
       {
         "host": "home.iitd.ac.in",
@@ -268,13 +286,13 @@
       {
         "host": "iitk.ac.in",
         "seed_count": 0,
-        "pages_crawled": 30,
-        "jobs_found": 4
+        "pages_crawled": 29,
+        "jobs_found": 3
       },
       {
         "host": "iitpkd.ac.in",
         "seed_count": 0,
-        "pages_crawled": 52,
+        "pages_crawled": 21,
         "jobs_found": 0
       },
       {
@@ -296,15 +314,33 @@
         "jobs_found": 0
       },
       {
+        "host": "in.iitd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "indiancoastguard.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 1
       },
       {
-        "host": "industries.tripura.gov.in",
+        "host": "indianrail.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "internal.iitd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "international.iitd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 30,
         "jobs_found": 0
       },
       {
@@ -332,6 +368,12 @@
         "jobs_found": 1
       },
       {
+        "host": "itiadmission.goa.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "itiemp.karnataka.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -339,6 +381,12 @@
       },
       {
         "host": "jakemp.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "jammu.nic.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -422,22 +470,16 @@
         "jobs_found": 0
       },
       {
-        "host": "nsb.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "nsedm.nagaland.gov.in",
         "seed_count": 1,
         "pages_crawled": 11,
         "jobs_found": 0
       },
       {
-        "host": "ntpc.co.in",
-        "seed_count": 2,
-        "pages_crawled": 60,
-        "jobs_found": 6
+        "host": "ocs.iitd.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
       },
       {
         "host": "ocs.iith.ac.in",
@@ -446,13 +488,25 @@
         "jobs_found": 0
       },
       {
+        "host": "odisha.gov.in",
+        "seed_count": 2,
+        "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
         "host": "odishatourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 16,
+        "seed_count": 3,
+        "pages_crawled": 18,
         "jobs_found": 0
       },
       {
         "host": "onlineemploymentportal.delhi.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "parcel.indianrail.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -476,9 +530,15 @@
         "jobs_found": 0
       },
       {
-        "host": "portal.ge.iitm.ac.in",
+        "host": "portal.iitb.ac.in",
         "seed_count": 0,
         "pages_crawled": 2,
+        "jobs_found": 0
+      },
+      {
+        "host": "powermin.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -502,7 +562,7 @@
       {
         "host": "recruitment.iitgn.ac.in",
         "seed_count": 0,
-        "pages_crawled": 18,
+        "pages_crawled": 7,
         "jobs_found": 1
       },
       {
@@ -518,20 +578,20 @@
         "jobs_found": 0
       },
       {
-        "host": "resap.iitpkd.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "revenue.cg.nic.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "rojgar.mahaswayam.gov.in",
         "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "rrb.indianrailways.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "sdct.goa.gov.in",
+        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -579,14 +639,14 @@
       },
       {
         "host": "ssc.gov.in",
-        "seed_count": 3,
-        "pages_crawled": 4,
+        "seed_count": 2,
+        "pages_crawled": 2,
         "jobs_found": 0
       },
       {
         "host": "ssccr.gov.in",
         "seed_count": 1,
-        "pages_crawled": 2,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -626,24 +686,6 @@
         "jobs_found": 0
       },
       {
-        "host": "upsc.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "upsconline.gov.in",
-        "seed_count": 2,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "upsconline.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "utcsdm.chdtechnicaleducation.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -656,9 +698,15 @@
         "jobs_found": 0
       },
       {
+        "host": "www.apprenticeship.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 7,
+        "jobs_found": 0
+      },
+      {
         "host": "www.apprenticeshipindia.gov.in",
         "seed_count": 0,
-        "pages_crawled": 2,
+        "pages_crawled": 3,
         "jobs_found": 0
       },
       {
@@ -692,10 +740,16 @@
         "jobs_found": 0
       },
       {
-        "host": "www.iitb.ac.in",
+        "host": "www.idc.iitb.ac.in",
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
+      },
+      {
+        "host": "www.iitb.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 60,
+        "jobs_found": 8
       },
       {
         "host": "www.iitbbs.ac.in",
@@ -708,6 +762,12 @@
         "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 1
+      },
+      {
+        "host": "www.iitd.ac.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
       },
       {
         "host": "www.iitdh.ac.in",
@@ -765,14 +825,32 @@
       },
       {
         "host": "www.incredibleindia.gov.in",
-        "seed_count": 5,
-        "pages_crawled": 7,
+        "seed_count": 9,
+        "pages_crawled": 15,
         "jobs_found": 0
       },
       {
         "host": "www.india.gov.in",
         "seed_count": 3,
         "pages_crawled": 3,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.indianculture.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ir.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 60,
+        "jobs_found": 0
+      },
+      {
+        "host": "www.ircc.iitb.ac.in",
+        "seed_count": 0,
+        "pages_crawled": 6,
         "jobs_found": 0
       },
       {
@@ -850,35 +928,35 @@
     ]
   },
   "quality": {
-    "raw_candidates": 3255,
-    "published_jobs": 249,
-    "rejected_or_deduplicated": 3006,
+    "raw_candidates": 3293,
+    "published_jobs": 246,
+    "rejected_or_deduplicated": 3047,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 249,
-    "published_jobs_after_gate": 35,
-    "rejected_by_scope_gate": 214,
+    "published_jobs_before_gate": 246,
+    "published_jobs_after_gate": 28,
+    "rejected_by_scope_gate": 218,
     "scope_counts": {
-      "state_other": 2,
       "central": 3,
+      "state_other": 1,
+      "institutional_indian_source": 3,
       "central_linked": 10,
-      "psu": 18,
-      "institutional_indian_source": 2
+      "psu": 11
     },
     "publication_tier_counts": {
-      "high_confidence": 11,
-      "verified": 24
+      "verified": 22,
+      "high_confidence": 6
     },
     "verified_precision_target": ">=98%",
     "gate_architecture": "hard exclusions -> provenance -> ownership -> evidence -> tier",
     "tier_qc": {
       "verified": {
-        "rows": 24,
+        "rows": 22,
         "failed": 0,
         "score": 1.0
       },
       "high_confidence": {
-        "rows": 11,
+        "rows": 6,
         "failed": 0,
         "score": 1.0
       }
@@ -899,7 +977,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE",
       "official_source": true,
       "confidence": "primary_domain",
@@ -941,7 +1019,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM",
       "official_source": true,
       "confidence": "primary_domain",
@@ -983,7 +1061,7 @@
       "pay": "pay ol Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1024,7 +1102,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1065,7 +1143,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1106,7 +1184,7 @@
       "pay": "rs. 2",
       "qualification": null,
       "posting_date": "2026-03-01",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1147,7 +1225,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1188,7 +1266,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1229,7 +1307,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2025-03-01",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1270,7 +1348,7 @@
       "pay": "rs,",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1311,7 +1389,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2026-01-01",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1340,48 +1418,6 @@
       "publication_score": 91
     },
     {
-      "id": "80deba3af29d0f45",
-      "title": "Job description 0",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
-      "deadline": null,
-      "vacancies": 1,
-      "age_limit_years": null,
-      "pay": "₹ 200000",
-      "qualification": "The applicant should be an Engineering Graduate/ Chartered Accountant/ Cost Accountant/ Post Graduate/ Graduate with MBA/PGDIM from a leading Institute",
-      "posting_date": "2024-01-08",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "No.8/1/2024-Th.(Part-I)(277298) Government of India Ministry of Power ***** Shram Shakti Bhawan, Rafi Marg New Delhi, Dated: 28th February, 2026 Subject: Appointment to the post of Chairman and Managing Director, NTPC Limited through Search-cum-selection Committee. Name of the CPSE : NTPC Ltd. Name of the post : Chairman & Managing Director (CMD) Date of Vacancy : 01.08.2026 Schedule of the CPSE : Schedule A Scale of the Post : ₹ 200000 – 370000 (IDA) l. COMPANY PROFILE: NTPC Limited was incorporated in 1975 under the companies act, 1956 with objective to develop and provide reliable power, related projects and services at competitive prices, integrating multiple energy sources with innovative and eco-friendly technologies and contribute to society. NTPC became a listed company in 2004, with majority holding of 89.50% with the Government of India which was further reduced from time to time. The Company has over the years, developed from a thermal power generator to an integrated power company with presence across entire energy value chain through backward and forward integration into areas such as coal mining power trading, distribution etc. On 19th May 2010, NTPC was granted the status of 'Maharatna' that resulted in enhanced autonomy in decision making. Its registered and corporate offices are at New Delhi. The company employed 16,689 regular employees (Executives: 12,319 and Non- executives: 4,370) as on 31.03.2025. The authorized and paid up capital of the Company was Rs. 16,600 crores and Rs. 9,696.7 crores respectively as on 31.03.2025. Government of India's equity in NTPC, stands at 51.10% as on 31.03.2025, the rest being held by Institutional Investors, public & others. ll. JOB DESCRIPTION AND RESPONSIBILITIES: The Chairman and Managing Director is the Chief Executive of the Corporation and is accountable to the Board of Directors and the Government. He/ She is responsible for the overall management and performance of the organization, including providing strategic direction, ensuring effective corporate governance, and overseeing the operations of the Corporation, its subsidiaries, and joint ventures. CMD shall lead the formulation and implementation of the Corporation’s long-term vision and strategy, ensure sustainable growth, and align organizational objectives with national priorities. The role also encompasses guiding expansion both organic and inorganic, across the power value chain, including generation, mining, renewables, nuclear, energy s",
-      "normalized_key": "verified news lead|job description 0",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "vacancy_count",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "verified",
-        "publication_score": 100,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "verified",
-      "publication_score": 100
-    },
-    {
       "id": "17e07fdd920c2db6",
       "title": "MAIN%20SRD 18.8.2026",
       "organization": "Indian Institute of Technology Delhi",
@@ -1394,7 +1430,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-II",
       "posting_date": "2026-02-01",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1423,47 +1459,6 @@
       "publication_score": 91
     },
     {
-      "id": "cd2eb644200e2676",
-      "title": "Note%20on%20Shortlisting%20for%20%20the%20post%20of%20CSO",
-      "organization": "Indian Institute of Technology Delhi",
-      "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Note%20on%20Shortlisting%20for%20%20the%20post%20of%20CSO.pdf",
-      "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Note%20on%20Shortlisting%20for%20%20the%20post%20of%20CSO.pdf",
-      "document_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Note%20on%20Shortlisting%20for%20%20the%20post%20of%20CSO.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
-      "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "INDIAN INSTITUTE OF TECHNOLOGY DELHI RECRUITMENT CELL Dated: 24.06.2026 Subject: Shortlisting for the post of Chief Security Officer at IIT Delhi. The Institute vide No. E -II/02/2026(DR) dated 26.02.2026 had invited online applications for filling-up 01 (UR) post of Chief Security Officer in Level -12 of Pay Matrix as per 7th CPC for Security Staff Cadre. Total 83 applications were received for the said post. The Shortlisting Committee has scrutinized the applications of the applicants in the light of prescribed essential educational qualification/experience and the ‘General Instructions’ of the advertisement for this post. The following essential criteria were mentioned in the advertisement: Essential Qualification/ Experience: 1. Commissioned Officer of Army/ Navy/ Air Force or Deputy Superintendent of Police or Assistant Commandant of Police/ Security Force having a Bachelor’s degree or equivalent from a recognized University with at least 55% marks in the qualifying degree with 15 years relevant experience out of which minimum five years must be in Pay Level-11 or at least 13 years in Pay Level-10. OR A Master’s Degree from a recognized University with at least 55% marks in the qualifying degree with at least 15 years relevant experience out of which at least 07 years’ experience in the Supervisory capacity in Pay Level-11 or its equivalent in the Police or in a big security organization, educational Institution/ University/ PSU etc. OR A Bachelor’s Degree from a recognized University with at least 55% marks in the qualifying degree with at least 20 years relevant experience out of which at least 07 years’ experience in the Supervisory capacity in Pay Level-11 or its equivalent in the Police or in a big security organization educational Institution/ University/ PSU etc. 2. Should be able to ride motorcycle, motor car and handle firearms. 3. Should be of sound health. 4. Should be conversant with security rules and procedures to deal with Police and the Public. Based on the criteria mentioned above, 27 applicants have been provisionally shortlisted, and 56 applicants found not shortlisted. Please note that the Shortlisting for the above post is “Provisional” and is subject to verification of original certificates/ documents pertaining to his/her Educational Qualification, Marksheet, Experience & Salary etc. which he/she has mentioned in his/her online application. At any stage, if any applicant is found ineligible, his/her candidature for the said post",
-      "normalized_key": "verified news lead|note 20on 20shortlisting 20for 20 20the 20post 20of 20cso",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "verified",
-        "publication_score": 82,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "verified",
-      "publication_score": 82
-    },
-    {
       "id": "b648f93a262e38c6",
       "title": "Note%20on%20Shortlisting%20for%20%20the%20post%20of%20EE%20(Civil)",
       "organization": "Indian Institute of Technology Delhi",
@@ -1476,7 +1471,7 @@
       "pay": null,
       "qualification": "required and the ‘General Terms and Conditions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1517,7 +1512,7 @@
       "pay": "Pay of Rs. 8700",
       "qualification": "required and the ‘General Terms and Conditions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1558,7 +1553,7 @@
       "pay": null,
       "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1599,7 +1594,7 @@
       "pay": null,
       "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1640,7 +1635,7 @@
       "pay": null,
       "qualification": "/experience and the ‘‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1681,7 +1676,7 @@
       "pay": "Pay of Rs. 6600",
       "qualification": "/experience and the ‘General Instructions’ of the advertisement for this post",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1722,7 +1717,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1763,7 +1758,7 @@
       "pay": null,
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure -II",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1804,7 +1799,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-2",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1845,7 +1840,7 @@
       "pay": "rs,",
       "qualification": "of Persons with Benchmark Disabilities (PwBD) for recruitment at IIT Delhi is specified in Annexure-2",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1874,49 +1869,6 @@
       "publication_score": 91
     },
     {
-      "id": "56e650cc38f0de02",
-      "title": "final advt 05 2026",
-      "organization": "https://dsssb.d...",
-      "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026.pdf",
-      "application_url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026.pdf",
-      "document_url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026.pdf",
-      "deadline": "2026-11-11",
-      "vacancies": 12,
-      "age_limit_years": null,
-      "pay": "Pay Scale:- ₹5,200-20,200/- + Grade Pay ₹2000",
-      "qualification": "as per the Recruitment Rules of the indenting departments for the above vacancies",
-      "posting_date": "2026-10-13",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
-      "source": "https://dsssb.d...",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Page 1 of 23 To Download Advertisement, Scan → No. F.1(451)/P&P/DSSSB/2026/Advt./5134 Dated: 09.10.2026 VACANCY NOTICE ADVERTISEMENT NO. 05/2026 The opening date and closing date for receipt of online applications are as under : - Opening Date for Submission of Online Applications: - 13/10/2026 ( 13th October, 2026) (From 12.00 Noon) Closing Date for Submission of Online Applications :- 11/11/2026 ( 11th November, 2026) (Till 11.00 PM) Delhi Subordinate Services Selection Board (DSSSB) invites online applications on behalf of District and Sessions Courts from eligible candidates from Indian Nationals (citizens of India as defined in the Constitution of India or under any law made by the Parliament to regulate the rights for citizenship) for recruitment to the posts of Sweeper / Safai Karamchari and Chowkidar against vacancies in District & Sessions Courts as per details given below : S No Post Code Name of the Post Name of Deptt. Group Vacancies* UR OBC SC ST EWS Total PwBD (incl.) ESM (incl.) MSP (incl.) 1 46/26 Sweeper/Safai karamchari District & Sessions Courts C 5 2 1 1 1 10 0 1 0 2 47/26 Chowkidar District & Sessions Courts C 7 4 2 1 1 15 0 1 0 TOTAL VACANCIES 12 6 3 2 2 25 0 2 0 *The above vacancies are tentative and based on inputs of the indenting Departments/ Bodies. Candidates must apply online through the website https://dsssbonline.nic.in. The closing date for submission of online application is up to 11/11/2026 (till 11:00 PM) after which the link will be disabled. DSSSB will conduct examinations for making recruitment against the vacancies notified above. The applicants are advised to visit DSSSB’s website i.e . https://dsssb.delhi.gov.in/dsssb-vacancies or scan the QR code to check the detailed advertisement to confirm eligibility as per the Recruitment Rules of the indenting departments for the above vacancies. The date of conduct of examinations / interview will be intimated in due course only through the website of the Board / District and Sessions Courts. GOVERNMENT OF NCT OF DELHI Delhi Subordinate Services Selection Board (D.S.S.S.B) FC-18, INSTITUTIONAL AREA, KARKARDOOMA, DELHI-110092 Website: https://dsssb.delhi.gov.in Page 2 of 23 Further, candidates are advised to visit website of the Board and Delhi District Courts on regular basis to get updates. The Board shall not be responsible for any lapse on the part of the candidate in this regard. IMPORTANT NOTE:- The candidates must submit their application through Online Mode only. No o",
-      "normalized_key": "https dsssb d|final advt 05 2026",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "vacancy_count",
-          "deadline",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "state_other",
-        "publication_tier": "high_confidence",
-        "publication_score": 100,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "state_other",
-      "publication_tier": "high_confidence",
-      "publication_score": 100
-    },
-    {
       "id": "7c8eda7b69c1bfa7",
       "title": "Advertisement (English)",
       "organization": "Indian Institute of Technology Delhi",
@@ -1929,7 +1881,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -1958,47 +1910,6 @@
       "publication_score": 73
     },
     {
-      "id": "5edc974ae1a4478e",
-      "title": "Advertisement for \"Special Recruitment Drive for the persons with disabilities\"",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Advertisement for \"Special Recruitment Drive for the persons with disabilities\"",
-      "normalized_key": "verified news lead|advertisement for special recruitment drive for the persons with disabilities",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
       "id": "6aafa6acf24e3fd2",
       "title": "Advertisement%20 %20IIT%20Kharagpur%20 %20To%20be%20Published%20in%20Newspapers",
       "organization": "Indian Institute of Technology Delhi",
@@ -2011,7 +1922,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2052,7 +1963,7 @@
       "pay": "pay of Rs. 2,25,000",
       "qualification": null,
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2093,7 +2004,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-10",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Indian Coast Guard",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2122,47 +2033,6 @@
       "publication_score": 73
     },
     {
-      "id": "264af47d05913609",
-      "title": "Dedication to the nation Dadri Stage II Advertisement",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_4.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Dedication to the nation Dadri Stage II Advertisement",
-      "normalized_key": "verified news lead|dedication to the nation dadri stage ii advertisement",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
       "id": "2221982b22684c46",
       "title": "Graduate Apprentice & Technician (Diploma) Apprentice",
       "organization": "DRDO - ITR, Chandipur",
@@ -2175,7 +2045,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-09",
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "DRDO - ITR, Chandipur",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2204,19 +2074,19 @@
       "publication_score": 73
     },
     {
-      "id": "16e6ead6e6c420fa",
-      "title": "NTPC Recruitment Ad",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
+      "id": "0989f155ca29286e",
+      "title": "Rolling Advertisement",
+      "organization": "Indian Institute of Technology Delhi",
+      "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
+      "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
+      "document_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
       "deadline": null,
       "vacancies": null,
       "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
+      "pay": "rs,",
+      "qualification": "(for all faculty positions): Ph",
       "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
+      "discovered_at": "2026-11-12T11:47:15.669694+00:00",
       "source": "Verified news lead",
       "official_source": true,
       "confidence": "primary_domain",
@@ -2224,8 +2094,8 @@
       "notice_type": "recruitment",
       "is_update": false,
       "kind": "recruitment_notice",
-      "raw_text": "",
-      "normalized_key": "verified news lead|ntpc recruitment ad",
+      "raw_text": "Faculty Positions : Associate and Full Professors Rolling Advertisement No. IITD/2026/PROF-1 Dated 23.3.2026 for the post of Associate Professor and Professor Rolling Advertisement Apply Now Benefits and Incentives",
+      "normalized_key": "verified news lead|rolling advertisement",
       "quality": {
         "valid": true,
         "evidence": [
@@ -2235,96 +2105,14 @@
           "specific_title"
         ],
         "rejection_reasons": [],
-        "scope": "psu",
+        "scope": "institutional_indian_source",
         "publication_tier": "high_confidence",
-        "publication_score": 73,
+        "publication_score": 91,
         "scope_gate": "multi_stage_v2"
       },
-      "scope": "psu",
+      "scope": "institutional_indian_source",
       "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
-      "id": "cb0e983a9ac76745",
-      "title": "Price Discovery Advertisement",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/advertisements-archive_8.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "Price Discovery Advertisement",
-      "normalized_key": "verified news lead|price discovery advertisement",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
-    },
-    {
-      "id": "d2008c8d6407c129",
-      "title": "Special Recruitment Drive for the persons with disabilities",
-      "organization": "NTPC Ltd.",
-      "url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "application_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "document_url": "https://ntpc.co.in/sites/default/files/inline-files/Special-Recruitment-Drive-for-the-persons-with-disabilities.pdf",
-      "deadline": null,
-      "vacancies": null,
-      "age_limit_years": null,
-      "pay": null,
-      "qualification": null,
-      "posting_date": null,
-      "discovered_at": "2026-11-11T11:29:17.812254+00:00",
-      "source": "Verified news lead",
-      "official_source": true,
-      "confidence": "primary_domain",
-      "verification": "primary_domain_match",
-      "notice_type": "recruitment",
-      "is_update": false,
-      "kind": "recruitment_notice",
-      "raw_text": "",
-      "normalized_key": "verified news lead|special recruitment drive for the persons with disabilities",
-      "quality": {
-        "valid": true,
-        "evidence": [
-          "strong_recruitment_term",
-          "application_link",
-          "recruitment_document",
-          "specific_title"
-        ],
-        "rejection_reasons": [],
-        "scope": "psu",
-        "publication_tier": "high_confidence",
-        "publication_score": 73,
-        "scope_gate": "multi_stage_v2"
-      },
-      "scope": "psu",
-      "publication_tier": "high_confidence",
-      "publication_score": 73
+      "publication_score": 91
     }
   ],
   "scope_policy": {
