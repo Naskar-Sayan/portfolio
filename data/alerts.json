@@ -1,28 +1,14 @@
 {
-  "generated_at": "2026-11-12T12:21:55.530495+00:00",
+  "generated_at": "2026-11-13T11:57:09.378089+00:00",
   "baseline": false,
   "summary": {
-    "new_jobs": 1,
+    "new_jobs": 0,
     "updated_jobs": 0,
     "deadline_alerts": 0,
     "total_jobs_checked": 28
   },
-  "new_jobs": [
-    {
-      "id": "0989f155ca29286e",
-      "title": "Rolling Advertisement",
-      "organization": "Indian Institute of Technology Delhi",
-      "deadline": null,
-      "vacancies": null,
-      "pay": "rs,",
-      "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
-      "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf",
-      "official_source": true,
-      "is_update": false,
-      "notice_type": "recruitment"
-    }
-  ],
+  "new_jobs": [],
   "updated_jobs": [],
   "deadline_alerts": [],
-  "notification_text": "NEW: Rolling Advertisement | Indian Institute of Technology Delhi | Last date: N/A | https://home.iitd.ac.in/jobs-iitd/uploads/Rolling Advt. IITD 2026 PROF-1_23.3.2026.pdf"
+  "notification_text": ""
 }
