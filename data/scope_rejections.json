@@ -1,23 +1,20 @@
 {
-  "generated_at": "2026-11-15T11:49:22.079928+00:00",
-  "rejected_count": 47,
+  "generated_at": "2026-11-16T12:18:31.310359+00:00",
+  "rejected_count": 113,
   "scope_counts": {
     "central": 3,
-    "state_other": 1,
-    "institutional_indian_source": 3,
-    "central_linked": 10,
-    "psu": 11
+    "state_other": 1
   },
   "tier_counts": {
-    "verified": 22,
-    "high_confidence": 6
+    "verified": 2,
+    "high_confidence": 2
   },
   "rejected": [
     {
-      "id": "4c2a4f801ce90813",
-      "title": "Internships Fellowships Opportunities | OGE IIT Madras",
+      "id": "25ea258ad1b221dd",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector (Post Code NR19124) in National Center for Vector Borne Diseases Control under Selection Post Phase-XII/2024-Reg. [31 Aug 2026]",
       "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -25,10 +22,10 @@
       "score": 0
     },
     {
-      "id": "5a8356d78adcb210",
-      "title": "2027 CCU/CoE International Internship Program | OGE IIT Madras",
+      "id": "6118cb31de932b4f",
+      "title": "Corrigendum Recruitment to the post of Office Superintendent advertised vide post code NR21024 Phase-XII/2024/Selection Posts- reg.[06 June 2026]",
       "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/2027-ccucoe-international-internship-program",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -36,10 +33,10 @@
       "score": 0
     },
     {
-      "id": "e7eb3b8d146659c7",
-      "title": "Science Tokyo AOTULE Summer Program 2027 | OGE IIT Madras",
+      "id": "d2c5cecdd4595ebc",
+      "title": "Corrigendum regarding withdrawal of 01 vacancy for the Post of Library & Information Assistant advertised vide Post Code NR18724 Phase-XII/2024/Selection Post.[24 April 2026]",
       "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/science-tokyo-aotule-summer-program-2027",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -47,10 +44,10 @@
       "score": 0
     },
     {
-      "id": "3fb5ddd0cfbe56bf",
-      "title": "Call for Applications: Kyoto University Amgen Scholars Program 2027 | OGE IIT Madras",
+      "id": "1e59ea63d90d3ae8",
+      "title": "Cancellation Notice Cancellation of Post Code NR12724 (01-SC Vacancy) – Research Investigator in Department of Land Resources under Selection Post Phase-XII/2024-Reg. [23 Mar 2026]",
       "organization": "Verified news lead",
-      "url": "https://ge.iitm.ac.in/programs/student-outbound/internships-fellowships/opportunities/call-for-applications-kyoto-university-amgen-scholars-program-2027",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -58,10 +55,10 @@
       "score": 0
     },
     {
-      "id": "064756ebefb5159f",
-      "title": "View the Recruitment and Promotion Norms",
+      "id": "de81b9367e8f79da",
+      "title": "Cancellation Notice Cancellation of the vacancy of Mud Plaster in National Crafts Museum & Hastkala Academy, M/o Textiles Post Category No. NR21524 advertised under Phase-XII/2024 Selection Posts-reg. [21 Jan 2026]",
       "organization": "Verified news lead",
-      "url": "https://www.iitm.ac.in/sites/default/files/Promotion%20Norms/recruitment-and-promotion-norms.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -69,10 +66,10 @@
       "score": 0
     },
     {
-      "id": "9541686d349fc0bd",
-      "title": "Engagement of Lab technician on hourly basis, walk in interview on 29.09.2026 - THDC Institute of Hydropower Engineering and Technology",
+      "id": "979ee11dc2344b70",
+      "title": "Cancellation Notice Cancellation of the following vacancies in National Crafts Museum & Hastkala Academy, M/o Textiles advertised under Phase XIII/2025 Selection Posts-reg. [21 Jan 2026]",
       "organization": "Verified news lead",
-      "url": "https://thdcihet.ac.in/engagement-of-lab-technician-on-hourly-basis-walk-in-interview-on-29-09-2026/",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -80,10 +77,10 @@
       "score": 0
     },
     {
-      "id": "b4ae2cdf33d82cc6",
-      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS [IITM/R/5/2025 dated 24.09.2025]",
+      "id": "0531911ccabcf5c6",
+      "title": "Corrigendum Recruitment to the post of Civil Motor Driver (Ordinary Grade) Post Category No. NR32623 advertised under Phase-XI/2023/Selection Posts Examination. [23 Dec 2025]",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -91,10 +88,10 @@
       "score": 0
     },
     {
-      "id": "51560ca86ca60e86",
-      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS (Application portal will open on 27.09.2025)",
+      "id": "821056094e819e3f",
+      "title": "Corrigendum WITHDRAWAL OF 05 VACANCIES FOR THE POST CODE NR28823 PHASE-XI/2023 (DATA ENTRY OPERATOR (DEO). [18 Aug 2025]",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -102,10 +99,10 @@
       "score": 0
     },
     {
-      "id": "e77c68acbfd6b662",
-      "title": "Detailed Advertisement & GENERAL INSTRUCTIONS",
+      "id": "9370b28653b33ffc",
+      "title": "Corrigendum Vacancy reserved for Ex-servicemen (ESM) as “NIL” for the Post Code NR10424 of Selection Posts Phase-XII/2024. [12 Aug 2025]",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R425_Detailed_Advt_and_instructions.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -113,10 +110,10 @@
       "score": 0
     },
     {
-      "id": "ad3dcc1bf4c16247",
-      "title": "R525 Detailed Advt and instructions",
+      "id": "679cf3846a2b5e0c",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code-NR12923 Phase XI/2023. [15 July 2025]",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_Detailed_Advt_and_instructions.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -124,10 +121,10 @@
       "score": 0
     },
     {
-      "id": "410bcf5677cf7587",
-      "title": "R525 DR L1list",
+      "id": "36962373c9646c34",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code NR12723 and NR12823 Phase XI/2023. [12 Mar 2025]",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-DR-L1list.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12723_NR12823_12032025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -135,10 +132,10 @@
       "score": 0
     },
     {
-      "id": "8ca86983478404c3",
-      "title": "R525 DR L1 addshortlisted",
+      "id": "dd3ae1267c4ae302",
+      "title": "Detailed Advertisement",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-DR-L1-addshortlisted.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/DetailedAdvtTraineeEngineerthruGATE2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -146,10 +143,10 @@
       "score": 0
     },
     {
-      "id": "19e2360c7dc4bb68",
-      "title": "R525 DRAR L1Schedule",
+      "id": "3bb2772660f5701a",
+      "title": "Window Advertisement -English",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-DRAR-L1Schedule.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/023-Powergrid-8x10-Recruitment-Ad.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -157,10 +154,10 @@
       "score": 0
     },
     {
-      "id": "56646570288316f6",
-      "title": "R525 DRAR L2 Schedule",
+      "id": "7cf04f6e08f595c6",
+      "title": "Window Advertisement-Hindi",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_DRAR_L2_Schedule.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/024-Powergrid-8x10-Recruitment-Ad.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -168,10 +165,10 @@
       "score": 0
     },
     {
-      "id": "55b2356cbe265131",
-      "title": "R525 DR Selected",
+      "id": "b9b9ec9f34b0435f",
+      "title": "Notice-1-Recruitment Portal Unavailable from 12 AM to 01 AM for 1 Hour on 30th April 2026",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-DR-Selected.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-1-Recruitment%20Portal%20Unavailable%20from%2012%20AM%20to%2001%20AM%20for%201%20Hour%20on%2030th%20April%202026_0.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -179,10 +176,10 @@
       "score": 0
     },
     {
-      "id": "10eb809f1f4b6bcb",
-      "title": "R525 AR L1list",
+      "id": "38bfc0c3d1e15fbe",
+      "title": "Notice 01-2025 dtd 30-09-2025 - Vacancy Notification",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-AR-L1list.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/DetailedAdvt_2_ETGATE2025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -190,10 +187,10 @@
       "score": 0
     },
     {
-      "id": "8fad1beade097cf5",
-      "title": "R525 AR L1 addshortlisted",
+      "id": "6b399ad0bbc34fcd",
+      "title": "Notice-4 Regarding unfilled vacancies",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-AR-L1-addshortlisted.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice4_1.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -201,10 +198,10 @@
       "score": 0
     },
     {
-      "id": "b5427bc2e1a58c5a",
-      "title": "R525 AR Selected",
+      "id": "efc25a2f7b2922bb",
+      "title": "Notice 04/2025 dtd 25-04-2025 - Recruitment Closure Notice (EE/CS)",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-AR-Selected.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice_04_2025_dtd_25_04_2025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -212,10 +209,10 @@
       "score": 0
     },
     {
-      "id": "e59a4c5ba444f683",
-      "title": "R525 HVAC Officer L1",
+      "id": "29e507cd10c10329",
+      "title": "Notice 05/2025 dtd 10-09-2025 - Recruitment Closure Notice (CE/EC)",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_HVAC_Officer_L1.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Closure_Notice_CE_EC.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -223,10 +220,10 @@
       "score": 0
     },
     {
-      "id": "d9af9ec47c2e4ce2",
-      "title": "R525 HVACOfficer L1L2schedule",
+      "id": "b4b3ff00a59be803",
+      "title": "Detailed Advertisement (Application Window Dates are tentative)",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_HVACOfficer_L1L2schedule.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Aot_HR_Detailed_Advertisement_09012023.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -234,10 +231,10 @@
       "score": 0
     },
     {
-      "id": "553a5c038e88f510",
-      "title": "R525 HVAC Officer Selected",
+      "id": "52344bc3830a857e",
+      "title": "Notice-6 regarding 2nd Attempt for filling of balance vacancies of DVC for the post of Management Trainee (HR)",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-HVAC_Officer-Selected.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-6-dtd-18-10-2023-2nd-Attempt-for-filling-of-balance-vacancies-of-DVC-for-MT-HR.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -245,10 +242,10 @@
       "score": 0
     },
     {
-      "id": "b0627348feb2b2ce",
-      "title": "R525 TO SOE",
+      "id": "fb9f5de8ae0e8ce9",
+      "title": "Call Letter for Interview in 2nd Attempt for Balance vacancies of DVC",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_TO_SOE.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-7-dated-27-10-2023-Call-Letter-for-Interview-DVC.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -256,10 +253,10 @@
       "score": 0
     },
     {
-      "id": "2ed8a728df394284",
-      "title": "R525 TO L1",
+      "id": "e3bff29e900eb9c9",
+      "title": "Notice-5-Revision in notified vacancies and opportunity to revise the choice of Region",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_TO_L1.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-5-Revision%20in%20notified%20vacancies%20and%20opportunity%20to%20revise%20the%20choice%20of%20Region.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -267,10 +264,10 @@
       "score": 0
     },
     {
-      "id": "6d573d2d41752f7c",
-      "title": "R525 TO Selected",
+      "id": "5888e28cc3c01b4e",
+      "title": "Notice-15-Notice regarding recruitment for CTUIL",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-TO-Selected.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-15-%20Notice%20regarding%20recruitment%20for%20CTUIL.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -278,10 +275,10 @@
       "score": 0
     },
     {
-      "id": "e707147f4b839bde",
-      "title": "R525 EE Selected",
+      "id": "5f2e0880312569f1",
+      "title": "Corrigendum to Advertisement",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-EE-Selected.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Corrigendum_to_Advertisement_0.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -289,10 +286,10 @@
       "score": 0
     },
     {
-      "id": "50093a13a46de2e8",
-      "title": "R525 AEE L1",
+      "id": "439f351815ce3c35",
+      "title": "Notice 8_Notification of vacancies",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_AEE_L1.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice8_0.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -300,10 +297,10 @@
       "score": 0
     },
     {
-      "id": "78be1156473dfd3e",
-      "title": "R525 AEE Selected",
+      "id": "fabc7187baf0985e",
+      "title": "Notification of vacancies for RDSS project",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-AEE-Selected.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice%20for%20vacancies%20for%20RDSS%20project.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -311,10 +308,10 @@
       "score": 0
     },
     {
-      "id": "abb24e7216399266",
-      "title": "R525 STO L1",
+      "id": "f78a108c824878f6",
+      "title": "Regarding change of jurisdiction of Regions and addition of vacancies for ER-I & ER-II",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_STO_L1.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-9_Jurisdiction%20of%20Regions.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -322,10 +319,10 @@
       "score": 0
     },
     {
-      "id": "d224c78042d21c29",
-      "title": "R525 STO L1 addshortlisted",
+      "id": "fa9b582b2d0c1854",
+      "title": "Notice-10_Notification of vacancies in second phase",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-STO-L1-addshortlisted.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-10_Notification%20of%20vacancies%20in%20second%20phase.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -333,10 +330,10 @@
       "score": 0
     },
     {
-      "id": "66166215adafd9b4",
-      "title": "R525 STO L1L2Schedule",
+      "id": "972b6c5ef61ddf83",
+      "title": "Recruitment Closure Notice dated 09.10.2025",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_STO_L1L2Schedule.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/ClosurenoticeCSProfOC_0.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -344,10 +341,10 @@
       "score": 0
     },
     {
-      "id": "e3be26b3c838d22e",
-      "title": "R525 STO Selected",
+      "id": "3b498c72dc761be9",
+      "title": "Detail Advertisement",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-STO-Selected.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Detailed_Advertisement_1.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -355,10 +352,10 @@
       "score": 0
     },
     {
-      "id": "b49bb391b196dfa5",
-      "title": "R525 JE CE SOE",
+      "id": "5123db70991a3e9a",
+      "title": "Vacancy Notification - Director (Projects)",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_JE_CE_SOE.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/inline-files/Vacancy%20notification%20for%20POWERGRID%20website.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -366,10 +363,10 @@
       "score": 0
     },
     {
-      "id": "40d1e90574d3bbd6",
-      "title": "R525 JE EE SOE",
+      "id": "8da83706ddfe71c4",
+      "title": "Vacancy Notification - Director (Operations)",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_JE_EE_SOE.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/inline-files/Vacancy_notification_Dir_operations.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -377,10 +374,10 @@
       "score": 0
     },
     {
-      "id": "98353f873049d2c5",
-      "title": "R525 JE HVAC SOE",
+      "id": "0929a02ff1d6517c",
+      "title": "Vacancy Notification - Director (Finance)",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_JE_HVAC_SOE.pdf",
+      "url": "https://www.powergrid.in/sites/default/files/inline-files/Director_Finance_Vacancy.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -388,10 +385,10 @@
       "score": 0
     },
     {
-      "id": "31adf17c25151282",
-      "title": "R525 JE CE L1",
+      "id": "169319dcddb4d011",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JE-CE-L1.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -399,10 +396,10 @@
       "score": 0
     },
     {
-      "id": "660b70d786ab3f53",
-      "title": "R525 JECE L1 addshorlisted",
+      "id": "726306cd71838359",
+      "title": "Cancellation Notice NR15125",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JECE-L1-addshorlisted.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_Notice_NR15125.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -410,10 +407,10 @@
       "score": 0
     },
     {
-      "id": "e67bf9b50c567f56",
-      "title": "R525 JE EE L1",
+      "id": "ffe434ec6f53ac85",
+      "title": "Corrigendum NR21024",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JE-EE-L1.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -421,10 +418,10 @@
       "score": 0
     },
     {
-      "id": "6c10e9c7760474e4",
-      "title": "R525 JE CE L2",
+      "id": "f84210518433afce",
+      "title": "CancelNotice 31623",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JE-CE-L2.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/CancelNotice_31623.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -432,10 +429,10 @@
       "score": 0
     },
     {
-      "id": "3eecb5301292dd90",
-      "title": "R525 JEEE L2",
+      "id": "1f301afd527fed84",
+      "title": "Corrigendum NR 18724",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JEEE-L2.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -443,10 +440,10 @@
       "score": 0
     },
     {
-      "id": "bebac9062dc4dcb2",
-      "title": "R525 JE L1L2Schedule",
+      "id": "13053bd431eb72bb",
+      "title": "Cancellation Notice NR12724",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_JE_L1L2Schedule.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -454,10 +451,10 @@
       "score": 0
     },
     {
-      "id": "6dbd36c26ec38d6d",
-      "title": "R525 Corrigendum",
+      "id": "87b41b5962751332",
+      "title": "Cancel Notice NR21524",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525_Corrigendum.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -465,10 +462,10 @@
       "score": 0
     },
     {
-      "id": "dd79a00315898d87",
-      "title": "R525 JE Selected",
+      "id": "6fa64bd6b74d8228",
+      "title": "Cancel Notice NR17525 NR17625 NR17725 NR17825",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JE-Selected.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -476,10 +473,10 @@
       "score": 0
     },
     {
-      "id": "9051ecd46ae85828",
-      "title": "R525 JA L1list",
+      "id": "6442f55acf66c7a1",
+      "title": "Corr 32623 231222025",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JA-L1list.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -487,10 +484,10 @@
       "score": 0
     },
     {
-      "id": "8ecf0a78def94955",
-      "title": "R525 JA L1 addshortlisted",
+      "id": "5a9e0e0d7e053216",
+      "title": "Corrigendum SSC NR11925 NR12025 and NR16325",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JA-L1-addshortlisted.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corrigendum_SSC_NR11925_NR12025_and_NR16325.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -498,10 +495,10 @@
       "score": 0
     },
     {
-      "id": "3bb9b3cde2f3ef01",
-      "title": "R525 JA L2",
+      "id": "c04d5202cbb7e3d0",
+      "title": "CORRIGENDUM NR28823 18082025",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R525-JA-L2.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -509,10 +506,10 @@
       "score": 0
     },
     {
-      "id": "5df3f0f3081cab1b",
-      "title": "R425 LB PI",
+      "id": "e2c48abb3061cde3",
+      "title": "Cancel Notice NR25024 12082025",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R425_LB_PI.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancel_Notice_NR25024_12082025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -520,12 +517,738 @@
       "score": 0
     },
     {
-      "id": "32775a14dad62d76",
-      "title": "R425 LB selected",
+      "id": "2d86c838d2763226",
+      "title": "Corrigendum NR10424 12082025",
       "organization": "Verified news lead",
-      "url": "https://recruit.iitm.ac.in/include/R425_LB_selected.pdf",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
       "reasons": [
         "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3494d0a9be88d62e",
+      "title": "CORRIGENDUM NR12923 15072025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e0e89127ab4654b1",
+      "title": "Cancellation Notice for NR14122 to NR15722 25062025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR14122_to_NR15722_25062025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "54feaec5e5272e32",
+      "title": "Cancellation Notice for NR11322 NR11422 NR11622",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR11322_NR11422_NR11622.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0eef9c935f8a2099",
+      "title": "CANCELLATION NOTICE NR14423 NR17623 28032025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR14423_NR17623_28032025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b883c0ccfc6d6594",
+      "title": "CANCELLATION NOTICE NR15523 07012025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR15523_07012025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "42b4856c52a402e3",
+      "title": "Details â€” Advertisement No.SIC/Advisor/01/2026 w.r.t. Engagement of Advisor for NVCFL (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "65e3c5f4e6d3e34b",
+      "title": "Details â€” Engagement of Young Professionals on Contract Basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "774c30060aa87aed",
+      "title": "Details â€” Notice dated 27.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026127191629.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "654c6d5fae7bc10b",
+      "title": "Details â€” Notice dated 20.01.2026 w.r.t. Verification of documents and Schedule of Interview against Advt. No. NSIC/HR/16/2025, dated 25.10.2025 - Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entr",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026120184824.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b09bbca33a2a07ed",
+      "title": "Details â€” Advertisement for Engagement of MSME Relationship Manager (On Contract Basis) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251118183938.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ae52409fd5b3e5da",
+      "title": "Details â€” Advertisement for Engagement of Civil Engineer (On Contract Basis) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112258.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "326ccec0e828ab38",
+      "title": "Details â€” Advertisement for Engagement of Electrical Engineer (On Contract Basis) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251119112220.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0866d731cd1917a8",
+      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Special Recruitment Drive for SC/ST/OBC including PwBD for lateral entry to the various posts at Executive level (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ec6e633aad4810d7",
+      "title": "Details â€” Advt. No. NSIC/HR/16/2025, Recruitment for lateral entry to the various posts at Executive Level (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c675a92e7b929f5c",
+      "title": "Details â€” Corrigendum w.r.t. Advertisement No. NSIC/HR/15/2025 dated 03.09.2025 inviting applications from Professionals with suitable domain expertise to be engaged as Lead- TReDs (on contract basis) in the Corporatio",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202595173243.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f067061f308b4023",
+      "title": "Details â€” Notice dt. 09.05.2025 w.r.t. Schedule of Interview against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 Special Recruitment Drive to the post of General Manager (E-5) / Deputy General Manager (E-4), Chief Mana",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025510201915.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "408cbe5dace4b9c9",
+      "title": "Details â€” Schedule of Interview against Special Recruitment Drive for SC, ST, OBC (including PwBD) against Advt. No. NSIC/HR/13/2025, dated 08.02.2025 for the post of Deputy General Manager (Finance & Accounts) (E-4 Le",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/HR_Noticedated01052025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e9414782f84592cd",
+      "title": "Details â€” Schedule of Interview against Advt. No. Advt. No. NSIC/HR/13/2025 Dated: 08.02.2025 for the post of Deputy Manager (Finance & Accounts) (E-1 Level), Special Recruitment Drive for SC, ST, OBC (including PwBD)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/Notice_ 29042025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0826763720660135",
+      "title": "Details â€” Notice: Advertisement No. NSIC/HR/14/2025 dated 28.01.2025 w.r.t. engagement of Consultants in the field of MSME Credit Product Structuring and Implementation, NBFC Regulation and Operation, Strategy & Ventur",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025212174123.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b58805602bf9f2cf",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025 , Special Recruitment Drive for SC, ST, OBC (Including PwBD) to the various posts (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "22729a8282109af6",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Deputy Manager (Finance & Accounts) and Manager (Finance & Accounts) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "94b77ea920ef8caa",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Technology (Works & Estate) (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "557d5747c56fc623",
+      "title": "Details â€” Advt. No. NSIC/HR/13/2025, Recruitment to the post of Senior General Manager or Chief General Manager in the functional area of Human Resource (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c9eae95a1ff1599f",
+      "title": "Details â€” Engagement of Consultant (MSME Credit Product Structuring and Implementation) on part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134013.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "209d3b157cd77793",
+      "title": "Details â€” Engagement of Consultant (NBFC Regulations & Operations) on part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134052.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b57e9b3b17b52a05",
+      "title": "Details â€” Engagement of Consultant (Strategy and Venture) on part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2025128134129.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6206d5684a37447a",
+      "title": "Details â€” Engagement of Consultant (Human Resource) on Part time basis (opens in new tab)",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3ac1147c1c6a799b",
+      "title": "CC Detailed Advertisement,,.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/CC%20%20Detailed%20Advertisement%2C%2C.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "547940f723593e36",
+      "title": "NR-I Detailed Advertisement..pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NR-I%20Detailed%20Advertisement..pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "83fc5e1cd9e199ff",
+      "title": "NR-II Detailed Advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NR-II%20%20Detailed%20Advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1dc0de7cda3bfeee",
+      "title": "NR III Detailed Advertisement;.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NR%20III%20Detailed%20Advertisement%3B.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "68261526fec5edf2",
+      "title": "NWR Detailed Advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NWR%20%20Detailed%20Advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "eb163037af1ddafb",
+      "title": "ER-I Detailed advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/ER-I%20Detailed%20advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "15a4d50dd4fac170",
+      "title": "ER-II Detailed Advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/ER-II%20Detailed%20Advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "df188d3727d10932",
+      "title": "WR-1 Detailed Advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/WR-1%20Detailed%20Advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "669f6abed9c2654d",
+      "title": "WR-II Detailed Advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/WR-II%20Detailed%20Advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "cb6752b4375a76d3",
+      "title": "SR-1 Detailed Advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/SR-1%20Detailed%20Advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a21efe16266a0b91",
+      "title": "Odisha Projects Detailed Advertisement.pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/Odisha%20Projects%20Detailed%20Advertisement.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "98856bface41691e",
+      "title": "NER Detailed Advertisement...pdf",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/apprentices_document/NER%20Detailed%20Advertisement...pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "82256f5b0a6cc664",
+      "title": "Closure of Recruitment Process for the Post of Junior Officer Trainee (HR)",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice7dated30082024ClosureofJOTHRRecruitment.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5eefd21e9992fb0c",
+      "title": "Walk In Interview in UT of Ladakh",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Walk_In_Interview_in_UT_of_Ladakh.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1fafe207fabff0c5",
+      "title": "FE CTDS 2026 Detailed Advertisement",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/FE%20CTDS%202026%20Detailed_Advertisement%20%20Final%20f.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2f4eda247d6a8aaa",
+      "title": "FE CTDS 2026 Window Advertisement",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Window%20Advertisement%20FE%20CTDS%202026%20Final_1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "73a20054c3c944fb",
+      "title": "DetailedAdvtTraineeEngineerthruGATE2026",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/DetailedAdvtTraineeEngineerthruGATE2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9f663407eb31a3d3",
+      "title": "ET2026throughGATe2026",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/ET2026throughGATe2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9b32a8ab2ff2c3dd",
+      "title": "Notice 1%20dated%2006 04 2026",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice_1%20dated%2006-04-2026.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "af91932995c32d13",
+      "title": "ET2027 Detailed Advertisement For%20Website 1",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/ET2027_Detailed_Advertisement_For%20Website_1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "cf7d0dbed1e58af8",
+      "title": "023 Powergrid 8x10 Recruitment Ad",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/023-Powergrid-8x10-Recruitment-Ad.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0d3039071f438467",
+      "title": "024 Powergrid 8x10 Recruitment Ad",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/024-Powergrid-8x10-Recruitment-Ad.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "355697c7305087fc",
+      "title": "Notice 1 Recruitment%20Portal%20Unavailable%20from%2012%20AM%20to%2001%20AM%20for%201%20Hour%20on%2030th%20April%202026 0",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-1-Recruitment%20Portal%20Unavailable%20from%2012%20AM%20to%2001%20AM%20for%201%20Hour%20on%2030th%20April%202026_0.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9982688ef6e34fa0",
+      "title": "FAQs",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/FAQs.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "345db8d40d3af5f6",
+      "title": "Notice 2 Application%20in%20Draft%20Mode",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-2-Application%20in%20Draft%20Mode.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "988f5aa642005517",
+      "title": "Notice 3 Application%20Count",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-3_Application%20Count.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "674b0eaf80560c0c",
+      "title": "Notice 4 Date%20of%20CBT%20and%20eligibility%20status",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice_4_Date%20of%20CBT%20and%20eligibility%20status.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e3819837693c5e00",
+      "title": "Notice 5 Admit%20card",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-5_Admit%20card.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f9613e6412d160a3",
+      "title": "Notice 6 Submission%20of%20TA%20Claims%20for%20ST%20candidates",
+      "organization": "Verified news lead",
+      "url": "https://www.powergrid.in/sites/default/files/job_opportunities_document/Notice-6_Submission%20of%20TA%20Claims%20for%20ST%20candidates.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "288b493754d65035",
+      "title": "2026714181514",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026714181514.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b554794bfbc176b3",
+      "title": "202672195435",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202672195435.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9a4b882fbc30407d",
+      "title": "2026522202851",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/2026522202851.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b0236f9d4ad9ecb6",
+      "title": "20251024224149A",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224149A.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2a6d8a8b264964f9",
+      "title": "20251024224228",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20251024224228.pdf",
+      "reasons": [
+        "historical_recruitment"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2d2ab36fd0d2a3b6",
+      "title": "202527174223",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174223.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "7c3434ff774594bd",
+      "title": "202527174446",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174446.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "4624f177988a9abd",
+      "title": "202527174750",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202527174750.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "94ae38e18eda06a5",
+      "title": "20252717492",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/20252717492.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a2975d0184757593",
+      "title": "202512813422",
+      "organization": "Verified news lead",
+      "url": "https://www.nsic.co.in/documents/PDFs/Careers/202512813422.pdf",
+      "reasons": [
+        "historical_recruitment"
       ],
       "scope": null,
       "score": 0
