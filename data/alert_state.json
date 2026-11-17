@@ -1,6 +1,6 @@
 {
   "initialized_at": "2026-10-01T14:13:53.336347+00:00",
-  "updated_at": "2026-11-16T12:18:31.387713+00:00",
+  "updated_at": "2026-11-17T12:35:19.901716+00:00",
   "jobs": {
     "sainik school nagrota sainik schools society ministry of defence|tgt computer science others": {
       "id": "b838aaf76b0dc137",
@@ -15,7 +15,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE",
       "official_source": true,
       "confidence": "primary_domain",
@@ -57,7 +57,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM",
       "official_source": true,
       "confidence": "primary_domain",
@@ -99,7 +99,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-10",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "Indian Coast Guard",
       "official_source": true,
       "confidence": "primary_domain",
@@ -140,7 +140,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-09",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "DRDO - ITR, Chandipur",
       "official_source": true,
       "confidence": "primary_domain",
