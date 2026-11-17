@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-16T12:03:06.838316+00:00",
+  "generated_at": "2026-11-17T12:22:50.057025+00:00",
   "window_days": 30,
-  "cutoff": "2026-10-17",
+  "cutoff": "2026-10-18",
   "discovery": {
     "seed_count": 108,
-    "pages_crawled": 475,
-    "domains_crawled": 94,
+    "pages_crawled": 453,
+    "domains_crawled": 87,
     "source_stats": [
       {
         "host": "admser.chd.nic.in",
@@ -38,25 +38,19 @@
         "jobs_found": 0
       },
       {
-        "host": "bhulekh.ori.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "chandigarhdistrict.nic.in",
         "seed_count": 1,
         "pages_crawled": 5,
         "jobs_found": 0
       },
       {
-        "host": "chennaicorporation.gov.in",
+        "host": "chhattisgarh.nic.in",
         "seed_count": 1,
-        "pages_crawled": 2,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "chhattisgarh.nic.in",
+        "host": "cms.upsc.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -86,6 +80,12 @@
         "jobs_found": 0
       },
       {
+        "host": "dpg.gov.in",
+        "seed_count": 0,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
         "host": "drdo.gov.in",
         "seed_count": 4,
         "pages_crawled": 4,
@@ -100,7 +100,7 @@
       {
         "host": "dsde.goa.gov.in",
         "seed_count": 1,
-        "pages_crawled": 14,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -119,12 +119,6 @@
         "host": "eex.ncs.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "egovernance.unom.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 14,
         "jobs_found": 0
       },
       {
@@ -168,12 +162,6 @@
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 1
-      },
-      {
-        "host": "itiadmission.goa.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
       },
       {
         "host": "itiemp.karnataka.gov.in",
@@ -230,16 +218,10 @@
         "jobs_found": 0
       },
       {
-        "host": "maharashtratourism.gov.in",
+        "host": "mopng.gov.in",
         "seed_count": 1,
-        "pages_crawled": 2,
-        "jobs_found": 0
-      },
-      {
-        "host": "maitri.maharashtra.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 1,
-        "jobs_found": 0
+        "pages_crawled": 22,
+        "jobs_found": 4
       },
       {
         "host": "mprojgar.gov.in",
@@ -249,6 +231,12 @@
       },
       {
         "host": "mpskills.gov.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "mybharat.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
@@ -279,8 +267,8 @@
       },
       {
         "host": "odishatourism.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 10,
+        "seed_count": 3,
+        "pages_crawled": 18,
         "jobs_found": 0
       },
       {
@@ -322,12 +310,6 @@
       {
         "host": "rojgar.mahaswayam.gov.in",
         "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "sdct.goa.gov.in",
-        "seed_count": 0,
         "pages_crawled": 1,
         "jobs_found": 0
       },
@@ -374,24 +356,6 @@
         "jobs_found": 0
       },
       {
-        "host": "ssccr.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
-        "host": "sscnr.nic.in",
-        "seed_count": 1,
-        "pages_crawled": 33,
-        "jobs_found": 29
-      },
-      {
-        "host": "sscsr.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
-        "jobs_found": 0
-      },
-      {
         "host": "sulm.delhi.gov.in",
         "seed_count": 1,
         "pages_crawled": 6,
@@ -410,15 +374,21 @@
         "jobs_found": 0
       },
       {
-        "host": "tourism.cgstate.gov.in",
+        "host": "upsc.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
         "jobs_found": 0
       },
       {
-        "host": "unom.ac.in",
+        "host": "upsconline.gov.in",
         "seed_count": 1,
-        "pages_crawled": 2,
+        "pages_crawled": 1,
+        "jobs_found": 0
+      },
+      {
+        "host": "upsconline.nic.in",
+        "seed_count": 1,
+        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -428,21 +398,9 @@
         "jobs_found": 0
       },
       {
-        "host": "www.apprenticeship.gov.in",
-        "seed_count": 0,
-        "pages_crawled": 7,
-        "jobs_found": 0
-      },
-      {
         "host": "www.apprenticeshipindia.gov.in",
         "seed_count": 0,
         "pages_crawled": 3,
-        "jobs_found": 0
-      },
-      {
-        "host": "www.civilaviation.gov.in",
-        "seed_count": 1,
-        "pages_crawled": 1,
         "jobs_found": 0
       },
       {
@@ -482,6 +440,12 @@
         "jobs_found": 0
       },
       {
+        "host": "www.irel.co.in",
+        "seed_count": 2,
+        "pages_crawled": 36,
+        "jobs_found": 0
+      },
+      {
         "host": "www.labour.gov.in",
         "seed_count": 2,
         "pages_crawled": 2,
@@ -501,8 +465,8 @@
       },
       {
         "host": "www.nsic.co.in",
-        "seed_count": 2,
-        "pages_crawled": 56,
+        "seed_count": 1,
+        "pages_crawled": 55,
         "jobs_found": 32
       },
       {
@@ -554,12 +518,6 @@
         "jobs_found": 0
       },
       {
-        "host": "www.unom.ac.in",
-        "seed_count": 0,
-        "pages_crawled": 12,
-        "jobs_found": 0
-      },
-      {
         "host": "www.upsc.gov.in",
         "seed_count": 1,
         "pages_crawled": 1,
@@ -574,14 +532,14 @@
     ]
   },
   "quality": {
-    "raw_candidates": 1338,
-    "published_jobs": 117,
-    "rejected_or_deduplicated": 1221,
+    "raw_candidates": 1430,
+    "published_jobs": 92,
+    "rejected_or_deduplicated": 1338,
     "primary_source_required": true,
     "scope_gate": "multi_stage_v2",
-    "published_jobs_before_gate": 117,
+    "published_jobs_before_gate": 92,
     "published_jobs_after_gate": 4,
-    "rejected_by_scope_gate": 113,
+    "rejected_by_scope_gate": 88,
     "scope_counts": {
       "central": 3,
       "state_other": 1
@@ -620,7 +578,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE",
       "official_source": true,
       "confidence": "primary_domain",
@@ -662,7 +620,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-11-02",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM",
       "official_source": true,
       "confidence": "primary_domain",
@@ -704,7 +662,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-10",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "Indian Coast Guard",
       "official_source": true,
       "confidence": "primary_domain",
@@ -745,7 +703,7 @@
       "pay": null,
       "qualification": null,
       "posting_date": "2026-10-09",
-      "discovered_at": "2026-11-16T12:03:06.838316+00:00",
+      "discovered_at": "2026-11-17T12:22:50.057025+00:00",
       "source": "DRDO - ITR, Chandipur",
       "official_source": true,
       "confidence": "primary_domain",
