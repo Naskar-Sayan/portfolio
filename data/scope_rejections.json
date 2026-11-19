@@ -1,18 +1,40 @@
 {
-  "generated_at": "2026-11-18T12:36:07.047663+00:00",
-  "rejected_count": 204,
+  "generated_at": "2026-11-19T12:40:32.168722+00:00",
+  "rejected_count": 268,
   "scope_counts": {
     "central": 3,
     "state_other": 1,
     "institutional_indian_source": 3,
     "central_linked": 9,
-    "psu": 13
+    "psu": 19
   },
   "tier_counts": {
-    "verified": 23,
-    "high_confidence": 6
+    "verified": 24,
+    "high_confidence": 11
   },
   "rejected": [
+    {
+      "id": "7eda78468af8e500",
+      "title": "2",
+      "organization": "Verified news lead",
+      "url": "https://thdc.co.in/sites/default/files/career/Associate.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "398a969a2b8bd10c",
+      "title": "1",
+      "organization": "Verified news lead",
+      "url": "https://thdc.co.in/sites/default/files/career/ADVT_INTERVIEW_ADHOC_GDMO.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
     {
       "id": "aae56d59aee3e62a",
       "title": "Advt.%20No. %20IITPKD R F 03 2026%20Dated %2009%20July%202026",
@@ -51,6 +73,127 @@
       "title": "Advertisement for the post of Director, IIT Mandi",
       "organization": "Verified news lead",
       "url": "https://www.iitsystem.ac.in/sites/default/files/news/15/Advertisement-iit-mandi-director-to-be-uploaded.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "25ea258ad1b221dd",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector (Post Code NR19124) in National Center for Vector Borne Diseases Control under Selection Post Phase-XII/2024-Reg. [31 Aug 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6118cb31de932b4f",
+      "title": "Corrigendum Recruitment to the post of Office Superintendent advertised vide post code NR21024 Phase-XII/2024/Selection Posts- reg.[06 June 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d2c5cecdd4595ebc",
+      "title": "Corrigendum regarding withdrawal of 01 vacancy for the Post of Library & Information Assistant advertised vide Post Code NR18724 Phase-XII/2024/Selection Post.[24 April 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1e59ea63d90d3ae8",
+      "title": "Cancellation Notice Cancellation of Post Code NR12724 (01-SC Vacancy) – Research Investigator in Department of Land Resources under Selection Post Phase-XII/2024-Reg. [23 Mar 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "de81b9367e8f79da",
+      "title": "Cancellation Notice Cancellation of the vacancy of Mud Plaster in National Crafts Museum & Hastkala Academy, M/o Textiles Post Category No. NR21524 advertised under Phase-XII/2024 Selection Posts-reg. [21 Jan 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "979ee11dc2344b70",
+      "title": "Cancellation Notice Cancellation of the following vacancies in National Crafts Museum & Hastkala Academy, M/o Textiles advertised under Phase XIII/2025 Selection Posts-reg. [21 Jan 2026]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0531911ccabcf5c6",
+      "title": "Corrigendum Recruitment to the post of Civil Motor Driver (Ordinary Grade) Post Category No. NR32623 advertised under Phase-XI/2023/Selection Posts Examination. [23 Dec 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "821056094e819e3f",
+      "title": "Corrigendum WITHDRAWAL OF 05 VACANCIES FOR THE POST CODE NR28823 PHASE-XI/2023 (DATA ENTRY OPERATOR (DEO). [18 Aug 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "9370b28653b33ffc",
+      "title": "Corrigendum Vacancy reserved for Ex-servicemen (ESM) as “NIL” for the Post Code NR10424 of Selection Posts Phase-XII/2024. [12 Aug 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "679cf3846a2b5e0c",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code-NR12923 Phase XI/2023. [15 July 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "36962373c9646c34",
+      "title": "Corrigendum Vacancy reserved for ESM is treated as “NIL” for the Post Code NR12723 and NR12823 Phase XI/2023. [12 Mar 2025]",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12723_NR12823_12032025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -150,6 +293,468 @@
       "title": "Courses from HSS for 1st and 2nd Year Students' Summer Vacation Engagement.",
       "organization": "Verified news lead",
       "url": "https://www.iitbbs.ac.in/notice/noticeb_1589356959.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "39ca31167b188af1",
+      "title": "Advertisement No. - 13 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsconline.nic.in/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "89ad1e7ba5a9e38d",
+      "title": "05 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/applicants-list/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d4993a4793cfbe1b",
+      "title": "07 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/applicants-list/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5ebf0d134116208c",
+      "title": "11 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/applicants-list/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "90da4a9636b09ad1",
+      "title": "06 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/applicants-list/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d2d6096e8487bdf1",
+      "title": "12 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/notices/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "40290c16efe9c388",
+      "title": "12 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/notices/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a394b25874f1bd34",
+      "title": "11 - 2024",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/notices/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a8b1a44b1f79e622",
+      "title": "08 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/notices/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1ad4dfb6668c802c",
+      "title": "06 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/scrutiny/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a625b1cbab6e270a",
+      "title": "07 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/interview-schedules/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ab3a284f14797387",
+      "title": "54 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/interview-schedules/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e3c75c7a5519c264",
+      "title": "09 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/interview-schedules/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6032f6e2e439ae4f",
+      "title": "01 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/interview-schedules/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c8e3a17bc1fffe07",
+      "title": "53 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/interview-schedules/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0281809114fdbfd3",
+      "title": "05 - 2024",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/results/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2628212310ea1439",
+      "title": "05 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/results/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "4a152c6303218e6d",
+      "title": "16 - 2023",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/status-of-recruitment-cases-advertisement-wise/results/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c1f1bc53f849c5de",
+      "title": "रिक्ति संख्या Vacancy No.",
+      "organization": "Verified news lead",
+      "url": "https://upsconline.gov.in/oramarks/vacancy_marks.php",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6c011dfe93c00ecc",
+      "title": "52 - 2025 - (Special)",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/recruitment-tests/schedule-for-recruitment-tests-and-interviews/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "beca1deb76feb43b",
+      "title": "08 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/recruitment-tests/notice/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0246a0bc2d0e86d0",
+      "title": "14 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/recruitment-tests/notice/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "a99232b56c3b22d9",
+      "title": "13 - 2025",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/recruitment-tests/results/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "33c3899d8b836d28",
+      "title": "03 - 2024",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/recruitment-tests/cut-off-marks/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "169319dcddb4d011",
+      "title": "Cancellation of 02 vacancies for the Post of Insect Collector",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_of_02_vacancies_for_the_Post_of_Insect_Collector.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "726306cd71838359",
+      "title": "Cancellation Notice NR15125",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancellation_Notice_NR15125.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "ffe434ec6f53ac85",
+      "title": "Corrigendum NR21024",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR21024.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "f84210518433afce",
+      "title": "CancelNotice 31623",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/CancelNotice_31623.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "1f301afd527fed84",
+      "title": "Corrigendum NR 18724",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Corrigendum_NR_18724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "13053bd431eb72bb",
+      "title": "Cancellation Notice NR12724",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/Cancellation_Notice_NR12724.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "87b41b5962751332",
+      "title": "Cancel Notice NR21524",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR21524.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6fa64bd6b74d8228",
+      "title": "Cancel Notice NR17525 NR17625 NR17725 NR17825",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2026/ImportantNotice/Cancel_Notice_NR17525_NR17625_NR17725_NR17825.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6442f55acf66c7a1",
+      "title": "Corr 32623 231222025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corr_32623_231222025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "5a9e0e0d7e053216",
+      "title": "Corrigendum SSC NR11925 NR12025 and NR16325",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/Corrigendum_SSC_NR11925_NR12025_and_NR16325.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c04d5202cbb7e3d0",
+      "title": "CORRIGENDUM NR28823 18082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2025/ImportantNotice/CORRIGENDUM_NR28823_18082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e2c48abb3061cde3",
+      "title": "Cancel Notice NR25024 12082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancel_Notice_NR25024_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2d86c838d2763226",
+      "title": "Corrigendum NR10424 12082025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/Corrigendum_NR10424_12082025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "3494d0a9be88d62e",
+      "title": "CORRIGENDUM NR12923 15072025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/ImportantNotice/CORRIGENDUM_NR12923_15072025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "e0e89127ab4654b1",
+      "title": "Cancellation Notice for NR14122 to NR15722 25062025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR14122_to_NR15722_25062025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "54feaec5e5272e32",
+      "title": "Cancellation Notice for NR11322 NR11422 NR11622",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/Cancellation_Notice_for_NR11322_NR11422_NR11622.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0eef9c935f8a2099",
+      "title": "CANCELLATION NOTICE NR14423 NR17623 28032025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR14423_NR17623_28032025.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "b883c0ccfc6d6594",
+      "title": "CANCELLATION NOTICE NR15523 07012025",
+      "organization": "Verified news lead",
+      "url": "https://sscnr.nic.in/newlook/downloads/2024/Short_Notice/CANCELLATION_NOTICE_NR15523_07012025.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -942,6 +1547,149 @@
       "title": "Detailed Advertisement (Application Links Included)",
       "organization": "Verified news lead",
       "url": "https://iith.ac.in/assets/files/careers/staff/nf20/Final-Detailed_NotificationsNF-20-1.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "0affa061f31fd29e",
+      "title": "Advertisement No. - 12 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "4d9553e2807dcc0f",
+      "title": "Advertisement No - 11 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "19d292b4e8adbcd4",
+      "title": "Advertisement - No. 52 - 2026 - (Special)",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c6532b79e37b242e",
+      "title": "Advertisement No - 10 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d73ea99d0169f6f6",
+      "title": "Advertisement No. - 51 - 2026 - (Special)",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "d475dab15050899a",
+      "title": "Advertisement No. - 09-2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "2205a2e221b9212e",
+      "title": "Advertisement No. - 08 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "604a4ab59ee69235",
+      "title": "Advertisement No. - 07 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c43b91ef39f9ae74",
+      "title": "Advertisement No. - 06 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "6ff5d1dc2899d6d1",
+      "title": "Advertisement No. - 05 - 2026",
+      "organization": "Verified news lead",
+      "url": "https://upsc.gov.in/archived-advertisements/",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "60ff6c3b00a97c49",
+      "title": "RECRUITMENT OF SENIOR%20MANAGER DEPUTY GENERAL MANAGER AND ADDITIONAL GENERAL MANAGER",
+      "organization": "Verified news lead",
+      "url": "https://thdc.co.in/sites/default/files/career/RECRUITMENT_OF_SENIOR%20MANAGER_DEPUTY_GENERAL_MANAGER_AND_ADDITIONAL_GENERAL_MANAGER.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c1213818e4c4af80",
+      "title": "Engagement%20 Consultant contract basis in DCPC reg 0001",
+      "organization": "Verified news lead",
+      "url": "https://chemicals.gov.in/sites/default/files/recruitment-documents/Engagement%20_Consultant_contract_basis_in_DCPC_reg_0001.pdf",
+      "reasons": [
+        "generic_organization"
+      ],
+      "scope": null,
+      "score": 0
+    },
+    {
+      "id": "c7f29ae97802b6f0",
+      "title": "vacancy circular dated 27.05.2026",
+      "organization": "Verified news lead",
+      "url": "https://chemicals.gov.in/sites/default/files/recruitment-documents/vacancy_circular_dated_27.05.2026.pdf",
       "reasons": [
         "generic_organization"
       ],
@@ -2207,50 +2955,6 @@
       "title": "DAAD Bilateral Exchange of Academics",
       "organization": "Verified news lead",
       "url": "https://ir.iitr.ac.in/notifications/DAAD-Bilateral-Exchange-of-Academics.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "496a61afce80e302",
-      "title": "FAQ Faculty%20Recruitment",
-      "organization": "Verified news lead",
-      "url": "https://recruitment.iitgn.ac.in/faculty/pdf/FAQ_Faculty%20Recruitment.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "4a73498eb81e3b4a",
-      "title": "Placement%20and%20Internship%20Procedure",
-      "organization": "Verified news lead",
-      "url": "https://cdc.iitpkd.ac.in/sites/default/files/Placement%20and%20Internship%20Procedure.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "503aea3d8f02a209",
-      "title": "Internship%20Policy%20CDC%20IIT%20PKD",
-      "organization": "Verified news lead",
-      "url": "https://cdc.iitpkd.ac.in/sites/default/files/Internship%20Policy%20CDC%20IIT%20PKD.pdf",
-      "reasons": [
-        "generic_organization"
-      ],
-      "scope": null,
-      "score": 0
-    },
-    {
-      "id": "ee3014cad2263c6c",
-      "title": "Internship%20Policy%20CDC",
-      "organization": "Verified news lead",
-      "url": "https://cdc.iitpkd.ac.in/sites/default/files/Internship%20Policy%20CDC.pdf",
       "reasons": [
         "generic_organization"
       ],
