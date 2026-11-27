@@ -1,43 +1,14 @@
 {
-  "generated_at": "2026-11-26T13:35:21.027487+00:00",
+  "generated_at": "2026-11-27T13:18:44.358610+00:00",
   "baseline": false,
   "summary": {
     "new_jobs": 0,
-    "updated_jobs": 1,
+    "updated_jobs": 0,
     "deadline_alerts": 0,
-    "total_jobs_checked": 27
+    "total_jobs_checked": 2
   },
   "new_jobs": [],
-  "updated_jobs": [
-    {
-      "previous": {
-        "id": "d8bafabb6ca23656",
-        "title": "Rolling Advertisement",
-        "organization": "Indian Institute of Technology Delhi",
-        "deadline": null,
-        "vacancies": null,
-        "pay": null,
-        "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling-Advt.IITD-2026-PROF-2_w.e.f.17.11.2026.pdf",
-        "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling-Advt.IITD-2026-PROF-2_w.e.f.17.11.2026.pdf",
-        "official_source": true,
-        "is_update": false,
-        "notice_type": "recruitment"
-      },
-      "current": {
-        "id": "d8bafabb6ca23656",
-        "title": "Rolling Advertisement",
-        "organization": "Indian Institute of Technology Delhi",
-        "deadline": null,
-        "vacancies": null,
-        "pay": "rs,",
-        "url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling-Advt.IITD-2026-PROF-2_w.e.f.17.11.2026.pdf",
-        "application_url": "https://home.iitd.ac.in/jobs-iitd/uploads/Rolling-Advt.IITD-2026-PROF-2_w.e.f.17.11.2026.pdf",
-        "official_source": true,
-        "is_update": false,
-        "notice_type": "recruitment"
-      }
-    }
-  ],
+  "updated_jobs": [],
   "deadline_alerts": [],
-  "notification_text": "UPDATED: Rolling Advertisement | Indian Institute of Technology Delhi | Last date: N/A | https://home.iitd.ac.in/jobs-iitd/uploads/Rolling-Advt.IITD-2026-PROF-2_w.e.f.17.11.2026.pdf"
+  "notification_text": ""
 }
